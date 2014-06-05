@@ -1,7 +1,6 @@
-cache/*
-log/*
-web/uploads/*
-config/databases.yml
-config/propel.ini
-data/sql/*
-web/*Plugin/*
+#cache/*
+#log/*
+#web/uploads/*
+#config/databases.yml
+#config/propel.ini
+#data/sql/*
