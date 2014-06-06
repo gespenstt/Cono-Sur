@@ -1,0 +1,5 @@
+validarTrivia = function(){
+    
+    
+    
+}
