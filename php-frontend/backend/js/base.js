@@ -1,5 +1,8 @@
-validarTrivia = function(){
+$(document).ready(function(){
+    /*--------------------------------------------------
+    Plugin: Lightbox
+    --------------------------------------------------*/	
+
+    $('.lightbox-type').lightbox ();
     
-    
-    
-}
+})

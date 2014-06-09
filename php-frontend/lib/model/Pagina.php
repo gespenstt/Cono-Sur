@@ -17,5 +17,10 @@
  * @package    lib.model
  */
 class Pagina extends BasePagina {
+    
+  public function __toString()
+  {
+    return $this->getPagNombre();
+  }
 
 } // Pagina

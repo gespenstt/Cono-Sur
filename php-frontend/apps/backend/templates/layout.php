@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Backend Tab Campanario</title>
+    <title>Backend</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">    
@@ -15,6 +15,8 @@
     <link href="<?=public_path("css/font-awesome.min.css");?>" rel="stylesheet">        
     
     <link href="<?=public_path("css/ui-lightness/jquery-ui-1.10.0.custom.min.css");?>" rel="stylesheet">
+    
+    <link href="<?=public_path("js/plugins/lightbox/themes/evolution-dark/jquery.lightbox.css");?>" rel="stylesheet">
     
     <link href="<?=public_path("css/base-admin-3.css");?>" rel="stylesheet">
     <link href="<?=public_path("css/base-admin-3-responsive.css");?>" rel="stylesheet">
@@ -56,7 +58,7 @@
 		<div class="row">
 			
 			<div id="footer-copyright" class="ol-md-6">
-				&copy; <?=date("Y");?> Backend Trivia
+				&copy; <?=date("Y");?> Backend Cono Sur
 			</div> <!-- /span6 -->
 			
 		</div> <!-- /row -->
@@ -76,6 +78,8 @@
 <script src="<?=public_path("js/libs/jquery-ui-1.10.0.custom.min.js");?>"></script>
 <script src="<?=public_path("js/libs/bootstrap.min.js");?>"></script>
 
+<script src="<?=public_path("js/plugins/lightbox/jquery.lightbox.min.js");?>"></script>
+
 <script src="<?=public_path("js/plugins/flot/jquery.flot.js");?>"></script>
 <script src="<?=public_path("js/plugins/flot/jquery.flot.pie.js");?>"></script>
 <script src="<?=public_path("js/plugins/flot/jquery.flot.resize.js");?>"></script>
@@ -84,8 +88,7 @@
 
 <script src="<?=public_path("js/Application.js");?>"></script>
 
-<script src="<?=public_path("js/charts/area.js");?>"></script>
-<script src="<?=public_path("js/charts/donut.js");?>"></script>
+<script src="<?=public_path("js/base.js");?>"></script>
 
   </body>
 </html>
