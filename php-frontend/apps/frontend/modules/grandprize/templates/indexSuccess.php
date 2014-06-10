@@ -1,6 +1,5 @@
 <?php
     $array_diccionario = $sf_data->getRaw("diccionario");
-    print_r($array_diccionario);
 ?>
 				<div class="container-fluid">
 

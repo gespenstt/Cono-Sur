@@ -27,7 +27,7 @@ class grandprizeActions extends sfActions
       $c->addJoin(SeccionPeer::SEC_ID, ParametroPeer::SEC_ID);
       $c->addJoin(ParametroPeer::PAR_ID, DiccionarioPeer::PAR_ID);
       $c->add(DiccionarioPeer::IDI_ID,1);
-      $c->add(PaginaPeer::PAG_ID,2);
+      $c->add(PaginaPeer::PAG_ID,3);
       
       $resC = DiccionarioPeer::doSelectStmt($c);
       $array_out = array();
