@@ -9,7 +9,7 @@
                                     <span class="icon-bar"></span>
                             </button>
 
-                            <a class="navbar-brand" href="index.html">Conosur Bloggers</a>
+                            <a class="navbar-brand" href="<?=url_for("home/index");?>">Conosur Bloggers</a>
 
                     </div>
 
@@ -17,9 +17,9 @@
                     <div class="collapse navbar-collapse navbar-ex1-collapse">
 
                             <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="contest_details.html">CONTEST DETAILS</a></li>
-                                    <li><a href="grand_prize.html">GRAND PRIZE</a></li>
-                                    <li><a href="enter_recipe.html">ENTER YOUR RECIPE</a></li>
+                                    <li><a href="<?=url_for("contestdetails/index");?>">CONTEST DETAILS</a></li>
+                                    <li><a href="<?=url_for("grandprize/index");?>">GRAND PRIZE</a></li>
+                                    <li><a href="<?=url_for("enterrecipe/index");?>">ENTER YOUR RECIPE</a></li>
                                     <!--<li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">RECIPES</a>
                                             <ul class="dropdown-menu">
