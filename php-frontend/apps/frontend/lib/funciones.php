@@ -160,8 +160,8 @@ class funciones{
             return $output;
             
         } catch (Exception $ex) {
-            return $output;
             $log->err($ex->getMessage());
+            return $output;
         }
 }
     
