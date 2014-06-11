@@ -110,9 +110,9 @@ class funciones{
         //if (filter_var($ip, FILTER_VALIDATE_IP) && in_array($purpose, $support)) {
         $url_api = "http://www.geoplugin.net/json.gp?ip=" . $ip;
         $log->debug("Call api | url=$url_api");
-        $w = new sfBrowser();
+        $w = new sfWebBrowser();
         $w->get($url_api);
-        $json_w = $w->getResponse();
+        $json_w = $w->getResponseText();
         $log->debug("Call api RESPONSE | data=$json_w");
             $ipdat = @json_decode($json_w);
             $log->debug("IPDAT: ".$ipdat);
