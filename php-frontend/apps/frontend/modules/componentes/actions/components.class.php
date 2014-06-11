@@ -34,7 +34,7 @@ class componentesComponents extends sfComponents
                 case (strpos($detect, "fi")!==FALSE):
                     $array_cookie = array(
                         "lang"=>"fi",
-                        "id"=>"4",
+                        "id"=>"c5e62d69879248ba52c5839ae8216ae7",
                         "natural"=>true,
                     );
                     setcookie("conosur", serialize($array_cookie), time()+3600*24*90, "/");
@@ -44,7 +44,7 @@ class componentesComponents extends sfComponents
                 case (strpos($detect, "gb")!==FALSE):
                     $array_cookie = array(
                         "lang"=>"gb",
-                        "id"=>"1",
+                        "id"=>"5f5c41ce34cae1c4503d800b291f8bd4",
                         "natural"=>true,
                     );
                     setcookie("conosur", serialize($array_cookie), time()+3600*24*90, "/");
@@ -54,7 +54,7 @@ class componentesComponents extends sfComponents
                 case (strpos($detect, "ie")!==FALSE):
                     $array_cookie = array(
                         "lang"=>"ie",
-                        "id"=>"2",
+                        "id"=>"ca5d0605b60bf30f6a41cecb4b873dc4",
                         "natural"=>true,
                     );
                     setcookie("conosur", serialize($array_cookie), time()+3600*24*90, "/");
@@ -64,16 +64,18 @@ class componentesComponents extends sfComponents
                 case (strpos($detect, "se")!==FALSE):
                     $array_cookie = array(
                         "lang"=>"se",
-                        "id"=>"3",
+                        "id"=>"ea14eaf7e36e0a5a298c8e5e41f85cce",
                         "natural"=>true,
                     );
                     setcookie("conosur", serialize($array_cookie), time()+3600*24*90, "/");
                     $found=true;
                     break;
                 case (strpos($detect, "cl")!==FALSE):
+                    //EN
+                    //f6d7a559d5cfa79f1daf7c3562253c61 ID 5
                     $array_cookie = array(
                         "lang"=>"gb",
-                        "id"=>"1",
+                        "id"=>"5f5c41ce34cae1c4503d800b291f8bd4",
                         "natural"=>true,
                     );
                     setcookie("conosur", serialize($array_cookie), time()+3600*24*90, "/");
