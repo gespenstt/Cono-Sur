@@ -19,7 +19,7 @@ class componentesComponents extends sfComponents
   {
       $this->respuesta = false;
       $cookie = unserialize($_COOKIE["conosur"]);
-      if(!is_array($cookie) && empty($cookie["lang"])){
+      if(!is_array($cookie) || empty($cookie["lang"])){
         $funciones = new funciones();
         $detect = $funciones->detectLang();
         echo "DETECT:::$detect";
