@@ -2,8 +2,18 @@
 
 class funciones{
     
+    public function setLog($type='',$archivo='frontend')
+    {
+        $logFechaNombre = $archivo."_".date("Ymd").".log";
+        $logPath = sfConfig::get('sf_log_dir').'/'.$logFechaNombre;
+        $log = new sfFileLogger(new sfEventDispatcher(), array('level' => sfFileLogger::DEBUG,'file' => $logPath,'type' => $type)); 
+        return $log;
+    }
+    
     public function detectLang(){
         
+        $log = $this->setLog("funciones-detectLang");
+        $log->debug("inicio detect");
         $metodo_ip = $this->detectIp();
         if(!$metodo_ip){
             
@@ -22,16 +32,21 @@ class funciones{
     
     private function detectIp(){
         
+        $log = $this->setLog("funciones-detectIp");
         $ip = $this->get_client_ip();
+        $log->debug("IP Encontrada | ip=$ip");
         $output = false;
         if($ip != "UNKNOWN" && !empty($ip)){            
             $out = $this->ip_info($ip);
             if(!is_null($out) || !empty($out)){
+                $log->debug("COUNTRY CODE ENCONTRADO: ".$out["country_code"]);
                 return $out["country_code"];
             }else{
+                $log->err("LOCATION NO RESUELTO POR INFO");
                 return $output;
             }
         }  else {
+            $log->err("IP NO RESUELTA");
             return $output;
         }
         
@@ -68,6 +83,8 @@ class funciones{
     }   
     
     private function ip_info($ip = NULL, $purpose = "location", $deep_detect = FALSE) {
+        $log = $this->setLog("funciones-ip_info");
+        $log->debug("datos de entrada | ip=$ip");
         $output = NULL;
         if (filter_var($ip, FILTER_VALIDATE_IP) === FALSE) {
             $ip = $_SERVER["REMOTE_ADDR"];
@@ -92,6 +109,7 @@ class funciones{
         );
         if (filter_var($ip, FILTER_VALIDATE_IP) && in_array($purpose, $support)) {
             $ipdat = @json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=" . $ip));
+            $log->debug("IPDAT: ".$ipdat);
             if (@strlen(trim($ipdat->geoplugin_countryCode)) == 2) {
                 switch ($purpose) {
                     case "location":
@@ -103,6 +121,7 @@ class funciones{
                             "continent"      => @$continents[strtoupper($ipdat->geoplugin_continentCode)],
                             "continent_code" => @$ipdat->geoplugin_continentCode
                         );
+                        $log->debug("Output | ".print_r($output,true));
                         break;
                     case "address":
                         $address = array($ipdat->geoplugin_countryName);
