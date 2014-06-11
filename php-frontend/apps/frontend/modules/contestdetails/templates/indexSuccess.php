@@ -6,7 +6,7 @@
 
 					<div class="row show-grid violet row-no-margin">
 
-						<div class="col-md-5 text-center">
+						<div class="col-md-5 text-center contest-details-box">
 							<h1><?=$array_diccionario["panel_a"]["titulo"];?></h1>
 
 							<p class="text-14-uppercase"><?=$array_diccionario["panel_a"]["texto"];?></p> 
