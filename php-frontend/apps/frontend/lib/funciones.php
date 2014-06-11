@@ -43,7 +43,8 @@ class funciones{
         if($ua_locale==""){
             return false;
         }else{
-            return $ua_locale;
+            $ua_locale_explode = explode(",", $ua_locale);
+            return $ua_locale[0];
         }
     }
     

@@ -14,7 +14,7 @@
             <script src="<?=public_path("js/jquery.cycle2.min.js");?>"></script>
             <script src="<?=public_path("js/fix-ios6.js");?>"></script>
             <script>
-                var aa = '<?php include_component("componentes", "detectar"); ?>'; 
+                var det = '<?php include_component("componentes", "detectar"); ?>'; 
             </script>
     </head>
     <body>

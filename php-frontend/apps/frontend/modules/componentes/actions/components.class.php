@@ -17,7 +17,7 @@ class componentesComponents extends sfComponents
       $funciones = new funciones();
       $detect = $funciones->detectLang();
       if($detect!==FALSE){
-          $this->respuesta = $detect;
+          $this->respuesta = "'$detect'";
       }
   }
     
