@@ -13,6 +13,9 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
             <script src="<?=public_path("js/jquery.cycle2.min.js");?>"></script>
             <script src="<?=public_path("js/fix-ios6.js");?>"></script>
+            <script>
+                var aa = '<?php include_component("componentes", "detectar"); ?>'; 
+            </script>
     </head>
     <body>
         <div class="container">
