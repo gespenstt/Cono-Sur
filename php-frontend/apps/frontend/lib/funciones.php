@@ -107,7 +107,7 @@ class funciones{
             "NA" => "North America",
             "SA" => "South America"
         );
-        if (filter_var($ip, FILTER_VALIDATE_IP) && in_array($purpose, $support)) {
+        //if (filter_var($ip, FILTER_VALIDATE_IP) && in_array($purpose, $support)) {
             $ipdat = @json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=" . $ip));
             $log->debug("IPDAT: ".$ipdat);
             if (@strlen(trim($ipdat->geoplugin_countryCode)) == 2) {
@@ -148,7 +148,7 @@ class funciones{
                         break;
                 }
             }
-        }
+        //}
         return $output;
 }
     
