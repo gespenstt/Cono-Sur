@@ -18,9 +18,11 @@ class componentesComponents extends sfComponents
   public function executeDetectar()
   {
       $this->respuesta = false;
+      $funciones = new funciones();
+      $log = $funciones->setLog("executeDetectar");
       $cookie = unserialize($_COOKIE["conosur"]);
+      $log->debug("Cookie : ".print_r($cookie,true));
       if(!is_array($cookie) || empty($cookie["lang"])){
-        $funciones = new funciones();
         $detect = $funciones->detectLang();
         echo "DETECT:::$detect";
         if($detect!==FALSE){
