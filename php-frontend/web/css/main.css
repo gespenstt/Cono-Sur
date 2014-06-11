@@ -25,6 +25,7 @@ a:hover, a:focus {
 }
 .navbar-default .navbar-nav > li > a {
     color: #000000;
+    font-weight: bold;
 }
 .navbar-brand {
 	background-image: url(../img/logo-conosur-bloggers.png);
@@ -115,6 +116,9 @@ h3 {
 .row-no-margin {
 	margin: 0px;
 }
+.contest-details-box {
+	padding: 0px 50px;
+}
 .contest-details {
 	height: 330px;
 	background-image: url(../img/contest-details.jpg);
@@ -136,6 +140,7 @@ h3 {
 }
 .paragraph-color-especial {
 	color: #58595b;
+	padding-bottom: 20px;
 }
 .grand-prize {
 	height: 450px;
@@ -156,6 +161,7 @@ h3 {
 
 .img-02 {
 	background-image: url(../img/img-02.jpg);
+	background-position: bottom;
 }
 
 .img-03 {
