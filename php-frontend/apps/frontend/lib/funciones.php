@@ -86,76 +86,83 @@ class funciones{
         $log = $this->setLog("funciones-ip_info");
         $log->debug("datos de entrada | ip=$ip");
         $output = NULL;
-        if (filter_var($ip, FILTER_VALIDATE_IP) === FALSE) {
-            $ip = $_SERVER["REMOTE_ADDR"];
-            if ($deep_detect) {
-                if (filter_var(@$_SERVER['HTTP_X_FORWARDED_FOR'], FILTER_VALIDATE_IP))
-                    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-                if (filter_var(@$_SERVER['HTTP_CLIENT_IP'], FILTER_VALIDATE_IP))
-                    $ip = $_SERVER['HTTP_CLIENT_IP'];
-            }
-        }
-        //echo "ENCONTRE IP: $ip<br>";
-        $purpose    = str_replace(array("name", "\n", "\t", " ", "-", "_"), NULL, strtolower(trim($purpose)));
-        $support    = array("country", "countrycode", "state", "region", "city", "location", "address");
-        $continents = array(
-            "AF" => "Africa",
-            "AN" => "Antarctica",
-            "AS" => "Asia",
-            "EU" => "Europe",
-            "OC" => "Australia (Oceania)",
-            "NA" => "North America",
-            "SA" => "South America"
-        );
-        //if (filter_var($ip, FILTER_VALIDATE_IP) && in_array($purpose, $support)) {
-        $url_api = "http://www.geoplugin.net/json.gp?ip=" . $ip;
-        $log->debug("Call api | url=$url_api");
-        $w = new sfWebBrowser();
-        $w->get($url_api);
-        $json_w = $w->getResponseText();
-        $log->debug("Call api RESPONSE | data=$json_w");
-            $ipdat = @json_decode($json_w);
-            $log->debug("IPDAT: ".$ipdat);
-            if (@strlen(trim($ipdat->geoplugin_countryCode)) == 2) {
-                switch ($purpose) {
-                    case "location":
-                        $output = array(
-                            "city"           => @$ipdat->geoplugin_city,
-                            "state"          => @$ipdat->geoplugin_regionName,
-                            "country"        => @$ipdat->geoplugin_countryName,
-                            "country_code"   => @$ipdat->geoplugin_countryCode,
-                            "continent"      => @$continents[strtoupper($ipdat->geoplugin_continentCode)],
-                            "continent_code" => @$ipdat->geoplugin_continentCode
-                        );
-                        $log->debug("Output | ".print_r($output,true));
-                        break;
-                    case "address":
-                        $address = array($ipdat->geoplugin_countryName);
-                        if (@strlen($ipdat->geoplugin_regionName) >= 1)
-                            $address[] = $ipdat->geoplugin_regionName;
-                        if (@strlen($ipdat->geoplugin_city) >= 1)
-                            $address[] = $ipdat->geoplugin_city;
-                        $output = implode(", ", array_reverse($address));
-                        break;
-                    case "city":
-                        $output = @$ipdat->geoplugin_city;
-                        break;
-                    case "state":
-                        $output = @$ipdat->geoplugin_regionName;
-                        break;
-                    case "region":
-                        $output = @$ipdat->geoplugin_regionName;
-                        break;
-                    case "country":
-                        $output = @$ipdat->geoplugin_countryName;
-                        break;
-                    case "countrycode":
-                        $output = @$ipdat->geoplugin_countryCode;
-                        break;
+        try{
+            
+            if (filter_var($ip, FILTER_VALIDATE_IP) === FALSE) {
+                $ip = $_SERVER["REMOTE_ADDR"];
+                if ($deep_detect) {
+                    if (filter_var(@$_SERVER['HTTP_X_FORWARDED_FOR'], FILTER_VALIDATE_IP))
+                        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+                    if (filter_var(@$_SERVER['HTTP_CLIENT_IP'], FILTER_VALIDATE_IP))
+                        $ip = $_SERVER['HTTP_CLIENT_IP'];
                 }
             }
-        //}
-        return $output;
+            //echo "ENCONTRE IP: $ip<br>";
+            $purpose    = str_replace(array("name", "\n", "\t", " ", "-", "_"), NULL, strtolower(trim($purpose)));
+            $support    = array("country", "countrycode", "state", "region", "city", "location", "address");
+            $continents = array(
+                "AF" => "Africa",
+                "AN" => "Antarctica",
+                "AS" => "Asia",
+                "EU" => "Europe",
+                "OC" => "Australia (Oceania)",
+                "NA" => "North America",
+                "SA" => "South America"
+            );
+            //if (filter_var($ip, FILTER_VALIDATE_IP) && in_array($purpose, $support)) {
+            $url_api = "http://www.geoplugin.net/json.gp?ip=" . $ip;
+            $log->debug("Call api | url=$url_api");
+            $w = new sfWebBrowser();
+            $w->get($url_api);
+            $json_w = $w->getResponseText();
+            $log->debug("Call api RESPONSE | data=$json_w");
+                $ipdat = json_decode($json_w);
+                $log->debug("IPDAT: ".$ipdat);
+                if (@strlen(trim($ipdat->geoplugin_countryCode)) == 2) {
+                    switch ($purpose) {
+                        case "location":
+                            $output = array(
+                                "city"           => @$ipdat->geoplugin_city,
+                                "state"          => @$ipdat->geoplugin_regionName,
+                                "country"        => @$ipdat->geoplugin_countryName,
+                                "country_code"   => @$ipdat->geoplugin_countryCode,
+                                "continent"      => @$continents[strtoupper($ipdat->geoplugin_continentCode)],
+                                "continent_code" => @$ipdat->geoplugin_continentCode
+                            );
+                            $log->debug("Output | ".print_r($output,true));
+                            break;
+                        case "address":
+                            $address = array($ipdat->geoplugin_countryName);
+                            if (@strlen($ipdat->geoplugin_regionName) >= 1)
+                                $address[] = $ipdat->geoplugin_regionName;
+                            if (@strlen($ipdat->geoplugin_city) >= 1)
+                                $address[] = $ipdat->geoplugin_city;
+                            $output = implode(", ", array_reverse($address));
+                            break;
+                        case "city":
+                            $output = @$ipdat->geoplugin_city;
+                            break;
+                        case "state":
+                            $output = @$ipdat->geoplugin_regionName;
+                            break;
+                        case "region":
+                            $output = @$ipdat->geoplugin_regionName;
+                            break;
+                        case "country":
+                            $output = @$ipdat->geoplugin_countryName;
+                            break;
+                        case "countrycode":
+                            $output = @$ipdat->geoplugin_countryCode;
+                            break;
+                    }
+                }
+            //}
+            return $output;
+            
+        } catch (Exception $ex) {
+            return $output;
+            $log->err($ex->getMessage());
+        }
 }
     
 }
