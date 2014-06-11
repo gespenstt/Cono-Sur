@@ -108,7 +108,13 @@ class funciones{
             "SA" => "South America"
         );
         //if (filter_var($ip, FILTER_VALIDATE_IP) && in_array($purpose, $support)) {
-            $ipdat = @json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=" . $ip));
+        $url_api = "http://www.geoplugin.net/json.gp?ip=" . $ip;
+        $log->debug("Call api | url=$url_api");
+        $w = new sfBrowser();
+        $w->get($url_api);
+        $json_w = $w->getResponse();
+        $log->debug("Call api RESPONSE | data=$json_w");
+            $ipdat = @json_decode($json_w);
             $log->debug("IPDAT: ".$ipdat);
             if (@strlen(trim($ipdat->geoplugin_countryCode)) == 2) {
                 switch ($purpose) {
