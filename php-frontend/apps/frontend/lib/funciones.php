@@ -116,8 +116,8 @@ class funciones{
             $w->get($url_api);
             $json_w = $w->getResponseText();
             $log->debug("Call api RESPONSE | data=$json_w");
-                $ipdat = json_decode($json_w);
-                $log->debug("IPDAT: ".$ipdat);
+                $ipdat = json_decode($json_w,true);
+                $log->debug("IPDAT: ".print_r($ipdat,true));
                 if (@strlen(trim($ipdat->geoplugin_countryCode)) == 2) {
                     switch ($purpose) {
                         case "location":
