@@ -43,4 +43,8 @@ class homeActions extends sfActions
       $this->diccionario = $array_out;
       
   }
+  public function executeLang(sfWebRequest $request)
+  {
+      
+  }
 }
