@@ -265,3 +265,37 @@ Jun 10 20:22:51 symfony [info] {sfWebDebugLogger} Partial "componentes/_menu" 2.
 Jun 10 20:22:51 symfony [info] {sfWebDebugLogger} Component "componentes/footer" 0.00 ms (1)
 Jun 10 20:22:51 symfony [info] {sfWebDebugLogger} Partial "componentes/_footer" 1.00 ms (1)
 Jun 10 20:22:51 symfony [info] {sfWebResponse} Send content (44849 o)
+Jun 10 20:26:42 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Jun 10 20:26:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 10 20:26:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 10 20:26:42 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jun 10 20:26:42 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.5 MB | mempeak:    5.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 10 20:26:42 symfony [debug] {sfPropelLogger} time:  0.002 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SELECT pagina.PAG_IDENTIFICADOR, seccion.SEC_IDENTIFICADOR, diccionario.DIC_TEXTO, parametro.PAR_IDENTIFICADOR FROM `pagina`, `seccion`, `diccionario`, `parametro` WHERE diccionario.IDI_ID=1 AND pagina.PAG_ID=1 AND pagina.PAG_ID=seccion.PAG_ID AND seccion.SEC_ID=parametro.SEC_ID AND parametro.PAR_ID=diccionario.PAR_ID
+Jun 10 20:26:42 symfony [info] {sfPHPView} Render "D:\Github\Cono-Sur\php-frontend\apps\frontend\modules/home/templates/indexSuccess.php"
+Jun 10 20:26:42 symfony [info] {sfPHPView} Decorate content with "D:\Github\Cono-Sur\php-frontend\apps\frontend\templates/layout.php"
+Jun 10 20:26:42 symfony [info] {sfPHPView} Render "D:\Github\Cono-Sur\php-frontend\apps\frontend\templates/layout.php"
+Jun 10 20:26:42 symfony [info] {main} Call "componentes->executeDetectar()"
+Jun 10 20:26:42 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\lib\funciones.php on line 112 (Undefined index: HTTP_CLIENT_IP)
+Jun 10 20:26:42 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\lib\funciones.php on line 114 (Undefined index: HTTP_X_FORWARDED_FOR)
+Jun 10 20:26:42 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\lib\funciones.php on line 116 (Undefined index: HTTP_X_FORWARDED)
+Jun 10 20:26:42 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\lib\funciones.php on line 118 (Undefined index: HTTP_FORWARDED_FOR)
+Jun 10 20:26:42 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\lib\funciones.php on line 120 (Undefined index: HTTP_FORWARDED)
+Jun 10 20:26:42 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\lib\funciones.php on line 40 (Undefined variable: purpose)
+Jun 10 20:26:42 symfony [info] {sfPartialView} Render "D:\Github\Cono-Sur\php-frontend\apps\frontend\modules/componentes/templates/_detectar.php"
+Jun 10 20:26:42 symfony [info] {main} Call "componentes->executeMenu()"
+Jun 10 20:26:42 symfony [info] {sfPartialView} Render "D:\Github\Cono-Sur\php-frontend\apps\frontend\modules/componentes/templates/_menu.php"
+Jun 10 20:26:42 symfony [info] {main} Call "componentes->executeFooter()"
+Jun 10 20:26:42 symfony [info] {sfPartialView} Render "D:\Github\Cono-Sur\php-frontend\apps\frontend\modules/componentes/templates/_footer.php"
+Jun 10 20:26:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 10 20:26:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 10 20:26:42 symfony [info] {sfWebDebugLogger} Configuration 23.00 ms (15)
+Jun 10 20:26:42 symfony [info] {sfWebDebugLogger} Factories 56.00 ms (1)
+Jun 10 20:26:42 symfony [info] {sfWebDebugLogger} Action "home/index" 49.00 ms (1)
+Jun 10 20:26:42 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 55.00 ms (1)
+Jun 10 20:26:42 symfony [info] {sfWebDebugLogger} Component "componentes/detectar" 3.00 ms (1)
+Jun 10 20:26:42 symfony [info] {sfWebDebugLogger} Partial "componentes/_detectar" 1.00 ms (1)
+Jun 10 20:26:42 symfony [info] {sfWebDebugLogger} Component "componentes/menu" 0.00 ms (1)
+Jun 10 20:26:42 symfony [info] {sfWebDebugLogger} Partial "componentes/_menu" 3.00 ms (1)
+Jun 10 20:26:42 symfony [info] {sfWebDebugLogger} Component "componentes/footer" 0.00 ms (1)
+Jun 10 20:26:42 symfony [info] {sfWebDebugLogger} Partial "componentes/_footer" 1.00 ms (1)
+Jun 10 20:26:42 symfony [info] {sfWebResponse} Send content (44849 o)

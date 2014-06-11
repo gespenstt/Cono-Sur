@@ -5,6 +5,7 @@ class funciones{
     public function detectLang(){
         
         $metodo_ip = $this->detectIp();
+        print_r($metodo_ip);
         if(!$metodo_ip){
             
             $ua = $this->detectUa();
