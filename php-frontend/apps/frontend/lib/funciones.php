@@ -27,7 +27,7 @@ class funciones{
         if($ip != "UNKNOWN" && !empty($ip)){            
             
             if (filter_var($ip, FILTER_VALIDATE_IP) === FALSE) {
-                $ip = $_SERVER["REMOTE_ADDR"];
+                //$ip = $_SERVER["REMOTE_ADDR"];
                 if ($deep_detect) {
                     if (filter_var(@$_SERVER['HTTP_X_FORWARDED_FOR'], FILTER_VALIDATE_IP))
                         $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
@@ -35,7 +35,7 @@ class funciones{
                         $ip = $_SERVER['HTTP_CLIENT_IP'];
                 }
             }
-            //echo "ENCONTRE IP: $ip<br>";
+            echo "ENCONTRE IP: $ip<br>";
             $purpose    = str_replace(array("name", "\n", "\t", " ", "-", "_"), NULL, strtolower(trim($purpose)));
             $support    = array("country", "countrycode", "state", "region", "city", "location", "address");
             $continents = array(
@@ -87,6 +87,7 @@ class funciones{
                     }
                 }
             }
+            echo $output;
             return $output;            
             
         }else{
