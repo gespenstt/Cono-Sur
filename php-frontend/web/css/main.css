@@ -310,6 +310,15 @@ h3 {
 	-webkit-background-size: cover;
 			background-size: cover;
 }
+.content-slider > div {
+	width: 100%;
+	height: 550px;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+			background-size: cover;
+}
 .box-transparent {
 	background-color: rgba(177, 178, 65, 0.5) ;
 	float: left;
