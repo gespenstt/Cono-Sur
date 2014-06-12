@@ -1,0 +1,286 @@
+Jun 12 09:32:35 executeDetectar [debug] Cookie : 
+Jun 12 09:32:35 funciones-detectLang [debug] inicio detect
+Jun 12 09:32:35 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 09:32:35 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 09:32:35 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 09:32:37 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 09:32:37 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Jun 12 09:32:43 executeDetectar [debug] Cookie : 
+Jun 12 09:32:43 funciones-detectLang [debug] inicio detect
+Jun 12 09:32:43 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 09:32:43 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 09:32:43 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 09:32:44 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 09:32:44 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Jun 12 09:32:53 executeDetectar [debug] Cookie : 
+Jun 12 09:32:53 funciones-detectLang [debug] inicio detect
+Jun 12 09:32:53 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 09:32:53 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 09:32:53 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 09:32:53 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 09:32:53 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Jun 12 09:33:33 executeDetectar [debug] Cookie : 
+Jun 12 09:33:33 funciones-detectLang [debug] inicio detect
+Jun 12 09:33:33 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 09:33:33 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 09:33:33 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 09:33:34 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 09:33:34 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Jun 12 09:33:44 executeDetectar [debug] Cookie : 
+Jun 12 09:33:44 funciones-detectLang [debug] inicio detect
+Jun 12 09:33:44 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 09:33:44 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 09:33:44 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 09:33:45 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 09:33:45 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Jun 12 09:35:18 executeDetectar [debug] Cookie : 
+Jun 12 09:35:18 funciones-detectLang [debug] inicio detect
+Jun 12 09:35:18 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 09:35:18 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 09:35:18 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 09:35:19 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 09:35:19 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Jun 12 09:35:46 executeDetectar [debug] Cookie : 
+Jun 12 09:35:46 funciones-detectLang [debug] inicio detect
+Jun 12 09:35:46 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 09:35:46 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 09:35:46 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 09:35:46 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 09:35:46 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Jun 12 09:38:10 executeDetectar [debug] Cookie : 
+Jun 12 09:38:10 funciones-detectLang [debug] inicio detect
+Jun 12 09:38:10 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 09:38:10 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 09:38:10 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 09:38:10 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 09:38:10 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Jun 12 09:57:59 executeDetectar [debug] Cookie : 
+Jun 12 09:57:59 funciones-detectLang [debug] inicio detect
+Jun 12 09:57:59 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 09:57:59 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 09:57:59 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 09:58:00 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 09:58:00 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Jun 12 09:58:03 executeDetectar [debug] Cookie : 
+Jun 12 09:58:03 funciones-detectLang [debug] inicio detect
+Jun 12 09:58:03 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 09:58:03 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 09:58:03 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 09:58:03 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 09:58:03 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Jun 12 10:01:15 executeDetectar [debug] Cookie : 
+Jun 12 10:01:15 funciones-detectLang [debug] inicio detect
+Jun 12 10:01:15 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 10:01:15 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 10:01:15 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 10:01:15 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 10:01:15 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
