@@ -1,4 +1,6 @@
-
+<?php
+    $array_diccionario = $sf_data->getRaw("diccionario");
+?>
 
 				<div class="container-fluid">
 
@@ -52,28 +54,28 @@
 								</div>
 
 								<div class="form-group">
-							    	<label for="inputEmail3" class="col-sm-2 control-label"><?=$array_diccionario["formulario"]["wine_used"];?>Wine Used (specify range & variety)</label>
+							    	<label for="inputEmail3" class="col-sm-2 control-label"><?=$array_diccionario["formulario"]["wine_used"];?></label>
 									<div class="col-sm-10">
 										<input type="text" class="form-control" data-msg="Debe ingresar wine used" id="vino_usado" name="vino_usado" placeholder="EXAMPLE: Cono Sur, Ocio, Pinot Noir">
 									</div>
 								</div>
 
 								<div class="form-group">
-							    	<label for="inputEmail3" class="col-sm-2 control-label"><?=$array_diccionario["formulario"]["your_name"];?>Your Name</label>
+							    	<label for="inputEmail3" class="col-sm-2 control-label"><?=$array_diccionario["formulario"]["your_name"];?></label>
 									<div class="col-sm-10">
                                                                             <input type="text" class="form-control" data-msg="Debe ingresar your name" name="nombre" id="nombre">
 									</div>
 								</div>
 
 								<div class="form-group">
-							    	<label for="inputEmail3" class="col-sm-2 control-label"><?=$array_diccionario["formulario"]["link_to_your_blog"];?>Link to your blog</label>
+							    	<label for="inputEmail3" class="col-sm-2 control-label"><?=$array_diccionario["formulario"]["link_to_your_blog"];?></label>
 									<div class="col-sm-10">
 										<input type="text" class="form-control" data-msg="Debe ingresar link to your blog" id="link_blog" name="link_blog">
 									</div>
 								</div>
 
 								<div class="form-group">
-							    	<label for="inputEmail3" class="col-sm-2 control-label"><?=$array_diccionario["formulario"]["your_email"];?>Your E-mail</label>
+							    	<label for="inputEmail3" class="col-sm-2 control-label"><?=$array_diccionario["formulario"]["your_email"];?></label>
 									<div class="col-sm-10">
 										<input type="email" class="form-control" data-msg="Debe ingresar un email valido" id="email" name="email">
 									</div>
