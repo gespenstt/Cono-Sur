@@ -14,7 +14,7 @@
 
         <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
  
-        <p>Cheers!</p>
+        <h4>Cheers!</h4>
           
           <input type="hidden" id="defaultLang" value="<?=url_for("home/lang/?set=en");?>" />
 
