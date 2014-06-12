@@ -44,31 +44,25 @@
 					  	</div>
 
 					  	<div class="col-md-4">
+
 					  		<!-- Slider -->
-					      	<div class="main-slider cycle-slideshow"
+					      	<div class="grid-slider cycle-slideshow"
 					          data-cycle-fx="fade"
 					          data-cycle-pause-on-hover="true"
 					          data-cycle-speed="1000"
 					          data-cycle-swipe=true
+					          data-cycle-timeout="3000"
 					          data-cycle-slides="> div"
-					          data-cycle-timeout="5000"
-					          data-cycle-pager=".pager1"
-					          data-cycle-pager-template="<a href=#>&bull;</a>"
 					        >
         
-								<div>			
-									<span class="wine-01"></span>
-								</div>
+								<div class="wine-01"></div>
 
-							    <div>
-							    	<span class="wine-02"></span>
-							    </div>
+								<div class="wine-02"></div>
 
-							    <div>
-							    	<span class="wine-03"></span>
-							    </div>
+								<div class="wine-03"></div>
 
-							</div>
+							</div><!--/slider-->
+
 					  	</div>
 
 					</div>
