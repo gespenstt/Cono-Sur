@@ -11,6 +11,10 @@ a:hover {
 a:hover, a:focus {
 	color: #666666;
 }
+.modal-content {
+border-radius: 0px;
+text-align: center;
+}
 .mayus {
 	text-transform: uppercase;
 }
