@@ -7,7 +7,7 @@
                                 </div>
 
                                 <div class="col-md-3">
-                                        participating countries: <img src="img/country.png" alt="">
+                                        participating countries: <img src="<?=public_path("img/country.png");?>" alt="">
                                 </div>
 
                                 <div class="col-md-2">
