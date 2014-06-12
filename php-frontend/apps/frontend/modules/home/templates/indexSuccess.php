@@ -15,13 +15,13 @@
 						</div>
 
 					  	<div class="col-md-4 no-padding">
-					  		<span class="square grey img-07">
+					  		<span class="square grey img-07"> 
 							</span>
 					  	</div>
 
 					  	<div class="col-md-4">
 					  		<span class="square mustard" style="padding-top:30%;">
-					  			<h3><?=$array_diccionario["panel_b"]["texto"];?></h3>
+					  			<h3 class="uppercase"><?=$array_diccionario["panel_b"]["texto"];?></h3>
 								<a href="<?=url_for("enterrecipe/index");?>" class="link-georgia"><?=$array_diccionario["panel_b"]["link"];?></a>
 							</span>
 					  	</div>

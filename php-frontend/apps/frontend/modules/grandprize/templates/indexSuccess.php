@@ -9,11 +9,11 @@
 
 							<h1><?=$array_diccionario["panel_a"]["titulo"];?></h1>
 
-							<h2><?=$array_diccionario["panel_a"]["box1"];?></h2>
+							<h2 class="uppercase"><?=$array_diccionario["panel_a"]["box1"];?></h2>
 
 							<p><?=$array_diccionario["panel_a"]["texto1"];?></p> 
 
-							<h2><?=$array_diccionario["panel_a"]["box2"];?></h2>
+							<h2 class="uppercase"><?=$array_diccionario["panel_a"]["box2"];?></h2>
 
 							<p><?=$array_diccionario["panel_a"]["texto2"];?></p> 
 							
@@ -35,21 +35,21 @@
         
 								<div>			
 									<span class="box-transparent">
-										<p class="pull-right">Campo Lindo</p>
+										<p class="pull-right">Our Campo Lindo Estate in the San Antonio Valley.</p>
 									</span>
 									<img src="<?=public_path("img/noticia01.jpg");?>" alt="">
 								</div>
 
 							    <div>
 							    	<span class="box-transparent">
-										<p class="pull-right">Casona de la Viña Cono Sur</p>
+										<p class="pull-right">Where the winner will be staying in Chimbarongo, Cono Sur´s Casona.</p>
 									</span>
 							    	<img src="<?=public_path("img/noticia02.jpg");?>" alt="">
 							    </div>
 
 							    <div>
 							    	<span class="box-transparent">
-										<p class="pull-right">Gansos</p>
+										<p class="pull-right">Our Santa Elisa Estate in the Colchagua Valley.</p>
 									</span>
 							    	<img src="<?=public_path("img/noticia03.jpg");?>" alt="">
 							    </div>
