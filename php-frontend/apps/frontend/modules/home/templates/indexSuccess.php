@@ -9,7 +9,7 @@
 							<span class="square blue">
 								<p><?=$array_diccionario["panel_a"]["texto"];?></p> 
 
-								<a href="" class="link-georgia"><?=$array_diccionario["panel_a"]["link"];?></a>
+								<a href="<?=url_for("grandprize/index");?>" class="link-georgia"><?=$array_diccionario["panel_a"]["link"];?></a>
 
 							</span>
 						</div>
