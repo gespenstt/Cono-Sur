@@ -11,7 +11,7 @@ a:hover {
 a:hover, a:focus {
 	color: #666666;
 }
-.uppercase {
+.mayus {
 	text-transform: uppercase;
 }
 .btn:hover, btn:focus {

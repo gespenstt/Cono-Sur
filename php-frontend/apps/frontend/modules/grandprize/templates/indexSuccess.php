@@ -9,11 +9,11 @@
 
 							<h1><?=$array_diccionario["panel_a"]["titulo"];?></h1>
 
-							<h2 class="uppercase"><?=$array_diccionario["panel_a"]["box1"];?></h2>
+							<h2 class="mayus"><?=$array_diccionario["panel_a"]["box1"];?></h2>
 
 							<p><?=$array_diccionario["panel_a"]["texto1"];?></p> 
 
-							<h2 class="uppercase"><?=$array_diccionario["panel_a"]["box2"];?></h2>
+							<h2 class="mayus"><?=$array_diccionario["panel_a"]["box2"];?></h2>
 
 							<p><?=$array_diccionario["panel_a"]["texto2"];?></p> 
 							
