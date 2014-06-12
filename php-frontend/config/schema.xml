@@ -463,6 +463,16 @@
         <parameter name="Extra" value=""/>
       </vendor>
     </column>
+    <column name="rec_pais" phpName="RecPais" type="SMALLINT" size="6" required="false" defaultValue="0">
+      <vendor type="mysql">
+        <parameter name="Field" value="rec_pais"/>
+        <parameter name="Type" value="smallint(6)"/>
+        <parameter name="Null" value="YES"/>
+        <parameter name="Key" value=""/>
+        <parameter name="Default" value="0"/>
+        <parameter name="Extra" value=""/>
+      </vendor>
+    </column>
     <column name="created_at" phpName="CreatedAt" type="TIMESTAMP" required="false">
       <vendor type="mysql">
         <parameter name="Field" value="created_at"/>

@@ -24,6 +24,7 @@ abstract class BaseRecetaForm extends BaseFormPropel
       'rec_url_blogger'    => new sfWidgetFormInputText(),
       'rec_estado'         => new sfWidgetFormInputText(),
       'rec_eliminado'      => new sfWidgetFormInputText(),
+      'rec_pais'           => new sfWidgetFormInputText(),
       'created_at'         => new sfWidgetFormDateTime(),
       'updated_at'         => new sfWidgetFormDateTime(),
     ));
@@ -39,6 +40,7 @@ abstract class BaseRecetaForm extends BaseFormPropel
       'rec_url_blogger'    => new sfValidatorString(array('max_length' => 200, 'required' => false)),
       'rec_estado'         => new sfValidatorInteger(array('min' => -32768, 'max' => 32767, 'required' => false)),
       'rec_eliminado'      => new sfValidatorInteger(array('min' => -32768, 'max' => 32767, 'required' => false)),
+      'rec_pais'           => new sfValidatorInteger(array('min' => -32768, 'max' => 32767, 'required' => false)),
       'created_at'         => new sfValidatorDateTime(array('required' => false)),
       'updated_at'         => new sfValidatorDateTime(array('required' => false)),
     ));
