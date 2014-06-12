@@ -1,6 +1,7 @@
-#cache/*
-#log/*
-#web/uploads/*
-#config/databases.yml
-#config/propel.ini
-#data/sql/*
+cache/*
+log/*
+web/uploads/*
+config/databases.yml
+config/propel.ini
+data/sql/*
+nbproject
