@@ -57,6 +57,10 @@ class enterrecipeActions extends sfActions
               echo "NOK";
               exit;
           }
+          $id_idioma = $funciones->mercheKeyIdioma($cookie["id"]);
+          $log->debug("Set idioma = $id_idioma");
+          $path_upload = sfConfig::get("sf_upload_dir").DIRECTORY_SEPARATOR;
+          
 /*
  *     var nombre_receta = $("#nombre_receta");
     var ingredientes = $("#ingredientes");
