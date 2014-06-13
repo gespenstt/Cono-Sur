@@ -53,6 +53,12 @@ class homeActions extends sfActions
   }
   public function executeLang(sfWebRequest $request)
   {
+        $array_cookie = array(
+            "lang"=>"en",
+            "id"=>"f6d7a559d5cfa79f1daf7c3562253c61",
+        );
+        setcookie("conosur", serialize($array_cookie), time()+3600*24*90, "/");
+        $this->redirect("home/index");
       
   }
   public function executeDebug(sfWebRequest $request)

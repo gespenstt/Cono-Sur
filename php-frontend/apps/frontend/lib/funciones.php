@@ -151,12 +151,14 @@ class funciones{
             "ca5d0605b60bf30f6a41cecb4b873dc4",
             "ea14eaf7e36e0a5a298c8e5e41f85cce",
             "c5e62d69879248ba52c5839ae8216ae7",
+            "f6d7a559d5cfa79f1daf7c3562253c61",
         );
         $key_replace = array(
             "1",
             "2",
             "3",
             "4",
+            "5",
         );
         return str_replace($key_array, $key_replace, $key);
     }
