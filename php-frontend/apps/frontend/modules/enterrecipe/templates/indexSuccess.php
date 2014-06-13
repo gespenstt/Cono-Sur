@@ -103,6 +103,7 @@
 									    	<input type="checkbox" name="acepta_tos" data-msg="Debe aceptar el tos 2 " id="acepta_tos">
 									    <?=$array_diccionario["formulario"]["tos2"];?> <a href="" class="link-georgia"><?=$array_diccionario["formulario"]["link_tos2"];?></a>
 										</label>
+										<p class="bg-danger">Validacion</p>
 									</div>
 
 								</div>
