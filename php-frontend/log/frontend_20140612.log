@@ -839,3 +839,691 @@ Jun 12 21:39:27 executeDetectar [debug] Cookie : Array
     [natural] => 1
 )
 
+Jun 12 22:06:47 executeDetectar [debug] Cookie : Array
+(
+    [lang] => gb
+    [id] => 5f5c41ce34cae1c4503d800b291f8bd4
+    [natural] => 1
+)
+
+Jun 12 22:06:48 executeDetectar [debug] Cookie : Array
+(
+    [lang] => gb
+    [id] => 5f5c41ce34cae1c4503d800b291f8bd4
+    [natural] => 1
+)
+
+Jun 12 22:07:07 executeGuardar [debug] Array
+(
+    [nombre_receta] => mi receta
+    [ingredientes] => hola, hola, asd
+    [intrucciones] => gggg
+    [vino_usado] => asd
+    [nombre] => JAIME
+    [link_blog] => google.cl
+    [email] => rodrigoxv@gmail.com
+    [acepta_pais] => on
+    [acepta_tos] => on
+)
+
+Jun 12 22:07:07 executeGuardar [debug] Array
+(
+    [foto] => Array
+        (
+            [name] => screenshot_00001.png
+            [type] => image/png
+            [tmp_name] => C:\Windows\Temp\phpD599.tmp
+            [error] => 0
+            [size] => 324372
+        )
+
+)
+
+Jun 12 22:07:07 executeGuardar [debug] Array
+(
+    [lang] => gb
+    [id] => 5f5c41ce34cae1c4503d800b291f8bd4
+    [natural] => 1
+)
+
+Jun 12 22:07:07 executeGuardar [debug] Set idioma = 
+Jun 12 22:08:35 executeGuardar [debug] Array
+(
+    [nombre_receta] => mi receta
+    [ingredientes] => hola, hola, asd
+    [intrucciones] => gggg
+    [vino_usado] => asd
+    [nombre] => JAIME
+    [link_blog] => google.cl
+    [email] => rodrigoxv@gmail.com
+    [acepta_pais] => on
+    [acepta_tos] => on
+)
+
+Jun 12 22:08:35 executeGuardar [debug] Array
+(
+    [foto] => Array
+        (
+            [name] => screenshot_00001.png
+            [type] => image/png
+            [tmp_name] => C:\Windows\Temp\php2DB8.tmp
+            [error] => 0
+            [size] => 324372
+        )
+
+)
+
+Jun 12 22:08:35 executeGuardar [debug] Array
+(
+    [lang] => gb
+    [id] => 5f5c41ce34cae1c4503d800b291f8bd4
+    [natural] => 1
+)
+
+Jun 12 22:08:35 executeGuardar [debug] Set idioma = 1
+Jun 12 22:09:44 executeGuardar [debug] Array
+(
+    [nombre_receta] => mi receta
+    [ingredientes] => hola, hola, asd
+    [intrucciones] => gggg
+    [vino_usado] => asd
+    [nombre] => JAIME
+    [link_blog] => google.cl
+    [email] => rodrigoxv@gmail.com
+    [acepta_pais] => on
+    [acepta_tos] => on
+)
+
+Jun 12 22:09:44 executeGuardar [debug] Array
+(
+    [foto] => Array
+        (
+            [name] => screenshot_00001.png
+            [type] => image/png
+            [tmp_name] => C:\Windows\Temp\php3882.tmp
+            [error] => 0
+            [size] => 324372
+        )
+
+)
+
+Jun 12 22:09:44 executeGuardar [debug] Array
+(
+    [lang] => gb
+    [id] => 5f5c41ce34cae1c4503d800b291f8bd4
+    [natural] => 1
+)
+
+Jun 12 22:09:44 executeGuardar [debug] Set idioma = 1
+Jun 12 22:09:58 executeGuardar [debug] Array
+(
+    [nombre_receta] => mi receta
+    [ingredientes] => hola, hola, asd
+    [intrucciones] => gggg
+    [vino_usado] => asd
+    [nombre] => JAIME
+    [link_blog] => google.cl
+    [email] => rodrigoxv@gmail.com
+    [acepta_pais] => on
+    [acepta_tos] => on
+)
+
+Jun 12 22:09:58 executeGuardar [debug] Array
+(
+    [foto] => Array
+        (
+            [name] => screenshot_00001.png
+            [type] => image/png
+            [tmp_name] => C:\Windows\Temp\php6FD8.tmp
+            [error] => 0
+            [size] => 324372
+        )
+
+)
+
+Jun 12 22:09:58 executeGuardar [debug] Array
+(
+    [lang] => gb
+    [id] => 5f5c41ce34cae1c4503d800b291f8bd4
+    [natural] => 1
+)
+
+Jun 12 22:09:58 executeGuardar [debug] Set idioma = 1
+Jun 12 22:09:59 executeGuardar [debug] Array
+(
+    [nombre_receta] => mi receta
+    [ingredientes] => hola, hola, asd
+    [intrucciones] => gggg
+    [vino_usado] => asd
+    [nombre] => JAIME
+    [link_blog] => google.cl
+    [email] => rodrigoxv@gmail.com
+    [acepta_pais] => on
+    [acepta_tos] => on
+)
+
+Jun 12 22:09:59 executeGuardar [debug] Array
+(
+    [foto] => Array
+        (
+            [name] => screenshot_00001.png
+            [type] => image/png
+            [tmp_name] => C:\Windows\Temp\php7584.tmp
+            [error] => 0
+            [size] => 324372
+        )
+
+)
+
+Jun 12 22:09:59 executeGuardar [debug] Array
+(
+    [lang] => gb
+    [id] => 5f5c41ce34cae1c4503d800b291f8bd4
+    [natural] => 1
+)
+
+Jun 12 22:09:59 executeGuardar [debug] Set idioma = 1
+Jun 12 22:11:13 executeGuardar [debug] Array
+(
+    [nombre_receta] => mi receta
+    [ingredientes] => hola, hola, asd
+    [intrucciones] => gggg
+    [vino_usado] => asd
+    [nombre] => JAIME
+    [link_blog] => google.cl
+    [email] => rodrigoxv@gmail.com
+    [acepta_pais] => on
+    [acepta_tos] => on
+)
+
+Jun 12 22:11:13 executeGuardar [debug] Array
+(
+    [foto] => Array
+        (
+            [name] => screenshot_00001.png
+            [type] => image/png
+            [tmp_name] => C:\Windows\Temp\php9545.tmp
+            [error] => 0
+            [size] => 324372
+        )
+
+)
+
+Jun 12 22:11:13 executeGuardar [debug] Array
+(
+    [lang] => gb
+    [id] => 5f5c41ce34cae1c4503d800b291f8bd4
+    [natural] => 1
+)
+
+Jun 12 22:11:13 executeGuardar [debug] Set idioma = 1
+Jun 12 22:12:02 executeGuardar [debug] Array
+(
+    [nombre_receta] => mi receta
+    [ingredientes] => hola, hola, asd
+    [intrucciones] => gggg
+    [vino_usado] => asd
+    [nombre] => JAIME
+    [link_blog] => google.cl
+    [email] => rodrigoxv@gmail.com
+    [acepta_pais] => on
+    [acepta_tos] => on
+)
+
+Jun 12 22:12:02 executeGuardar [debug] Array
+(
+    [foto] => Array
+        (
+            [name] => screenshot_00001.png
+            [type] => image/png
+            [tmp_name] => C:\Windows\Temp\php5614.tmp
+            [error] => 0
+            [size] => 324372
+        )
+
+)
+
+Jun 12 22:12:02 executeGuardar [debug] Array
+(
+    [lang] => gb
+    [id] => 5f5c41ce34cae1c4503d800b291f8bd4
+    [natural] => 1
+)
+
+Jun 12 22:12:02 executeGuardar [debug] Set idioma = 1
+Jun 12 22:12:02 executeGuardar [debug] Imagen | origen=C:\Windows\Temp\php5614.tmp | destino=D:\Github\Cono-Sur\php-frontend\web\uploads\1402625522348.jpg
+Jun 12 22:12:58 executeGuardar [debug] Array
+(
+    [nombre_receta] => mi receta
+    [ingredientes] => hola, hola, asd
+    [intrucciones] => gggg
+    [vino_usado] => asd
+    [nombre] => JAIME
+    [link_blog] => google.cl
+    [email] => rodrigoxv@gmail.com
+    [acepta_pais] => on
+    [acepta_tos] => on
+)
+
+Jun 12 22:12:58 executeGuardar [debug] Array
+(
+    [foto] => Array
+        (
+            [name] => screenshot_00001.png
+            [type] => image/png
+            [tmp_name] => C:\Windows\Temp\php2E1C.tmp
+            [error] => 0
+            [size] => 324372
+        )
+
+)
+
+Jun 12 22:12:58 executeGuardar [debug] Array
+(
+    [lang] => gb
+    [id] => 5f5c41ce34cae1c4503d800b291f8bd4
+    [natural] => 1
+)
+
+Jun 12 22:12:58 executeGuardar [debug] Set idioma = 1
+Jun 12 22:12:58 executeGuardar [debug] Imagen | origen=C:\Windows\Temp\php2E1C.tmp | destino=D:\Github\Cono-Sur\php-frontend\web\uploads\1402625578599.jpg
+Jun 12 22:25:35 executeGuardar [debug] Array
+(
+    [nombre_receta] => mi receta
+    [ingredientes] => hola, hola, asd
+    [intrucciones] => gggg
+    [vino_usado] => asd
+    [nombre] => JAIME
+    [link_blog] => google.cl
+    [email] => rodrigoxv@gmail.com
+    [acepta_pais] => on
+    [acepta_tos] => on
+)
+
+Jun 12 22:25:35 executeGuardar [debug] Array
+(
+    [foto] => Array
+        (
+            [name] => screenshot_00001.png
+            [type] => image/png
+            [tmp_name] => C:\Windows\Temp\phpBD4D.tmp
+            [error] => 0
+            [size] => 324372
+        )
+
+)
+
+Jun 12 22:25:35 executeGuardar [debug] Array
+(
+    [lang] => gb
+    [id] => 5f5c41ce34cae1c4503d800b291f8bd4
+    [natural] => 1
+)
+
+Jun 12 22:25:35 executeGuardar [debug] Set idioma = 1
+Jun 12 22:25:35 executeGuardar [debug] Imagen | origen=C:\Windows\Temp\phpBD4D.tmp | destino=D:\Github\Cono-Sur\php-frontend\web\uploads\1402626335563.jpg
+Jun 12 22:33:21 executeGuardar [debug] Array
+(
+    [nombre_receta] => mi receta
+    [ingredientes] => hola, hola, asd
+    [intrucciones] => gggg
+    [vino_usado] => asd
+    [nombre] => JAIME
+    [link_blog] => google.cl
+    [email] => rodrigoxv@gmail.com
+    [acepta_pais] => on
+    [acepta_tos] => on
+)
+
+Jun 12 22:33:21 executeGuardar [debug] Array
+(
+    [foto] => Array
+        (
+            [name] => screenshot_00001.png
+            [type] => image/png
+            [tmp_name] => C:\Windows\Temp\phpD734.tmp
+            [error] => 0
+            [size] => 324372
+        )
+
+)
+
+Jun 12 22:33:21 executeGuardar [debug] Array
+(
+    [lang] => gb
+    [id] => 5f5c41ce34cae1c4503d800b291f8bd4
+    [natural] => 1
+)
+
+Jun 12 22:33:21 executeGuardar [debug] Set idioma = 1
+Jun 12 22:33:21 executeGuardar [debug] Imagen | origen=C:\Windows\Temp\phpD734.tmp | destino=D:\Github\Cono-Sur\php-frontend\web\uploads\1402626801474.jpg
+Jun 12 22:37:07 executeDetectar [debug] Cookie : 
+Jun 12 22:37:07 funciones-detectLang [debug] inicio detect
+Jun 12 22:37:07 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 22:37:07 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 22:37:07 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 22:37:08 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 22:37:08 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Jun 12 22:41:46 executeDetectar [debug] Cookie : 
+Jun 12 22:41:46 funciones-detectLang [debug] inicio detect
+Jun 12 22:41:46 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 22:41:46 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 22:41:46 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 22:41:46 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 22:41:46 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Jun 12 22:44:12 executeDetectar [debug] Cookie : 
+Jun 12 22:44:12 funciones-detectLang [debug] inicio detect
+Jun 12 22:44:12 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 22:44:12 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 22:44:12 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 22:44:13 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 22:44:13 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Jun 12 22:45:24 executeDetectar [debug] Cookie : 
+Jun 12 22:45:24 funciones-detectLang [debug] inicio detect
+Jun 12 22:45:24 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 22:45:24 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 22:45:24 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 22:45:24 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 22:45:24 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Jun 12 22:50:57 executeDetectar [debug] Cookie : 
+Jun 12 22:50:57 funciones-detectLang [debug] inicio detect
+Jun 12 22:50:57 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 22:50:57 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 22:50:57 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 22:50:57 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 22:50:57 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Jun 12 22:55:50 executeDetectar [debug] Cookie : 
+Jun 12 22:55:50 funciones-detectLang [debug] inicio detect
+Jun 12 22:55:50 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 22:55:50 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 22:55:50 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 22:55:50 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 22:55:50 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Jun 12 22:55:54 executeGuardar [debug] Array
+(
+    [nombre_receta] => 
+    [ingredientes] => 
+    [intrucciones] => 
+    [vino_usado] => 
+    [foto] => 
+    [nombre] => 
+    [link_blog] => 
+    [email] => 
+)
+
+Jun 12 22:55:54 executeGuardar [debug] Array
+(
+)
+
+Jun 12 22:55:54 executeGuardar [debug] 
+Jun 12 22:55:54 executeGuardar [debug] NOK
+Jun 12 22:56:10 executeDetectar [debug] Cookie : 
+Jun 12 22:56:10 funciones-detectLang [debug] inicio detect
+Jun 12 22:56:10 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 22:56:10 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 22:56:10 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 22:56:10 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 22:56:10 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Jun 12 22:57:02 executeDetectar [debug] Cookie : 
+Jun 12 22:57:02 funciones-detectLang [debug] inicio detect
+Jun 12 22:57:02 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 22:57:02 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 22:57:02 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 22:57:03 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 22:57:03 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Jun 12 22:57:30 executeDetectar [debug] Cookie : 
+Jun 12 22:57:30 funciones-detectLang [debug] inicio detect
+Jun 12 22:57:30 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 22:57:30 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 22:57:30 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 22:57:31 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 22:57:31 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Jun 12 22:58:10 executeDetectar [debug] Cookie : 
+Jun 12 22:58:10 funciones-detectLang [debug] inicio detect
+Jun 12 22:58:10 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 22:58:10 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 22:58:10 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 22:58:10 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 22:58:10 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Jun 12 22:58:50 executeDetectar [debug] Cookie : 
+Jun 12 22:58:50 funciones-detectLang [debug] inicio detect
+Jun 12 22:58:50 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 22:58:50 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 22:58:50 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 22:58:51 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 22:58:51 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Jun 12 22:59:46 executeDetectar [debug] Cookie : 
+Jun 12 22:59:46 funciones-detectLang [debug] inicio detect
+Jun 12 22:59:46 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 22:59:46 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 22:59:46 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 22:59:46 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 22:59:46 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO

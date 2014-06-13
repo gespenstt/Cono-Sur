@@ -54,6 +54,7 @@ validarRecipe = function(){
     var email = $("#email");
     var acepta_pais = $("#acepta_pais");
     var acepta_tos  = $("#acepta_tos");
+    var imagen = $("#validaImagen");
     setValidacion(nombre_receta);
     setValidacion(ingredientes);
     setValidacion(intrucciones);
@@ -63,12 +64,13 @@ validarRecipe = function(){
     setValidacion(email,"email");
     setValidacion(acepta_pais,"checkbox");
     setValidacion(acepta_tos,"checkbox");
+    setValidacion(imagen,"otro");
     if(validarError==0){
         console.log("validarRecipe | OK")
         return true;
     }else{
         console.log("validarRecipe | NOK")
-        alert(msgError);
+        //alert(msgError);
         return false;
     }
     
@@ -96,6 +98,11 @@ setValidacion = function(elemento,tipo,comparacion){
                        validacionSwitch = false; 
                     }
                 break;
+            case "otro":
+                    if(elemento.attr("data-imagen")!="true"){
+                       validacionSwitch = false; 
+                    }
+                break;
             default:
                     validacionSwitch = true;
                 break;
@@ -103,10 +110,24 @@ setValidacion = function(elemento,tipo,comparacion){
         if(elemento.val()=="" || !validacionSwitch){
             validarError++;
             var msgattr = elemento.attr("data-msg");
-            msgError = msgError + msgattr + "\n";
+            //msgError = msgError + msgattr + "\n";
             //elemento.parent("div").next("div.validaciones").show();
+            console.log(elemento.parent().find("p"));
+            if(tipo=="checkbox"){
+                elemento.parent().find("p").html(msgattr);
+                elemento.parent().find("p").removeClass("hidden");
+            }else{
+                elemento.parent().find("p").html(msgattr);
+                elemento.parent().find("p").removeClass("hidden");
+                elemento.parent("div").parent("div").addClass("has-error");                
+            }
         }else{
-            //elemento.parent("div").next("div.validaciones").hide();
+            if(tipo=="checkbox"){
+                elemento.parent().find("p").addClass("hidden");
+            }else{
+                elemento.parent().find("p").addClass("hidden");
+                elemento.parent("div").parent("div").removeClass("has-error");                
+            }
         } 
 }
 
@@ -166,7 +187,14 @@ UpdatePreviewCanvas = function()
 
     if( typeof img === "undefined" )
         return;
-
+    console.log(img.width);
+    console.log(img.height);
+    if(img.width == 400 && img.height == 400){
+        $("#validaImagen").attr("data-imagen","true");
+    }else{
+        $("#validaImagen").attr("data-imagen","false");
+        return false;
+    }
     var WidthDif = img.width - world.width;
     var HeightDif = img.height - world.height;
 

@@ -463,6 +463,16 @@
         <parameter name="Extra" value=""/>
       </vendor>
     </column>
+    <column name="rec_imagen" phpName="RecImagen" type="LONGVARCHAR" required="false">
+      <vendor type="mysql">
+        <parameter name="Field" value="rec_imagen"/>
+        <parameter name="Type" value="text"/>
+        <parameter name="Null" value="YES"/>
+        <parameter name="Key" value=""/>
+        <parameter name="Default" value=""/>
+        <parameter name="Extra" value=""/>
+      </vendor>
+    </column>
     <column name="rec_pais" phpName="RecPais" type="SMALLINT" size="6" required="false" defaultValue="0">
       <vendor type="mysql">
         <parameter name="Field" value="rec_pais"/>
@@ -505,7 +515,7 @@
       <parameter name="Index_length" value="0"/>
       <parameter name="Data_free" value="0"/>
       <parameter name="Auto_increment" value="1"/>
-      <parameter name="Create_time" value="2014-06-12 09:53:21"/>
+      <parameter name="Create_time" value="2014-06-12 22:31:00"/>
       <parameter name="Update_time" value=""/>
       <parameter name="Check_time" value=""/>
       <parameter name="Collation" value="utf8_general_ci"/>

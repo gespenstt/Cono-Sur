@@ -57,10 +57,44 @@ class enterrecipeActions extends sfActions
               echo "NOK";
               exit;
           }
-          $id_idioma = $funciones->mercheKeyIdioma($cookie["id"]);
-          $log->debug("Set idioma = $id_idioma");
-          $path_upload = sfConfig::get("sf_upload_dir").DIRECTORY_SEPARATOR;
-          
+          try{
+            $id_idioma = $funciones->mercheKeyIdioma($cookie["id"]);
+            $log->debug("Set idioma = $id_idioma");
+            $path_upload = sfConfig::get("sf_upload_dir").DIRECTORY_SEPARATOR;
+            $nombre_archivo = date("U").rand(111,999).".jpg";
+            $log->debug("Imagen | origen=".$_FILES["foto"]["tmp_name"]." | destino=$path_upload$nombre_archivo");
+            //$s_imagen = new abeautifulsite\SimpleImage($_FILES["foto"]["tmp_name"]);
+            //$s_imagen->resize(400, 400);
+            //$s_imagen->save($path_upload.$nombre_archivo);
+            $s_imagen = new SimpleImage();
+            $s_imagen->load($_FILES["foto"]["tmp_name"]);
+            $s_imagen->resize(400, 400);
+            $s_imagen->save($path_upload.$nombre_archivo);
+            
+            $nombre_receta = $request->getPostParameter("nombre_receta");
+            $ingredientes = $request->getPostParameter("ingredientes");
+            $intrucciones = $request->getPostParameter("intrucciones");
+            $vino_usado = $request->getPostParameter("vino_usado");
+            $nombre = $request->getPostParameter("nombre");
+            $link_blog = $request->getPostParameter("link_blog");
+            $email = $request->getPostParameter("email");
+            //$acepta_pais = $re
+            $receta = new Receta();
+            $receta->setRecNombreReceta($nombre_receta);
+            $receta->setRecIngredientes($ingredientes);
+            $receta->setRecInstrucciones($intrucciones);
+            $receta->setRecVino($vino_usado);
+            $receta->setRecNombreBlogger($nombre);
+            $receta->setRecUrlBlogger($link_blog);
+            $receta->setRecEmailBlogger($email);
+            $receta->setRecPais($id_idioma);
+            $receta->setRecImagen($nombre_archivo);
+            $receta->save();
+            echo "ok";
+              
+          } catch (Exception $ex) {
+              $log->err($ex->getMessage());
+          }
 /*
  *     var nombre_receta = $("#nombre_receta");
     var ingredientes = $("#ingredientes");
@@ -72,24 +106,6 @@ class enterrecipeActions extends sfActions
     var acepta_pais = $("#acepta_pais");
     var acepta_tos  = $("#acepta_tos");
  */   
-          $nombre_receta = $request->getPostParameter("nombre_receta");
-          $ingredientes = $request->getPostParameter("ingredientes");
-          $intrucciones = $request->getPostParameter("intrucciones");
-          $vino_usado = $request->getPostParameter("vino_usado");
-          $nombre = $request->getPostParameter("nombre");
-          $link_blog = $request->getPostParameter("link_blog");
-          $email = $request->getPostParameter("email");
-          //$acepta_pais = $re
-          $receta = new Receta();
-          $receta->setRecNombreReceta($nombre_receta);
-          $receta->setRecIngredientes($ingredientes);
-          $receta->setRecInstrucciones($intrucciones);
-          $receta->setRecVino($vino_usado);
-          $receta->setRecNombreBlogger($nombre);
-          $receta->setRecUrlBlogger($link_blog);
-          $receta->setRecEmailBlogger($email);
-          $receta->save();
-          echo "Receta creada!";
       }
       return sfView::NONE;
   }

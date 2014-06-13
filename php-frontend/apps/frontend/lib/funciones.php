@@ -158,11 +158,7 @@ class funciones{
             "3",
             "4",
         );
-        if(array_search($key, $key_array)){
-            return true;
-        }else{
-            return false;
-        }
+        return str_replace($key_array, $key_replace, $key);
     }
     
 }
