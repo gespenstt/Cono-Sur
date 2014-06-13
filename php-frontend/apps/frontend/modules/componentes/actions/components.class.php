@@ -58,7 +58,7 @@ class componentesComponents extends sfComponents
       $log->debug("Cookie : ".print_r($cookie,true));
       if(!is_array($cookie) || empty($cookie["lang"])){
         $detect = $funciones->detectLang();
-        echo "DETECT:::$detect";
+        //echo "DETECT:::$detect";
         if($detect!==FALSE){
             //$this->respuesta = $detect;
             $detect = strtolower($detect);
