@@ -84,10 +84,11 @@
 									</div>
 								</div>
 
-								<div class="form-group">
+								<div class="form-group has-error">
 							    	<label for="inputEmail3" class="col-sm-2 control-label"><?=$array_diccionario["formulario"]["your_email"];?></label>
 									<div class="col-sm-10">
 										<input type="email" class="form-control" data-msg="Debe ingresar un email valido" id="email" name="email">
+										<p class="text-danger">Validacion</p>
 									</div>
 								</div>
 
