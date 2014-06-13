@@ -23,7 +23,7 @@ class enterrecipeActions extends sfActions
       if($id_idioma>0&&$id_idioma<5){
           $id_idioma = $id_idioma;
       }else{
-          $id_idioma = 5;          
+          $this->redirect("home/index");        
       }
       $c = new Criteria();
       $c->clearSelectColumns();
@@ -98,6 +98,62 @@ class enterrecipeActions extends sfActions
             $receta->setRecPais($id_idioma);
             $receta->setRecImagen($nombre_archivo);
             $receta->save();
+
+
+$to = "invasor@gmail.com";
+$subject = "Email ConoSur";
+
+$array_paises["1"] = "UK";
+$array_paises["2"] = "Irlanda";
+$array_paises["3"] = "Suecia";
+$array_paises["4"] = "Finlandia";
+
+
+$message = '<html><head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td align="center" style="color:#333;font-family:arial,sans-serif;font-size:12px;line-height:16px; padding-bottom:20px;" valign="top">
+        <img src="http://bloggercompetition.conosur.com/img/logo-conosur-bloggers.png" alt="Cono Sur Bloggers">
+      </td>
+    </tr>
+
+    <tr>
+      <td align="left" style="color:#333;font-family:arial,sans-serif;font-size:12px;line-height:16px;" valign="top">
+        <img src="recipe02-big.jpg" alt="Cono Sur Bloggers">
+      </td>
+      <td align="left" style="color:#333;font-family:arial,sans-serif;font-size:12px;line-height:16px; padding:10px;" valign="top" >
+        <h3>
+          Recipe Country '.$array_paises[$id_idioma].'
+        </h3>
+        <p>'.$nombre_receta.'</P>
+
+<p>Ingredients:<br /><br />
+
+'.$ingredientes.'</P>
+
+<p>Instructions:<br /><br />
+
+'.$intrucciones.'</p>
+      </td>
+    </tr>
+
+  </table>
+</body>
+</html>';
+
+// Always set content-type when sending HTML email
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+// More headers
+$headers .= "From: <$email>" . "\r\n";
+
+mail($to,$subject,$message,$headers);
+
+
             echo "ok";
               
           } catch (Exception $ex) {
