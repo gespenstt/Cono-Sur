@@ -18,6 +18,7 @@ class grandprizeActions extends sfActions
   public function executeIndex(sfWebRequest $request)
   {
       $cookie = unserialize($_COOKIE["conosur"]);
+      $funciones = new funciones();
       $id_idioma = $funciones->mercheKeyIdioma($cookie["id"]);
       if($id_idioma>0&&$id_idioma<5){
           $id_idioma = $id_idioma;
