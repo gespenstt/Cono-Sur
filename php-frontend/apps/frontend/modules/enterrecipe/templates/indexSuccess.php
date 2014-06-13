@@ -35,7 +35,7 @@
 							 	<div class="form-group">
 							    	<label for="inputEmail3" class="col-sm-2 control-label"><?=$array_diccionario["formulario"]["recipe_name"];?></label>
 									<div class="col-sm-10">
-										<input type="text" class="form-control" data-msg="Please complete.nnnn" name="nombre_receta" id="nombre_receta">
+										<input type="text" class="form-control" data-msg="Please complete." name="nombre_receta" id="nombre_receta">
 									</div>
 								</div>
 
