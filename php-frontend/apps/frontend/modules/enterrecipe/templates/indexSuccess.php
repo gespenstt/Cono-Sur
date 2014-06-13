@@ -1,6 +1,9 @@
 <?php
     $array_diccionario = $sf_data->getRaw("diccionario");
 ?>
+<div class="hidden">
+    <img id="iconPicture" src="<?=public_path("img/icon-picture.png");?>" />
+</div>
 
 				<div class="container-fluid">
 

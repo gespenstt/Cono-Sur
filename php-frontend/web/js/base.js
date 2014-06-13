@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    
+    dibujarIconPicture();
         
     var validarError = 0;
     var msgError = "";
@@ -217,4 +219,11 @@ UpdatePreviewCanvas = function()
     var y = Math.floor( ( world.height - UseHeight ) / 2 );
 
     context.drawImage( img, x, y, 200, 200 );  
+}
+
+dibujarIconPicture = function(){
+var c=document.getElementById("previewcanvas");
+var ctx=c.getContext("2d");
+var img=document.getElementById("iconPicture");
+ctx.drawImage(img,0,0);    
 }

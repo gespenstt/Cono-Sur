@@ -17,6 +17,13 @@ class contestdetailsActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
+      $cookie = unserialize($_COOKIE["conosur"]);
+      $id_idioma = $funciones->mercheKeyIdioma($cookie["id"]);
+      if($id_idioma>0&&$id_idioma<5){
+          $id_idioma = $id_idioma;
+      }else{
+          $id_idioma = 5;          
+      }
       $c = new Criteria();
       $c->clearSelectColumns();
       $c->addSelectColumn(PaginaPeer::PAG_IDENTIFICADOR);
@@ -26,7 +33,7 @@ class contestdetailsActions extends sfActions
       $c->addJoin(PaginaPeer::PAG_ID, SeccionPeer::PAG_ID);
       $c->addJoin(SeccionPeer::SEC_ID, ParametroPeer::SEC_ID);
       $c->addJoin(ParametroPeer::PAR_ID, DiccionarioPeer::PAR_ID);
-      $c->add(DiccionarioPeer::IDI_ID,1);
+      $c->add(DiccionarioPeer::IDI_ID,$id_idioma);
       $c->add(PaginaPeer::PAG_ID,2);
       
       $resC = DiccionarioPeer::doSelectStmt($c);

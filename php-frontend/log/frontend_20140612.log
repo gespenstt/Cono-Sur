@@ -1527,3 +1527,29 @@ Jun 12 22:59:46 funciones-ip_info [debug] Call api RESPONSE | data={
   "geoplugin_currencyConverter":0
 }
 Jun 12 22:59:46 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Jun 12 23:05:23 executeDetectar [debug] Cookie : 
+Jun 12 23:05:23 funciones-detectLang [debug] inicio detect
+Jun 12 23:05:23 funciones-detectIp [debug] IP Encontrada | ip=127.0.0.1
+Jun 12 23:05:23 funciones-ip_info [debug] datos de entrada | ip=127.0.0.1
+Jun 12 23:05:23 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=127.0.0.1
+Jun 12 23:05:24 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_request":"127.0.0.1",
+  "geoplugin_status":404,
+  "geoplugin_credit":"Some of the returned data includes GeoLite data created by MaxMind, available from <a href=\\'http:\/\/www.maxmind.com\\'>http:\/\/www.maxmind.com<\/a>.",
+  "geoplugin_city":"",
+  "geoplugin_region":"",
+  "geoplugin_areaCode":"",
+  "geoplugin_dmaCode":"",
+  "geoplugin_countryCode":"",
+  "geoplugin_countryName":"",
+  "geoplugin_continentCode":"",
+  "geoplugin_latitude":"0",
+  "geoplugin_longitude":"0",
+  "geoplugin_regionCode":"",
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+Jun 12 23:05:24 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
