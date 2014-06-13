@@ -1,6 +1,8 @@
 $(document).ready(function(){
     
-    dibujarIconPicture();
+    if($("#iconPicture").length>0){
+        dibujarIconPicture();
+    }
         
     var validarError = 0;
     var msgError = "";

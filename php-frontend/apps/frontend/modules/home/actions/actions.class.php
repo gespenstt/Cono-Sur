@@ -25,6 +25,7 @@ class homeActions extends sfActions
       }else{
           $id_idioma = 5;          
       }
+      echo $id_idioma; exit;
       $c = new Criteria();
       $c->clearSelectColumns();
       $c->addSelectColumn(PaginaPeer::PAG_IDENTIFICADOR);

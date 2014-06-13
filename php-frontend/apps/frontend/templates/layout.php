@@ -11,7 +11,7 @@
             <link href="<?=public_path("css/main.css");?>" rel="stylesheet" media="screen">
             
             <script>
-                var det_lang = false; /*<?php include_component("componentes", "detectar"); ?>; */
+                var det_lang = false; /*<?php //include_component("componentes", "detectar"); ?>; */
             </script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
             <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
