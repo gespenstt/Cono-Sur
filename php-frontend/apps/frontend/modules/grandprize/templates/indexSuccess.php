@@ -33,7 +33,7 @@
 					          data-cycle-pager-template="<a href=#>&bull;</a>"
 					        >
         
-								<div>			
+								<!--<div>			
 									<span class="box-transparent">
 										<p class="pull-right">Our Campo Lindo Estate in the San Antonio Valley.</p>
 									</span>
@@ -52,7 +52,13 @@
 										<p class="pull-right">Our Santa Elisa Estate in the Colchagua Valley.</p>
 									</span>
 							    	<img src="<?=public_path("img/noticia03.jpg");?>" alt="">
-							    </div>
+							    </div>-->
+
+							    <div class="picture-01"></div>
+
+								<div class="picture-02"></div>
+
+								<div class="picture-03"></div>
 
 							</div>
 					  		

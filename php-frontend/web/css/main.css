@@ -204,6 +204,18 @@ h3 {
 	background-image: url(../img/wine-03.jpg);
 }
 
+.picture-01{
+	background-image: url(../img/noticia01.jpg);
+}
+
+.picture-02 {
+	background-image: url(../img/noticia02.jpg);
+}
+
+.picture-03 {
+	background-image: url(../img/noticia03.jpg);
+}
+
 .dropdown-menu {
 	background-color: #483b71;
 }
@@ -312,7 +324,7 @@ h3 {
 }
 .content-slider > div {
 	width: 100%;
-	height: 550px;
+	height: 530px;
 	float: left;
 	background-repeat: no-repeat;
 	background-position: center center;
