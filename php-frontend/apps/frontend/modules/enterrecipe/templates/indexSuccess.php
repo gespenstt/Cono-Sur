@@ -86,6 +86,7 @@
 							    	<label for="inputEmail3" class="col-sm-2 control-label"><?=$array_diccionario["formulario"]["your_email"];?></label>
 									<div class="col-sm-10">
 										<input type="email" class="form-control" data-msg="Debe ingresar un email valido" id="email" name="email">
+										<p class="bg-danger">Validacion</p>
 									</div>
 								</div>
 
@@ -103,7 +104,6 @@
 									    	<input type="checkbox" name="acepta_tos" data-msg="Debe aceptar el tos 2 " id="acepta_tos">
 									    <?=$array_diccionario["formulario"]["tos2"];?> <a href="" class="link-georgia"><?=$array_diccionario["formulario"]["link_tos2"];?></a>
 										</label>
-										<p class="bg-danger">Validacion</p>
 									</div>
 
 								</div>
