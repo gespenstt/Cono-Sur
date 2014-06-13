@@ -10,10 +10,38 @@ $(document).ready(function(){
             location.href=$("#defaultLang").val();
         })
     }
+    
+    if(!$("#foto").length > 0){
+        $("#canvasImagen").hide();
+    }
+    
+    var options = { 
+        beforeSend: function() 
+        {
+
+        },
+        uploadProgress: function(event, position, total, percentComplete) 
+        {
+
+        },
+        success: function() 
+        {
+
+        },
+        complete: function(response) 
+        {
+        //response text from the server.
+        }
+ 
+    };
+    if($("#formRecipe").length > 0){
+        console.log("FORM")
+        $('#formRecipe').ajaxForm(options);
+    }
 })
 
 validarRecipe = function(){
-    
+    console.log("validarRecipe")
     validarError = 0;
     msgError = "";
     
@@ -36,8 +64,10 @@ validarRecipe = function(){
     setValidacion(acepta_pais,"checkbox");
     setValidacion(acepta_tos,"checkbox");
     if(validarError==0){
+        console.log("validarRecipe | OK")
         return true;
     }else{
+        console.log("validarRecipe | NOK")
         alert(msgError);
         return false;
     }
@@ -158,5 +188,5 @@ UpdatePreviewCanvas = function()
     var x = Math.floor( ( world.width - UseWidth ) / 2 );
     var y = Math.floor( ( world.height - UseHeight ) / 2 );
 
-    context.drawImage( img, x, y, UseWidth, UseHeight );  
+    context.drawImage( img, x, y, 200, 200 );  
 }

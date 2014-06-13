@@ -128,6 +128,41 @@ class funciones{
             $log->err($ex->getMessage());
             return $output;
         }
-}
+    }
+    
+    public function esKeyIdioma($key){
+        $key_array = array(
+            "5f5c41ce34cae1c4503d800b291f8bd4",
+            "ca5d0605b60bf30f6a41cecb4b873dc4",
+            "ea14eaf7e36e0a5a298c8e5e41f85cce",
+            "c5e62d69879248ba52c5839ae8216ae7",
+            "f6d7a559d5cfa79f1daf7c3562253c61",
+        );
+        if(array_search($key, $key_array)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    
+    public function mercheKeyIdioma($key){
+        $key_array = array(
+            "5f5c41ce34cae1c4503d800b291f8bd4",
+            "ca5d0605b60bf30f6a41cecb4b873dc4",
+            "ea14eaf7e36e0a5a298c8e5e41f85cce",
+            "c5e62d69879248ba52c5839ae8216ae7",
+        );
+        $key_replace = array(
+            "1",
+            "2",
+            "3",
+            "4",
+        );
+        if(array_search($key, $key_array)){
+            return true;
+        }else{
+            return false;
+        }
+    }
     
 }

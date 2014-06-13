@@ -880,3 +880,93 @@ Jun 12 09:32:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Fou
 Jun 12 09:32:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
 Jun 12 09:32:53 symfony [info] {sfWebDebugLogger} Configuration 7.00 ms (5)
 Jun 12 09:32:53 symfony [info] {sfWebDebugLogger} Factories 79.00 ms (1)
+Jun 12 20:47:51 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Jun 12 20:47:51 symfony [info] {myUser} Automatic user logout due to timeout
+Jun 12 20:47:51 symfony [info] {myUser} User is not authenticated
+Jun 12 20:47:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 20:47:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 20:47:51 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jun 12 20:47:51 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 12 20:47:51 symfony [debug] {sfPropelLogger} time:  0.002 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT pagina.PAG_IDENTIFICADOR, seccion.SEC_IDENTIFICADOR, diccionario.DIC_TEXTO, parametro.PAR_IDENTIFICADOR FROM `pagina`, `seccion`, `diccionario`, `parametro` WHERE diccionario.IDI_ID=1 AND pagina.PAG_ID=1 AND pagina.PAG_ID=seccion.PAG_ID AND seccion.SEC_ID=parametro.SEC_ID AND parametro.PAR_ID=diccionario.PAR_ID
+Jun 12 20:47:51 symfony [info] {sfPHPView} Render "D:\Github\Cono-Sur\php-frontend\apps\frontend\modules/home/templates/indexSuccess.php"
+Jun 12 20:47:51 symfony [info] {sfPHPView} Decorate content with "D:\Github\Cono-Sur\php-frontend\apps\frontend\templates/layout.php"
+Jun 12 20:47:51 symfony [info] {sfPHPView} Render "D:\Github\Cono-Sur\php-frontend\apps\frontend\templates/layout.php"
+Jun 12 20:47:51 symfony [info] {main} Call "componentes->executeDetectar()"
+Jun 12 20:47:51 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\modules\componentes\actions\components.class.php on line 23 (Undefined index: conosur)
+Jun 12 20:47:51 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\lib\funciones.php on line 68 (Undefined index: HTTP_CLIENT_IP)
+Jun 12 20:47:51 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\lib\funciones.php on line 70 (Undefined index: HTTP_X_FORWARDED_FOR)
+Jun 12 20:47:51 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\lib\funciones.php on line 72 (Undefined index: HTTP_X_FORWARDED)
+Jun 12 20:47:51 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\lib\funciones.php on line 74 (Undefined index: HTTP_FORWARDED_FOR)
+Jun 12 20:47:51 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\lib\funciones.php on line 76 (Undefined index: HTTP_FORWARDED)
+Jun 12 20:47:52 symfony [info] {sfPartialView} Render "D:\Github\Cono-Sur\php-frontend\apps\frontend\modules/componentes/templates/_detectar.php"
+Jun 12 20:47:52 symfony [info] {main} Call "componentes->executeMenu()"
+Jun 12 20:47:52 symfony [info] {sfPartialView} Render "D:\Github\Cono-Sur\php-frontend\apps\frontend\modules/componentes/templates/_menu.php"
+Jun 12 20:47:52 symfony [info] {main} Call "componentes->executeFooter()"
+Jun 12 20:47:52 symfony [info] {sfPartialView} Render "D:\Github\Cono-Sur\php-frontend\apps\frontend\modules/componentes/templates/_footer.php"
+Jun 12 20:47:52 symfony [info] {main} Call "componentes->executeStuff()"
+Jun 12 20:47:52 symfony [info] {sfPartialView} Render "D:\Github\Cono-Sur\php-frontend\apps\frontend\modules/componentes/templates/_stuff.php"
+Jun 12 20:47:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 20:47:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 20:47:52 symfony [info] {sfWebDebugLogger} Configuration 458.03 ms (17)
+Jun 12 20:47:52 symfony [info] {sfWebDebugLogger} Factories 372.02 ms (1)
+Jun 12 20:47:52 symfony [info] {sfWebDebugLogger} Action "home/index" 65.00 ms (1)
+Jun 12 20:47:52 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 542.03 ms (1)
+Jun 12 20:47:52 symfony [info] {sfWebDebugLogger} Component "componentes/detectar" 467.03 ms (1)
+Jun 12 20:47:52 symfony [info] {sfWebDebugLogger} Partial "componentes/_detectar" 2.00 ms (1)
+Jun 12 20:47:52 symfony [info] {sfWebDebugLogger} Component "componentes/menu" 0.00 ms (1)
+Jun 12 20:47:52 symfony [info] {sfWebDebugLogger} Partial "componentes/_menu" 2.00 ms (1)
+Jun 12 20:47:52 symfony [info] {sfWebDebugLogger} Component "componentes/footer" 0.00 ms (1)
+Jun 12 20:47:52 symfony [info] {sfWebDebugLogger} Partial "componentes/_footer" 1.00 ms (1)
+Jun 12 20:47:52 symfony [info] {sfWebDebugLogger} Component "componentes/stuff" 0.00 ms (1)
+Jun 12 20:47:52 symfony [info] {sfWebDebugLogger} Partial "componentes/_stuff" 1.00 ms (1)
+Jun 12 20:47:52 symfony [info] {sfWebResponse} Send content (48757 o)
+Jun 12 20:47:54 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /enterrecipe with parameters array (  'module' => 'enterrecipe',  'action' => 'index',)
+Jun 12 20:47:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 20:47:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 20:47:54 symfony [info] {enterrecipeActions} Call "enterrecipeActions->executeIndex()"
+Jun 12 20:47:54 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.3 MB | mempeak:    6.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 12 20:47:54 symfony [debug] {sfPropelLogger} time:  0.002 sec | slow:  NO | mem:    6.5 MB | mempeak:    6.5 MB | memdelta:      0.0 B | SELECT pagina.PAG_IDENTIFICADOR, seccion.SEC_IDENTIFICADOR, diccionario.DIC_TEXTO, parametro.PAR_IDENTIFICADOR FROM `pagina`, `seccion`, `diccionario`, `parametro` WHERE diccionario.IDI_ID=1 AND pagina.PAG_ID=6 AND pagina.PAG_ID=seccion.PAG_ID AND seccion.SEC_ID=parametro.SEC_ID AND parametro.PAR_ID=diccionario.PAR_ID
+Jun 12 20:47:54 symfony [info] {sfPHPView} Render "D:\Github\Cono-Sur\php-frontend\apps\frontend\modules/enterrecipe/templates/indexSuccess.php"
+Jun 12 20:47:54 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\modules\enterrecipe\templates\indexSuccess.php on line 12 (Undefined index: panel_a)
+Jun 12 20:47:54 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\modules\enterrecipe\templates\indexSuccess.php on line 15 (Undefined index: panel_a)
+Jun 12 20:47:54 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\modules\enterrecipe\templates\indexSuccess.php on line 36 (Undefined index: formulario)
+Jun 12 20:47:54 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\modules\enterrecipe\templates\indexSuccess.php on line 43 (Undefined index: formulario)
+Jun 12 20:47:54 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\modules\enterrecipe\templates\indexSuccess.php on line 50 (Undefined index: formulario)
+Jun 12 20:47:54 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\modules\enterrecipe\templates\indexSuccess.php on line 57 (Undefined index: formulario)
+Jun 12 20:47:54 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\modules\enterrecipe\templates\indexSuccess.php on line 74 (Undefined index: formulario)
+Jun 12 20:47:54 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\modules\enterrecipe\templates\indexSuccess.php on line 81 (Undefined index: formulario)
+Jun 12 20:47:54 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\modules\enterrecipe\templates\indexSuccess.php on line 88 (Undefined index: formulario)
+Jun 12 20:47:54 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\modules\enterrecipe\templates\indexSuccess.php on line 99 (Undefined index: formulario)
+Jun 12 20:47:54 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\modules\enterrecipe\templates\indexSuccess.php on line 106 (Undefined index: formulario)
+Jun 12 20:47:54 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\modules\enterrecipe\templates\indexSuccess.php on line 106 (Undefined index: formulario)
+Jun 12 20:47:54 symfony [info] {sfPHPView} Decorate content with "D:\Github\Cono-Sur\php-frontend\apps\frontend\templates/layout.php"
+Jun 12 20:47:54 symfony [info] {sfPHPView} Render "D:\Github\Cono-Sur\php-frontend\apps\frontend\templates/layout.php"
+Jun 12 20:47:54 symfony [info] {main} Call "componentes->executeDetectar()"
+Jun 12 20:47:54 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\modules\componentes\actions\components.class.php on line 23 (Undefined index: conosur)
+Jun 12 20:47:54 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\lib\funciones.php on line 68 (Undefined index: HTTP_CLIENT_IP)
+Jun 12 20:47:54 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\lib\funciones.php on line 70 (Undefined index: HTTP_X_FORWARDED_FOR)
+Jun 12 20:47:54 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\lib\funciones.php on line 72 (Undefined index: HTTP_X_FORWARDED)
+Jun 12 20:47:54 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\lib\funciones.php on line 74 (Undefined index: HTTP_FORWARDED_FOR)
+Jun 12 20:47:54 symfony [notice] {sfWebDebugLogger}  Notice at D:\Github\Cono-Sur\php-frontend\apps\frontend\lib\funciones.php on line 76 (Undefined index: HTTP_FORWARDED)
+Jun 12 20:47:55 symfony [info] {sfPartialView} Render "D:\Github\Cono-Sur\php-frontend\apps\frontend\modules/componentes/templates/_detectar.php"
+Jun 12 20:47:55 symfony [info] {main} Call "componentes->executeMenu()"
+Jun 12 20:47:55 symfony [info] {sfPartialView} Render "D:\Github\Cono-Sur\php-frontend\apps\frontend\modules/componentes/templates/_menu.php"
+Jun 12 20:47:55 symfony [info] {main} Call "componentes->executeFooter()"
+Jun 12 20:47:55 symfony [info] {sfPartialView} Render "D:\Github\Cono-Sur\php-frontend\apps\frontend\modules/componentes/templates/_footer.php"
+Jun 12 20:47:55 symfony [info] {main} Call "componentes->executeStuff()"
+Jun 12 20:47:55 symfony [info] {sfPartialView} Render "D:\Github\Cono-Sur\php-frontend\apps\frontend\modules/componentes/templates/_stuff.php"
+Jun 12 20:47:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 20:47:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 20:47:55 symfony [info] {sfWebDebugLogger} Configuration 88.00 ms (18)
+Jun 12 20:47:55 symfony [info] {sfWebDebugLogger} Factories 54.00 ms (1)
+Jun 12 20:47:55 symfony [info] {sfWebDebugLogger} Action "enterrecipe/index" 53.00 ms (1)
+Jun 12 20:47:55 symfony [info] {sfWebDebugLogger} View "Success" for "enterrecipe/index" 504.03 ms (1)
+Jun 12 20:47:55 symfony [info] {sfWebDebugLogger} Component "componentes/detectar" 440.03 ms (1)
+Jun 12 20:47:55 symfony [info] {sfWebDebugLogger} Partial "componentes/_detectar" 1.00 ms (1)
+Jun 12 20:47:55 symfony [info] {sfWebDebugLogger} Component "componentes/menu" 0.00 ms (1)
+Jun 12 20:47:55 symfony [info] {sfWebDebugLogger} Partial "componentes/_menu" 1.00 ms (1)
+Jun 12 20:47:55 symfony [info] {sfWebDebugLogger} Component "componentes/footer" 0.00 ms (1)
+Jun 12 20:47:55 symfony [info] {sfWebDebugLogger} Partial "componentes/_footer" 1.00 ms (1)
+Jun 12 20:47:55 symfony [info] {sfWebDebugLogger} Component "componentes/stuff" 0.00 ms (1)
+Jun 12 20:47:55 symfony [info] {sfWebDebugLogger} Partial "componentes/_stuff" 2.00 ms (1)
+Jun 12 20:47:55 symfony [info] {sfWebResponse} Send content (52866 o)

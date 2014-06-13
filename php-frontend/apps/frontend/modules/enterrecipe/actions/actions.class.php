@@ -46,6 +46,17 @@ class enterrecipeActions extends sfActions
   public function executeGuardar(sfWebRequest $request)
   {
       if($request->isMethod("post")){
+          $funciones = new funciones();
+          $log = $funciones->setLog("executeGuardar");
+          $log->debug(print_r($_POST,true));
+          $log->debug(print_r($_FILES,true));
+          $cookie = unserialize($_COOKIE["conosur"]);
+          $log->debug(print_r($cookie,true));
+          if($cookie["natural"]!="1"||empty($cookie["id"])&&!$funciones->esKeyIdioma($cookie["id"])){
+              $log->debug("NOK");
+              echo "NOK";
+              exit;
+          }
 /*
  *     var nombre_receta = $("#nombre_receta");
     var ingredientes = $("#ingredientes");

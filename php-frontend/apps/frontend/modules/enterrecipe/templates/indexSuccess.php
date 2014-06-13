@@ -30,7 +30,7 @@
 
 					  	<div class="col-md-9 no-padding padding-right">
 
-                                                    <form action="<?=url_for("enterrecipe/guardar");?>" method="post" class="form-horizontal enter-recipe-form" role="form" onsubmit="return validarRecipe();">
+                                                    <form id="formRecipe" action="<?=url_for("enterrecipe/guardar");?>" method="post" enctype="multipart/form-data" class="form-horizontal enter-recipe-form" role="form" onsubmit="return validarRecipe();">
 
 							 	<div class="form-group">
 							    	<label for="inputEmail3" class="col-sm-2 control-label"><?=$array_diccionario["formulario"]["recipe_name"];?></label>
@@ -63,7 +63,9 @@
 								<div class="form-group">
 							    	<label for="inputEmail3" class="col-sm-2 control-label">FOTO</label>
 									<div class="col-sm-10">
-                                                                            <canvas id="previewcanvas"></canvas>
+                                                                            <div id="canvasImagen">
+                                                                                <canvas id="previewcanvas" width="200" height="200"></canvas>
+                                                                            </div>
                                                                             <input type="file" name="foto" id="foto" onchange="return ShowImagePreview( this.files );" />
 									</div>
 								</div>
