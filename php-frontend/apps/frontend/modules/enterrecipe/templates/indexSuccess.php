@@ -64,7 +64,7 @@
 							    	<label for="inputEmail3" class="col-sm-2 control-label">FOTO</label>
 									<div class="col-sm-10">
                                                                             <canvas id="previewcanvas"></canvas>
-                                                                            <input type="file" name="foto" id="foto" onchange="return ShowImagePreview( this.files );" />
+                                                                            <input type="file" class="btn btn-submit" name="foto" id="foto" onchange="return ShowImagePreview( this.files );" />
 									</div>
 								</div>
 
@@ -109,7 +109,7 @@
 					
 							  	<div class="form-group">
 								    <div class="col-sm-offset-2 col-sm-10">
-								    	<button type="submit" class="btn btn-submit pull-right">SUBMIT</button>
+								    	<button type="submit" >SUBMIT</button>
 								    </div>
 							  	</div>
 
