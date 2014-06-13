@@ -40,6 +40,7 @@ $(document).ready(function(){
             console.log("complete");
             console.log(response.responseText);
             if(response.responseText=="ok"){
+                dibujarIconPicture();
                 $('#formRecipe')[0].reset();
                 $("#modalRecipe").modal(); 
             }
