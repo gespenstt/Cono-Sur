@@ -22,7 +22,9 @@
                             <ul class="nav navbar-nav navbar-right">
                                     <li><a href="<?=url_for("contestdetails/index");?>"><?=$array_diccionario["menu"]["contest_details"];?></a></li>
                                     <li><a href="<?=url_for("grandprize/index");?>"><?=$array_diccionario["menu"]["grand_prize"];?></a></li>
+                                    <?php if($esconder){ ?>
                                     <li><a href="<?=url_for("enterrecipe/index");?>"><?=$array_diccionario["menu"]["enter_your_recipe"];?></a></li>
+                                    <?php } ?>
                                     <!--<li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">RECIPES</a>
                                             <ul class="dropdown-menu">

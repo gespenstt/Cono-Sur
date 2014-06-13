@@ -8,8 +8,10 @@ class componentesComponents extends sfComponents
       $cookie = unserialize($_COOKIE["conosur"]);
       $funciones = new funciones();
       $id_idioma = $funciones->mercheKeyIdioma($cookie["id"]);
+      $this->esconder = true;
       if($id_idioma>0&&$id_idioma<5){
           $id_idioma = $id_idioma;
+          $this->esconder = false;
       }else{
           $id_idioma = 5;          
       }
@@ -102,7 +104,7 @@ class componentesComponents extends sfComponents
                     setcookie("conosur", serialize($array_cookie), time()+3600*24*90, "/");
                     $found=true;
                     break;
-                case (strpos($detect, "cl")!==FALSE):
+                /*case (strpos($detect, "cl")!==FALSE):
                     //EN
                     //f6d7a559d5cfa79f1daf7c3562253c61 ID 5
                     $array_cookie = array(
@@ -112,10 +114,12 @@ class componentesComponents extends sfComponents
                     );
                     setcookie("conosur", serialize($array_cookie), time()+3600*24*90, "/");
                     $found=true;
-                    break;
+                    break;*/
             }
             if($found){
                 $this->getContext()->getActionStack()->getLastEntry()->getActionInstance()->redirect('home/index'); 
+            }else{
+                $this->respuesta = "OK";
             }
         }
       }else{
