@@ -237,7 +237,7 @@ h3 {
 }
 
 .no-padding {
-	padding: 0px !important;
+	padding: 0px;
 }
 .padding-right {
 	padding-right: 15px;
