@@ -28,13 +28,17 @@ $(document).ready(function(){
         {
 
         },
-        success: function() 
+        success: function(response) 
         {
+            console.log("SUCCESS");
+            console.log(response);
 
         },
         complete: function(response) 
         {
         //response text from the server.
+            console.log("complete");
+            console.log(response);
             if(response=="ok"){
                 $('#formRecipe')[0].reset();
                 $("#modalRecipe").modal(); 
