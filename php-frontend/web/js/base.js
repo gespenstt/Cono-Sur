@@ -38,8 +38,8 @@ $(document).ready(function(){
         {
         //response text from the server.
             console.log("complete");
-            console.log(response);
-            if(response=="ok"){
+            console.log(response.responseText);
+            if(response.responseText=="ok"){
                 $('#formRecipe')[0].reset();
                 $("#modalRecipe").modal(); 
             }
