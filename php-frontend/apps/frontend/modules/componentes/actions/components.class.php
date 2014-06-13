@@ -118,8 +118,6 @@ class componentesComponents extends sfComponents
             }
             if($found){
                 $this->getContext()->getActionStack()->getLastEntry()->getActionInstance()->redirect('home/index'); 
-            }else{
-                $this->respuesta = "OK";
             }
         }
       }else{
