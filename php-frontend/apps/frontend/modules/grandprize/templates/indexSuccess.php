@@ -19,7 +19,7 @@
 							
 						</div>
 
-					  	<div class="col-md-7 no-padding ">
+					  	<div class="col-md-7">
 
 							<!-- Slider -->
 					      	<div class="content-slider cycle-slideshow"
