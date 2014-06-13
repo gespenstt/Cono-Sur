@@ -35,6 +35,10 @@ $(document).ready(function(){
         complete: function(response) 
         {
         //response text from the server.
+            if(response=="ok"){
+                $('#formRecipe')[0].reset();
+                $("#modalRecipe").modal(); 
+            }
         }
  
     };
