@@ -60,6 +60,13 @@
 						</a>	    				
 					</li>
 				
+					<li class="">
+						<a href="<?=url_for("receta/index");?>">
+							<i class="icon-food"></i>
+							<span>Recetas</span>
+						</a>	    				
+					</li>
+				
 				</ul>
 			</div> <!-- /.subnav-collapse -->
 
