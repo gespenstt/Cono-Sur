@@ -46,3 +46,10 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
     </div>
   </div>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalLoading" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" align="center" style="padding-top: 100px;">
+      <img src="<?=public_path("img/ajax-loader.gif");?>" />
+  </div>
+</div>

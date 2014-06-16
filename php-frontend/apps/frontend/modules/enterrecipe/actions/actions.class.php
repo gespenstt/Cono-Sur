@@ -37,6 +37,8 @@ class enterrecipeActions extends sfActions
       $c->add(DiccionarioPeer::IDI_ID,$id_idioma);
       $c->add(PaginaPeer::PAG_ID,6);
       
+      $this->lang = $cookie["lang"];
+      
       $resC = DiccionarioPeer::doSelectStmt($c);
       $array_out = array();
       if($resC){
@@ -81,6 +83,7 @@ class enterrecipeActions extends sfActions
             
             $nombre_receta = $request->getPostParameter("nombre_receta");
             $ingredientes = $request->getPostParameter("ingredientes");
+            $ingredientes = str_replace(",", "<br>", $ingredientes);
             $intrucciones = $request->getPostParameter("intrucciones");
             $vino_usado = $request->getPostParameter("vino_usado");
             $nombre = $request->getPostParameter("nombre");
@@ -100,7 +103,7 @@ class enterrecipeActions extends sfActions
             $receta->save();
 
 
-$to = "invasor@gmail.com";
+$to = "rodrigoxv@gmail.com";
 $subject = "Email ConoSur";
 
 $array_paises["1"] = "UK";
@@ -122,21 +125,35 @@ $message = '<html><head>
 
     <tr>
       <td align="left" style="color:#333;font-family:arial,sans-serif;font-size:12px;line-height:16px;" valign="top">
-        <img src="recipe02-big.jpg" alt="Cono Sur Bloggers">
+        <img src="http://bloggercompetition.conosur.com/uploads/'.$nombre_archivo.'" alt="Cono Sur Bloggers">
       </td>
       <td align="left" style="color:#333;font-family:arial,sans-serif;font-size:12px;line-height:16px; padding:10px;" valign="top" >
         <h3>
-          Recipe Country '.$array_paises[$id_idioma].'
+          <b>Recipe Country </b>"'.$array_paises[$id_idioma].'"
         </h3>
         <p>'.$nombre_receta.'</P>
 
-<p>Ingredients:<br /><br />
+<p><b>Ingredients:</b><br /><br />
 
 '.$ingredientes.'</P>
 
-<p>Instructions:<br /><br />
+<p><b>Instructions:</b><br /><br />
 
 '.$intrucciones.'</p>
+
+<p><b>Wine Used:</b><br /><br />
+
+'.$vino_usado.'</p>
+
+<p><b>Blogger:</b><br /><br />
+
+Name: '.$nombre.'<br />
+
+Email: '.$email.'<br />
+
+Blog: '.$link_blog.'<br />
+    
+</p>
       </td>
     </tr>
 
@@ -149,7 +166,7 @@ $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
 // More headers
-$headers .= "From: <$email>" . "\r\n";
+$headers .= "From: <receta@bloggercompetition.conosur.com>" . "\r\n";
 
 mail($to,$subject,$message,$headers);
 

@@ -42,6 +42,7 @@ $(document).ready(function(){
             if(response.responseText=="ok"){
                 dibujarIconPicture();
                 $('#formRecipe')[0].reset();
+                $("#modalLoading").modal('hide');
                 $("#modalRecipe").modal(); 
             }
         }
@@ -80,6 +81,10 @@ validarRecipe = function(){
     setValidacion(imagen,"otro");
     if(validarError==0){
         console.log("validarRecipe | OK")
+        $("#modalLoading").modal({
+            backdrop: 'static',
+            keyboard: false
+        }); 
         return true;
     }else{
         console.log("validarRecipe | NOK")
@@ -202,10 +207,11 @@ UpdatePreviewCanvas = function()
         return;
     console.log(img.width);
     console.log(img.height);
-    if(img.width == 400 && img.height == 400){
+    if(img.width > 400 && img.height > 400){
         $("#validaImagen").attr("data-imagen","true");
     }else{
         $("#validaImagen").attr("data-imagen","false");
+        dibujarIconPicture();
         return false;
     }
     var WidthDif = img.width - world.width;
@@ -229,7 +235,7 @@ UpdatePreviewCanvas = function()
     var x = Math.floor( ( world.width - UseWidth ) / 2 );
     var y = Math.floor( ( world.height - UseHeight ) / 2 );
 
-    context.drawImage( img, x, y, 200, 200 );  
+    context.drawImage( img, x, y, UseWidth, UseHeight );  
 }
 
 dibujarIconPicture = function(){
