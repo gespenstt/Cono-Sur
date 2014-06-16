@@ -12,6 +12,8 @@
 
         <p>Although your country is not participating this year, we invite you to check out the site and stay tuned for heaps of savory recipes to pair with your favorite Cono Sur wines, which we will publish 18 August, 2014.</p> 
 
+        <h4>Participating Countries</h4>
+
         <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
  
         <h4>Cheers!</h4>
