@@ -37,6 +37,8 @@ class homeActions extends sfActions
       $c->add(DiccionarioPeer::IDI_ID,$id_idioma);
       $c->add(PaginaPeer::PAG_ID,1);
       
+      $this->lang = $cookie["lang"];
+      
       $resC = DiccionarioPeer::doSelectStmt($c);
       $array_out = array();
       if($resC){
