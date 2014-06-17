@@ -283,21 +283,21 @@ h3 {
 .icon-like, .icon-chef, .icon-airplane {
 	background-image: url(../img/icon-like.png);
 	height: 83px;
-	width: 83px;
+	width: 125px;
 	display: block;
 	margin: 30px auto;
 }
 .icon-chef{
 	background-image: url(../img/icon-chef.png);
 	height: 83px;
-	width: 83px;
+	width: 125px;
 	display: block;
 	margin: 30px auto;
 }
 .icon-airplane {
 	background-image: url(../img/icon-airplane.png);
 	height: 83px;
-	width: 83px;
+	width: 125px;
 	display: block;
 	margin: 30px auto;
 }
