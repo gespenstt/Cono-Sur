@@ -67,15 +67,15 @@
 									</div>
 								</div>
 
-								<div class="form-group">
+								<div class="form-group form-group-imagen">
 							    	<label for="inputEmail3" class="col-sm-2 control-label"><?=$array_diccionario["formulario"]["foto"];?></label>
 									<div class="col-sm-10">
                                                                             <div id="canvasImagen" >
                                                                                 <canvas id="previewcanvas" width="200" height="200"></canvas>
                                                                             </div>
                                                                             <input type="hidden" id="validaImagen" value="ok" data-imagen="false" data-msg="Your photo does not meet the dimension requirements. Please try again with a photo of 400 x 400 pixels." />
-                                                                            <input type="file" name="foto" data-msg="Your photo does not meet the dimension requirements. Please try again with a photo of 400 x 400 pixels." id="foto" onchange="return ShowImagePreview( this.files );" />
-										<p class="text-danger hidden"></p>
+                                                                            <input type="file" name="foto" data-msg="Your photo does not meet the dimension requirements. Please try again with a photo of 460 x 460 pixels or superior." id="foto" onchange="return ShowImagePreview( this.files );" />
+										<p class="text-danger hidden text-danger-imagen"></p>
 									</div>
 								</div>
 
