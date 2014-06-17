@@ -49,6 +49,9 @@ text-align: center;
 	background-position: 15px 15px;
 
 }
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #fff;
+}
 .link-georgia {
 	text-decoration: none;
 	font-family: "georgia";
