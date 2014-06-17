@@ -3,9 +3,9 @@
 ?>
 				<div class="container-fluid">
 
-					<div class="row show-grid row-no-margin">
+					<div class="row show-grid row-no-margin dark-grey">
 
-						<div class="col-md-5 text-center no-padding dark-grey">
+						<div class="col-md-5 text-center no-padding">
 
 							<div class="grand-prize">
 
