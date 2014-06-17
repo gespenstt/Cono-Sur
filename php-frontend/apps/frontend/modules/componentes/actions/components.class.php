@@ -6,6 +6,7 @@ class componentesComponents extends sfComponents
   public function executeMenu()
   {
       $cookie = unserialize($_COOKIE["conosur"]);
+      $cookie_legal = unserialize($_COOKIE["conosur_legal"]);
       $funciones = new funciones();
       $id_idioma = $funciones->mercheKeyIdioma($cookie["id"]);
       $this->esconder = true;
@@ -36,6 +37,10 @@ class componentesComponents extends sfComponents
       }else{
           echo "Error :(";
           exit;
+      }
+      $this->legal = "false";
+      if($cookie_legal=="accepted"){
+          $this->legal = "true";
       }
       
       $this->diccionario = $array_out;
