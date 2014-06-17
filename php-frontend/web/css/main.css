@@ -66,7 +66,7 @@ text-align: center;
 h1 {
 	text-decoration: underline;
 	font-size: 12px;
-	padding: 20px 0px;
+	padding: 0px;
 }
 h2 {
 	border: 1px solid #fff;
@@ -160,8 +160,7 @@ h3 {
 	font-size: 14px;
 }
 .grand-prize {
-	padding-right: 15px;
-	padding-left: 15px;
+	padding: 30px 15px 15px 10px;
 	
 }
 .grand-prize h2 {
