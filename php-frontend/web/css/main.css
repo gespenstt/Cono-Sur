@@ -499,9 +499,9 @@ h3 {
 		background-size: 100%;
 	}
 	.navbar-brand {
-		background-image: url(../img/logo-conosur-bloggers.png);
-		width: 250px;
-		height: 48px;
+		background-image: url(../img/logo-conosur-bloggers-small.png);
+		width: 215px;
+		height: 37px;
 		background-position: 15px 15px;
 
 	}
