@@ -5,9 +5,9 @@
 
 					<div class="row show-grid row-no-margin">
 
-						<div class="col-md-5 text-center">
+						<div class="col-md-5 text-center no-padding">
 
-							<div class="dark-grey grand-prize no-padding">
+							<div class="dark-grey grand-prize">
 
 								<h1><?=$array_diccionario["panel_a"]["titulo"];?></h1>
 
