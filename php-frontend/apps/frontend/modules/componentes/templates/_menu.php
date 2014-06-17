@@ -19,7 +19,7 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse navbar-ex1-collapse">
 
-                            <ul class="nav navbar-nav navbar-right">
+                            <ul class="nav navbar-nav navbar-right mayus">
                                     <li><a href="<?=url_for("contestdetails/index");?>"><?=$array_diccionario["menu"]["contest_details"];?></a></li>
                                     <li><a href="<?=url_for("grandprize/index");?>"><?=$array_diccionario["menu"]["grand_prize"];?></a></li>
                                     <?php if(!$esconder){ ?>
