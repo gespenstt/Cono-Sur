@@ -118,4 +118,15 @@ class homeActions extends sfActions
       
       $this->setLayout("layout_debug");
   }
+  public function executeAccept(sfWebRequest $request)
+  {
+      $legal = $request->getParameter("legal");
+      if($legal=="ok"){
+          setcookie("conosur_legal", "accepted", time()+3600*24*90, "/");
+          $this->redirect("home/index");          
+      }else{
+          $this->redirect("home/index");
+      }
+      return sfView::NONE;
+  }
 }
