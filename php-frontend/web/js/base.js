@@ -1,7 +1,10 @@
 $(document).ready(function(){
     
     if($("#iconPicture").length>0){
-        dibujarIconPicture();
+        console.log("iconPicture")
+        setTimeout(function(){
+            dibujarIconPicture();
+        },500);
     }
         
     var validarError = 0;
@@ -207,9 +210,15 @@ UpdatePreviewCanvas = function()
         return;
     console.log(img.width);
     console.log(img.height);
-    if(img.width > 400 && img.height > 400){
+    if(img.width > 459 && img.height > 459){
         $("#validaImagen").attr("data-imagen","true");
+        $(".form-group-imagen").removeClass("has-error");
+        $(".text-danger-imagen").addClass("hidden");
     }else{
+        var msgerror = $("#validaImagen").attr("data-msg");
+        $(".text-danger-imagen").html(msgerror);
+        $(".form-group-imagen").addClass("has-error");
+        $(".text-danger-imagen").removeClass("hidden");
         $("#validaImagen").attr("data-imagen","false");
         dibujarIconPicture();
         return false;
