@@ -3,19 +3,23 @@
 ?>
 				<div class="container-fluid">
 
-					<div class="row show-grid dark-grey row-no-margin grand-prize">
+					<div class="row show-grid row-no-margin">
 
 						<div class="col-md-5 text-center">
 
-							<h1><?=$array_diccionario["panel_a"]["titulo"];?></h1>
+							<div class="dark-grey grand-prize">
 
-							<h2 class="mayus"><?=$array_diccionario["panel_a"]["box1"];?></h2>
+								<h1><?=$array_diccionario["panel_a"]["titulo"];?></h1>
 
-							<p><?=$array_diccionario["panel_a"]["texto1"];?></p> 
+								<h2 class="mayus"><?=$array_diccionario["panel_a"]["box1"];?></h2>
 
-							<h2 class="mayus"><?=$array_diccionario["panel_a"]["box2"];?></h2>
+								<p><?=$array_diccionario["panel_a"]["texto1"];?></p> 
 
-							<p><?=$array_diccionario["panel_a"]["texto2"];?></p> 
+								<h2 class="mayus"><?=$array_diccionario["panel_a"]["box2"];?></h2>
+
+								<p><?=$array_diccionario["panel_a"]["texto2"];?></p>
+
+							</div> 
 							
 						</div>
 
