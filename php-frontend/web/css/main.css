@@ -493,8 +493,11 @@ h3 {
 	}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-.content-slider > div {
-	height: 617px;
+	.content-slider > div {
+		height: 617px;
+	}
+	.contest-details {
+		height: 382px;
 	}	
 }
 
