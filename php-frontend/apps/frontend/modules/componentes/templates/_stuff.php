@@ -4,7 +4,6 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h4 class="modal-title" id="myModalLabel">Welcome to Cono Sur´s Blogger Competition!</h4>
       </div>
 
@@ -17,8 +16,10 @@
         <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
  
         <h4>Cheers!</h4>
-          
-          <input type="hidden" id="defaultLang" value="<?=url_for("home/lang/?set=en");?>" />
+         <p>
+             TEXT LEGAL
+         </p>             
+         <a href="<?=url_for("home/accept/?set=en&legal=ok");?>" type="button" class="btn btn-submit" >Aceptar</a>
 
       </div>
     </div>
@@ -30,6 +31,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h4 class="modal-title" id="myModalLabel">Congratulations!</h4>
       </div>
 
@@ -40,10 +42,6 @@
 publish the recipes on this site on 18.08.2014 when the voting begins. If you have any questions, 
 
 please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurwinery.cl</a>.</p>
-         <p>
-             TEXT LEGAL
-         </p>             
-         <a href="<?=url_for("home/accept/?set=en&legal=ok");?>" type="button" class="btn btn-submit" >Aceptar</a>
       </div>
     </div>
   </div>
