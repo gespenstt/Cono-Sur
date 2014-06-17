@@ -58,20 +58,20 @@
                                                                 if($lang=="se"){
                                                             ?>
         
-								<div class="wine-01"></div>
-
-								<div class="wine-02"></div>
-
-								<div class="wine-03"></div>
-                                                            <?php
-                                                                }else{
-                                                            ?>
-        
 								<div class="wine-01-se"></div>
 
 								<div class="wine-02-se"></div>
 
 								<div class="wine-03-se"></div>
+                                                            <?php
+                                                                }else{
+                                                            ?>
+        
+								<div class="wine-01"></div>
+
+								<div class="wine-02"></div>
+
+								<div class="wine-03"></div>
                                                             <?php
                                                                 }
                                                             ?>
