@@ -13,10 +13,14 @@ $(document).ready(function(){
     
     //DET LANG
     if(!det_lang){
-        $('#modalLang').modal(); 
+        /*$('#modalLang').modal(); 
         $('#modalLang').on('hide.bs.modal', function () {
             location.href=$("#defaultLang").val();
-        })
+        })*/
+        $("#modalLang").modal({
+            backdrop: 'static',
+            keyboard: false
+        }); 
     }else if(legal=="false"){
         $("#modalRestriccion").modal({
             backdrop: 'static',
