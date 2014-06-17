@@ -78,7 +78,7 @@ class enterrecipeActions extends sfActions
             //$s_imagen->save($path_upload.$nombre_archivo);
             $s_imagen = new SimpleImage();
             $s_imagen->load($_FILES["foto"]["tmp_name"]);
-            $s_imagen->resize(400, 400);
+            //$s_imagen->resize(400, 400);
             $s_imagen->save($path_upload.$nombre_archivo);
             
             $nombre_receta = $request->getPostParameter("nombre_receta");
