@@ -25,6 +25,9 @@ class contestdetailsActions extends sfActions
       }else{
           $id_idioma = 5;          
       }
+      
+      $this->lang = $cookie["lang"];
+      
       $c = new Criteria();
       $c->clearSelectColumns();
       $c->addSelectColumn(PaginaPeer::PAG_IDENTIFICADOR);
