@@ -7,7 +7,7 @@
             <meta name=viewport content="width=device-width, initial-scale=1">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <!-- Bootstrap CSS -->
-            <link href="<?=public_path("css/bootstrap.min.css");?>" rel="stylesheet" media="screen">
+            <link href="<?=public_path("css/bootstrap.css");?>" rel="stylesheet" media="screen">
             <link href="<?=public_path("css/main.css");?>" rel="stylesheet" media="screen">
             
             <script>
@@ -15,7 +15,7 @@
             </script>
             <script src="<?=public_path("js/jquery.min.js");?>"></script>
             <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
-            <script src="<?=public_path("js/bootstrap.min.js");?>"></script> 
+            <script src="<?=public_path("js/bootstrap.js");?>"></script> 
             <script src="<?=public_path("js/jquery.cycle2.min.js");?>"></script>
             <script src="<?=public_path("js/jquery.form.js");?>"></script>
             <!--[if IE]>
