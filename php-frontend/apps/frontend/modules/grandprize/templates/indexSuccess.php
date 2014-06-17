@@ -7,7 +7,7 @@
 
 						<div class="col-md-5 text-center">
 
-							<div class="dark-grey grand-prize">
+							<div class="dark-grey grand-prize no-padding">
 
 								<h1><?=$array_diccionario["panel_a"]["titulo"];?></h1>
 
