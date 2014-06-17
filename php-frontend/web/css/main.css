@@ -488,4 +488,9 @@ h3 {
 	background-size: 100%;
 	}
 }
+@media (min-width: 992px) {
+.content-slider > div {
+	height: 612px;
+	}	
+}
 
