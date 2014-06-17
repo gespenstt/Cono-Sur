@@ -19,7 +19,7 @@
          <p>
              TEXT LEGAL
          </p>             
-         <a href="<?=url_for("home/accept/?set=en&legal=ok");?>" type="button" class="btn btn-submit" >Aceptar</a>
+         <a href="<?=url_for("home/lang/?set=en&legal=ok");?>" type="button" class="btn btn-submit" >Aceptar</a>
 
       </div>
     </div>
