@@ -385,9 +385,10 @@ h3 {
 .bg-enter-recipes {
 	background-image: url(../img/bg-enter-recipes.jpg);
 	background-position: bottom;
-	height: 568px;
+	background-repeat: no-repeat;
+	height: 837px;
 	display: block;
-	background-size: 100%;
+	background-size: cover;
 }
 
 .enter-recipe-form {
