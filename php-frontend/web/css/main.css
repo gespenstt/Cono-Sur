@@ -67,6 +67,7 @@ h1 {
 	text-decoration: underline;
 	font-size: 12px;
 	padding: 0px;
+	text-transform: uppercase;
 }
 h2 {
 	border: 1px solid #fff;
