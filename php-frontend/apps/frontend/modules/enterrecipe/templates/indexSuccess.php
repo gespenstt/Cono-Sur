@@ -116,7 +116,7 @@
 									<div class="checkbox">
 										<label>
 									    	<input type="checkbox" name="acepta_tos" data-msg="You must read and fully understand the rules and regulations." id="acepta_tos">
-									    <?=$array_diccionario["formulario"]["tos2"];?> <a href="<?=public_path("pdf/Rules_and_Regulations_$lang.pdf");?>" class="link-georgia"><?=$array_diccionario["formulario"]["link_tos2"];?></a>
+									    <?=$array_diccionario["formulario"]["tos2"];?> <a href="<?=public_path("pdf/Rules_and_Regulations_$lang.pdf");?>" class="link-georgia" target="blank_"><?=$array_diccionario["formulario"]["link_tos2"];?></a>
 										<p class="text-danger hidden"></p>
 										</label>
 									</div>
