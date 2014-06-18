@@ -52,6 +52,9 @@ class componentesComponents extends sfComponents
   }
   public function executeStuff()
   {
+      $cookie = unserialize($_COOKIE["conosur"]);
+      
+      $this->lang = $cookie["lang"];
       
   }
   public function executeDetectar()

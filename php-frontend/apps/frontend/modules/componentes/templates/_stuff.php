@@ -58,16 +58,63 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
 <div class="modal fade" id="modalRestriccion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
+          
+      <?php
+        switch ($lang){//fi gb se ie
+            case "fi":
+      ?>
       <div class="modal-header">
         <h4 class="modal-title" id="myModalLabel">Warning!</h4>
       </div>
 
       <div class="modal-body">
-
-         <p>Text legal</p>
+         <p>Text legal Finlandia</p>
          <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">Aceptar</a>
 
+      </div>   
+        <?php            
+                break;
+            case "gb":
+        ?> 
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Warning!</h4>
       </div>
+
+      <div class="modal-body">
+         <p>Text legal UK</p>
+         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">Aceptar</a>
+
+      </div>   
+        <?php            
+                break;
+            case "se":
+        ?> 
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Warning!</h4>
+      </div>
+
+      <div class="modal-body">
+         <p>Text legal Suecia</p>
+         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">Aceptar</a>
+
+      </div>   
+        <?php            
+                break;
+            case "ie":
+        ?>
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Warning!</h4>
+      </div>
+
+      <div class="modal-body">
+         <p>Text legal Irlanda</p>
+         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">Aceptar</a>
+
+      </div>   
+        <?php  
+                break;
+        }   
+        ?>
     </div>
   </div>
 </div>
