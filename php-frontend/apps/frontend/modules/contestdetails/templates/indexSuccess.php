@@ -66,7 +66,7 @@
 
 					</div>
 
-                                        <p><small><a href="<?=public_path("pdf/Rules_and_Regulations_$lang.pdf");?>"><?=$array_diccionario["panel_f"]["link"];?></a></small></p>
+                                        <p><small><a href="<?=public_path("pdf/Rules_and_Regulations_$lang.pdf");?>" target="blank_"><?=$array_diccionario["panel_f"]["link"];?></a></small></p>
 
 					<p><?=$array_diccionario["panel_f"]["texto"];?></p>
 
