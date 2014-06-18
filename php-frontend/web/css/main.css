@@ -5,6 +5,11 @@ body {
 .hidden{
     display:none;
 }
+.modal {
+display: block;
+height: 0;
+overflow: visible;
+}
 a{
 	color: #000;
 }
