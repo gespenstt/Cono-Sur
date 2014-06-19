@@ -88,11 +88,19 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
         ?> 
 
       <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Warning!</h4>
+        <h4 class="modal-title" id="myModalLabel">Welcome</h4>
       </div>
 
       <div class="modal-body">
-         <p>Text legal UK</p>
+         <p>
+          Confirm you are above legal drinking age to enter the site.<br />
+          Product for those of legal drinking age. Enjoy responsibly.
+        </p>
+
+        <h4>Participating Countries</h4>
+
+        <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
+
          <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">Agree</a>
 
       </div>   
@@ -101,11 +109,16 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
             case "se":
         ?> 
       <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Warning!</h4>
+        <h4 class="modal-title" id="myModalLabel">Välkommen</h4>
       </div>
 
       <div class="modal-body">
-         <p>Text legal Suecia</p>
+         <p>På den här webbplatsen förekommer det information om alkoholhaltiga drycker och du måste ha fyllt 20 år för att besöka den.</p>
+
+        <h4>Deltagande länder</h4>
+
+        <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
+
          <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">Agree</a>
 
       </div>   
@@ -114,11 +127,19 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
             case "ie":
         ?>
       <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Warning!</h4>
+        <h4 class="modal-title" id="myModalLabel">Welcome</h4>
       </div>
 
       <div class="modal-body">
-         <p>Text legal Irlanda</p>
+         <p>
+          Confirm you are above legal drinking age to enter the site.<br />
+          Product for those of legal drinking age. Enjoy responsibly.
+        </p>
+
+        <h4>Participating Countries</h4>
+
+        <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
+        
          <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">Agree</a>
 
       </div>   
