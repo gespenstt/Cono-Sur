@@ -20,7 +20,7 @@
              Confirm you are above legal drinking age to enter the site.<br />
              Product for those of legal drinking age. Enjoy responsibly.
          </p>             
-         <a href="<?=url_for("home/lang/?set=en&legal=ok");?>" type="button" class="btn btn-submit" >Agree</a>
+         <a href="<?=url_for("home/lang/?set=en&legal=ok");?>" type="button" class="btn btn-submit" >I agree</a>
 
       </div>
     </div>
@@ -78,7 +78,7 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
 
         <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
 
-         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">Agree</a>
+         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">Olen samaa mieltä</a>
 
       </div>  
 
@@ -101,7 +101,7 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
 
         <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
 
-         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">Agree</a>
+         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">I agree</a>
 
       </div>   
         <?php            
@@ -119,7 +119,7 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
 
         <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
 
-         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">Agree</a>
+         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">jag håller med</a>
 
       </div>   
         <?php            
@@ -140,7 +140,7 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
 
         <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
         
-         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">Agree</a>
+         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">I agree</a>
 
       </div>   
         <?php  
