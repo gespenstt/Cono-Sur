@@ -123,6 +123,11 @@ class homeActions extends sfActions
           setcookie("conosur", null, time()-3600*24*90, "/");
                     $this->msg = "Reset OK";
       }
+      $resetlegal = $request->getParameter("resetlegal");
+      if($resetlegal=="ok"){
+          setcookie("conosur_legal", null, time()-3600*24*90, "/");
+                    $this->msg = "Reset Legal OK";
+      }
       
       $this->setLayout("layout_debug");
   }

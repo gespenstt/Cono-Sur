@@ -19,6 +19,13 @@ class funciones{
             return "";
         }
     }
+    public function setLog($type='',$archivo='backend')
+    {
+        $logFechaNombre = $archivo."_".date("Ymd").".log";
+        $logPath = sfConfig::get('sf_log_dir').'/'.$logFechaNombre;
+        $log = new sfFileLogger(new sfEventDispatcher(), array('level' => sfFileLogger::DEBUG,'file' => $logPath,'type' => $type)); 
+        return $log;
+    }
     
 }
 

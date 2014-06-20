@@ -16,6 +16,8 @@
     
     <link href="<?=public_path("css/ui-lightness/jquery-ui-1.10.0.custom.min.css");?>" rel="stylesheet">
     
+    <link href="<?=public_path("css/jquery.Jcrop.css");?>" rel="stylesheet">
+    
     <link href="<?=public_path("js/plugins/lightbox/themes/evolution-dark/jquery.lightbox.css");?>" rel="stylesheet">
     
     <link href="<?=public_path("css/base-admin-3.css");?>" rel="stylesheet">
@@ -24,8 +26,6 @@
     <link href="<?=public_path("css/pages/dashboard.css");?>" rel="stylesheet">  
 
     <link href="<?=public_path("css/custom.css");?>" rel="stylesheet"> 
-
-    <link href="<?=public_path("css/custom.css");?>" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -75,6 +75,8 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="<?=public_path("js/libs/jquery-1.9.1.min.js");?>"></script>
+<script src="<?=public_path("js/jquery.mb.browser.js");?>"></script>
+<script src="<?=public_path("js/jquery.Jcrop.js");?>"></script>
 <script src="<?=public_path("js/libs/jquery-ui-1.10.0.custom.min.js");?>"></script>
 <script src="<?=public_path("js/libs/bootstrap.min.js");?>"></script>
 

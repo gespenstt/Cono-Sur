@@ -45,7 +45,7 @@ class loginActions extends sfActions
                       $log->debug("pass ok");
                       $this->getUser()->setAuthenticated(true);
                       $this->getUser()->setAttribute('nombre', $nombre);
-                      $this->redirect("trivia/index");
+                      $this->redirect("receta/index");
                   }else{
                       $msgout = "Contraseña inválida";
                       $log->warning($msgout);
@@ -63,5 +63,11 @@ class loginActions extends sfActions
       }
       $this->msgout = $msgout;
       $this->setLayout("layout_login");
+  }
+  public function executeSalir(sfWebRequest $request)
+  {
+          $this->getUser()->setAuthenticated(false);
+          $this->getUser()->setAttribute('nombre', null);
+          $this->redirect("login/index");      
   }
 }

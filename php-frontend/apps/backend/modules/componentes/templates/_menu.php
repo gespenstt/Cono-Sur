@@ -19,7 +19,7 @@
 			</a>
 			
 			<ul class="dropdown-menu">
-				<li><a href="">Salir</a></li>
+				<li><a href="<?=url_for("login/salir");?>">Salir</a></li>
 			</ul>
 			
 		</li>
@@ -60,7 +60,7 @@
 						</a>	    				
 					</li>
 				
-					<li class="">
+					<li class="active">
 						<a href="<?=url_for("receta/index");?>">
 							<i class="icon-food"></i>
 							<span>Recetas</span>

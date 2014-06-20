@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Backend Trivia</title>
+    <title>Backend Cono Sur</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes"> 
@@ -32,7 +32,7 @@
 	<div class="container">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
-    <a class="navbar-brand" href="<?=url_for("home/index");?>">Backend Trivia</a>
+    <a class="navbar-brand" href="<?=url_for("home/index");?>">Backend Conosur</a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->

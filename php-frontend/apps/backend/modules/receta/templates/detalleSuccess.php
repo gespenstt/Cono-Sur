@@ -70,7 +70,7 @@
                                     <i class="icon-list-alt"></i>
                                     <h3>Imagen</h3>
                                 </div>     
-                                <div class="widget-content">
+                                <div class="widget-content" align="center">
                                     <section>
                                         <img src="http://bloggercompetition.conosur.com/uploads/<?=$receta->getRecImagen();?>" />
                                     </section>
@@ -79,9 +79,9 @@
                             </div>
 
                         </div>
+            <a href="<?=url_for("receta/crop/?id=".$receta->getRecId());?>" class="btn btn-warning">Crop Imagen</a>
                     </section>
 
                 </div>      
             </div>   
-            
         </div>

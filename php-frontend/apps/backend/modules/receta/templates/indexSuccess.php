@@ -10,15 +10,32 @@
                     </div>                    
                     <div class="widget-content">
                         <section id="tables">
-                            <h3>Listado</h3>        
-                            
-
+                            <h3>Listado</h3>                  
                             <?php
                                 $array_paises["1"] = "UK";
                                 $array_paises["2"] = "Irlanda";
                                 $array_paises["3"] = "Suecia";
-                                $array_paises["4"] = "Finlandia";                            
-                                if(count($recetas) > 0){
+                                $array_paises["4"] = "Finlandia";                              
+                            ?>
+                            <div class="clearfix" style="padding-bottom: 10px;">
+                                  <form id="formularioBuscar" action="<?=url_for("receta/index");?>" method="get">
+                                <div class="navbar-left navbar-form">
+                                      <select name="pais" class="form-control">
+                                          <option value="">Todos</option>
+                                      <?php foreach($array_paises as $key => $val){ ?>
+                                          <option value="<?=$key;?>" <?php if($pais==$key){echo "selected";}?>><?=$val;?></option>
+                                      <?php } ?>
+                                      </select>
+                                </div>
+                                <div class="navbar-left navbar-form">
+                                      <button type="submit" class="btn btn-default">Filtrar pais</button>
+                                </div>
+                                  </form>
+                            </div>   
+                            
+
+                            <?php                          
+                                if($recetas->count() > 0){
                             ?>
                             
                             <div class="table-responsive">
@@ -33,7 +50,7 @@
                                       </tr>
                                     </thead>
                                     <tbody>
-                                      <?php foreach($recetas as $p){  ?>
+                                      <?php foreach($recetas->getResults() as $p){  ?>
                                       <tr>
                                         <td><?=$p->getRecNombreReceta();?></td>
                                         <td><?php
@@ -65,6 +82,14 @@
                                 </table>
                             </div>
                             <?php
+                                if($recetas->haveToPaginate()){
+                            ?>
+                            <ul class="pagination">
+                                <li><a href="<?=url_for("receta/index/?pais=$pais&p=".$recetas->getPreviousPage());?>">«</a></li>
+                                <li><a href="<?=url_for("receta/index/?pais=$pais&p=".$recetas->getNextPage());?>">»</a></li>
+                            </ul>   
+                            <?php                            
+                                }
                             
                                 }else{
                                     echo "<center>No se han encontrado recetas</center>";
