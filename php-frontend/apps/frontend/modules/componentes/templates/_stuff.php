@@ -78,7 +78,7 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
 
         <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
 
-         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">Olen samaa mieltä</a>
+         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">Olen täysi-ikäinen</a>
 
       </div>  
 
