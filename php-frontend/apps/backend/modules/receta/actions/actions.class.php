@@ -43,7 +43,61 @@ class recetaActions extends sfActions
       $c = new Criteria();
       $c->add(RecetaPeer::REC_ELIMINADO,0);
       $c->add(RecetaPeer::REC_ID,$id);
-      $this->receta = RecetaPeer::doSelectOne($c);
+      $receta = RecetaPeer::doSelectOne($c);
+      $this->receta = $receta;
+      $src_original = sfConfig::get('sf_root_dir').DIRECTORY_SEPARATOR."web".DIRECTORY_SEPARATOR."uploads".DIRECTORY_SEPARATOR."original_".$receta->getRecImagen();
+      $this->original = false;
+      if(is_file($src_original)){
+          $this->original = true;
+      }
+  }
+  public function executeEditar(sfWebRequest $request)
+  {
+      $id = $request->getParameter("id");
+      if(empty($id)){
+          $this->redirect("receta/index");
+      }
+      $this->funciones = new funciones();
+      $c = new Criteria();
+      $c->add(RecetaPeer::REC_ELIMINADO,0);
+      $c->add(RecetaPeer::REC_ID,$id);
+      $receta = RecetaPeer::doSelectOne($c);
+      if($request->isMethod("post")){
+          $nombrereceta = $request->getPostParameter("nombrereceta");
+          $ingredientes = $request->getPostParameter("ingredientes");
+          $instrucciones = $request->getPostParameter("instrucciones");
+          $vinousado = $request->getPostParameter("vinousado");
+          $estado = $request->getPostParameter("estado");
+          
+          $receta->setRecEstado($estado);
+          $receta->setRecVino($vinousado);
+          $receta->setRecNombreReceta($nombrereceta);
+          $receta->setRecIngredientes(($ingredientes));
+          $receta->setRecInstrucciones(($instrucciones));
+          $receta->save();
+      }
+      $this->receta = $receta;
+  }
+  public function executeRestaurar(sfWebRequest $request)
+  {
+      $id = $request->getParameter("id");
+      if(empty($id)){
+          $this->redirect("receta/index");
+      }
+      $this->funciones = new funciones();
+      $c = new Criteria();
+      $c->add(RecetaPeer::REC_ELIMINADO,0);
+      $c->add(RecetaPeer::REC_ID,$id);
+      $receta = RecetaPeer::doSelectOne($c);
+      $src_original = sfConfig::get('sf_root_dir').DIRECTORY_SEPARATOR."web".DIRECTORY_SEPARATOR."uploads".DIRECTORY_SEPARATOR."original_".$receta->getRecImagen();
+      $src = sfConfig::get('sf_root_dir').DIRECTORY_SEPARATOR."web".DIRECTORY_SEPARATOR."uploads".DIRECTORY_SEPARATOR.$receta->getRecImagen();
+      $src_2 = sfConfig::get('sf_root_dir').DIRECTORY_SEPARATOR."web".DIRECTORY_SEPARATOR."uploads".DIRECTORY_SEPARATOR.$receta->getRecImagen();
+      unlink($src);
+        $imagen = new SimpleImage();
+        $imagen->load($src_original);
+        $imagen->save($src_2);
+        unlink($src_original);
+        $this->redirect("receta/detalle/?id=$id");      
   }
   public function executeCrop(sfWebRequest $request)
   {
