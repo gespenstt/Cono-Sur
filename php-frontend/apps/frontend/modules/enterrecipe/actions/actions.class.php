@@ -103,7 +103,7 @@ class enterrecipeActions extends sfActions
             $receta->save();
 
 
-$to = "rodrigoxv@gmail.com";
+$to = "webmanager@conosurwinery.cl";
 $subject = "Email ConoSur";
 
 $array_paises["1"] = "UK";
@@ -125,7 +125,7 @@ $message = '<html><head>
 
     <tr>
       <td align="left" style="color:#333;font-family:arial,sans-serif;font-size:12px;line-height:16px;" valign="top">
-        <img src="http://bloggercompetition.conosur.com/uploads/'.$nombre_archivo.'" alt="Cono Sur Bloggers">
+        <img width="200" src="http://bloggercompetition.conosur.com/uploads/'.$nombre_archivo.'" alt="Cono Sur Bloggers">
       </td>
       <td align="left" style="color:#333;font-family:arial,sans-serif;font-size:12px;line-height:16px; padding:10px;" valign="top" >
         <h3>
