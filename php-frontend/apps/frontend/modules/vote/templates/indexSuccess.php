@@ -20,7 +20,7 @@
 							<a href="recipe_detail.html">
 
 								<ul class="recipe-item green">
-									<li class="recipe-img" style="background-image: url(img/recipe01.jpg)"></li>
+									<li class="recipe-img" style="background-image: url(<?=public_path("img/recipe01.jpg");?>)"></li>
 									<li class="recipe-name txt-center">
 										<h1>Paula Troncoso</h1> 
 										<p>CORDERO CON FRITAS EN SALSA FRAMBUESA</p>
@@ -38,7 +38,7 @@
 						<div class="col-md-6">
 
 							<ul class="recipe-item green">
-								<li class="recipe-img" style="background-image: url(img/recipe02.jpg)"></li>
+								<li class="recipe-img" style="background-image: url(<?=public_path("img/recipe02.jpg");?>)"></li>
 								<li class="recipe-name txt-center">
 									<h1>Paula Troncoso</h1> 
 									<p>CORDERO CON FRITAS EN SALSA FRAMBUESA</p>
@@ -58,7 +58,7 @@
 						<div class="col-md-6">
 
 							<ul class="recipe-item dark-grey">
-								<li class="recipe-img" style="background-image: url(img/recipe01.jpg)"></li>
+								<li class="recipe-img" style="background-image: url(<?=public_path("img/recipe01.jpg");?>)"></li>
 								<li class="recipe-name txt-center">
 									<h1>Paula Troncoso</h1> 
 									<p>CORDERO CON FRITAS EN SALSA FRAMBUESA</p>
@@ -74,7 +74,7 @@
 						<div class="col-md-6">
 
 							<ul class="recipe-item dark-grey">
-								<li class="recipe-img" style="background-image: url(img/recipe02.jpg)"></li>
+								<li class="recipe-img" style="background-image: url(<?=public_path("img/recipe02.jpg");?>)"></li>
 								<li class="recipe-name txt-center">
 									<h1>Paula Troncoso</h1> 
 									<p>CORDERO CON FRITAS EN SALSA FRAMBUESA</p>
@@ -95,7 +95,7 @@
 
 							<a href="recipe_detail.html">
 								<ul class="recipe-item violet">
-									<li class="recipe-img" style="background-image: url(img/recipe01.jpg)"></li>
+									<li class="recipe-img" style="background-image: url(<?=public_path("img/recipe01.jpg");?>)"></li>
 									<li class="recipe-name txt-center">
 										<h1>Paula Troncoso</h1> 
 										<p>CORDERO CON FRITAS EN SALSA FRAMBUESA</p>
@@ -111,7 +111,7 @@
 						<div class="col-md-6">
 
 							<ul class="recipe-item violet">
-								<li class="recipe-img" style="background-image: url(img/recipe02.jpg)"></li>
+								<li class="recipe-img" style="background-image: url(<?=public_path("img/recipe02.jpg");?>)"></li>
 								<li class="recipe-name txt-center">
 									<h1>Paula Troncoso</h1> 
 									<p>CORDERO CON FRITAS EN SALSA FRAMBUESA</p>
