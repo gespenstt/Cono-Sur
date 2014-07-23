@@ -22,7 +22,7 @@
 								<li class="recipe-name txt-center">
 									<h1>Paula Troncoso</h1> 
 									<p>CORDERO CON FRITAS EN SALSA FRAMBUESA</p>
-									<a href=""><h1>View Recipe</h1></a> 
+									<a href="">View Recipe</a> 
 								</li>
 								<li class="recipe-wine txt-center light">
 									<span class="icon-glass"></span>
