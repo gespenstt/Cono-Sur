@@ -23,7 +23,7 @@
 									<a href="" class="link-view-recipe">View Recipe</a> 
 								</li>
 								<li class="recipe-wine txt-center light">
-									<a href="" class="link-vote">VOTE FOR THIS RECEPE</a> 
+									<a href="" class="link-vote">VOTE FOR THIS RECIPE</a> 
 								</li>
 							</ul>
 							
@@ -40,7 +40,7 @@
 								</li>
 								<li class="recipe-wine txt-center light">
 									<span class="icon-glass"></span>
-									<h2>Cono Sur riestling</h2>
+									<a href="" class="link-vote">VOTE FOR THIS RECIPE</a>
 								</li>
 							</ul>
 							
@@ -61,7 +61,7 @@
 								</li>
 								<li class="recipe-wine txt-center light">
 									<span class="icon-glass"></span>
-									<h2>Cono Sur riestling</h2>
+									<a href="" class="link-vote">VOTE FOR THIS RECIPE</a>
 								</li>
 							</ul>
 							
@@ -78,7 +78,7 @@
 								</li>
 								<li class="recipe-wine txt-center light">
 									<span class="icon-glass"></span>
-									<h2>Cono Sur riestling</h2>
+									<a href="" class="link-vote">VOTE FOR THIS RECIPE</a>
 								</li>
 							</ul>
 							
@@ -99,7 +99,7 @@
 								</li>
 								<li class="recipe-wine txt-center light">
 									<span class="icon-glass"></span>
-									<h2>Cono Sur riestling</h2>
+									<a href="" class="link-vote">VOTE FOR THIS RECIPE</a>
 								</li>
 							</ul>
 						</div>
@@ -115,7 +115,7 @@
 								</li>
 								<li class="recipe-wine txt-center light">
 									<span class="icon-glass"></span>
-									<h2>Cono Sur riestling</h2>
+									<a href="" class="link-vote">VOTE FOR THIS RECIPE</a>
 								</li>
 							</ul>
 							
