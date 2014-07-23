@@ -419,6 +419,10 @@ h3 {
 	width: 100%;
 }
 
+.recipe-item a {	
+	color: #fff;
+}
+
 .recipe-item h1, .recipe-item h2{	
 	font-size: 12px;
 	padding: 20px 10px 0px 10px;
