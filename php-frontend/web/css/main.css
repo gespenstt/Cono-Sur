@@ -421,6 +421,10 @@ h3 {
 
 .recipe-item a {	
 	color: #fff;
+	background-image: url(../img/icon-recipe.png);
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	height: 13px;	
 }
 
 .recipe-item h1, .recipe-item h2{	
