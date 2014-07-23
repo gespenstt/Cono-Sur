@@ -420,7 +420,7 @@ h3 {
 	width: 100%;
 }
 
-.recipe-item a {	
+.link-view-recipe {	
 	color: #fff;
 	background-image: url(../img/icon-recipe.png);
 	background-repeat: no-repeat;
