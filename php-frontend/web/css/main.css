@@ -427,12 +427,33 @@ h3 {
 	padding-left: 25px;
 	height: 13px;	
 }
+
 .link-vote {
 	background-color: #fff;
 	margin: 45% 10%;
 	padding: 10px;
 	float: left;
 }
+
+ .bubble {
+    position: relative;
+    padding: 0px;
+    background: #483B71;
+}
+
+ .bubble:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 28px;
+    border-style: solid;
+    border-width: 15px 15px 0;
+    border-color: #483B71 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+
 
 .recipe-item h1, .recipe-item h2{	
 	font-size: 12px;

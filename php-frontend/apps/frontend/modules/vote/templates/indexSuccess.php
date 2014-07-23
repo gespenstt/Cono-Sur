@@ -6,6 +6,8 @@
 
 						<div class="col-md-12">
 						
+							<div class="bubble">VOTE FOR YOUR FAVOURITE RECIPE AND WIN A WINE BOX OF CONO SUR’S BEST PINOT NOIR.
+YOU CAN ONLY VOTE ONCE!</div>
 							
 						</div>
 							
