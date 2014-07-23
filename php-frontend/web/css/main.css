@@ -427,6 +427,11 @@ h3 {
 	padding-left: 25px;
 	height: 13px;	
 }
+.link-vote {
+	background-color: #fff;
+	margin: 10px;
+	padding: 10px;
+}
 
 .recipe-item h1, .recipe-item h2{	
 	font-size: 12px;

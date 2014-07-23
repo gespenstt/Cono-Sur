@@ -23,7 +23,7 @@
 									<a href="" class="link-view-recipe">View Recipe</a> 
 								</li>
 								<li class="recipe-wine txt-center light">
-									<a href="">VOTE FOR THIS RECEPE</a> 
+									<a href="" class="link-vote">VOTE FOR THIS RECEPE</a> 
 								</li>
 							</ul>
 							
@@ -36,7 +36,7 @@
 								<li class="recipe-name txt-center">
 									<h1>Paula Troncoso</h1> 
 									<p>CORDERO CON FRITAS EN SALSA FRAMBUESA</p>
-									<a href="">View Recipe</a> 
+									<a href="" class="link-view-recipe">View Recipe</a> 
 								</li>
 								<li class="recipe-wine txt-center light">
 									<span class="icon-glass"></span>
@@ -57,7 +57,7 @@
 								<li class="recipe-name txt-center">
 									<h1>Paula Troncoso</h1> 
 									<p>CORDERO CON FRITAS EN SALSA FRAMBUESA</p>
-									<a href="">View Recipe</a> 
+									<a href="" class="link-view-recipe">View Recipe</a> 
 								</li>
 								<li class="recipe-wine txt-center light">
 									<span class="icon-glass"></span>
@@ -74,7 +74,7 @@
 								<li class="recipe-name txt-center">
 									<h1>Paula Troncoso</h1> 
 									<p>CORDERO CON FRITAS EN SALSA FRAMBUESA</p>
-									<a href="">View Recipe</a> 
+									<a href="" class="link-view-recipe">View Recipe</a> 
 								</li>
 								<li class="recipe-wine txt-center light">
 									<span class="icon-glass"></span>
@@ -95,7 +95,7 @@
 								<li class="recipe-name txt-center">
 									<h1>Paula Troncoso</h1> 
 									<p>CORDERO CON FRITAS EN SALSA FRAMBUESA</p>
-									<a href="">View Recipe</a> 
+									<a href="" class="link-view-recipe">View Recipe</a>  
 								</li>
 								<li class="recipe-wine txt-center light">
 									<span class="icon-glass"></span>
@@ -111,7 +111,7 @@
 								<li class="recipe-name txt-center">
 									<h1>Paula Troncoso</h1> 
 									<p>CORDERO CON FRITAS EN SALSA FRAMBUESA</p>
-									<a href="">View Recipe</a> 
+									<a href="" class="link-view-recipe">View Recipe</a>  
 								</li>
 								<li class="recipe-wine txt-center light">
 									<span class="icon-glass"></span>
