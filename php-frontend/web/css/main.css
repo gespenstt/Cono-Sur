@@ -437,8 +437,13 @@ h3 {
 
  .bubble {
     position: relative;
-    padding: 0px;
-    background: #483B71;
+	padding: 0px;
+	background: #483B71;
+	width: 300px;
+	padding: 20px;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
 }
 
  .bubble:after {
