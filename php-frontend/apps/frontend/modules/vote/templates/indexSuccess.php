@@ -23,8 +23,7 @@
 									<a href="">View Recipe</a> 
 								</li>
 								<li class="recipe-wine txt-center light">
-									<span class="icon-glass"></span>
-									<h2>Cono Sur riestling</h2>
+									<a href="">VOTE FOR THIS RECEPE</a> 
 								</li>
 							</ul>
 							
