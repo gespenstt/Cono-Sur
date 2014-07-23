@@ -39,7 +39,6 @@
 									<a href="" class="link-view-recipe">View Recipe</a> 
 								</li>
 								<li class="recipe-wine txt-center light">
-									<span class="icon-glass"></span>
 									<a href="" class="link-vote">VOTE FOR THIS RECIPE</a>
 								</li>
 							</ul>
@@ -60,7 +59,6 @@
 									<a href="" class="link-view-recipe">View Recipe</a> 
 								</li>
 								<li class="recipe-wine txt-center light">
-									<span class="icon-glass"></span>
 									<a href="" class="link-vote">VOTE FOR THIS RECIPE</a>
 								</li>
 							</ul>
@@ -77,7 +75,6 @@
 									<a href="" class="link-view-recipe">View Recipe</a> 
 								</li>
 								<li class="recipe-wine txt-center light">
-									<span class="icon-glass"></span>
 									<a href="" class="link-vote">VOTE FOR THIS RECIPE</a>
 								</li>
 							</ul>
@@ -98,7 +95,6 @@
 									<a href="" class="link-view-recipe">View Recipe</a>  
 								</li>
 								<li class="recipe-wine txt-center light">
-									<span class="icon-glass"></span>
 									<a href="" class="link-vote">VOTE FOR THIS RECIPE</a>
 								</li>
 							</ul>
@@ -114,7 +110,6 @@
 									<a href="" class="link-view-recipe">View Recipe</a>  
 								</li>
 								<li class="recipe-wine txt-center light">
-									<span class="icon-glass"></span>
 									<a href="" class="link-vote">VOTE FOR THIS RECIPE</a>
 								</li>
 							</ul>
