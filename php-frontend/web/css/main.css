@@ -528,7 +528,7 @@ h3 {
 }
 
 .blogger-name a {
-	font-family: "georgia"
+	font-family: "georgia";
 	text-decoration: underline;
 	font-size: 12px;
 	text-transform: none;
