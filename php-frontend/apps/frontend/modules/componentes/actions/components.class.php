@@ -53,6 +53,8 @@ class componentesComponents extends sfComponents
   public function executeStuff()
   {
       $cookie = unserialize($_COOKIE["conosur"]);
+	  
+	  $this->recaptcha = new recaptchalib();	  
       
       $this->lang = $cookie["lang"];
       
