@@ -112,7 +112,7 @@ YOU CAN ONLY VOTE ONCE!</div>
 									<a href="" class="link-view-recipe">View Recipe</a>  
 								</li>
 								<li class="recipe-wine txt-center light">
-									<a href="" class="link-vote">VOTE FOR THIS RECIPE</a>
+									<a href="" class="link-vote modal-vote">VOTE FOR THIS RECIPE</a>
 								</li>
 							</ul>
 							

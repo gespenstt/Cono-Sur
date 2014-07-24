@@ -65,6 +65,13 @@ $(document).ready(function(){
         console.log("FORM")
         $('#formRecipe').ajaxForm(options);
     }
+	
+	$(".modal-vote").click(function(){
+		$("#modalVote").modal({
+            backdrop: 'static',
+            keyboard: false
+        });
+	});
 })
 
 validarRecipe = function(){
