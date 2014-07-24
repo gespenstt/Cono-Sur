@@ -22,6 +22,9 @@
             <!--[if IE]>
             <script src="http://goo.gl/r57ze"></script>
             <![endif]-->
+			<script type="text/javascript"
+			 src="http://www.google.com/recaptcha/api/challenge?k=6Le4R_cSAAAAAN9b8eQkCxwQbynVCBNWjrIRqCzJ">
+			</script>
             <script src="<?=public_path("js/fix-ios6.js");?>"></script>
             <script src="<?=public_path("js/base.js");?>"></script>
     </head>

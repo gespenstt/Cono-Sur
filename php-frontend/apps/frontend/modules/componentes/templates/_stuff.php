@@ -175,7 +175,11 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
 		 <p>
-		 <?php echo htmlspecialchars_decode($recaptcha->recaptcha_get_html("6Le4R_cSAAAAAN9b8eQkCxwQbynVCBNWjrIRqCzJ")); ?>
+			 <script type="text/javascript">
+			 var RecaptchaOptions = {
+				theme : 'clean'
+			 };
+			 </script>
 		 </p>
       </div>
     </div>
