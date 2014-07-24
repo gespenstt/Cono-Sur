@@ -165,7 +165,7 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
 
          <p>Bla bla bla bla</p>
 		 <p>
-		 <?php $recaptcha->recaptcha_get_html("6Le4R_cSAAAAAN9b8eQkCxwQbynVCBNWjrIRqCzJ"); ?>
+		 <?php echo $recaptcha->recaptcha_get_html("6Le4R_cSAAAAAN9b8eQkCxwQbynVCBNWjrIRqCzJ"); ?>
 		 </p>
       </div>
     </div>
