@@ -18,7 +18,7 @@
 
 							<span class="picture-info">Cono Sur riestling</span>
 
-							<a href="recipes.html"><p><button type="button" class="btn btn-back pull-right">BACK TO RECIPES</button></p></a>
+							<a href="recipes.html"><p><span class="btn btn-back pull-right">BACK TO RECIPES</span></p></a>
 
 						</div>
 
