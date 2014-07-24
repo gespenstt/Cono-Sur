@@ -161,9 +161,22 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
         <h4 class="modal-title" id="myModalLabel">Vote</h4>
       </div>
 
-      <div class="modal-body">
-
-         <p>Bla bla bla bla</p>
+      <di<form role="form">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
 		 <p>
 		 <?php echo htmlspecialchars_decode($recaptcha->recaptcha_get_html("6Le4R_cSAAAAAN9b8eQkCxwQbynVCBNWjrIRqCzJ")); ?>
 		 </p>
