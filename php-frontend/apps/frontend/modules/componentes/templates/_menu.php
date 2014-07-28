@@ -26,15 +26,19 @@
                                     <?php if(!$esconder){ ?>
                                     <li><a href="<?=url_for("enterrecipe/index");?>"><?=$array_diccionario["menu"]["enter_your_recipe"];?></a></li>
                                     <?php } ?>
-                                    <!--<li class="dropdown">
+                                    <li><a href="<?=url_for("grandprize/index");?>">recipes</a></li>
+                                    <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">RECIPES</a>
                                             <ul class="dropdown-menu">
-                                                    <li><a href="recipes.html">FROM SWEEDEN</a></li>
-                                                    <li><a href="recipes.html">FROM IRELAND</a></li>
-                                                    <li><a href="recipes.html">FROM UK</a></li>
-                                                    <li><a href="recipes.html">FROM HOLLAND</a></li>
+                                                    <li><a href="<?=url_for("recipes/index/?from=se");?>">FROM SWEEDEN</a></li>
+                                                    <li><a href="<?=url_for("recipes/index/?from=ie");?>">FROM IRELAND</a></li>
+                                                    <li><a href="<?=url_for("recipes/index/?from=gb");?>">FROM UK</a></li>
+                                                    <li><a href="<?=url_for("recipes/index/?from=fi");?>">FROM FINLAND</a></li>
                                             </ul>
-                                    </li>-->
+                                    </li>
+                                    <?php if(!$esconder){ ?>
+                                    <li><a href="<?=url_for("vote/index");?>">VOTE</a></li>
+                                    <?php } ?>
                             </ul>
 
                     </div><!-- /.navbar-collapse -->
