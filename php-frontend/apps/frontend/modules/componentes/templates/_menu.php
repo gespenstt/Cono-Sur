@@ -26,7 +26,6 @@
                                     <?php if(!$esconder){ ?>
                                     <li><a href="<?=url_for("enterrecipe/index");?>"><?=$array_diccionario["menu"]["enter_your_recipe"];?></a></li>
                                     <?php } ?>
-                                    <li><a href="<?=url_for("grandprize/index");?>">recipes</a></li>
                                     <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">RECIPES</a>
                                             <ul class="dropdown-menu">

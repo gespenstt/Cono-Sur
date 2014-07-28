@@ -17,6 +17,7 @@ class recipesActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
+      
   
   }
   public function executeDetail(sfWebRequest $request)
