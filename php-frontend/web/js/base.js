@@ -81,12 +81,13 @@ $(document).ready(function(){
     $(".btn-submit-voto").click(function(){
         var formulario = $("#formularioVoto").serialize();
          $.ajax({
+            dataType: "json",
             url: $("#url-voto").val(),
             type: "POST",
             data: formulario,
             success: function(d) {
-                alert(d);
-                $("#modalLoading").modal('hide');
+                alert(d.msg);
+                $("#modalVote").modal('hide');
             }
         });
     })

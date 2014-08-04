@@ -62,6 +62,7 @@ class voteActions extends sfActions
           
         $funciones = new funciones();
         $log = $funciones->setLog("executeAjax");
+        $array_salida = array();
           
           try{
 
@@ -78,7 +79,12 @@ class voteActions extends sfActions
                 $log->debug("Id Idioma = $id_idioma");
             }else{
                 $log->err("El pais no puede votar | id_idioma=$id_idioma");
-                echo "NOK";
+                //echo "NOK";
+                $array_salida = array(
+                  "estado" => "nok",
+                    "msg" => "Error al votar"
+                );
+                echo json_encode($array_salida);
                 exit;
             }
             $captcha = new recaptchalib();
@@ -89,7 +95,11 @@ class voteActions extends sfActions
                                         $_POST["recaptcha_response_field"]); 
             if(!$resp->is_valid){
                 $log->err("Captcha no valido");
-                echo "NOK";
+                $array_salida = array(
+                  "estado" => "nok",
+                    "msg" => "Captcha inválido"
+                );
+                echo json_encode($array_salida);
                 exit;
             }
 
@@ -118,7 +128,11 @@ class voteActions extends sfActions
 
             if($resCv){
                 $log->err("Usuario ya registra voto");
-                echo "NOK";
+                $array_salida = array(
+                  "estado" => "nok",
+                    "msg" => "Ya has votado en otra receta"
+                );
+                echo json_encode($array_salida);
                 exit;
             }
 
@@ -142,13 +156,21 @@ class voteActions extends sfActions
               $log->debug("Mail Enviado");           
 
             $log->debug("Voto guardado mail enviado");
-            echo "OK";            
-            
+                $array_salida = array(
+                  "estado" => "ok",
+                    "msg" => "Te hemos enviado un correo para validar tu voto"
+                ); 
+                echo json_encode($array_salida);
+                exit;
               
           } catch (Exception $ex) {
 
               $log->err($ex->getMessage());
-              echo "NOK";
+                $array_salida = array(
+                  "estado" => "nok",
+                    "msg" => "Error al votar"
+                );
+                echo json_encode($array_salida);
               exit;
               
           }
