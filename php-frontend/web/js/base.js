@@ -67,11 +67,29 @@ $(document).ready(function(){
     }
 	
 	$(".modal-vote").click(function(){
-		$("#modalVote").modal({
-            backdrop: 'static',
-            keyboard: false
-        });
+            var _this = $(this);
+            $("#modalVote").modal({
+                backdrop: 'static',
+                keyboard: false
+            });
+            var nombreReceta = _this.attr("data-receta");
+            var idReceta = _this.attr("data-id");
+            $("#receta_id").val(idReceta);
+            $("#titulo-receta").html(nombreReceta);
 	});
+        
+    $(".btn-submit-voto").click(function(){
+        var formulario = $("#formularioVoto").serialize();
+         $.ajax({
+            url: $("#url-voto").val(),
+            type: "POST",
+            data: formulario,
+            success: function(d) {
+                alert(d);
+                $("#modalLoading").modal('hide');
+            }
+        });
+    })
 })
 
 validarRecipe = function(){

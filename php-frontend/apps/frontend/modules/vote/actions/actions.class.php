@@ -56,4 +56,104 @@ class voteActions extends sfActions
       $this->recetas = RecetaPeer::doSelect($cre);
   
   }
+  public function executeAjax(sfWebRequest $request)
+  {
+      if($request->isMethod("post")){
+          
+        $funciones = new funciones();
+        $log = $funciones->setLog("executeAjax");
+          
+          try{
+
+            $email = $request->getPostParameter("email");
+            $receta_id = $receta_id->getPostParameter("receta");
+
+            $log->debug("Datos de entrada | email=$email | recetaid=$receta_id");
+
+            $cookie = unserialize($_COOKIE["conosur"]);
+            $funciones = new funciones();
+            $id_idioma = $funciones->mercheKeyIdioma($cookie["id"]);
+            if($id_idioma>0&&$id_idioma<5){
+                $id_idioma = $id_idioma;
+                $log->debug("Id Idioma = $id_idioma");
+            }else{
+                $log->err("El pais no puede votar | id_idioma=$id_idioma");
+                echo "NOK";
+                exit;
+            }
+            $captcha = new recaptchalib();
+            $privatekey = "6Le4R_cSAAAAABeiA2WbQeVDkgHVrTdV0LatoEgN";
+            $resp = $captcha->recaptcha_check_answer ($privatekey,
+                                        $_SERVER["REMOTE_ADDR"],
+                                        $_POST["recaptcha_challenge_field"],
+                                        $_POST["recaptcha_response_field"]); 
+            if(!$resp->is_valid){
+                $log->err("Captcha no valido");
+                echo "NOK";
+                exit;
+            }
+
+            //BUSCAR USUARIO
+            $cus = new Criteria();
+            $cus->add(UsuarioPeer::USU_EMAIL,$email);
+            $cus->setIgnoreCase(true);
+            $usuario = UsuarioPeer::doSelectOne($cus);
+
+            if(!$usuario){
+                $log->debug("Usuario no encontrado se procede a crear");
+                $usuario = new Usuario();
+                $usuario->setUsuEmail(strtolower($email));
+                $usuario->setUsuClave(md5(date("U").rand(11,99)));
+                $usuario->save();
+                $log->debug("Usuario creado | usuid=".$usuario->getUsuId());
+
+            }else{
+                $log->debug("Usuario encontrado | usuid=".$usuario->getUsuId());
+            }
+
+            //Buscar que no tenga votos
+            $cv = new Criteria();
+            $cv->add(UsuarioRecetaPeer::USU_ID,$usuario->getUsuId());
+            $resCv = UsuarioRecetaPeer::doSelectOne($cv);
+
+            if($resCv){
+                $log->err("Usuario ya registra voto");
+                echo "NOK";
+                exit;
+            }
+
+            //Registrar voto
+            $voto = new UsuarioReceta();
+            $voto->setUsuId($usuario->getUsuId());
+            $voto->setRecId($receta_id);
+            $voto->save();
+            
+            $url_validar = "http://conosur.ratamonkey.com/web/index.php/home/validar/usuid/".$usuario->getUsuId()."/key/".$usuario->getUsuClave();
+            
+            // Always set content-type when sending HTML email
+            $headers = "MIME-Version: 1.0" . "\r\n";
+            $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+            // More headers
+            $headers .= "From: <receta@bloggercompetition.conosur.com>" . "\r\n";
+            
+            $message = "<h1>Valida tu cuenta</h1><br><br>Haz click <a href='".$url_validar."'>aqui</a>";
+
+            mail($to,$subject,$message,$headers);
+
+            $log->debug("Voto guardado mail enviado");
+            echo "OK";            
+            
+              
+          } catch (Exception $ex) {
+
+              $log->err($ex->getMessage());
+              echo "NOK";
+              exit;
+              
+          }
+        
+      }
+      return sfView::NONE;      
+  }
 }

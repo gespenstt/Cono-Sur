@@ -158,22 +158,17 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Vote</h4>
+        <h4 class="modal-title" id="myModalLabel">Vote <span id="titulo-receta"></span></h4>
       </div>
-
+        
       <div class="modal-body">
-
-         <form role="form">
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
+        <input type="hidden" id="url-voto" value="<?=url_for("vote/ajax");?>" />
+        <form id="formularioVoto" role="form">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            <input type="hidden" name="receta" id="receta_id" value="" />
+          </div>          
 		 <p>	 
 			 <script type="text/javascript">
 			 var RecaptchaOptions = {
@@ -184,6 +179,8 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
 			 src="http://www.google.com/recaptcha/api/challenge?k=6Le4R_cSAAAAAN9b8eQkCxwQbynVCBNWjrIRqCzJ">
 			</script>	
 		 </p>
+          <button type="button" class="btn btn-default btn-submit-voto">Submit</button>
+        </form>
       </div>
     </div>
   </div>
