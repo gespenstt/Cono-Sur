@@ -130,16 +130,16 @@ class voteActions extends sfActions
             
             $url_validar = "http://conosur.ratamonkey.com/web/index.php/home/validar/usuid/".$usuario->getUsuId()."/key/".$usuario->getUsuClave();
             
-            // Always set content-type when sending HTML email
-            $headers = "MIME-Version: 1.0" . "\r\n";
-            $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-
-            // More headers
-            $headers .= "From: <receta@bloggercompetition.conosur.com>" . "\r\n";
-            
             $message = "<h1>Valida tu cuenta</h1><br><br>Haz click <a href='".$url_validar."'>aqui</a>";
 
-            mail($to,$subject,$message,$headers);
+            //mail($to,$subject,$message,$headers);
+            $mensaje = Swift_Message::newInstance()
+              ->setFrom(array('info@ratamonkey.com' => 'Blogger Competition'))
+              ->setTo($usuario->getUsuEmail())
+              ->setSubject('Validación de cuenta')
+              ->setBody($message,'text/html');
+              $this->getMailer()->send($mensaje);
+              $log->debug("Mail Enviado");           
 
             $log->debug("Voto guardado mail enviado");
             echo "OK";            
