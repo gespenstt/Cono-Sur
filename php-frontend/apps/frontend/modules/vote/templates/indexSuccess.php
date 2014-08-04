@@ -25,7 +25,7 @@
 								<li class="recipe-name txt-center">
 									<h1><?=$re->getRecNombreBlogger();?></h1> 
 									<p><?=$re->getRecNombreReceta();?></p>
-									<a href="<?=url_for("recipes/detail/?id=".$rec->getRecId());?>" class="link-view-recipe"><?=$array_diccionario["panel_b"]["view_recipe"];?></a> 
+									<a href="<?=url_for("recipes/detail/?id=".$re->getRecId());?>" class="link-view-recipe"><?=$array_diccionario["panel_b"]["view_recipe"];?></a> 
 								</li>
 								<li class="recipe-wine txt-center light">
 									<a data-receta="<?=$re->getRecNombreReceta();?>" data-id="<?=$re->getRecId();?>" class="link-vote modal-vote"><?=$array_diccionario["panel_b"]["vote_for"];?></a> 
