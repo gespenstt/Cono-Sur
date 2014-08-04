@@ -1,4 +1,6 @@
-
+<?php
+    $array_diccionario = $sf_data->getRaw("diccionario");
+?>
 				<div class="container-fluid">
 
 					<div class="row show-grid">

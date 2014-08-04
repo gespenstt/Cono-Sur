@@ -1,4 +1,6 @@
-
+<?php
+    $array_diccionario = $sf_data->getRaw("diccionario");
+?>
 				<div class="container-fluid">
 
 
@@ -6,8 +8,7 @@
 
 						<div class="col-md-12">
 						
-							<div class="bubble">VOTE FOR YOUR FAVOURITE RECIPE AND WIN A WINE BOX OF CONO SUR’S BEST PINOT NOIR.
-YOU CAN ONLY VOTE ONCE!</div>
+							<div class="bubble"><?=$array_diccionario["panel_a"]["texto"];?></div>
 							
 						</div>
 							
@@ -16,22 +17,26 @@ YOU CAN ONLY VOTE ONCE!</div>
 					<div class="row show-grid">
 
 						<div class="col-md-6">
+                                                    
+                                                    <?php foreach($recetas as $re){ ?>
 
 							<ul class="recipe-item green">
-								<li class="recipe-img" style="background-image: url(<?=public_path("img/recipe01.jpg");?>)"></li>
+								<li class="recipe-img" style="background-image: url(<?=public_path("uploads/".$re->getRecImagen());?>)"></li>
 								<li class="recipe-name txt-center">
-									<h1>Paula Troncoso</h1> 
-									<p>CORDERO CON FRITAS EN SALSA FRAMBUESA</p>
-									<a href="" class="link-view-recipe">View Recipe</a> 
+									<h1><?=$re->getRecNombreBlogger();?></h1> 
+									<p><?=$re->getRecNombreReceta();?></p>
+									<a href="<?=url_for("recipes/detail/?id=".$rec->getRecId());?>" class="link-view-recipe"><?=$array_diccionario["panel_b"]["view_recipe"];?></a> 
 								</li>
 								<li class="recipe-wine txt-center light">
-									<a href="" class="link-vote">VOTE FOR THIS RECIPE</a> 
+									<a data-receta="<?=$re->getRecNombreReceta();?>" data-id="<?=$re->getRecId();?>" class="link-vote modal-vote"><?=$array_diccionario["panel_b"]["vote_for"];?></a> 
 								</li>
 							</ul>
+                                                    
+                                                    <?php } ?>
 							
 						</div>
 
-						<div class="col-md-6">
+						<!-- <div class="col-md-6">
 
 							<ul class="recipe-item green">
 								<li class="recipe-img" style="background-image: url(<?=public_path("img/recipe02.jpg");?>)"></li>
@@ -116,7 +121,7 @@ YOU CAN ONLY VOTE ONCE!</div>
 								</li>
 							</ul>
 							
-						</div>
+						</div> -->
 
 					</div>
 
