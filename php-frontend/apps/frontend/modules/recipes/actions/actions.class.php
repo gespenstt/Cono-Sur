@@ -48,7 +48,11 @@ class recipesActions extends sfActions
           exit;
       }
       
-      $this->diccionario = $array_out;      
+      $this->diccionario = $array_out;  
+      
+      $cre = new Criteria();
+      $cre->add(RecetaPeer::REC_ELIMINADO,0);
+      $this->recetas = RecetaPeer::doSelect($cre);    
   
   }
   public function executeDetail(sfWebRequest $request)
@@ -84,7 +88,19 @@ class recipesActions extends sfActions
           exit;
       }
       
-      $this->diccionario = $array_out;  
+      $this->diccionario = $array_out; 
+      
+      $id_receta = $request->getParameter("id");
+      
+      $cre = new Criteria();
+      $cre->add(RecetaPeer::REC_ID,$id_receta);
+      $cre->add(RecetaPeer::REC_ELIMINADO,0);
+      $resC = RecetaPeer::doSelectOne($cre);
+      if(!$resC){
+          $this->redirect("home/index");
+      }
+      
+      $this->receta = $resC;
   
   }
 }

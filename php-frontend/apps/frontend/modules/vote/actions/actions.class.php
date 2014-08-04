@@ -52,6 +52,7 @@ class voteActions extends sfActions
       
       $cre = new Criteria();
       $cre->add(RecetaPeer::REC_ELIMINADO,0);
+      $cre->add(RecetaPeer::REC_PAIS,$id_idioma);
       $this->recetas = RecetaPeer::doSelect($cre);
   
   }

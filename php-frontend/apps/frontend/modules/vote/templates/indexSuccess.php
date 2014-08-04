@@ -13,14 +13,23 @@
 						</div>
 							
 					</div>
-
-					<div class="row show-grid">
-
-						<div class="col-md-6">
                                                     
-                                                    <?php foreach($recetas as $re){ ?>
+                                    <?php 
+                                    $count = 0;
+                                    $count_color = 0;
+                                    $array_color = array(
+                                      "green","dark-grey","violet"
+                                    );
+                                    
+                                    foreach($recetas as $re){ 
+                                        $resto = $count % 2;
+                                    ?>
+                                        <?php if($resto==0){ ?>
+					<div class="row show-grid">
+                                        <?php } ?>
+						<div class="col-md-6">
 
-							<ul class="recipe-item green">
+							<ul class="recipe-item <?=$array_color[$count_color];?>">
 								<li class="recipe-img" style="background-image: url(<?=public_path("uploads/".$re->getRecImagen());?>)"></li>
 								<li class="recipe-name txt-center">
 									<h1><?=$re->getRecNombreBlogger();?></h1> 
@@ -31,11 +40,23 @@
 									<a data-receta="<?=$re->getRecNombreReceta();?>" data-id="<?=$re->getRecId();?>" class="link-vote modal-vote"><?=$array_diccionario["panel_b"]["vote_for"];?></a> 
 								</li>
 							</ul>
-                                                    
-                                                    <?php } ?>
 							
 						</div>
 
+                                        <?php if($resto==1){ ?>
+                                        </div>
+                                        <?php 
+                                              $count_color++;
+                                              if($count_color>2){
+                                                  $count_color=0;
+                                              }
+                                        } 
+                                        ?>
+                                                    
+                                    <?php 
+                                    $count++;
+                                    } 
+                                    ?>
 						<!-- <div class="col-md-6">
 
 							<ul class="recipe-item green">
@@ -121,8 +142,8 @@
 								</li>
 							</ul>
 							
-						</div> -->
+						</div>
 
-					</div>
+					</div> -->
 
 				</div>
