@@ -142,4 +142,31 @@ class homeActions extends sfActions
       }
       return sfView::NONE;
   }
+  
+  public function executeValidar(sfWebRequest $request)
+  {
+      $funciones = new funciones();
+      $log = $funciones->setLog("executeValidar");
+      $usuid = $request->getParameter("usuid");
+      $key = $request->getParameter("key");
+      
+      $log->debug("Datos de entrada | usuid=$usuid | key=$key");
+      
+      $this->error = true;
+      if(!empty($usuid) && !empty($key)){
+          $cu = new Criteria();
+          $cu->add(UsuarioPeer::USU_ID,$usuid);
+          $cu->add(UsuarioPeer::USU_CLAVE,$key);
+          $usuario = UsuarioPeer::doSelectOne($cu);
+          if($usuario){
+              $log->debug("Usuario encontrado");
+              $usuario->setUsuEstado(1);
+              $usuario->save();
+              $log->debug("Usuario actualizado");
+              $this->error = false;
+          }else{
+              $log->err("Usuario no encontrado");
+          }
+      }
+  }
 }
