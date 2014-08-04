@@ -166,7 +166,7 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
         <form id="formularioVoto" role="form">
           <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
             <input type="hidden" name="receta" id="receta_id" value="" />
           </div>          
 		 <p>	 
