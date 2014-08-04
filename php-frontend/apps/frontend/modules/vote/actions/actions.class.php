@@ -66,7 +66,7 @@ class voteActions extends sfActions
           try{
 
             $email = $request->getPostParameter("email");
-            $receta_id = $receta_id->getPostParameter("receta");
+            $receta_id = $request->getPostParameter("receta");
 
             $log->debug("Datos de entrada | email=$email | recetaid=$receta_id");
 
