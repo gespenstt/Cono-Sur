@@ -29,6 +29,7 @@ class recetaActions extends sfActions
       //$resC = RecetaPeer::doSelect($c);
       //$this->recetas = $resC;
       $pagina = $request->getParameter("p");
+      $this->pagina = $pagina;
       $pager = new sfPropelPager('receta', 10);
       $pager->setCriteria($c);
       $pager->setPage($pagina);

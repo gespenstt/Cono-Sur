@@ -85,8 +85,13 @@
                                 if($recetas->haveToPaginate()){
                             ?>
                             <ul class="pagination">
-                                <li><a href="<?=url_for("receta/index/?pais=$pais&p=".$recetas->getPreviousPage());?>">«</a></li>
-                                <li><a href="<?=url_for("receta/index/?pais=$pais&p=".$recetas->getNextPage());?>">»</a></li>
+                                <?php if($pagina != $recetas->getPreviousPage()){ ?>
+                                <li><a href="<?=url_for("receta/index/?pais=$pais&p=".$recetas->getPreviousPage());?>">« anterior</a></li>
+                                <?php } ?>
+                                
+                                <?php if($pagina != $recetas->getNextPage()){ ?>
+                                <li><a href="<?=url_for("receta/index/?pais=$pais&p=".$recetas->getNextPage());?>">siguiente »</a></li>
+                                <?php } ?>
                             </ul>   
                             <?php                            
                                 }
