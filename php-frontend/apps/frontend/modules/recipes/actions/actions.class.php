@@ -101,6 +101,21 @@ class recipesActions extends sfActions
       }
       
       $this->receta = $resC;
+      
+      $this->modal = false;
+      $modal = $request->getParameter("modal");
+      if(!empty($modal)){
+          switch(strtolower($modal)){
+              case "ok":
+                  $this->modal = true;
+                  $this->msg = "Tu voto ha sido activado.";
+                  break;
+              case "nok":
+                  $this->modal = true;
+                  $this->msg = "Hubo un error comunicate con webmanager@conosurwinery.cl";
+                  break;
+          }
+      }
   
   }
 }

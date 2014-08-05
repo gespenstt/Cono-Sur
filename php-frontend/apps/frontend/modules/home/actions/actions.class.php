@@ -149,10 +149,10 @@ class homeActions extends sfActions
       $log = $funciones->setLog("executeValidar");
       $usuid = $request->getParameter("usuid");
       $key = $request->getParameter("key");
+      $receta = $request->getParameter("receta");
       
       $log->debug("Datos de entrada | usuid=$usuid | key=$key");
       
-      $this->error = true;
       if(!empty($usuid) && !empty($key)){
           $cu = new Criteria();
           $cu->add(UsuarioPeer::USU_ID,$usuid);
@@ -163,10 +163,15 @@ class homeActions extends sfActions
               $usuario->setUsuEstado(1);
               $usuario->save();
               $log->debug("Usuario actualizado");
-              $this->error = false;
+              $this->redirect("recipes/detail/?id=$receta&voto=ok");
           }else{
               $log->err("Usuario no encontrado");
+              $this->redirect("recipes/detail/?id=$receta&voto=nok");
           }
+      }else{
+          $this->redirect("recipes/detail/?id=$receta&voto=nok");
       }
+      exit;
+      return sfView::NONE;
   }
 }

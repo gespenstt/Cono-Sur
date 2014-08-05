@@ -168,6 +168,11 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
             <label for="exampleInputEmail1">Email address</label>
             <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
             <input type="hidden" name="receta" id="receta_id" value="" />
+          </div>  
+          <div class="form-group">
+            <label for="exampleInputEmail1">Name</label>
+            <input type="text" name="name" class="form-control" placeholder="Enter your name">
+            <input type="hidden" name="receta" id="receta_id" value="" />
           </div>          
 		 <p>	 
 			 <script type="text/javascript">
@@ -181,6 +186,24 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
 		 </p>
           <button type="button" class="btn btn-default btn-submit-voto">Submit</button>
         </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalVotoexito" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Congratulations!</h4>
+      </div>
+
+      <div class="modal-body">
+
+         <p id="mensajeVotoExito"></p>
+         
       </div>
     </div>
   </div>

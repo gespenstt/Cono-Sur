@@ -67,9 +67,10 @@ class voteActions extends sfActions
           try{
 
             $email = $request->getPostParameter("email");
+            $nombre = $request->getPostParameter("name");
             $receta_id = $request->getPostParameter("receta");
 
-            $log->debug("Datos de entrada | email=$email | recetaid=$receta_id");
+            $log->debug("Datos de entrada | email=$email | recetaid=$receta_id | nombre=$nombre");
 
             $cookie = unserialize($_COOKIE["conosur"]);
             $funciones = new funciones();
@@ -114,6 +115,7 @@ class voteActions extends sfActions
                 $usuario = new Usuario();
                 $usuario->setUsuEmail(strtolower($email));
                 $usuario->setUsuClave(md5(date("U").rand(11,99)));
+                $usuario->setUsuNombre($nombre);
                 $usuario->save();
                 $log->debug("Usuario creado | usuid=".$usuario->getUsuId());
 

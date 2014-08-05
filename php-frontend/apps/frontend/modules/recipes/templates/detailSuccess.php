@@ -49,5 +49,18 @@
 					</div>
 
 				</div>
+<?php if($modal){ ?>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    $("#mensajeVotoExito").html('<?=$msg;?>');
+    $("#modalVotoexito").modal({
+        backdrop: 'static',
+        keyboard: false
+    });     
+})
+
+</script>
+<?php } ?>
 				
 
