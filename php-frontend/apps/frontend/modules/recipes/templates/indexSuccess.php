@@ -23,7 +23,7 @@
                                     );
                                     
                                     foreach($recetas as $re){ 
-                                        $resto = $count % 3;
+                                        $resto = $count % 2;
                                     ?>
                                         <?php if($resto==0){ ?>
 					<div class="row show-grid">
