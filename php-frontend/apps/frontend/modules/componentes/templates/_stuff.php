@@ -172,7 +172,6 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
           <div class="form-group">
             <label for="exampleInputEmail1">Name</label>
             <input type="text" name="name" class="form-control" placeholder="Enter your name">
-            <input type="hidden" name="receta" id="receta_id" value="" />
           </div>          
 		 <p>	 
 			 <script type="text/javascript">
