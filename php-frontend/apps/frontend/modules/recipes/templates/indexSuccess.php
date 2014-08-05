@@ -8,8 +8,8 @@
 
 						<div class="col-md-12">
 						
-						<a href="<?=url_for("recipes/index/?order=az");?>" class="btn btn-filter"><?=$array_diccionario["panel_a"]["bloggers_az"];?></a> 
-						<a href="<?=url_for("recipes/index/?order=date");?>" class="btn btn-filter"><?=$array_diccionario["panel_a"]["date_of"];?></a>
+						<a href="<?=url_for("recipes/index/?order=az&from=$from");?>" class="btn btn-filter"><?=$array_diccionario["panel_a"]["bloggers_az"];?></a> 
+						<a href="<?=url_for("recipes/index/?order=date&from=$from");?>" class="btn btn-filter"><?=$array_diccionario["panel_a"]["date_of"];?></a>
 							
 						</div>
 							

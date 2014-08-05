@@ -50,6 +50,8 @@ class recipesActions extends sfActions
       
       $this->diccionario = $array_out; 
       $order = $request->getParameter("order");
+      $from = $request->getParameter("from");
+      $this->from = $from;
       
       $cre = new Criteria();
       $cre->add(RecetaPeer::REC_ELIMINADO,0);
@@ -59,6 +61,20 @@ class recipesActions extends sfActions
               break;
           case "date":
               $cre->addAscendingOrderByColumn(RecetaPeer::CREATED_AT);
+              break;
+      }
+      switch($from){
+          case "se":
+              $cre->add(RecetaPeer::REC_PAIS,3);
+              break;
+          case "ie":
+              $cre->add(RecetaPeer::REC_PAIS,2);
+              break;
+          case "gb":
+              $cre->add(RecetaPeer::REC_PAIS,1);
+              break;
+          case "fi":
+              $cre->add(RecetaPeer::REC_PAIS,4);
               break;
       }
       $this->recetas = RecetaPeer::doSelect($cre);    
