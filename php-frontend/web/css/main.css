@@ -512,7 +512,6 @@ h3 {
 	display: block;
 }
 .recipe-picture {
-	background-image: url(../img/recipe02-big.jpg);
 	height: 360px;
 	display: block;
 	background-size: cover;
