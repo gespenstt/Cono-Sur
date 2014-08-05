@@ -103,7 +103,7 @@ class recipesActions extends sfActions
       $this->receta = $resC;
       
       $this->modal = false;
-      $modal = $request->getParameter("modal");
+      $modal = $request->getParameter("voto");
       if(!empty($modal)){
           switch(strtolower($modal)){
               case "ok":
