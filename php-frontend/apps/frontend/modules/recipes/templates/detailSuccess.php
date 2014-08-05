@@ -32,14 +32,14 @@
 
 					  		<ul class="list-unstyled">
 
-							 	<?=$receta->getRecIngredientes();?>
+							 	<?=html_entity_decode($receta->getRecIngredientes());?>
 
 							</ul>
 
 							<h3><?=$array_diccionario["panel_b"]["instructions"];?></h3>
 
                                                         <p class="text-left">
-                                                            <?=$receta->getRecInstrucciones();?>
+                                                            <?=html_entity_decode($receta->getRecInstrucciones());?>
                                                         </p>
 
 					  		
