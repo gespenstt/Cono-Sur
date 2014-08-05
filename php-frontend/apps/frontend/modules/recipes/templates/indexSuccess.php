@@ -19,7 +19,7 @@
                                     $count = 0;
                                     $count_color = 0;
                                     $array_color = array(
-                                      "green","yellow","red"
+                                      "green","dark-grey","violet"
                                     );
                                     
                                     foreach($recetas as $re){ 
