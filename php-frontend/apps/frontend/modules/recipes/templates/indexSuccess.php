@@ -32,7 +32,7 @@
 						<div class="col-md-6">
 
 							<ul class="recipe-item <?=$array_color[$count_color];?>">
-								<li class="recipe-img" style="background-image: url(<?=public_path("img/recipe01.jpg");?>)"></li>
+								<li class="recipe-img" style="background-image: url(<?=public_path("uploads/".$re->getRecImagen());?>)"></li>
 								<li class="recipe-name txt-center">
 									<h1><?=$re->getRecNombreBlogger();?></h1> 
 									<p><?=$re->getRecNombreReceta();?></p>
