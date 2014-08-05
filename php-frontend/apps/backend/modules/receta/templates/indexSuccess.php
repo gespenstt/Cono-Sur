@@ -85,7 +85,7 @@
                                 if($recetas->haveToPaginate()){
                             ?>
                             <ul class="pagination">
-                                <?php if($pagina != $recetas->getPreviousPage()){ ?>
+                                <?php if($pagina != $recetas->getPreviousPage() && !empty($pagina)){ ?>
                                 <li><a href="<?=url_for("receta/index/?pais=$pais&p=".$recetas->getPreviousPage());?>">« anterior</a></li>
                                 <?php } ?>
                                 
