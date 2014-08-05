@@ -27,7 +27,7 @@
                                     <li><a href="<?=url_for("enterrecipe/index");?>"><?=$array_diccionario["menu"]["enter_your_recipe"];?></a></li>
                                     <?php } ?>
                                     <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">RECIPES</a>
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$array_diccionario["menu"]["recipes"];?></a>
                                             <ul class="dropdown-menu">
                                                     <li><a href="<?=url_for("recipes/index/?from=se");?>">FROM SWEEDEN</a></li>
                                                     <li><a href="<?=url_for("recipes/index/?from=ie");?>">FROM IRELAND</a></li>
@@ -36,7 +36,7 @@
                                             </ul>
                                     </li>
                                     <?php if(!$esconder){ ?>
-                                    <li><a href="<?=url_for("vote/index");?>">VOTE</a></li>
+                                    <li><a href="<?=url_for("vote/index");?>"><?=$array_diccionario["menu"]["vote"];?></a></li>
                                     <?php } ?>
                             </ul>
 
