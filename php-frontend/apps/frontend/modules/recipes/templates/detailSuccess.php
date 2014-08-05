@@ -16,7 +16,7 @@
 									</span>
 									
 
-							<span style="background-image: url(php-jaime);" class="recipe-picture"></span>
+                                                    <span style="background-image: url(<?=public_path("uploads/".$receta->getRecImagen());?>)" class="recipe-picture"></span>
 
                                                         <span class="picture-info"><?=$receta->getRecVino();?></span>
 
