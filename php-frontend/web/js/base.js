@@ -86,8 +86,16 @@ $(document).ready(function(){
             type: "POST",
             data: formulario,
             success: function(d) {
-                alert(d.msg);
-                $("#modalVote").modal('hide');
+                switch(d.estado){
+                    case "ok":                        
+                            alert(d.msg);
+                            $("#modalVote").modal('hide');
+                        break;
+                    case "nok":
+                            alert(d.msg);
+                            Recaptcha.reload();
+                        break;
+                }
             }
         });
     })
