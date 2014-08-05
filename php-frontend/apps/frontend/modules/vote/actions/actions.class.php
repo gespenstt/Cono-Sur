@@ -144,7 +144,7 @@ class voteActions extends sfActions
             $voto->setRecId($receta_id);
             $voto->save();
             
-            $url_validar = "http://conosur.ratamonkey.com/web/index.php/home/validar/usuid/".$usuario->getUsuId()."/key/".$usuario->getUsuClave();
+            $url_validar = "http://conosur.ratamonkey.com/web/index.php/home/validar/usuid/".$usuario->getUsuId()."/key/".$usuario->getUsuClave()."/receta/$receta_id";
             
             $message = "<h1>Valida tu cuenta</h1><br><br>Haz click <a href='".$url_validar."'>aqui</a>";
 
