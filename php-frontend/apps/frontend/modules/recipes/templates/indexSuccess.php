@@ -23,7 +23,7 @@
                                     );
                                     
                                     foreach($recetas as $re){ 
-                                        $resto = $count % 2;
+                                        $resto = $count % 3;
                                     ?>
                                         <?php if($resto==0){ ?>
 					<div class="row show-grid">
@@ -50,7 +50,7 @@
                                         </div>
                                         <?php 
                                               $count_color++;
-                                              if($count_color>2){
+                                              if($count_color>3){
                                                   $count_color=0;
                                               }
                                         } 
