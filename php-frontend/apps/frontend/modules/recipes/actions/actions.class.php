@@ -48,10 +48,19 @@ class recipesActions extends sfActions
           exit;
       }
       
-      $this->diccionario = $array_out;  
+      $this->diccionario = $array_out; 
+      $order = $request->getParameter("order");
       
       $cre = new Criteria();
       $cre->add(RecetaPeer::REC_ELIMINADO,0);
+      switch($order){
+          case "az":
+              $cre->addAscendingOrderByColumn(RecetaPeer::REC_NOMBRE_RECETA);
+              break;
+          case "date":
+              $cre->addAscendingOrderByColumn(RecetaPeer::CREATED_AT);
+              break;
+      }
       $this->recetas = RecetaPeer::doSelect($cre);    
   
   }
