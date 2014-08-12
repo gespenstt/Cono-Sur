@@ -24,7 +24,7 @@ text-align: center;
 .btn:hover, btn:focus {
 	color: #ccc;
 }
-.btn-submit {
+.btn-submit, .btn-submit-voto {
 	background-color: #483b71;
 	border: none;
 	color: #fff;
