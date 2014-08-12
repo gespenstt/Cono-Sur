@@ -165,14 +165,14 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
         <input type="hidden" id="url-voto" value="<?=url_for("vote/ajax");?>" />
         <form id="formularioVoto" class="form-horizontal" role="form">
           <div class="form-group">
-            <label for="exampleInputEmail1" class="col-sm-2 control-label">Email address</label>
+            <label for="exampleInputEmail1" class="col-sm-2 control-label"><b>Email</b></label>
               <div class="col-sm-10">
                 <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
                 <input type="hidden" name="receta" id="receta_id" value="" />
               </div>
           </div>  
           <div class="form-group">
-            <label for="exampleInputEmail1" class="col-sm-2 control-label">Name</label>
+            <label for="exampleInputEmail1" class="col-sm-2 control-label"><b>Name</b></label>
               <div class="col-sm-10">
                 <input type="text" name="name" class="form-control" placeholder="Enter your name">
               </div>

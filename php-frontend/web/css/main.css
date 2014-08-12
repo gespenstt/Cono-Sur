@@ -409,11 +409,15 @@ h3 {
 	background-color: #d7a74a;
 }
 
-.form-control{
+.form-control, .form-control-especial{
 	border-radius: 0px;
 	border: 1px solid #fff;
 	box-shadow: none;
 } 
+
+.form-control-especial{
+	background-color: #ccc;
+}
 
 .form-horizontal .control-label {
 	text-align: left;
