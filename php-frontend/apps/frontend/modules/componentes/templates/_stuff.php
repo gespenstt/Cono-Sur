@@ -163,7 +163,7 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
         
       <div class="modal-body">
         <input type="hidden" id="url-voto" value="<?=url_for("vote/ajax");?>" />
-        <form id="formularioVoto" class="form-inline" role="form">
+        <form id="formularioVoto" class="form-horizontal" role="form">
           <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
             <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
