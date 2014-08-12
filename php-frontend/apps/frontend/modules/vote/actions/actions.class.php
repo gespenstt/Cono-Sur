@@ -83,7 +83,7 @@ class voteActions extends sfActions
                 //echo "NOK";
                 $array_salida = array(
                   "estado" => "nok",
-                    "msg" => "Error al votar"
+                    "msg" => "Oops, something did not work, please try again."
                 );
                 echo json_encode($array_salida);
                 exit;
@@ -98,7 +98,7 @@ class voteActions extends sfActions
                 $log->err("Captcha no valido");
                 $array_salida = array(
                   "estado" => "nok",
-                    "msg" => "Captcha inválido"
+                    "msg" => "The CAPTCHA you entered is invalid. Please try again."
                 );
                 echo json_encode($array_salida);
                 exit;
@@ -132,7 +132,7 @@ class voteActions extends sfActions
                 $log->err("Usuario ya registra voto");
                 $array_salida = array(
                   "estado" => "nok",
-                    "msg" => "Ya has votado en otra receta"
+                    "msg" => "Sorry! You can only vote once!"
                 );
                 echo json_encode($array_salida);
                 exit;
@@ -146,7 +146,8 @@ class voteActions extends sfActions
             
             $url_validar = "http://conosur.ratamonkey.com/web/index.php/home/validar/usuid/".$usuario->getUsuId()."/key/".$usuario->getUsuClave()."/receta/$receta_id";
             
-            $message = "<h1>Valida tu cuenta</h1><br><br>Haz click <a href='".$url_validar."'>aqui</a>";
+            //$message = "<h1>Valida tu cuenta</h1><br><br>Haz click <a href='".$url_validar."'>aqui</a>";
+            $message = "Please click on <a href='".$url_validar."'>this link</a> to validate your vote for your favorite recipe in the Cono Sur Blogger Competition.";
 
             //mail($to,$subject,$message,$headers);
             $mensaje = Swift_Message::newInstance()
@@ -160,7 +161,7 @@ class voteActions extends sfActions
             $log->debug("Voto guardado mail enviado");
                 $array_salida = array(
                   "estado" => "ok",
-                    "msg" => "Te hemos enviado un correo para validar tu voto"
+                    "msg" => "Thanks! We have sent you an e-mail to validate your vote, click on the link in your mail and you'll be entered to win!"
                 ); 
                 echo json_encode($array_salida);
                 exit;
@@ -170,7 +171,7 @@ class voteActions extends sfActions
               $log->err($ex->getMessage());
                 $array_salida = array(
                   "estado" => "nok",
-                    "msg" => "Error al votar"
+                    "msg" => "Oops, something did not work, please try again."
                 );
                 echo json_encode($array_salida);
               exit;

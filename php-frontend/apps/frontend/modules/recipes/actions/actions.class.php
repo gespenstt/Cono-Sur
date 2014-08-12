@@ -133,14 +133,16 @@ class recipesActions extends sfActions
           switch(strtolower($modal)){
               case "ok":
                   $this->modal = true;
-                  $this->msg = "Tu voto ha sido activado.";
+                  $this->msg = "Congratulations! You have successfully voted!";
                   break;
               case "nok":
                   $this->modal = true;
-                  $this->msg = "Hubo un error comunicate con webmanager@conosurwinery.cl";
+                  $this->msg = "Oops, something did not work, please try to vote again. If you continue to have problems, please write to webmanager@conosurwinery.cl.";
                   break;
           }
       }
+      $this->ref = $_SERVER["HTTP_REFERER"] ? $_SERVER["HTTP_REFERER"] : $_SERVER["SCRIPT_NAME"]."/recipes/index";
+      
   
   }
 }
