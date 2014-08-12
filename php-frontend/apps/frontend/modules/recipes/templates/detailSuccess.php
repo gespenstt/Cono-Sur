@@ -24,6 +24,10 @@
                                                     <span style="background-image: url(<?=public_path("uploads/".$receta->getRecImagen());?>)" class="recipe-picture"></span>
 
                                                         <span class="picture-info"><?=$receta->getRecVino();?></span>
+                                                        
+                                                        <!-- share -->
+                                                        <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/"></div>
+                                                        <!-- /share -->
 
 							<a href="<?=url_for("recipes/index");?>"><p><span class="btn btn-back pull-right"><?=$array_diccionario["panel_a"]["back_to"];?></span></p></a>
 
