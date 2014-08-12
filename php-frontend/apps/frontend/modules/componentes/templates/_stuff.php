@@ -167,14 +167,14 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
           <div class="form-group">
             <label for="exampleInputEmail1" class="col-sm-2 control-label"><b>Email</b></label>
               <div class="col-sm-10">
-                <input type="email" name="email" class="form-control-especial" id="exampleInputEmail1" placeholder="Enter email">
+                <input type="email" name="email" class="form-control form-control-especial" id="exampleInputEmail1" placeholder="Enter email">
                 <input type="hidden" name="receta" id="receta_id" value="" />
               </div>
           </div>  
           <div class="form-group">
             <label for="exampleInputEmail1" class="col-sm-2 control-label"><b>Name</b></label>
               <div class="col-sm-10">
-                <input type="text" name="name" class="form-control-especial" placeholder="Enter your name">
+                <input type="text" name="name" class="form-control form-control-especial" placeholder="Enter your name">
               </div>
           </div>          
 		 <p>	 
