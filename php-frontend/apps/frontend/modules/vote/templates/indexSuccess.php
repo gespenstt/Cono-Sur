@@ -33,7 +33,13 @@
 								<li class="recipe-img" style="background-image: url(<?=public_path("uploads/".$re->getRecImagen());?>)"></li>
 								<li class="recipe-name txt-center">
 									<h1><?=$re->getRecNombreBlogger();?></h1> 
-									<p><?=$re->getRecNombreReceta();?></p>
+									<p><?php
+                                                                        $nreceta = $re->getRecNombreReceta();
+                                                                        if(strlen($nreceta) > 60){
+                                                                            $nreceta = substr($nreceta, 0, 60)."...";
+                                                                        }
+                                                                        echo $nreceta;
+                                                                        ?></p>
 									<a href="<?=url_for("recipes/detail/?id=".$re->getRecId());?>" class="link-view-recipe"><?=$array_diccionario["panel_b"]["view_recipe"];?></a> 
 								</li>
 								<li class="recipe-wine txt-center light">
