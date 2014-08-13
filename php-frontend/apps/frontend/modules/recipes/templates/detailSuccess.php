@@ -32,8 +32,8 @@
                                                         <?php
                                                             $url_share = "http://conosur.ratamonkey.com/web/index.php/recipes/detail/id/".$receta->getRecId();
                                                         ?>
-                                                        <a href="https://www.facebook.com/sharer/sharer.php?u=<?=urlencode($url_share);?>" target="_blank">FACEBOOK</a> 
-                                                        <a href="https://twitter.com/home?status=<?=urlencode($url_share);?>" target="_blank">TWITTER</a>
+                                                        <a href="https://www.facebook.com/sharer/sharer.php?u=<?=urlencode($url_share);?>" target="_blank" class="share-facebook">FACEBOOK</a> 
+                                                        <a href="https://twitter.com/home?status=<?=urlencode($url_share);?>" target="_blank" class="share-twitter">TWITTER</a>
                                                         
                                                         <!-- /share -->
 
