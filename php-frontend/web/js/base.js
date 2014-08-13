@@ -82,6 +82,7 @@ $(document).ready(function(){
         var formulario = $("#formularioVoto").serialize();
         $(".voto-step1").addClass("hidden");
         $(".voto-step2").removeClass("hidden");
+        $("#mensajeVoto").addClass("hidden");
          $.ajax({
             dataType: "json",
             url: $("#url-voto").val(),
@@ -91,10 +92,12 @@ $(document).ready(function(){
                 switch(d.estado){
                     case "ok":    
                             $("#mensajeVoto").html(d.msg);
+                            $("#mensajeVoto").removeClass("hidden");
                             $(".voto-step2").addClass("hidden");
                         break;
                     case "nok":
                             $("#mensajeVoto").html(d.msg);
+                            $("#mensajeVoto").removeClass("hidden");
                             $(".voto-step2").addClass("hidden");
                             $(".voto-step1").removeClass("hidden");
                             Recaptcha.reload();

@@ -88,6 +88,18 @@ class voteActions extends sfActions
                 echo json_encode($array_salida);
                 exit;
             }
+            
+            if(empty($email) || empty($nombre)){
+                $log->err("Los datos de entrada son obligatorios");
+                //echo "NOK";
+                $array_salida = array(
+                  "estado" => "nok",
+                    "msg" => "All fields are required, please try again."
+                );
+                echo json_encode($array_salida);
+                exit;                
+            }
+            
             $captcha = new recaptchalib();
             $privatekey = "6Le4R_cSAAAAABeiA2WbQeVDkgHVrTdV0LatoEgN";
             $resp = $captcha->recaptcha_check_answer ($privatekey,
