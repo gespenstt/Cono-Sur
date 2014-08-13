@@ -133,7 +133,7 @@ class recetaActions extends sfActions
             $imagen->load($src);
             $imagen->save($src_original);
             //$log->debug('Imagen a cropear: '.$src);
-            $img_r = imagecreatefromjpeg($src);
+            $img_r = imagecreatefromjpeg($src_original);
             $dst_r = ImageCreateTrueColor( $targ_w, $targ_h );
 
             imagecopyresampled($dst_r,$img_r,0,0,$request->getParameter('x'),$request->getParameter('y'),
@@ -150,7 +150,7 @@ class recetaActions extends sfActions
             fwrite ($fp, $i);
             fclose ($fp);         
             $log->debug("FOPEN OK");
-            $this->redirect("receta/detalle/?id=".$receta->getRecId());
+            //$this->redirect("receta/detalle/?id=".$receta->getRecId());
               
           } catch (Exception $ex) {
               $log->err($ex->getTraceAsString());
