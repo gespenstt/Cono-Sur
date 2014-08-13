@@ -212,3 +212,19 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
     </div>
   </div>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalShare" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Share</h4>
+      </div>
+
+      <div class="modal-body modal-body-share">
+         
+      </div>
+    </div>
+  </div>
+</div>

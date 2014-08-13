@@ -99,6 +99,17 @@ $(document).ready(function(){
             }
         });
     })
+    
+    $(".share-social").click(function(){
+        var _this = $(this);
+        var url = _this.attr("data-link");
+        $(".modal-body-share").html('<iframe width="100%" height="100%" frameborder="0" scrolling="no" allowtransparency="true" src="'+url+'"></iframe>');
+        $("#modalShare").modal({
+            backdrop: 'static',
+            keyboard: false
+        });
+        
+    })
 })
 
 validarRecipe = function(){
