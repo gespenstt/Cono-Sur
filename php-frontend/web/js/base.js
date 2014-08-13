@@ -89,7 +89,7 @@ $(document).ready(function(){
             data: formulario,
             success: function(d) {
                 switch(d.estado){
-                    case "ok":            
+                    case "ok":    
                             $("#mensajeVoto").html(d.msg);
                             $(".voto-step2").addClass("hidden");
                             $(".voto-step1").removeClass("hidden");
