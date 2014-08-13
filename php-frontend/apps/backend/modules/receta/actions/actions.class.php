@@ -153,7 +153,7 @@ class recetaActions extends sfActions
             $this->redirect("receta/detalle/?id=".$receta->getRecId());
               
           } catch (Exception $ex) {
-              $log->err($ex->getMessage());
+              $log->err($ex->getTraceAsString());
           }
       }
       
