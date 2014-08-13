@@ -107,13 +107,18 @@ class recetaActions extends sfActions
       if(empty($id)){
           $this->redirect("receta/index");
       }
-      
+      $funciones = new funciones();
+      $log = $funciones->setLog("executeCrop", "backend");
       if($request->isMethod("post")){
+          
+          try{
           
             $c = new Criteria();
             $c->add(RecetaPeer::REC_ELIMINADO,0);
             $c->add(RecetaPeer::REC_ID,$id);
-            $receta = RecetaPeer::doSelectOne($c);          
+            $receta = RecetaPeer::doSelectOne($c);  
+            
+            $log->debug("Receta a cropear | receta".$receta->getRecNombreReceta()." | imagen=".$receta->getRecImagen());
           
             $targ_h = 460;
             $targ_w = 460;
@@ -121,6 +126,9 @@ class recetaActions extends sfActions
             
             $src = sfConfig::get('sf_root_dir').DIRECTORY_SEPARATOR."web".DIRECTORY_SEPARATOR."uploads".DIRECTORY_SEPARATOR.$receta->getRecImagen();
             $src_original = sfConfig::get('sf_root_dir').DIRECTORY_SEPARATOR."web".DIRECTORY_SEPARATOR."uploads".DIRECTORY_SEPARATOR."original_".$receta->getRecImagen();
+            
+            $log->debug("SRC=$src | SRC_ORIGINAL=$src_original");
+            
             $imagen = new SimpleImage();
             $imagen->load($src);
             $imagen->save($src_original);
@@ -140,8 +148,13 @@ class recetaActions extends sfActions
             $i = ob_get_clean();
             $fp = fopen ($src,'w');
             fwrite ($fp, $i);
-            fclose ($fp);            
+            fclose ($fp);         
+            $log->debug("FOPEN OK");
             $this->redirect("receta/detalle/?id=".$receta->getRecId());
+              
+          } catch (Exception $ex) {
+              $log->err($ex->getMessage());
+          }
       }
       
       $c = new Criteria();

@@ -163,7 +163,7 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
       </div>
         
       <div class="modal-body">
-          <div id="mensajeVoto">
+          <div id="mensajeVoto" class="hidden">
           </div>
           <div class="voto-step1">
             <!-- Mensaje -->
