@@ -4,7 +4,7 @@
 				<div class="container-fluid">
 
 
-					<div class="row show-grid">
+					<!-- <div class="row show-grid">
 
 						<div class="col-md-12">
 						
@@ -13,7 +13,7 @@
 							
 						</div>
 							
-					</div>
+					</div> -->
                                                     
                                     <?php 
                                     $count = 0;
