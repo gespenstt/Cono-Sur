@@ -223,7 +223,7 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
       </div>
 
       <div class="modal-body modal-body-share">
-         
+         <iframe name="frameSocial" width="100%" height="100%" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
       </div>
     </div>
   </div>
