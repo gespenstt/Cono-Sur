@@ -100,13 +100,6 @@ $(document).ready(function(){
         });
     })
     
-    $(".share-social").click(function(){
-        $("#modalShare").modal({
-            backdrop: 'static',
-            keyboard: false
-        });
-        
-    })
 })
 
 validarRecipe = function(){
