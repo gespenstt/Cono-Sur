@@ -163,11 +163,10 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
       </div>
         
       <div class="modal-body">
+          <div id="mensajeVoto">
+          </div>
           <div class="voto-step1">
             <!-- Mensaje -->
-            <div id="mensajeVoto">
-                
-            </div>
             <!-- /Mensaje -->
             <input type="hidden" id="url-voto" value="<?=url_for("vote/ajax");?>" />
             <form id="formularioVoto" class="form-horizontal" role="form">

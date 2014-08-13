@@ -92,7 +92,6 @@ $(document).ready(function(){
                     case "ok":    
                             $("#mensajeVoto").html(d.msg);
                             $(".voto-step2").addClass("hidden");
-                            $(".voto-step1").removeClass("hidden");
                         break;
                     case "nok":
                             $("#mensajeVoto").html(d.msg);
