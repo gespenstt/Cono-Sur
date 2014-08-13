@@ -37,8 +37,8 @@
 									<h1><?=$re->getRecNombreBlogger();?></h1> 
 									<p><?php
                                                                         $nreceta = $re->getRecNombreReceta();
-                                                                        if(strlen($nreceta) > 65){
-                                                                            $nreceta = substr($nreceta, 0, 65)."...";
+                                                                        if(strlen($nreceta) > 60){
+                                                                            $nreceta = substr($nreceta, 0, 60)."...";
                                                                         }
                                                                         echo $nreceta;
                                                                         ?></p>
