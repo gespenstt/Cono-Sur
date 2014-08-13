@@ -163,33 +163,43 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
       </div>
         
       <div class="modal-body">
-        <input type="hidden" id="url-voto" value="<?=url_for("vote/ajax");?>" />
-        <form id="formularioVoto" class="form-horizontal" role="form">
-          <div class="form-group">
-            <label for="exampleInputEmail1" class="col-sm-2 control-label"><b>Email</b></label>
-              <div class="col-sm-10">
-                <input type="email" name="email" class="form-control form-control-especial" id="exampleInputEmail1" placeholder="Enter email">
-                <input type="hidden" name="receta" id="receta_id" value="" />
-              </div>
-          </div>  
-          <div class="form-group">
-            <label for="exampleInputEmail1" class="col-sm-2 control-label"><b>Name</b></label>
-              <div class="col-sm-10">
-                <input type="text" name="name" class="form-control form-control-especial" placeholder="Enter your name">
-              </div>
-          </div>          
-		 <p>	 
-			 <script type="text/javascript">
-			 var RecaptchaOptions = {
-				theme : 'clean'
-			 };
-			 </script>
-			<script type="text/javascript"
-			 src="http://www.google.com/recaptcha/api/challenge?k=6Le4R_cSAAAAAN9b8eQkCxwQbynVCBNWjrIRqCzJ">
-			</script>	
-		 </p>
-          <button type="button" class="btn btn-submit-voto">Submit</button>
-        </form>
+          <div class="voto-step1">
+            <!-- Mensaje -->
+            <div id="mensajeVoto" class="hidden">
+                
+            </div>
+            <!-- /Mensaje -->
+            <input type="hidden" id="url-voto" value="<?=url_for("vote/ajax");?>" />
+            <form id="formularioVoto" class="form-horizontal" role="form">
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="col-sm-2 control-label"><b>Email</b></label>
+                  <div class="col-sm-10">
+                    <input type="email" name="email" class="form-control form-control-especial" id="exampleInputEmail1" placeholder="Enter email">
+                    <input type="hidden" name="receta" id="receta_id" value="" />
+                  </div>
+              </div>  
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="col-sm-2 control-label"><b>Name</b></label>
+                  <div class="col-sm-10">
+                    <input type="text" name="name" class="form-control form-control-especial" placeholder="Enter your name">
+                  </div>
+              </div>          
+                     <p>	 
+                             <script type="text/javascript">
+                             var RecaptchaOptions = {
+                                    theme : 'clean'
+                             };
+                             </script>
+                            <script type="text/javascript"
+                             src="http://www.google.com/recaptcha/api/challenge?k=6Le4R_cSAAAAAN9b8eQkCxwQbynVCBNWjrIRqCzJ">
+                            </script>	
+                     </p>
+              <button type="button" class="btn btn-submit-voto">Submit</button>
+            </form>
+          </div>
+          <div class="voto-step2 text-center hidden">
+              <img src="<?=public_path("img/ajax-loader.gif");?>" />
+          </div>
       </div>
     </div>
   </div>

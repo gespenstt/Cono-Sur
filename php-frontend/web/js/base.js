@@ -80,6 +80,8 @@ $(document).ready(function(){
         
     $(".btn-submit-voto").click(function(){
         var formulario = $("#formularioVoto").serialize();
+        $(".voto-step1").addClass("hidden");
+        $(".voto-step2").removeClass("hidden");
          $.ajax({
             dataType: "json",
             url: $("#url-voto").val(),
@@ -87,12 +89,15 @@ $(document).ready(function(){
             data: formulario,
             success: function(d) {
                 switch(d.estado){
-                    case "ok":                        
-                            alert(d.msg);
-                            $("#modalVote").modal('hide');
+                    case "ok":            
+                            $("#mensajeVoto").html(d.msg);
+                            $(".voto-step2").addClass("hidden");
+                            $(".voto-step1").removeClass("hidden");
                         break;
                     case "nok":
-                            alert(d.msg);
+                            $("#mensajeVoto").html(d.msg);
+                            $(".voto-step2").addClass("hidden");
+                            $(".voto-step1").removeClass("hidden");
                             Recaptcha.reload();
                         break;
                 }
