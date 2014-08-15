@@ -92,7 +92,7 @@
                                 </div>     
                                 <div class="widget-content" align="center">
                                     <section>
-                                        <img src="<?=public_path("uploads/".$receta->getRecImagen());?>" />
+                                        <img src="http://conosur.ratamonkey.com/web/uploads/<?=$receta->getRecImagen();?>" />
                                     </section>
                                 </div>
                                 

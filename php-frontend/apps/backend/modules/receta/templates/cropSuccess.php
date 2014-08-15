@@ -22,7 +22,7 @@
     <input type="hidden" id="h" name="h" value="460" />
     <input type="hidden" id="id" name="id" value="<?=$receta->getRecId();?>" />
 
-    <img src="<?=public_path("uploads/".$receta->getRecImagen());?>" id="iconCropImage" />
+    <img src="http://conosur.ratamonkey.com/web/uploads/<?=$receta->getRecImagen();?>" id="iconCropImage" />
                         <div style="padding-top:20px;">
                             <button type="submit" class="btn btn-success" >Recortar</button>
                             <a href="<?=url_for("receta/detalle/?id=".$receta->getRecId());?>" class="btn btn-default" >Cancelar</a>
