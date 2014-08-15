@@ -122,7 +122,7 @@ class recetaActions extends sfActions
           
             $targ_h = 460;
             $targ_w = 460;
-            $jpeg_quality = 100;
+            $jpeg_quality = 95;
             
             $src = sfConfig::get('sf_root_dir').DIRECTORY_SEPARATOR."web".DIRECTORY_SEPARATOR."uploads".DIRECTORY_SEPARATOR.$receta->getRecImagen();
             $src_original = sfConfig::get('sf_root_dir').DIRECTORY_SEPARATOR."web".DIRECTORY_SEPARATOR."uploads".DIRECTORY_SEPARATOR."original_".$receta->getRecImagen();
@@ -136,7 +136,7 @@ class recetaActions extends sfActions
             $imagen->save($src_original);
             unset($imagen);
             //$log->debug('Imagen a cropear: '.$src);
-            $img_r = imagecreatefromjpeg($src_original);
+            $img_r = imagecreatefromjpeg($src);
             $log->debug(print_r($img_r,true));
             $dst_r = ImageCreateTrueColor( $targ_w, $targ_h );
             $log->debug(print_r($dst_r,true));
