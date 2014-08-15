@@ -139,6 +139,13 @@ class recetaActions extends sfActions
             $log->debug(print_r($img_r,true));
             $dst_r = ImageCreateTrueColor( $targ_w, $targ_h );
             $log->debug(print_r($dst_r,true));
+            
+            $x = $request->getParameter("x");
+            $y = $request->getParameter("y");
+            $w = $request->getParameter("w");
+            $h = $request->getParameter("h");
+            
+            $log->debug("VARS | x=$x | y=$y | w=$w | h=$h");
 
             imagecopyresampled($dst_r,$img_r,0,0,$request->getParameter('x'),$request->getParameter('y'),
             $targ_w,$targ_h,$request->getParameter('w'),$request->getParameter('h'));
