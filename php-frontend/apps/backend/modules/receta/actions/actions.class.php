@@ -91,6 +91,8 @@ class recetaActions extends sfActions
       $c->add(RecetaPeer::REC_ELIMINADO,0);
       $c->add(RecetaPeer::REC_ID,$id);
       $receta = RecetaPeer::doSelectOne($c);
+      $receta->setUpdatedAt(date("Y-m-d H:i:s"));
+      $receta->save();
       $src_original = sfConfig::get('sf_root_dir').DIRECTORY_SEPARATOR."web".DIRECTORY_SEPARATOR."uploads".DIRECTORY_SEPARATOR."original_".$receta->getRecImagen();
       $src = sfConfig::get('sf_root_dir').DIRECTORY_SEPARATOR."web".DIRECTORY_SEPARATOR."uploads".DIRECTORY_SEPARATOR.$receta->getRecImagen();
       $src_2 = sfConfig::get('sf_root_dir').DIRECTORY_SEPARATOR."web".DIRECTORY_SEPARATOR."uploads".DIRECTORY_SEPARATOR.$receta->getRecImagen();
@@ -116,7 +118,9 @@ class recetaActions extends sfActions
             $c = new Criteria();
             $c->add(RecetaPeer::REC_ELIMINADO,0);
             $c->add(RecetaPeer::REC_ID,$id);
-            $receta = RecetaPeer::doSelectOne($c);  
+            $receta = RecetaPeer::doSelectOne($c); 
+            $receta->setUpdatedAt(date("Y-m-d H:i:s"));
+            $receta->save();
             
             $log->debug("Receta a cropear | receta".$receta->getRecNombreReceta()." | imagen=".$receta->getRecImagen());
           
