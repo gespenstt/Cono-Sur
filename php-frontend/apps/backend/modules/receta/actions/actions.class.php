@@ -129,11 +129,12 @@ class recetaActions extends sfActions
             
             $log->debug("SRC=$src | SRC_ORIGINAL=$src_original");
             
-            chmod($src_original, "0777");
+            //chmod($src_original, "0777");
             
             $imagen = new SimpleImage();
             $imagen->load($src);
             $imagen->save($src_original);
+            unset($imagen);
             //$log->debug('Imagen a cropear: '.$src);
             $img_r = imagecreatefromjpeg($src_original);
             $log->debug(print_r($img_r,true));
