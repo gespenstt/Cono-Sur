@@ -181,7 +181,7 @@ class recetaActions extends sfActions
             }
             fclose ($fp);         
             $log->debug("FOPEN OK");
-            //$this->redirect("receta/detalle/?id=".$receta->getRecId());
+            $this->redirect("receta/detalle/?id=".$receta->getRecId());
               
           } catch (Exception $ex) {
               $log->err($ex->getTraceAsString());
