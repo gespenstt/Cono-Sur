@@ -147,8 +147,8 @@ class recetaActions extends sfActions
             
             $log->debug("VARS | x=$x | y=$y | w=$w | h=$h");
 
-            imagecopyresampled($dst_r,$img_r,0,0,$request->getParameter('x'),$request->getParameter('y'),
-            $targ_w,$targ_h,$request->getParameter('w'),$request->getParameter('h'));
+            imagecopyresampled($dst_r,$img_r,0,0,$x,$y,
+            $targ_w,$targ_h,$w,$h);
 
             //header('Content-type: image/jpeg');
             //Path
@@ -156,6 +156,9 @@ class recetaActions extends sfActions
                 $log->debug("Archivo borrado | $src");
             }else{
                 $log->debug("No se pudo borrar archivo | $src");
+            }
+            if(file_exists($src)){
+                $log->debug("Archivo aun existe");
             }
             //Buffer y guardar archivo
             ob_start();
