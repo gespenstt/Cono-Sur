@@ -130,6 +130,8 @@ class recetaActions extends sfActions
             
             $log->debug("SRC=$src | SRC_ORIGINAL=$src_original");
             
+            chmod($src, "0777");
+            
             $imagen = new SimpleImage();
             $imagen->load($src);
             $imagen->save($src_original);
