@@ -122,7 +122,7 @@ class recetaActions extends sfActions
           
             $targ_h = 460;
             $targ_w = 460;
-            $jpeg_quality = 10;
+            $jpeg_quality = 100;
             
             $src = sfConfig::get('sf_root_dir').DIRECTORY_SEPARATOR."web".DIRECTORY_SEPARATOR."uploads".DIRECTORY_SEPARATOR.$receta->getRecImagen();
             $src_original = sfConfig::get('sf_root_dir').DIRECTORY_SEPARATOR."web".DIRECTORY_SEPARATOR."uploads".DIRECTORY_SEPARATOR."original_".$receta->getRecImagen();
