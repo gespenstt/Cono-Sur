@@ -155,7 +155,11 @@ class recetaActions extends sfActions
             imagejpeg($dst_r,null,$jpeg_quality);
             $i = ob_get_clean();
             $fp = fopen ($src,'w');
-            fwrite ($fp, $i);
+            if(fwrite ($fp, $i)===FALSE){
+                $log->debug("Error al guardar imagen | $src" );                
+            }else{
+                $log->debug("Imagen nueva creada | $src");
+            }
             fclose ($fp);         
             $log->debug("FOPEN OK");
             //$this->redirect("receta/detalle/?id=".$receta->getRecId());
