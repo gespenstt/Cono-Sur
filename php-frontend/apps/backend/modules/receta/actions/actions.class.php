@@ -126,18 +126,19 @@ class recetaActions extends sfActions
             
             $src = sfConfig::get('sf_root_dir').DIRECTORY_SEPARATOR."web".DIRECTORY_SEPARATOR."uploads".DIRECTORY_SEPARATOR.$receta->getRecImagen();
             $src_original = sfConfig::get('sf_root_dir').DIRECTORY_SEPARATOR."web".DIRECTORY_SEPARATOR."uploads".DIRECTORY_SEPARATOR."original_".$receta->getRecImagen();
-            $src_final = $src;
             
             $log->debug("SRC=$src | SRC_ORIGINAL=$src_original");
             
-            chmod($src, "0777");
+            chmod($src_original, "0777");
             
             $imagen = new SimpleImage();
             $imagen->load($src);
             $imagen->save($src_original);
             //$log->debug('Imagen a cropear: '.$src);
             $img_r = imagecreatefromjpeg($src_original);
+            $log->debug(print_r($img_r,true));
             $dst_r = ImageCreateTrueColor( $targ_w, $targ_h );
+            $log->debug(print_r($dst_r,true));
 
             imagecopyresampled($dst_r,$img_r,0,0,$request->getParameter('x'),$request->getParameter('y'),
             $targ_w,$targ_h,$request->getParameter('w'),$request->getParameter('h'));
@@ -147,11 +148,11 @@ class recetaActions extends sfActions
             unlink($src);
             //Buffer y guardar archivo
             ob_start();
-            imagejpeg($dst_r,$src_final,$jpeg_quality);
-            //$i = ob_get_clean();
-            //$fp = fopen ($src,'w');
-            //fwrite ($fp, $i);
-            //fclose ($fp);         
+            imagejpeg($dst_r,null,$jpeg_quality);
+            $i = ob_get_clean();
+            $fp = fopen ($src,'w');
+            fwrite ($fp, $i);
+            fclose ($fp);         
             $log->debug("FOPEN OK");
             //$this->redirect("receta/detalle/?id=".$receta->getRecId());
               
