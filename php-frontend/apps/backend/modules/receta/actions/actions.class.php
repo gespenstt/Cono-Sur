@@ -145,7 +145,11 @@ class recetaActions extends sfActions
 
             //header('Content-type: image/jpeg');
             //Path
-            unlink($src);
+            if(unlink($src)===true){
+                $log->debug("Archivo borrado | $src");
+            }else{
+                $log->debug("No se pudo borrar archivo | $src");
+            }
             //Buffer y guardar archivo
             ob_start();
             imagejpeg($dst_r,null,$jpeg_quality);
