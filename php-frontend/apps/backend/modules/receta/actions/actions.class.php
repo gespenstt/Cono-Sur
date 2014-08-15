@@ -148,8 +148,12 @@ class recetaActions extends sfActions
             
             $log->debug("VARS | x=$x | y=$y | w=$w | h=$h");
 
-            imagecopyresized($dst_r,$img_r,0,0,$x,$y,
-            $targ_w,$targ_h,$w,$h);
+            if(imagecopyresized($dst_r,$img_r,0,0,$x,$y,
+            $targ_w,$targ_h,$w,$h)===true){
+                $log->debug("rezise OK");
+            }else{
+                $log->debug("rezise NOK");
+            }
             
             $imagen_actual_contenido = file_get_contents($src_original);
             $log->debug("Largo imagen original | ".strlen($imagen_actual_contenido));
