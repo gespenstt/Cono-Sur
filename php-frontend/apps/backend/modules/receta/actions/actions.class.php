@@ -149,6 +149,9 @@ class recetaActions extends sfActions
 
             imagecopyresampled($dst_r,$img_r,0,0,$x,$y,
             $targ_w,$targ_h,$w,$h);
+            
+            $imagen_actual_contenido = file_get_contents($src_original);
+            $log->debug("Largo imagen original | ".strlen($imagen_actual_contenido));
 
             //header('Content-type: image/jpeg');
             //Path
@@ -164,6 +167,7 @@ class recetaActions extends sfActions
             ob_start();
             imagejpeg($dst_r,null,$jpeg_quality);
             $i = ob_get_clean();
+            $log->debug("Largo nueva imagen | ".strlen($i));
             $fp = fopen ($src,'w');
             if(fwrite ($fp, $i)===FALSE){
                 $log->debug("Error al guardar imagen | $src" );                
