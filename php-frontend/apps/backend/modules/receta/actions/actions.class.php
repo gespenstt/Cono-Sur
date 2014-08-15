@@ -148,7 +148,7 @@ class recetaActions extends sfActions
             
             $log->debug("VARS | x=$x | y=$y | w=$w | h=$h");
 
-            imagecopyresampled($dst_r,$img_r,0,0,$x,$y,
+            imagecopyresized($dst_r,$img_r,0,0,$x,$y,
             $targ_w,$targ_h,$w,$h);
             
             $imagen_actual_contenido = file_get_contents($src_original);
