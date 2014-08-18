@@ -3,7 +3,7 @@
     <head>
             <title>Cono Sur</title>
             <meta charset="UTF-8">
-            <meta name=description content="">
+            <meta name="description" content="Cono Sur is in search of a savory new main dish to pair with one of their wines and calling all bloggers from England, Finland, Ireland and Sweden to participate. A Semi-Finalist will be selected from each country and sent to Paris, France to compete in the Grand Finale. The Grand Prize: A trip for two to Chile to visit Cono Sur Vineyards & Winery and discover its beautiful home country">
 
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
             <!-- for Facebook -->          
