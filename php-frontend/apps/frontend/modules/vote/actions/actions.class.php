@@ -100,6 +100,18 @@ class voteActions extends sfActions
                 exit;                
             }
             
+            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                $log->err("Email invalido");
+                //echo "NOK";
+                $array_salida = array(
+                  "estado" => "nok",
+                    "msg" => "Please enter a valid email."
+                );
+                echo json_encode($array_salida);
+                exit; 
+                
+            }
+            
             $captcha = new recaptchalib();
             $privatekey = "6Le4R_cSAAAAABeiA2WbQeVDkgHVrTdV0LatoEgN";
             $resp = $captcha->recaptcha_check_answer ($privatekey,
