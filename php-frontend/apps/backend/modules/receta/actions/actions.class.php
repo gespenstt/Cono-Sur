@@ -28,7 +28,7 @@ class recetaActions extends sfActions
           $this->pais = $pais;
           $c->add(RecetaPeer::REC_PAIS,$pais);
       }
-      if($estado == ""){
+      if($estado != ""){
           $this->estado = $estado;
           $c->add(RecetaPeer::REC_ESTADO,$estado);
       }
