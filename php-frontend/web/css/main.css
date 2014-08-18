@@ -606,6 +606,9 @@ h3 {
 		float: left;
 		font-size: 10px;
 	}
+	.recipe-item {
+	margin-bottom: 10px;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
