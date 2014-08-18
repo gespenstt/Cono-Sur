@@ -3,7 +3,7 @@
 class componentesComponents extends sfComponents
 {
   
-  public function executeMenu()
+  public function executeMenu(sfWebRequest $request)
   {
       $cookie = unserialize($_COOKIE["conosur"]);
       $cookie_legal = $_COOKIE["conosur_legal"];
@@ -39,7 +39,11 @@ class componentesComponents extends sfComponents
           exit;
       }
       $this->legal = "false";
-      if($cookie_legal=="accepted"){
+      
+      $parametrosIn = ($request->getParameterHolder()->getAll());
+      $activo = $parametrosIn['module'];
+        
+      if($cookie_legal=="accepted" || $activo == "recipes"){
           $this->legal = "true";
       }
       
