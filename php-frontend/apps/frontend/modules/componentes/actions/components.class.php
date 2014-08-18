@@ -41,7 +41,7 @@ class componentesComponents extends sfComponents
       $this->legal = "false";
       
       $parametrosIn = ($request->getParameterHolder()->getAll());
-      $activo = $parametrosIn['module']; echo "::::$activo";
+      $activo = $parametrosIn['module'];
         
       if($cookie_legal=="accepted" || $activo == "recipes"){
           $this->legal = "true";
