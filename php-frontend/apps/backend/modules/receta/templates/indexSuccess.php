@@ -54,6 +54,7 @@
                                         <th class="col-lg-2">Pais</th>
                                         <th class="col-lg-2">Estado</th>
                                         <th class="col-lg-2">Fecha</th>
+                                        <th class="col-lg-2">Votos</th>
                                         <th class="col-lg-2">Acciones</th>
                                       </tr>
                                     </thead>
@@ -78,6 +79,7 @@
                                             }
                                             ?></td>
                                         <td><?=$p->getUpdatedAt("d-m-Y h:s");?></td>
+                                        <td><?=$funciones->countVotos($p->getRecId());?></td>
                                         <td>
                                             <a href="<?=public_path("receta/detalle/?id=".$p->getRecId());?>" class="btn btn-default btn-sm">
                                                 <i class="icon-list-alt"></i>

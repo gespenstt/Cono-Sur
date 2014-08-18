@@ -41,6 +41,7 @@ class recetaActions extends sfActions
       $pager->setPage($pagina);
       $pager->init();
       $this->recetas = $pager;
+      $this->funciones = new funciones();
   }
   public function executeDetalle(sfWebRequest $request)
   {

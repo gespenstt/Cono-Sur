@@ -32,5 +32,14 @@ class funciones{
         return preg_replace('/\<br(\s*)?\/?\>/i', "\n", $string);
     }
     
+    public function countVotos($id){
+        $c = new Criteria();
+        $c->addJoin(UsuarioRecetaPeer::USU_ID, UsuarioPeer::USU_ID);
+        $c->add(UsuarioRecetaPeer::REC_ID,$id);
+        $c->addAnd(UsuarioPeer::USU_ESTADO,1);
+        $res = UsuarioRecetaPeer::doCount($c);
+        return $res;
+    }
+    
 }
 
