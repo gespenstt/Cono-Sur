@@ -89,6 +89,20 @@
                                 <li><a href="<?=url_for("receta/index/?pais=$pais&p=".$recetas->getPreviousPage());?>">« anterior</a></li>
                                 <?php } ?>
                                 
+                                <?php
+                                foreach($recetas->getLinks() as $link){
+                                    if($link != $pagina){
+                                ?>
+                                <li><a href="<?=url_for("receta/index/?pais=$pais&p=".$link);?>"><?=$link;?></a></li>                                                                
+                                <?php
+                                    }else{
+                                ?>
+                                <li><?=$link;?></li>
+                                <?php
+                                    }
+                                }
+                                ?>
+                                
                                 <?php if($pagina != $recetas->getNextPage()){ ?>
                                 <li><a href="<?=url_for("receta/index/?pais=$pais&p=".$recetas->getNextPage());?>">siguiente »</a></li>
                                 <?php } ?>
