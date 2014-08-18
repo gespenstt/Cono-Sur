@@ -97,7 +97,7 @@
                                 <?php
                                     }else{
                                 ?>
-                                <li><?=$link;?></li>
+                                <li><a href="#"><?=$link;?></a></li>
                                 <?php
                                     }
                                 }
