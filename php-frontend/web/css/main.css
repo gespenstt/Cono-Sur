@@ -615,6 +615,9 @@ h3 {
 	.bubble {
     	width: auto;
 	}
+	.recipe-img {
+    background-position: center center;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
