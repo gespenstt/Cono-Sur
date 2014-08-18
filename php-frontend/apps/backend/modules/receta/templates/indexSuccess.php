@@ -20,7 +20,7 @@
                             <div class="clearfix" style="padding-bottom: 10px;">
                                   <form id="formularioBuscar" action="<?=url_for("receta/index");?>" method="get">
                                 <div class="navbar-left navbar-form">
-                                      <select name="pais" class="form-control">
+                                      <select name="estado" class="form-control">
                                           <option value="">Todos los estados</option>
                                           <option value="0" <?php if($estado=="0"){echo "selected";}?>>En moderación</option>
                                           <option value="1" <?php if($estado=="1"){echo "selected";}?>>Aprobado</option>
