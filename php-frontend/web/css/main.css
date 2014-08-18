@@ -593,6 +593,10 @@ h3 {
 	.content-slider > div {
 		height: 300px;
 	}
+	.container-fluid {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
