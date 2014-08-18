@@ -21,14 +21,22 @@
                                   <form id="formularioBuscar" action="<?=url_for("receta/index");?>" method="get">
                                 <div class="navbar-left navbar-form">
                                       <select name="pais" class="form-control">
-                                          <option value="">Todos</option>
+                                          <option value="">Todos los estados</option>
+                                          <option value="0" <?php if($estado=="0"){echo "selected";}?>>En moderación</option>
+                                          <option value="1" <?php if($estado=="1"){echo "selected";}?>>Aprobado</option>
+                                          <option value="2" <?php if($estado=="2"){echo "selected";}?>>Reprobado</option>
+                                      </select>
+                                </div>
+                                <div class="navbar-left navbar-form">
+                                      <select name="pais" class="form-control">
+                                          <option value="">Todos los paises</option>
                                       <?php foreach($array_paises as $key => $val){ ?>
                                           <option value="<?=$key;?>" <?php if($pais==$key){echo "selected";}?>><?=$val;?></option>
                                       <?php } ?>
                                       </select>
                                 </div>
                                 <div class="navbar-left navbar-form">
-                                      <button type="submit" class="btn btn-default">Filtrar pais</button>
+                                      <button type="submit" class="btn btn-default">Filtrar</button>
                                 </div>
                                   </form>
                             </div>   
@@ -86,14 +94,14 @@
                             ?>
                             <ul class="pagination">
                                 <?php if($pagina != $recetas->getPreviousPage() && !empty($pagina)){ ?>
-                                <li><a href="<?=url_for("receta/index/?pais=$pais&p=".$recetas->getPreviousPage());?>">« anterior</a></li>
+                                <li><a href="<?=url_for("receta/index/?pais=$pais&estado=$estado&p=".$recetas->getPreviousPage());?>">« anterior</a></li>
                                 <?php } ?>
                                 
                                 <?php
                                 foreach($recetas->getLinks() as $link){
                                     if($link != $pagina){
                                 ?>
-                                <li><a href="<?=url_for("receta/index/?pais=$pais&p=".$link);?>"><?=$link;?></a></li>                                                                
+                                <li><a href="<?=url_for("receta/index/?pais=$pais&estado=$estado&p=".$link);?>"><?=$link;?></a></li>                                                                
                                 <?php
                                     }else{
                                 ?>
@@ -104,7 +112,7 @@
                                 ?>
                                 
                                 <?php if($pagina != $recetas->getNextPage()){ ?>
-                                <li><a href="<?=url_for("receta/index/?pais=$pais&p=".$recetas->getNextPage());?>">siguiente »</a></li>
+                                <li><a href="<?=url_for("receta/index/?pais=$pais&estado=$estado&p=".$recetas->getNextPage());?>">siguiente »</a></li>
                                 <?php } ?>
                             </ul>   
                             <?php                            

@@ -19,12 +19,18 @@ class recetaActions extends sfActions
   {
       $this->pais = "";
       $pais = $request->getParameter("pais");
+      $this->estado = "";
+      $estado = $request->getParameter("estado");
       $c = new Criteria();
       $c->add(RecetaPeer::REC_ELIMINADO,0);
       $c->addDescendingOrderByColumn(RecetaPeer::CREATED_AT);
       if(!empty($pais)){
           $this->pais = $pais;
           $c->add(RecetaPeer::REC_PAIS,$pais);
+      }
+      if($estado == ""){
+          $this->estado = $estado;
+          $c->add(RecetaPeer::REC_ESTADO,$estado);
       }
       //$resC = RecetaPeer::doSelect($c);
       //$this->recetas = $resC;
