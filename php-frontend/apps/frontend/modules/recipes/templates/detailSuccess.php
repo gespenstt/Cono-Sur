@@ -2,8 +2,8 @@
     $array_diccionario = $sf_data->getRaw("diccionario");
     //slot('social_title', json_encode($receta->getRecNombreReceta()));
     //slot('social_desc', json_encode($receta->getRecInstrucciones()));
-    slot('social_title','"'.iconv("UTF-8", "ISO-8859-1//IGNORE", $receta->getRecNombreReceta()).'"');
-    slot('social_desc','"'.iconv("UTF-8", "ISO-8859-1//IGNORE", $receta->getRecInstrucciones()).'"');
+    slot('social_title','"'.iconv("UTF-8", "ISO-8859-1", $receta->getRecNombreReceta()).'"');
+    slot('social_desc','"'.iconv("UTF-8", "ISO-8859-1", $receta->getRecInstrucciones()).'"');
     slot('social_img', "http://conosur.ratamonkey.com/".public_path("uploads/".$receta->getRecImagen()));
 ?>
 				<div class="container-fluid">
