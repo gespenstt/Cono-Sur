@@ -171,15 +171,42 @@ class voteActions extends sfActions
             $url_validar = "http://conosur.ratamonkey.com/web/index.php/home/validar/usuid/".$usuario->getUsuId()."/key/".$usuario->getUsuClave()."/receta/$receta_id";
             
             //$message = "<h1>Valida tu cuenta</h1><br><br>Haz click <a href='".$url_validar."'>aqui</a>";
-            $message = "Please click on <a href='".$url_validar."'>this link</a> to validate your vote for your favorite recipe in the Cono Sur Blogger Competition.";
+            $message = '<html>
+<head>
+</head>
+
+<body style="margin:0px; padding:0px; font-family:Arial, Helvetica, sans-serif;">
+<table width="450" border="0" cellpadding="0px" cellspacing="0px" style="border:1px solid #ccc;">
+  <tr>
+    <td><img src="http://bloggercompetition.conosur.com/img/letter-header.jpg" /></td>
+  </tr>
+  <tr>
+    <td height="200px" style="text-align:center; padding:20px;">Please click on <a href="'.$url_validar.'">this link</a> to validate your vote for your favorite recipe in the Cono Sur Blogger Competition.</td>
+  </tr>
+  <tr>
+    <td style="text-align:center; font-size:10px;
+    color:#000; padding:10px; background-color:#e5dd61;">© 2014 Cono Sur | <a href="www.conosur.com" style="color:#000; text-decoration:none;">www.conosur.com</a> | <a href="mailto:webmanager@conosurwinery.cl" style="color:#000; text-decoration:none;">contact: webmanager@conosurwinery.cl</a></td>
+  </tr>
+</table>
+</body>
+</html>
+';
+            //$message = "Please click on <a href='".$url_validar."'>this link</a> to validate your vote for your favorite recipe in the Cono Sur Blogger Competition.";
 
             //mail($to,$subject,$message,$headers);
-            $mensaje = Swift_Message::newInstance()
+            /*$mensaje = Swift_Message::newInstance()
               ->setFrom(array('info@ratamonkey.com' => 'Blogger Competition'))
               ->setTo($usuario->getUsuEmail())
               ->setSubject('Validación de cuenta')
               ->setBody($message,'text/html');
-              $this->getMailer()->send($mensaje);
+              $this->getMailer()->send($mensaje);*/
+// Always set content-type when sending HTML email
+                $headers = "MIME-Version: 1.0" . "\r\n";
+                $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+                // More headers
+                $headers .= 'From: Blogger Competition <webmanager@conosurwinery.cl>' . "\r\n";
+                mail($usuario->getUsuEmail(),"Validate vote",$message,$headers);
               $log->debug("Mail Enviado");           
 
             $log->debug("Voto guardado mail enviado");
