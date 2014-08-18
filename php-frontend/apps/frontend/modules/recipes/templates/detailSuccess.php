@@ -4,7 +4,7 @@
     //slot('social_desc', json_encode($receta->getRecInstrucciones()));
     slot('social_title','"'.$receta->getRecNombreReceta().'"');
     slot('social_desc','"'.$receta->getRecInstrucciones().'"');
-    slot('social_img', "http://conosur.ratamonkey.com/".public_path("uploads/".$receta->getRecImagen()));
+    slot('social_img', "http://bloggercompetition.conosur.com/".public_path("uploads/".$receta->getRecImagen()));
 ?>
 				<div class="container-fluid">
 
