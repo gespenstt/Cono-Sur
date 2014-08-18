@@ -54,7 +54,7 @@
                                         <th class="col-lg-2">Pais</th>
                                         <th class="col-lg-2">Estado</th>
                                         <th class="col-lg-2">Fecha</th>
-                                        <th class="col-lg-2">Votos</th>
+                                        <th class="col-lg-1">Votos</th>
                                         <th class="col-lg-2">Acciones</th>
                                       </tr>
                                     </thead>
