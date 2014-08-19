@@ -66,7 +66,7 @@
                                                     <select class="form-control" name="estado">
                                                         <option value="0" <?php if($receta->getRecEstado()=="0"){echo "selected";}?>>En moderación</option>
                                                         <option value="1" <?php if($receta->getRecEstado()=="1"){echo "selected";}?>>Aprobado</option>
-                                                        <option value="2" <?php if($receta->getRecEstado()=="2"){echo "selected";}?>>Reprovado</option>
+                                                        <option value="2" <?php if($receta->getRecEstado()=="2"){echo "selected";}?>>Reprobado</option>
                                                     </select>
                                                 </div>                                                
                                             </div>

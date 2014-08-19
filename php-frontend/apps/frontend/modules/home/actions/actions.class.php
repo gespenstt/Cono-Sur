@@ -20,7 +20,9 @@ class homeActions extends sfActions
       $cookie = unserialize($_COOKIE["conosur"]);
       $funciones = new funciones();
       $id_idioma = $funciones->mercheKeyIdioma($cookie["id"]);
+      $this->votohabilitado = false;
       if($id_idioma>1&&$id_idioma<5){
+          $this->votohabilitado = true;
           $id_idioma = $id_idioma;
       }else{
           $id_idioma = 5;          
