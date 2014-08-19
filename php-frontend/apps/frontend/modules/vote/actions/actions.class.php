@@ -195,19 +195,19 @@ class voteActions extends sfActions
             //$message = "Please click on <a href='".$url_validar."'>this link</a> to validate your vote for your favorite recipe in the Cono Sur Blogger Competition.";
 
             //mail($to,$subject,$message,$headers);
-            /*$mensaje = Swift_Message::newInstance()
-              ->setFrom(array('info@ratamonkey.com' => 'Blogger Competition'))
+            $mensaje = Swift_Message::newInstance()
+              ->setFrom(array('webmanager@conosurwinery.cl' => 'Blogger Competition'))
               ->setTo($usuario->getUsuEmail())
-              ->setSubject('Validación de cuenta')
+              ->setSubject('Validate vote')
               ->setBody($message,'text/html');
-              $this->getMailer()->send($mensaje);*/
+              $this->getMailer()->send($mensaje);
 // Always set content-type when sending HTML email
-                $headers = "MIME-Version: 1.0" . "\r\n";
+                /*$headers = "MIME-Version: 1.0" . "\r\n";
                 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
                 // More headers
                 $headers .= 'From: Blogger Competition <webmanager@conosurwinery.cl>' . "\r\n";
-                mail($usuario->getUsuEmail(),"Validate vote",$message,$headers);
+                mail($usuario->getUsuEmail(),"Validate vote",$message,$headers);*/
               $log->debug("Mail Enviado");           
 
             $log->debug("Voto guardado mail enviado");

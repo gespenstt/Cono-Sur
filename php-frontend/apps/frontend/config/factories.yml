@@ -53,5 +53,5 @@ all:
             host:       smtp.gmail.com
             port:       465
             encryption: ssl
-            username:   info@ratamonkey.com
-            password:   rata2014
+            username:   bloggercompetition.conosur@gmail.com
+            password:   c0n0sur2014
