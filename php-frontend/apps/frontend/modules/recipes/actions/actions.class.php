@@ -55,6 +55,7 @@ class recipesActions extends sfActions
       
       $cre = new Criteria();
       $cre->add(RecetaPeer::REC_ELIMINADO,0);
+      $cre->add(RecetaPeer::REC_ESTADO,1);
       switch($order){
           case "az":
               $cre->addAscendingOrderByColumn(RecetaPeer::REC_NOMBRE_RECETA);
@@ -120,6 +121,7 @@ class recipesActions extends sfActions
       $cre = new Criteria();
       $cre->add(RecetaPeer::REC_ID,$id_receta);
       $cre->add(RecetaPeer::REC_ELIMINADO,0);
+      $cre->add(RecetaPeer::REC_ESTADO,1);
       $resC = RecetaPeer::doSelectOne($cre);
       if(!$resC){
           $this->redirect("home/index");
