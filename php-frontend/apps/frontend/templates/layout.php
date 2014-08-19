@@ -9,7 +9,7 @@
             <!-- for Facebook -->          
             <meta property="og:title" content=<?php echo get_slot('social_title', '"Cono Sur"') ?> />
             <meta property="og:type" content="website" />
-            <meta property="og:image" content="<?php echo get_slot('social_img', '"http://bloggercompetition.conosur.com/img/logo-conosur.png"') ?>" />
+            <meta property="og:image" content="<?php echo get_slot('social_img', 'http://bloggercompetition.conosur.com/img/logo-conosur.png') ?>" />
             <meta property="og:description" content=<?php echo get_slot('social_desc', '"Cono Sur is in search of a savory new main dish to pair with one of their wines and calling all bloggers from England, Finland, Ireland and Sweden to participate. A Semi-Finalist will be selected from each country and sent to Paris, France to compete in the Grand Finale. The Grand Prize: A trip for two to Chile to visit Cono Sur Vineyards & Winery and discover its beautiful home country"') ?> />
 
             <!-- for Twitter -->          

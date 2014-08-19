@@ -190,7 +190,7 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
                              };
                              </script>
                             <script type="text/javascript"
-                             src="http://www.google.com/recaptcha/api/challenge?k=6Le4R_cSAAAAAN9b8eQkCxwQbynVCBNWjrIRqCzJ">
+                             src="http://www.google.com/recaptcha/api/challenge?k=6LdyyfgSAAAAAJeMTR7aJ3Ldq_htWVbMU_5e2jr7">
                             </script>	
                      </p>
               <button type="button" class="btn btn-submit-voto">Submit</button>

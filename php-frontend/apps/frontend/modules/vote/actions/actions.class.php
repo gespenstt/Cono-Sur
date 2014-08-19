@@ -114,7 +114,7 @@ class voteActions extends sfActions
             }
             
             $captcha = new recaptchalib();
-            $privatekey = "6Le4R_cSAAAAABeiA2WbQeVDkgHVrTdV0LatoEgN";
+            $privatekey = "6LdyyfgSAAAAAMOEGtahWl7v7SwLxM4PCik-VJ0N";
             $resp = $captcha->recaptcha_check_answer ($privatekey,
                                         $_SERVER["REMOTE_ADDR"],
                                         $_POST["recaptcha_challenge_field"],
@@ -169,7 +169,7 @@ class voteActions extends sfActions
             $voto->setRecId($receta_id);
             $voto->save();
             
-            $url_validar = "http://conosur.ratamonkey.com/web/index.php/home/validar/usuid/".$usuario->getUsuId()."/key/".$usuario->getUsuClave()."/receta/$receta_id";
+            $url_validar = "http://bloggercompetition.conosur.com/index.php/home/validar/usuid/".$usuario->getUsuId()."/key/".$usuario->getUsuClave()."/receta/$receta_id";
             
             //$message = "<h1>Valida tu cuenta</h1><br><br>Haz click <a href='".$url_validar."'>aqui</a>";
             $message = '<html>
