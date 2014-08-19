@@ -51,14 +51,14 @@
 
 					  		<ul class="list-unstyled">
 
-							 	<?=html_entity_decode($receta->getRecIngredientes());?>
+							 	<?=nl2br(html_entity_decode($receta->getRecIngredientes()));?>
 
 							</ul>
 
 							<h3><?=$array_diccionario["panel_b"]["instructions"];?></h3>
 
                                                         <p class="text-left">
-                                                            <?=html_entity_decode($receta->getRecInstrucciones());?>
+                                                            <?=nl2br(html_entity_decode($receta->getRecInstrucciones()));?>
                                                         </p>
 
 					  		
