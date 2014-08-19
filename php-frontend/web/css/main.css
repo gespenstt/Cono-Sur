@@ -633,7 +633,9 @@ h3 {
 		width: 215px;
 		height: 37px;
 		background-position: 15px 15px;
-
+	}
+	.recipe-item {
+		margin-bottom: 10px;
 	}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
