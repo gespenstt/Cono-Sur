@@ -20,7 +20,7 @@ class recipesActions extends sfActions
       $cookie = unserialize($_COOKIE["conosur"]);
       $funciones = new funciones();
       $id_idioma = $funciones->mercheKeyIdioma($cookie["id"]);
-      if($id_idioma>0&&$id_idioma<5){
+      if($id_idioma>1&&$id_idioma<5){
           $id_idioma = $id_idioma;
       }else{
           $id_idioma = 5;          
@@ -70,9 +70,9 @@ class recipesActions extends sfActions
           case "ie":
               $cre->add(RecetaPeer::REC_PAIS,2);
               break;
-          case "gb":
+          /*case "gb":
               $cre->add(RecetaPeer::REC_PAIS,1);
-              break;
+              break;*/
           case "fi":
               $cre->add(RecetaPeer::REC_PAIS,4);
               break;
@@ -85,7 +85,7 @@ class recipesActions extends sfActions
       $cookie = unserialize($_COOKIE["conosur"]);
       $funciones = new funciones();
       $id_idioma = $funciones->mercheKeyIdioma($cookie["id"]);
-      if($id_idioma>0&&$id_idioma<5){
+      if($id_idioma>1&&$id_idioma<5){
           $id_idioma = $id_idioma;
       }else{
           $id_idioma = 5;          

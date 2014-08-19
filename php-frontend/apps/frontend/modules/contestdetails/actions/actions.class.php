@@ -20,7 +20,7 @@ class contestdetailsActions extends sfActions
       $cookie = unserialize($_COOKIE["conosur"]);
       $funciones = new funciones();
       $id_idioma = $funciones->mercheKeyIdioma($cookie["id"]);
-      if($id_idioma>0&&$id_idioma<5){
+      if($id_idioma>1&&$id_idioma<5){
           $id_idioma = $id_idioma;
       }else{
           $id_idioma = 5;          

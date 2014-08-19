@@ -89,7 +89,7 @@ class componentesComponents extends sfComponents
                     $found=true;
                     break;
                 //GB UK
-                case (strpos($detect, "gb")!==FALSE):
+                /*case (strpos($detect, "gb")!==FALSE):
                     $array_cookie = array(
                         "lang"=>"gb",
                         "id"=>"5f5c41ce34cae1c4503d800b291f8bd4",
@@ -97,7 +97,7 @@ class componentesComponents extends sfComponents
                     );
                     setcookie("conosur", serialize($array_cookie), time()+3600*24*90, "/");
                     $found=true;
-                    break;
+                    break;*/
                 //IE
                 case (strpos($detect, "ie")!==FALSE):
                     $array_cookie = array(

@@ -146,7 +146,7 @@ class funciones{
     }
     
     public function mercheKeyIdioma($key){
-        $key_array = array(
+        /*$key_array = array(
             "5f5c41ce34cae1c4503d800b291f8bd4",
             "ca5d0605b60bf30f6a41cecb4b873dc4",
             "ea14eaf7e36e0a5a298c8e5e41f85cce",
@@ -159,7 +159,20 @@ class funciones{
             "3",
             "4",
             "5",
+        );*/
+        $key_array = array(
+            "ca5d0605b60bf30f6a41cecb4b873dc4",
+            "ea14eaf7e36e0a5a298c8e5e41f85cce",
+            "c5e62d69879248ba52c5839ae8216ae7",
+            "f6d7a559d5cfa79f1daf7c3562253c61",
         );
+        $key_replace = array(
+            "2",
+            "3",
+            "4",
+            "5",
+        );
+        
         return str_replace($key_array, $key_replace, $key);
     }
     
