@@ -114,8 +114,8 @@ class voteActions extends sfActions
             }
             
             $captcha = new recaptchalib();
-            //$privatekey = "6LdyyfgSAAAAAMOEGtahWl7v7SwLxM4PCik-VJ0N";
-            $privatekey = "6Le4R_cSAAAAABeiA2WbQeVDkgHVrTdV0LatoEgN";
+            $privatekey = "6LdyyfgSAAAAAMOEGtahWl7v7SwLxM4PCik-VJ0N";
+            //$privatekey = "6Le4R_cSAAAAABeiA2WbQeVDkgHVrTdV0LatoEgN";
             $resp = $captcha->recaptcha_check_answer ($privatekey,
                                         $_SERVER["REMOTE_ADDR"],
                                         $_POST["recaptcha_challenge_field"],
