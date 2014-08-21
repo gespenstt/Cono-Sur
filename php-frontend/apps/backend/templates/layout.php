@@ -40,6 +40,17 @@
     
     
 <div class="main">
+    
+    <?php if(strpos($_SERVER['SERVER_NAME'], "ratamonkey")!==FALSE){ ?>
+    
+    <div class="row">
+
+            <div class="alert alert-danger alert-dismissable">
+              <strong>Esto es DESARROLLO</strong>
+            </div> 
+    </div>
+    
+    <?php } ?>
 
     <div class="container">
 
