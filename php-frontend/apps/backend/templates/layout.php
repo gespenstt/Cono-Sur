@@ -40,6 +40,8 @@
     
     
 <div class="main">
+
+    <div class="container">
     
     <?php if(strpos($_SERVER['SERVER_NAME'], "ratamonkey")!==FALSE){ ?>
     
@@ -51,8 +53,6 @@
     </div>
     
     <?php } ?>
-
-    <div class="container">
 
         <?php echo $sf_content; ?>
 
