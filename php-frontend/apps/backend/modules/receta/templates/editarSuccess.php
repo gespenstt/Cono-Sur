@@ -29,13 +29,13 @@
                                     <section class="clearfix">
 
                                         <div class="col-lg-6">
-                                            <div class="form-group">
+                                            <div class="form-group" style="padding-bottom: 10px;">
                                                 <label class="col-lg-4">Nombre receta:</label>
                                                 <div class="col-lg-8">
                                                     <input type="text" class="form-control" name="nombrereceta" value="<?=$receta->getRecNombreReceta();?>" />
                                                 </div>                                                
                                             </div>
-                                            <div class="form-group">
+                                            <div class="form-group" style="padding-bottom: 10px;">
                                                 <label class="col-lg-4">Ingredientes:</label>
                                                 <div class="col-lg-8">
                                                     <textarea class="form-control" name="ingredientes"><?=$funciones->br2nl(html_entity_decode($receta->getRecIngredientes()));?></textarea>
@@ -43,7 +43,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-group col-lg-6">
+                                        <div class="form-group col-lg-6" style="padding-bottom: 10px;">
                                             <label class="col-lg-4">Instrucciones:</label>
                                             <div class="col-lg-8">
                                                 <textarea class="form-control" name="instrucciones"><?=$funciones->br2nl(html_entity_decode($receta->getRecInstrucciones()));?></textarea>
@@ -54,13 +54,13 @@
                                     <section class="clearfix">
 
                                         <div class="col-lg-6">
-                                            <div class="form-group">
+                                            <div class="form-group" style="padding-bottom: 10px;">
                                                 <label class="col-lg-4">Vino usado:</label>
                                                 <div class="col-lg-8">
                                                     <input class="form-control" type="text" name="vinousado" value="<?=$receta->getRecVino();?>" />
                                                 </div>
                                             </div>
-                                            <div class="form-group">
+                                            <div class="form-group" style="padding-bottom: 10px;">
                                                 <label class="col-lg-4">Estado:</label>
                                                 <div class="col-lg-8">
                                                     <select class="form-control" name="estado">
@@ -72,12 +72,24 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-group col-lg-6 ">
-                                            <label class="col-lg-4">Blogger:</label>
+                                        <div class="form-group col-lg-6 " style="padding-bottom: 10px;">
+                                            <label class="col-lg-4">Nombre Blogger:</label>
                                             <div class="col-lg-8">
-                                                Nombre: <?=$receta->getRecNombreBlogger();?><br>
-                                                Email: <?=$receta->getRecEmailBlogger();?><br>
-                                                Blog: <?=$receta->getRecUrlBlogger();?>
+                                                <input type="text" name="nombre_blogger" value="<?=$receta->getRecNombreBlogger();?>" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group col-lg-6 " style="padding-bottom: 10px;">
+                                            <label class="col-lg-4">Email Blogger:</label>
+                                            <div class="col-lg-8">
+                                                <input type="text" name="email_blogger" value="<?=$receta->getRecEmailBlogger();?>" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group col-lg-6 " style="padding-bottom: 10px;">
+                                            <label class="col-lg-4">Blog Blogger:</label>
+                                            <div class="col-lg-8">
+                                                <input type="text" name="blog_blogger" value="<?=$receta->getRecUrlBlogger();?>" />
                                             </div>
                                         </div>
                                         

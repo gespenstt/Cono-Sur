@@ -77,12 +77,18 @@ class recetaActions extends sfActions
           $instrucciones = $request->getPostParameter("instrucciones");
           $vinousado = $request->getPostParameter("vinousado");
           $estado = $request->getPostParameter("estado");
+          $nombre_blogger = $request->getPostParameter("nombre_blogger");
+          $email_blogger = $request->getPostParameter("email_blogger");
+          $blog_blogger = $request->getPostParameter("blog_blogger");
           
           $receta->setRecEstado($estado);
           $receta->setRecVino($vinousado);
           $receta->setRecNombreReceta($nombrereceta);
           $receta->setRecIngredientes(($ingredientes));
           $receta->setRecInstrucciones(($instrucciones));
+          $receta->setRecNombreBlogger($nombre_blogger);
+          $receta->setRecEmailBlogger($email_blogger);
+          $receta->setRecUrlBlogger($blog_blogger);
           $receta->save();
       }
       $this->receta = $receta;
