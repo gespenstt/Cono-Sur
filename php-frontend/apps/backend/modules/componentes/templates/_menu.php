@@ -3,7 +3,7 @@
 	<div class="container">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
-    <a class="navbar-brand" href="<?=url_for("home/index");?>">Backend Cono Sur</a>
+    <a class="navbar-brand" href="#">Backend Cono Sur</a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -64,6 +64,13 @@
 						<a href="<?=url_for("receta/index");?>">
 							<i class="icon-food"></i>
 							<span>Recetas</span>
+						</a>	    				
+					</li>
+				
+					<li class="active">
+						<a href="<?=url_for("votantes/index");?>">
+							<i class="icon-user"></i>
+							<span>Votantes</span>
 						</a>	    				
 					</li>
 				

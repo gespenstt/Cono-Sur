@@ -41,5 +41,22 @@ class funciones{
         return $res;
     }
     
+    public function getRecetaUsuarioInfo($idusuario){
+        $c = new Criteria();
+        $c->add(UsuarioRecetaPeer::USU_ID,$idusuario);
+        $c->addDescendingOrderByColumn(UsuarioRecetaPeer::UPDATED_AT);
+        $res = UsuarioRecetaPeer::doSelectOne($c);
+        
+        $out["nombre"] = "";
+        $out["pais"] = "";
+        
+        if($res){
+            $out["nombre"] = $res->getReceta()->getRecNombreReceta();
+            $out["pais"] = $res->getReceta()->getRecPais();
+        }
+        
+        return $out;
+    }
+    
 }
 
