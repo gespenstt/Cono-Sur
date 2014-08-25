@@ -26,7 +26,7 @@
                                     <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$array_diccionario["menu"]["recipes"];?></a>
                                             <ul class="dropdown-menu">
-                                                    <li><a href="<?=url_for("recipes/index/?from=se");?>">FROM SWEEDEN</a></li>
+                                                    <li><a href="<?=url_for("recipes/index/?from=se");?>">FROM SWEDEN</a></li>
                                                     <li><a href="<?=url_for("recipes/index/?from=ie");?>">FROM IRELAND</a></li>
                                                     <li><a href="<?=url_for("recipes/index/?from=fi");?>">FROM FINLAND</a></li>
                                             </ul>
