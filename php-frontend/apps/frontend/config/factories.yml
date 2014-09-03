@@ -39,7 +39,7 @@ all:
     class: sfViewCacheManager
     param:
       cache_key_use_vary_headers: true
-      cache_key_use_host_name:    true
+      cache_key_use_host_name:    true    
     
   mailer:
       class: sfMailer
@@ -50,8 +50,7 @@ all:
         transport:
           class: Swift_SmtpTransport
           param:    
-            host:       smtp.gmail.com
-            port:       465
-            encryption: ssl
-            username: bloggercompetition.conosur@gmail.com
-            password: c0n0sur2014
+            host:       mail.insydev.com
+            port:       25
+            username: no.reply@bloggercompetition.conosur.com
+            password: c0n0sur
