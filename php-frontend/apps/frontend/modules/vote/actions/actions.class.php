@@ -197,7 +197,7 @@ class voteActions extends sfActions
 
             //mail($to,$subject,$message,$headers);
             $mensaje = Swift_Message::newInstance()
-              ->setFrom(array('webmanager@conosurwinery.cl' => 'Blogger Competition'))
+              ->setFrom(array('no.reply@bloggercompetition.conosur.com' => 'Blogger Competition'))
               ->setTo($usuario->getUsuEmail())
               ->setSubject('Validate vote')
               ->setBody($message,'text/html');
