@@ -110,6 +110,7 @@ EOF;
                 //$message = "Please click on <a href='".$url_validar."'>this link</a> to validate your vote for your favorite recipe in the Cono Sur Blogger Competition.";
                 echo "ENVIANDO A ".$usuario->getUsuEmail()." | RECID=$receta_id <br>";
                 //mail($to,$subject,$message,$headers);
+                $this->getMailer();
                 $mensaje = Swift_Message::newInstance()
                   ->setFrom(array('no.reply@bloggercompetition.conosur.com' => 'Blogger Competition'))
                   ->setTo($usuario->getUsuEmail())
