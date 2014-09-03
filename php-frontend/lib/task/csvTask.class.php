@@ -30,8 +30,8 @@ EOF;
   protected function execute($arguments = array(), $options = array())
   {
     // initialize the database connection
-    //$databaseManager = new sfDatabaseManager($this->configuration);
-    //$connection = $databaseManager->getDatabase($options['connection'])->getConnection();
+    $databaseManager = new sfDatabaseManager($this->configuration);
+    $connection = $databaseManager->getDatabase($options['connection'])->getConnection();
 	
 /*	$file = sfConfig::get("sf_root_dir").DIRECTORY_SEPARATOR."visitas.csv";
 	
