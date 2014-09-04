@@ -82,7 +82,7 @@ class funciones{
         return $ipaddress;
     }   
     
-    private function ip_info($ip = NULL, $purpose = "location", $deep_detect = FALSE) {
+    public function ip_info($ip = NULL, $purpose = "location", $deep_detect = FALSE) {
         $log = $this->setLog("funciones-ip_info");
         $log->debug("datos de entrada | ip=$ip");
         $output = NULL;

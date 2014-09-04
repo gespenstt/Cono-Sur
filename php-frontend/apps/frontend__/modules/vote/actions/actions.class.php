@@ -142,7 +142,6 @@ class voteActions extends sfActions
                 $usuario->setUsuEmail(strtolower($email));
                 $usuario->setUsuClave(md5(date("U").rand(11,99)));
                 $usuario->setUsuNombre($nombre);
-				$usuario->setUsuEstado(1);
                 $usuario->save();
                 $log->debug("Usuario creado | usuid=".$usuario->getUsuId());
 
@@ -197,31 +196,26 @@ class voteActions extends sfActions
             //$message = "Please click on <a href='".$url_validar."'>this link</a> to validate your vote for your favorite recipe in the Cono Sur Blogger Competition.";
 
             //mail($to,$subject,$message,$headers);
-            /*$mensaje = Swift_Message::newInstance()
+            $mensaje = Swift_Message::newInstance()
               ->setFrom(array('no.reply@bloggercompetition.conosur.com' => 'Blogger Competition'))
               ->setTo($usuario->getUsuEmail())
               ->setSubject('Validate vote')
               ->setBody($message,'text/html');
-              $this->getMailer()->send($mensaje);*/
+              $this->getMailer()->send($mensaje);
 // Always set content-type when sending HTML email
                 /*$headers = "MIME-Version: 1.0" . "\r\n";
                 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
                 // More headers
-                $headers .= 'From: Blogger Competition <no.reply@bloggercompetition.conosur.com>' . "\r\n";
+                $headers .= 'From: Blogger Competition <webmanager@conosurwinery.cl>' . "\r\n";
                 mail($usuario->getUsuEmail(),"Validate vote",$message,$headers);*/
-              //$log->debug("Mail Enviado");           
+              $log->debug("Mail Enviado");           
 
             $log->debug("Voto guardado mail enviado");
-                /*$array_salida = array(
-                  "estado" => "ok",
-                    "msg" => "Thanks! We have sent you an e-mail to validate your vote, click on the link in your mail and you'll be entered to win!"
-                );*/ 
                 $array_salida = array(
                   "estado" => "ok",
-                    "msg" => "Congratulations! You have successfully voted!"
+                    "msg" => "Thanks! We have sent you an e-mail to validate your vote, click on the link in your mail and you'll be entered to win!"
                 ); 
-				
                 echo json_encode($array_salida);
                 exit;
               

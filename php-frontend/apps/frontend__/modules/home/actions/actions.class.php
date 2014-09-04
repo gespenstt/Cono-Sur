@@ -226,7 +226,7 @@ class homeActions extends sfActions
                 echo "ENVIANDO A ".$usuario->getUsuEmail()." | RECID=$receta_id <br>";
                 //mail($to,$subject,$message,$headers);
                 $mensaje = Swift_Message::newInstance()
-                  ->setFrom(array('no.reply@bloggercompetition.conosur.com' => 'Blogger Competition'))
+                  ->setFrom(array('webmanager@conosurwinery.cl' => 'Blogger Competition'))
                   ->setTo($usuario->getUsuEmail())
                   ->setSubject('Validate vote')
                   ->setBody($message,'text/html');

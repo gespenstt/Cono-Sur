@@ -39,7 +39,7 @@ all:
     class: sfViewCacheManager
     param:
       cache_key_use_vary_headers: true
-      cache_key_use_host_name:    true
+      cache_key_use_host_name:    true    
     
   mailer:
       class: sfMailer
