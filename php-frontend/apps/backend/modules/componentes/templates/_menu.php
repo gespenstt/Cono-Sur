@@ -68,6 +68,13 @@
 					</li>
 				
 					<li class="active">
+						<a href="<?=url_for("receta/top");?>">
+							<i class="icon-food"></i>
+							<span>Top Recetas</span>
+						</a>	    				
+					</li>
+				
+					<li class="active">
 						<a href="<?=url_for("votantes/index");?>">
 							<i class="icon-user"></i>
 							<span>Votantes</span>
