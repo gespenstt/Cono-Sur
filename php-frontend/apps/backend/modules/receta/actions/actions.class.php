@@ -256,7 +256,7 @@ class recetaActions extends sfActions
       usort($irlanda, function($a, $b) {
             return $a['count'] - $b['count'];
       });
-      asort($irlanda);
+      array_reverse($irlanda);
       print_r($irlanda);
       
       $suecia = array();
@@ -279,7 +279,7 @@ class recetaActions extends sfActions
       usort($suecia, function($a, $b) {
             return $a['count'] - $b['count'];
       });
-      asort($suecia);
+      array_reverse($suecia);
       print_r($suecia);
       
       $finlandia = array();      
@@ -302,7 +302,7 @@ class recetaActions extends sfActions
       usort($finlandia, function($a, $b) {
             return $a['count'] - $b['count'];
       });
-      asort($finlandia);
+      array_reverse($finlandia);
       print_r($finlandia);
   }
 }
