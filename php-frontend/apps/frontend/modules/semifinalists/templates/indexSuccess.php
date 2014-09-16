@@ -13,7 +13,7 @@
 						</div>
 							
 					</div>
-                                    
+                                    <div style="clear: both;">
                                     <?php 
                                     $count = 0;
                                     $count_color = 0;
@@ -65,7 +65,7 @@
                                     $count++;
                                     } 
                                     ?>
-                                    
+                                    </div>
                                     
                                     
 
@@ -80,6 +80,7 @@
 						</div>
 							
 					</div>
+                                    <div style="clear: both;">
                                     
                                     <?php 
                                     $count = 0;
@@ -133,7 +134,7 @@
                                     } 
                                     ?>
                                     
-                                    
+                                    </div>
                                     
 
 
@@ -148,6 +149,7 @@
 							
 					</div>
                                     
+                                    <div style="clear: both;">
                                     <?php 
                                     $count = 0;
                                     $count_color = 0;
@@ -199,6 +201,6 @@
                                     $count++;
                                     } 
                                     ?>
-                                    
+                                    </div>
 
 				</div>
