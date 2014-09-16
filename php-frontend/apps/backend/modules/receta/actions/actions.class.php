@@ -256,8 +256,8 @@ class recetaActions extends sfActions
       usort($irlanda, function($a, $b) {
             return $a['count'] - $b['count'];
       });
-      
-      print_r($irlanda); exit;
+      asort($irlanda);
+      print_r($irlanda);
       
       $suecia = array();
       
@@ -276,6 +276,12 @@ class recetaActions extends sfActions
           );
       }   
       
+      usort($suecia, function($a, $b) {
+            return $a['count'] - $b['count'];
+      });
+      asort($suecia);
+      print_r($suecia);
+      
       $finlandia = array();      
       
       $e = new Criteria();
@@ -292,5 +298,11 @@ class recetaActions extends sfActions
               "count" => $util->countVotos($r->getRecId())
           );
       }  
+      
+      usort($finlandia, function($a, $b) {
+            return $a['count'] - $b['count'];
+      });
+      asort($finlandia);
+      print_r($finlandia);
   }
 }
