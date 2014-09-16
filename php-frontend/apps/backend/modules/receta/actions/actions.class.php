@@ -247,6 +247,7 @@ class recetaActions extends sfActions
       
       foreach($resC as $r){
           $irlanda[$r->getRecId()] = array(
+              "id" => $r->getRecId(),
              "nombre" => $r->getRecNombreReceta(),
               "blogger" => $r->getRecNombreBlogger(),
               "count" => $util->countVotos($r->getRecId())
@@ -269,6 +270,7 @@ class recetaActions extends sfActions
       
       foreach($resD as $r){
           $suecia[$r->getRecId()] = array(
+              "id" => $r->getRecId(),
              "nombre" => $r->getRecNombreReceta(),
               "blogger" => $r->getRecNombreBlogger(),
               "count" => $util->countVotos($r->getRecId())
@@ -291,6 +293,7 @@ class recetaActions extends sfActions
       
       foreach($resE as $r){
           $finlandia[$r->getRecId()] = array(
+              "id" => $r->getRecId(),
              "nombre" => $r->getRecNombreReceta(),
               "blogger" => $r->getRecNombreBlogger(),
               "count" => $util->countVotos($r->getRecId())

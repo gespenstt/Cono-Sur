@@ -40,7 +40,7 @@
                                     <tbody>
                                         <?php foreach($irlanda as $ir){ ?>
                                         <tr>
-                                            <td><?=$ir["nombre"];?></td>
+                                            <td><a href="<?=url_for("receta/editar/?id=".$ir["id"]);?>"<?=$ir["nombre"];?></td>
                                             <td><?=$ir["blogger"];?></td>
                                             <td><?=$ir["count"];?></td>
                                         </tr>
@@ -67,7 +67,7 @@
                                     <tbody>
                                         <?php foreach($suecia as $ir){ ?>
                                         <tr>
-                                            <td><?=$ir["nombre"];?></td>
+                                            <td><a href="<?=url_for("receta/editar/?id=".$ir["id"]);?>"<?=$ir["nombre"];?></td>
                                             <td><?=$ir["blogger"];?></td>
                                             <td><?=$ir["count"];?></td>
                                         </tr>
@@ -94,7 +94,7 @@
                                     <tbody>
                                         <?php foreach($finlandia as $ir){ ?>
                                         <tr>
-                                            <td><?=$ir["nombre"];?></td>
+                                            <td><a href="<?=url_for("receta/editar/?id=".$ir["id"]);?>"<?=$ir["nombre"];?></td>
                                             <td><?=$ir["blogger"];?></td>
                                             <td><?=$ir["count"];?></td>
                                         </tr>
