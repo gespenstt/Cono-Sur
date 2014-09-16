@@ -1,3 +1,12 @@
+<?php
+
+    $irlanda = $sf_data->getRaw("irlanda");
+    $suecia = $sf_data->getRaw("suecia");
+    $finlandia = $sf_data->getRaw("finlandia");
+    
+    array_reverse($irlanda); print_r($irlanda); exit;
+
+?>
         <div class="row">
 
                             <?php
