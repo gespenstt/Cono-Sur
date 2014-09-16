@@ -13,7 +13,7 @@
 						</div>
 							
 					</div>
-                                                    
+                                    
                                     <?php 
                                     $count = 0;
                                     $count_color = 0;
@@ -27,6 +27,7 @@
                                         <?php if($resto==0){ ?>
 					<div class="row show-grid">
                                         <?php } ?>
+
 						<div class="col-md-6">
 
 							<ul class="recipe-item <?=$array_color[$count_color];?>">
@@ -43,7 +44,8 @@
 									<a href="<?=url_for("recipes/detail/?id=".$re->getRecId());?>" class="link-view-recipe"><?=$array_diccionario["panel_b"]["view_recipe"];?></a> 
 								</li>
 								<li class="recipe-wine txt-center light">
-									<a data-receta="<?=$re->getRecNombreReceta();?>" data-id="<?=$re->getRecId();?>" class="link-vote modal-vote"><?=$array_diccionario["panel_b"]["vote_for"];?></a> 
+									<span class="icon-glass"></span>
+									<h2><?=$re->getRecVino();?></h2>
 								</li>
 							</ul>
 							
@@ -63,12 +65,10 @@
                                     $count++;
                                     } 
                                     ?>
+                                    
+                                    
+                                    
 
-				</div>
-
-
-
-				<div class="container-fluid">
 
 
 					<div class="row show-grid">
@@ -80,7 +80,7 @@
 						</div>
 							
 					</div>
-                                                    
+                                    
                                     <?php 
                                     $count = 0;
                                     $count_color = 0;
@@ -94,6 +94,7 @@
                                         <?php if($resto==0){ ?>
 					<div class="row show-grid">
                                         <?php } ?>
+
 						<div class="col-md-6">
 
 							<ul class="recipe-item <?=$array_color[$count_color];?>">
@@ -110,7 +111,8 @@
 									<a href="<?=url_for("recipes/detail/?id=".$re->getRecId());?>" class="link-view-recipe"><?=$array_diccionario["panel_b"]["view_recipe"];?></a> 
 								</li>
 								<li class="recipe-wine txt-center light">
-									<a data-receta="<?=$re->getRecNombreReceta();?>" data-id="<?=$re->getRecId();?>" class="link-vote modal-vote"><?=$array_diccionario["panel_b"]["vote_for"];?></a> 
+									<span class="icon-glass"></span>
+									<h2><?=$re->getRecVino();?></h2>
 								</li>
 							</ul>
 							
@@ -130,12 +132,10 @@
                                     $count++;
                                     } 
                                     ?>
+                                    
+                                    
+                                    
 
-				</div>
-
-
-
-				<div class="container-fluid">
 
 
 					<div class="row show-grid">
@@ -147,7 +147,7 @@
 						</div>
 							
 					</div>
-                                                    
+                                    
                                     <?php 
                                     $count = 0;
                                     $count_color = 0;
@@ -161,6 +161,7 @@
                                         <?php if($resto==0){ ?>
 					<div class="row show-grid">
                                         <?php } ?>
+
 						<div class="col-md-6">
 
 							<ul class="recipe-item <?=$array_color[$count_color];?>">
@@ -177,7 +178,8 @@
 									<a href="<?=url_for("recipes/detail/?id=".$re->getRecId());?>" class="link-view-recipe"><?=$array_diccionario["panel_b"]["view_recipe"];?></a> 
 								</li>
 								<li class="recipe-wine txt-center light">
-									<a data-receta="<?=$re->getRecNombreReceta();?>" data-id="<?=$re->getRecId();?>" class="link-vote modal-vote"><?=$array_diccionario["panel_b"]["vote_for"];?></a> 
+									<span class="icon-glass"></span>
+									<h2><?=$re->getRecVino();?></h2>
 								</li>
 							</ul>
 							
@@ -197,5 +199,6 @@
                                     $count++;
                                     } 
                                     ?>
+                                    
 
 				</div>
