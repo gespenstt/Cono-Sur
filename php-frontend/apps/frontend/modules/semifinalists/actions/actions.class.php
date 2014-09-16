@@ -35,7 +35,7 @@ class semifinalistsActions extends sfActions
       $c->addJoin(SeccionPeer::SEC_ID, ParametroPeer::SEC_ID);
       $c->addJoin(ParametroPeer::PAR_ID, DiccionarioPeer::PAR_ID);
       $c->add(DiccionarioPeer::IDI_ID,$id_idioma);
-      $c->add(PaginaPeer::PAG_ID,8);
+      $c->add(PaginaPeer::PAG_ID,7);
       
       $resC = DiccionarioPeer::doSelectStmt($c);
       $array_out = array();
