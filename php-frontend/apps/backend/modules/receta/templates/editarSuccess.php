@@ -94,6 +94,17 @@
                                         </div>
                                         
                                     </section>
+
+                                </div>      
+                            </div>  
+
+                            <div class="widget stacked ">
+
+                                <div class="widget-header">
+                                    <i class="icon-list-alt"></i>
+                                    <h3>Resultados</h3>
+                                </div>     
+                                <div class="widget-content">
                                     <section class="clearfix">
 
                                         <div class="col-lg-6">
@@ -117,9 +128,8 @@
                                             </div>
                                         </div>
                                     </section>
-
-                                </div>      
-                            </div>   
+                                </div>
+                            </div>
 
                         </div>
                         <button type="submit" class="btn btn-success">Guardar</button> 
