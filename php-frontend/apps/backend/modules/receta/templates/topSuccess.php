@@ -3,8 +3,10 @@
     $irlanda = $sf_data->getRaw("irlanda");
     $suecia = $sf_data->getRaw("suecia");
     $finlandia = $sf_data->getRaw("finlandia");
-    print_r($irlanda);
-    $irlanda = array_reverse($irlanda); print_r($irlanda); exit;
+    
+    $irlanda = array_reverse($irlanda);
+    $suecia = array_reverse($suecia);
+    $finlandia = array_reverse($finlandia);
 
 ?>
         <div class="row">
@@ -26,6 +28,26 @@
                         
                         <div class="col-md-12">
                             <h4><?=$array_paises["2"];?></h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover table-striped">
+                                    <thead>
+                                      <tr>
+                                        <th class="col-lg-4">Nombre receta</th>
+                                        <th class="col-lg-2">Blogger</th>
+                                        <th class="col-lg-2">Votos</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php foreach($irlanda as $ir){ ?>
+                                        <tr>
+                                            <td><?=$ir["nombre"];?></td>
+                                            <td><?=$ir["blogger"];?></td>
+                                            <td><?=$ir["count"];?></td>
+                                        </tr>
+                                        <?php } ?>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         
                     </section>
@@ -33,6 +55,26 @@
                         
                         <div class="col-md-12">
                             <h4><?=$array_paises["3"];?></h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover table-striped">
+                                    <thead>
+                                      <tr>
+                                        <th class="col-lg-4">Nombre receta</th>
+                                        <th class="col-lg-2">Blogger</th>
+                                        <th class="col-lg-2">Votos</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php foreach($suecia as $ir){ ?>
+                                        <tr>
+                                            <td><?=$ir["nombre"];?></td>
+                                            <td><?=$ir["blogger"];?></td>
+                                            <td><?=$ir["count"];?></td>
+                                        </tr>
+                                        <?php } ?>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         
                     </section>
@@ -40,6 +82,26 @@
                         
                         <div class="col-md-12">
                             <h4><?=$array_paises["4"];?></h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover table-striped">
+                                    <thead>
+                                      <tr>
+                                        <th class="col-lg-4">Nombre receta</th>
+                                        <th class="col-lg-2">Blogger</th>
+                                        <th class="col-lg-2">Votos</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php foreach($finlandia as $ir){ ?>
+                                        <tr>
+                                            <td><?=$ir["nombre"];?></td>
+                                            <td><?=$ir["blogger"];?></td>
+                                            <td><?=$ir["count"];?></td>
+                                        </tr>
+                                        <?php } ?>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         
                     </section>
