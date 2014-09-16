@@ -94,7 +94,7 @@ class recetaActions extends sfActions
           if($post_final == "on"){
               $final = 1;
           }
-          if($ganador == "on"){
+          if($post_ganador == "on"){
               $ganador = 1;
           }
           
