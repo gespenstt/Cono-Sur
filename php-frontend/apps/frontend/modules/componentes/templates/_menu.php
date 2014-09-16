@@ -31,9 +31,10 @@
                                                     <li><a href="<?=url_for("recipes/index/?from=fi");?>">FROM FINLAND</a></li>
                                             </ul>
                                     </li>
-                                    <?php if(!$esconder){ ?>
+                                    <?php /*if(!$esconder){ ?>
                                     <li><a href="<?=url_for("vote/index");?>"><?=$array_diccionario["menu"]["vote"];?></a></li>
-                                    <?php } ?>
+                                    <?php } */ ?>
+                                    <li><a href="<?=url_for("semifinalists/index");?>"><?=$array_diccionario["menu"]["semifinalists"];?></a></li>
                             </ul>
 
                     </div><!-- /.navbar-collapse -->
