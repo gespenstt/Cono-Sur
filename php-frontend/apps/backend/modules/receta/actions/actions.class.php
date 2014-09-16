@@ -81,6 +81,23 @@ class recetaActions extends sfActions
           $email_blogger = $request->getPostParameter("email_blogger");
           $blog_blogger = $request->getPostParameter("blog_blogger");
           
+          $semi = 0;
+          $final = 0;
+          $ganador = 0;
+          $post_semi = $request->getPostParameter("semi");
+          $post_final = $request->getPostParameter("finalista");
+          $post_ganador = $request->getPostParameter("ganador");
+          
+          if($post_semi=="on"){
+              $semi = 1;
+          }
+          if($post_final == "on"){
+              $final = 1;
+          }
+          if($ganador == "on"){
+              $ganador = 1;
+          }
+          
           $receta->setRecEstado($estado);
           $receta->setRecVino($vinousado);
           $receta->setRecNombreReceta($nombrereceta);
@@ -89,6 +106,11 @@ class recetaActions extends sfActions
           $receta->setRecNombreBlogger($nombre_blogger);
           $receta->setRecEmailBlogger($email_blogger);
           $receta->setRecUrlBlogger($blog_blogger);
+          
+          $receta->setRecSemi($semi);
+          $receta->setRecFinal($final);
+          $receta->setRecGanador($ganador);
+          
           $receta->save();
       }
       $this->receta = $receta;
@@ -209,5 +231,66 @@ class recetaActions extends sfActions
       $c->add(RecetaPeer::REC_ELIMINADO,0);
       $c->add(RecetaPeer::REC_ID,$id);
       $this->receta = RecetaPeer::doSelectOne($c);
+  }
+  public function executeTop(sfWebRequest $request)
+  {
+      $util = new funciones();
+      
+      $irlanda = array();
+      
+      $c = new Criteria();
+      $c->add(RecetaPeer::REC_ELIMINADO,0);
+      $c->addDescendingOrderByColumn(RecetaPeer::CREATED_AT);
+      $c->add(RecetaPeer::REC_PAIS,2);
+      $c->add(RecetaPeer::REC_ESTADO,1);
+      $resC = RecetaPeer::doSelect($c);  
+      
+      foreach($resC as $r){
+          $irlanda[$r->getRecId()] = array(
+             "nombre" => $r->getRecNombreReceta(),
+              "blogger" => $r->getRecNombreBlogger(),
+              "count" => $util->countVotos($r->getRecId())
+          );
+      }
+      
+      usort($irlanda, function($a, $b) {
+            return $a['count'] - $b['count'];
+      });
+      
+      print_r($irlanda); exit;
+      
+      $suecia = array();
+      
+      $d = new Criteria();
+      $d->add(RecetaPeer::REC_ELIMINADO,0);
+      $d->addDescendingOrderByColumn(RecetaPeer::CREATED_AT);
+      $d->add(RecetaPeer::REC_PAIS,3);
+      $d->add(RecetaPeer::REC_ESTADO,1);
+      $resD = RecetaPeer::doSelect($d);  
+      
+      foreach($resD as $r){
+          $suecia[$r->getRecId()] = array(
+             "nombre" => $r->getRecNombreReceta(),
+              "blogger" => $r->getRecNombreBlogger(),
+              "count" => $util->countVotos($r->getRecId())
+          );
+      }   
+      
+      $finlandia = array();      
+      
+      $e = new Criteria();
+      $e->add(RecetaPeer::REC_ELIMINADO,0);
+      $e->addDescendingOrderByColumn(RecetaPeer::CREATED_AT);
+      $e->add(RecetaPeer::REC_PAIS,4);
+      $e->add(RecetaPeer::REC_ESTADO,1);
+      $resE = RecetaPeer::doSelect($e);  
+      
+      foreach($resE as $r){
+          $finlandia[$r->getRecId()] = array(
+             "nombre" => $r->getRecNombreReceta(),
+              "blogger" => $r->getRecNombreBlogger(),
+              "count" => $util->countVotos($r->getRecId())
+          );
+      }  
   }
 }

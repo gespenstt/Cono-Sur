@@ -94,6 +94,35 @@
                                         </div>
                                         
                                     </section>
+                                    <section class="clearfix">
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group" style="padding-top: 20px;">
+                                                <label class="col-lg-4">Semi-finalista:</label>
+                                                <div class="col-lg-8">
+                                                    <input class="form-control" type="checkbox" name="semi" <?php if($receta->getRecSemi()=="1"){ echo "checked"; }?> />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group" style="padding-top: 20px;">
+                                                <label class="col-lg-4">Finalista:</label>
+                                                <div class="col-lg-8">
+                                                    <input class="form-control" type="checkbox" name="finalista" <?php if($receta->getRecFinal()=="1"){ echo "checked"; }?> />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group" style="padding-top: 20px;">
+                                                <label class="col-lg-4">Ganador:</label>
+                                                <div class="col-lg-8">
+                                                    <input class="form-control" type="checkbox" name="ganador" <?php if($receta->getRecGanador()=="1"){ echo "checked"; }?> />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
 
                                 </div>      
                             </div>   
