@@ -6,9 +6,9 @@
 
 					<div class="row show-grid">
 
-						<div class="col-md-12">
+						<div class="col-md-6">
 						
-							<div class="bubble bubble-especial">Finland</div>
+							<div class="bubble-especial">Finland</div>
 							
 						</div>
 							
