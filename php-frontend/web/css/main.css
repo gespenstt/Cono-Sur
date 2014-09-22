@@ -488,9 +488,12 @@ h3 {
 }
 
 .flag-finland {
-	background-position: 0px 60px;
+	background-position: 45px 0px;
 }
 
+.flag-sweden {
+	background-position: 90px 0px;
+}
 
 .recipe-item h1, .recipe-item h2{	
 	font-size: 12px;
