@@ -86,7 +86,7 @@
                                     $count = 0;
                                     $count_color = 0;
                                     $array_color = array(
-                                      "green","dark-grey","yellow","red"
+                                      "red","red","red","red"
                                     );
                                     
                                     foreach($irlanda as $re){ 
@@ -154,7 +154,7 @@
                                     $count = 0;
                                     $count_color = 0;
                                     $array_color = array(
-                                      "green","dark-grey","yellow","red"
+                                      "yellow","yellow","yellow","yellow"
                                     );
                                     
                                     foreach($suecia as $re){ 
