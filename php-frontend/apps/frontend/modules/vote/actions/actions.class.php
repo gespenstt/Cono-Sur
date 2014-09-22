@@ -17,6 +17,7 @@ class voteActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
+      $this->redirect("semifinalist/index");
       $cookie = unserialize($_COOKIE["conosur"]);
       $funciones = new funciones();
       $id_idioma = $funciones->mercheKeyIdioma($cookie["id"]);
@@ -59,6 +60,7 @@ class voteActions extends sfActions
   }
   public function executeAjax(sfWebRequest $request)
   {
+      $this->redirect("semifinalist/index");
       if($request->isMethod("post")){
           
         $funciones = new funciones();
