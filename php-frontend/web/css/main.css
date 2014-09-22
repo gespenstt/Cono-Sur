@@ -487,6 +487,10 @@ h3 {
 	float: right;
 }
 
+.flag-finland {
+	background-position: 0px 60px;
+}
+
 
 .recipe-item h1, .recipe-item h2{	
 	font-size: 12px;
