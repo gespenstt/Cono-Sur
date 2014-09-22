@@ -6,9 +6,9 @@
 
 					<div class="row show-grid">
 
-						<div class="col-md-6">
+						<div class="col-md-12">
 						
-							<div class="bubble-especial">Finland</div>
+							<div class="bubble bubble-especial">Finland</div>
 							
 						</div>
 							
@@ -75,7 +75,7 @@
 
 						<div class="col-md-12">
 						
-							<div class="bubble">Ireland</div>
+							<div class="bubble bubble-especial">Ireland</div>
 							
 						</div>
 							
@@ -143,7 +143,7 @@
 
 						<div class="col-md-12">
 						
-							<div class="bubble">Sweden</div>
+							<div class="bubble bubble-especial">Sweden</div>
 							
 						</div>
 							
