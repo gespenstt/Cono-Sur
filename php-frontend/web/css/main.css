@@ -452,7 +452,7 @@ h3 {
 	cursor: pointer;
 }
 
- .bubble,  {
+ .bubble, .bubble-especial {
     position: relative;
 	padding: 0px;
 	background: #483B71;
@@ -465,17 +465,9 @@ h3 {
 
 .bubble-especial {
 	margin-top: 50px;
-	position: relative;
-	padding: 0px;
-	background: #483B71;
-	width: 300px;
-	padding: 20px;
-	text-align: center;
-	color: #fff;
-	text-transform: uppercase;
 }
 
- .bubble:after,  .bubble-especia:after {
+ .bubble:after {
     content: "";
     position: absolute;
     bottom: -15px;
