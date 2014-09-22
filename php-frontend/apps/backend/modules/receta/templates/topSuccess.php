@@ -35,6 +35,7 @@
                                         <th class="col-lg-4">Nombre receta</th>
                                         <th class="col-lg-2">Blogger</th>
                                         <th class="col-lg-2">Votos</th>
+                                        <th class="col-lg-2">Flag</th>
                                       </tr>
                                     </thead>
                                     <tbody>
@@ -43,6 +44,7 @@
                                             <td><a href="<?=url_for("receta/editar/?id=".$ir["id"]);?>"><?=$ir["nombre"];?></a></td>
                                             <td><?=$ir["blogger"];?></td>
                                             <td><?=$ir["count"];?></td>
+                                            <td><?=$ir["flag"];?></td>
                                         </tr>
                                         <?php } ?>
                                     </tbody>
@@ -62,6 +64,7 @@
                                         <th class="col-lg-4">Nombre receta</th>
                                         <th class="col-lg-2">Blogger</th>
                                         <th class="col-lg-2">Votos</th>
+                                        <th class="col-lg-2">Flag</th>
                                       </tr>
                                     </thead>
                                     <tbody>
@@ -70,6 +73,7 @@
                                             <td><a href="<?=url_for("receta/editar/?id=".$ir["id"]);?>"><?=$ir["nombre"];?></a></td>
                                             <td><?=$ir["blogger"];?></td>
                                             <td><?=$ir["count"];?></td>
+                                            <td><?=$ir["flag"];?></td>
                                         </tr>
                                         <?php } ?>
                                     </tbody>
@@ -89,6 +93,7 @@
                                         <th class="col-lg-4">Nombre receta</th>
                                         <th class="col-lg-2">Blogger</th>
                                         <th class="col-lg-2">Votos</th>
+                                        <th class="col-lg-2">Flag</th>
                                       </tr>
                                     </thead>
                                     <tbody>
@@ -97,6 +102,7 @@
                                             <td><a href="<?=url_for("receta/editar/?id=".$ir["id"]);?>"><?=$ir["nombre"];?></a></td>
                                             <td><?=$ir["blogger"];?></td>
                                             <td><?=$ir["count"];?></td>
+                                            <td><?=$ir["flag"];?></td>
                                         </tr>
                                         <?php } ?>
                                     </tbody>

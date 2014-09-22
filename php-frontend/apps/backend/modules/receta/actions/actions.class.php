@@ -246,11 +246,28 @@ class recetaActions extends sfActions
       $resC = RecetaPeer::doSelect($c);  
       
       foreach($resC as $r){
+          $flag = "";
+          switch(true){
+              case ($r->getRecSemi()==1):
+                    $flag = "Semi";
+                  break;
+              case ($r->getRecFinal()==1):
+                    $flag = "Finalista";
+                  break;
+              case ($r->getRecGanador()==1):
+                    $flag = "Ganador";
+                  break;
+              default:
+                  
+                  break;
+          }
+          
           $irlanda[$r->getRecId()] = array(
               "id" => $r->getRecId(),
              "nombre" => $r->getRecNombreReceta(),
               "blogger" => $r->getRecNombreBlogger(),
-              "count" => $util->countVotos($r->getRecId())
+              "count" => $util->countVotos($r->getRecId()),
+              "flag" => $flag,
           );
       }
       
@@ -269,11 +286,27 @@ class recetaActions extends sfActions
       $resD = RecetaPeer::doSelect($d);  
       
       foreach($resD as $r){
+          $flag = "";
+          switch(true){
+              case ($r->getRecSemi()==1):
+                    $flag = "Semi";
+                  break;
+              case ($r->getRecFinal()==1):
+                    $flag = "Finalista";
+                  break;
+              case ($r->getRecGanador()==1):
+                    $flag = "Ganador";
+                  break;
+              default:
+                  
+                  break;
+          }
           $suecia[$r->getRecId()] = array(
               "id" => $r->getRecId(),
              "nombre" => $r->getRecNombreReceta(),
               "blogger" => $r->getRecNombreBlogger(),
-              "count" => $util->countVotos($r->getRecId())
+              "count" => $util->countVotos($r->getRecId()),
+              "flag" => $flag,
           );
       }   
       
@@ -292,11 +325,27 @@ class recetaActions extends sfActions
       $resE = RecetaPeer::doSelect($e);  
       
       foreach($resE as $r){
+          $flag = "";
+          switch(true){
+              case ($r->getRecSemi()==1):
+                    $flag = "Semi";
+                  break;
+              case ($r->getRecFinal()==1):
+                    $flag = "Finalista";
+                  break;
+              case ($r->getRecGanador()==1):
+                    $flag = "Ganador";
+                  break;
+              default:
+                  
+                  break;
+          }
           $finlandia[$r->getRecId()] = array(
               "id" => $r->getRecId(),
              "nombre" => $r->getRecNombreReceta(),
               "blogger" => $r->getRecNombreBlogger(),
-              "count" => $util->countVotos($r->getRecId())
+              "count" => $util->countVotos($r->getRecId()),
+              "flag" => $flag,
           );
       }  
       
