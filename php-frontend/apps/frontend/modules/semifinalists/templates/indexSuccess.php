@@ -8,7 +8,7 @@
 
 						<div class="col-md-12">
 						
-							<div class="bubble bubble-especial">Finland<span class="flag-finland"></span></div>
+							<div class="bubble bubble-especial"><span class="flag-finland"></span>Finland</div>
 							
 						</div>
 							
