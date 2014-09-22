@@ -480,6 +480,12 @@ h3 {
     z-index: 1;
 }
 
+.flag-ireland, .flag-finland, .flag-sweden {
+	background-image: url(../img/country-modal.png);
+	height: 29px;
+	width: 45px;
+}
+
 
 .recipe-item h1, .recipe-item h2{	
 	font-size: 12px;

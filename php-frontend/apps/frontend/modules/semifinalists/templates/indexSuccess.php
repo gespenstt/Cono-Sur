@@ -8,7 +8,7 @@
 
 						<div class="col-md-12">
 						
-							<div class="bubble bubble-especial">Finland</div>
+							<div class="bubble bubble-especial"><span class="flag-finland">Finland</span></div>
 							
 						</div>
 							
@@ -75,7 +75,7 @@
 
 						<div class="col-md-12">
 						
-							<div class="bubble bubble-especial">Ireland</div>
+							<div class="bubble bubble-especial"><span class="flag-ireland">Ireland</span></div>
 							
 						</div>
 							
@@ -143,7 +143,7 @@
 
 						<div class="col-md-12">
 						
-							<div class="bubble bubble-especial">Sweden</div>
+							<div class="bubble bubble-especial"><span class="flag-sweden">Sweden</span></div>
 							
 						</div>
 							
