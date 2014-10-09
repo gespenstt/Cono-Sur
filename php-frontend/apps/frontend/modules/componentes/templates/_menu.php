@@ -33,8 +33,9 @@
                                     </li>
                                     <?php /*if(!$esconder){ ?>
                                     <li><a href="<?=url_for("vote/index");?>"><?=$array_diccionario["menu"]["vote"];?></a></li>
-                                    <?php } */ ?>
-                                    <li><a href="<?=url_for("semifinalists/index");?>"><?=$array_diccionario["menu"]["semifinalists"];?></a></li>
+                                    <?php } 
+                                    <li><a href="<?=url_for("semifinalists/index");?>"><?=$array_diccionario["menu"]["semifinalists"];?></a></li>*/ ?>
+                                    <li><a href="<?=url_for("finalists/index");?>"><?=$array_diccionario["menu"]["finalists"];?></a></li>
                             </ul>
 
                     </div><!-- /.navbar-collapse -->
