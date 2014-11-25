@@ -36,6 +36,7 @@
                                     <?php } 
                                     <li><a href="<?=url_for("semifinalists/index");?>"><?=$array_diccionario["menu"]["semifinalists"];?></a></li>*/ ?>
                                     <li><a href="<?=url_for("finalists/index");?>"><?=$array_diccionario["menu"]["finalists"];?></a></li>
+                                    <li><a href="<?=url_for("winner/index");?>"><?=$array_diccionario["menu"]["winner"];?></a></li>
                             </ul>
 
                     </div><!-- /.navbar-collapse -->
