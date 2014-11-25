@@ -247,20 +247,9 @@ class recetaActions extends sfActions
       
       foreach($resC as $r){
           $flag = "";
-          switch(true){
-              case ($r->getRecSemi()==1):
-                    $flag = "Semi";
-                  break;
-              case ($r->getRecFinal()==1):
-                    $flag = "Finalista";
-                  break;
-              case ($r->getRecGanador()==1):
-                    $flag = "Ganador";
-                  break;
-              default:
-                  
-                  break;
-          }
+          if($r->getRecSemi()==1){ $flag .= "Semi ";}
+          if($r->getRecFinal()==1){ $flag .= "- Finalista ";}
+          if($r->getRecGanador()==1){ $flag .= "- Ganador ";}
           
           $irlanda[$r->getRecId()] = array(
               "id" => $r->getRecId(),
