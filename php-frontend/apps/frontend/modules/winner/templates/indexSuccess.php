@@ -39,8 +39,6 @@
                                                         
                                                         <!-- /share -->
 
-							<a href="<?=$ref;?>"><p><span class="btn btn-back pull-right"><?=$array_diccionario["panel_a"]["back_to"];?></span></p></a>
-
 						</div>
 
 					  	<div class="col-md-8">
