@@ -970,3 +970,63 @@ Jun 12 20:47:55 symfony [info] {sfWebDebugLogger} Partial "componentes/_footer" 
 Jun 12 20:47:55 symfony [info] {sfWebDebugLogger} Component "componentes/stuff" 0.00 ms (1)
 Jun 12 20:47:55 symfony [info] {sfWebDebugLogger} Partial "componentes/_stuff" 2.00 ms (1)
 Jun 12 20:47:55 symfony [info] {sfWebResponse} Send content (52866 o)
+Jan 28 20:22:19 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Jan 28 20:22:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 28 20:22:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 28 20:22:20 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jan 28 20:22:20 symfony [notice] {sfWebDebugLogger}  Notice at D:\GIT\Cono-Sur\php-frontend\apps\frontend\modules\home\actions\actions.class.php on line 20 (Undefined index: conosur)
+Jan 28 20:22:20 symfony [err] {PropelException} Unable to open PDO connection [wrapped: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+Jan 28 20:22:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 28 20:22:20 symfony [warning] {sfWebDebugLogger}  Warning at D:\GIT\Cono-Sur\php-frontend\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at D:\GIT\Cono-Sur\php-frontend\lib\vendor\symfony\lib\response\sfWebResponse.class.php:409))
+Jan 28 20:22:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 28 20:22:20 symfony [info] {sfWebDebugLogger} Configuration 256.35 ms (8)
+Jan 28 20:22:20 symfony [info] {sfWebDebugLogger} Factories 399.68 ms (1)
+Jan 28 20:22:20 symfony [info] {sfWebDebugLogger} Action "home/index" 127.97 ms (1)
+Jan 28 20:25:33 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Jan 28 20:25:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 28 20:25:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 28 20:25:33 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jan 28 20:25:33 symfony [notice] {sfWebDebugLogger}  Notice at D:\GIT\Cono-Sur\php-frontend\apps\frontend\modules\home\actions\actions.class.php on line 20 (Undefined index: conosur)
+Jan 28 20:25:33 symfony [err] {PropelException} Unable to open PDO connection [wrapped: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+Jan 28 20:25:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 28 20:25:33 symfony [warning] {sfWebDebugLogger}  Warning at D:\GIT\Cono-Sur\php-frontend\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at D:\GIT\Cono-Sur\php-frontend\lib\vendor\symfony\lib\response\sfWebResponse.class.php:409))
+Jan 28 20:25:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 28 20:25:33 symfony [info] {sfWebDebugLogger} Configuration 7.17 ms (8)
+Jan 28 20:25:33 symfony [info] {sfWebDebugLogger} Factories 25.97 ms (1)
+Jan 28 20:25:33 symfony [info] {sfWebDebugLogger} Action "home/index" 76.89 ms (1)
+Jan 28 20:25:51 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Jan 28 20:25:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 28 20:25:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 28 20:25:51 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jan 28 20:25:51 symfony [notice] {sfWebDebugLogger}  Notice at D:\GIT\Cono-Sur\php-frontend\apps\frontend\modules\home\actions\actions.class.php on line 20 (Undefined index: conosur)
+Jan 28 20:25:51 symfony [err] {PropelException} Unable to open PDO connection [wrapped: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+Jan 28 20:25:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 28 20:25:51 symfony [warning] {sfWebDebugLogger}  Warning at D:\GIT\Cono-Sur\php-frontend\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at D:\GIT\Cono-Sur\php-frontend\lib\vendor\symfony\lib\response\sfWebResponse.class.php:409))
+Jan 28 20:25:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 28 20:25:51 symfony [info] {sfWebDebugLogger} Configuration 7.30 ms (8)
+Jan 28 20:25:51 symfony [info] {sfWebDebugLogger} Factories 28.76 ms (1)
+Jan 28 20:25:51 symfony [info] {sfWebDebugLogger} Action "home/index" 89.55 ms (1)
+Jan 28 20:26:02 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Jan 28 20:26:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 28 20:26:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 28 20:26:02 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jan 28 20:26:02 symfony [notice] {sfWebDebugLogger}  Notice at D:\GIT\Cono-Sur\php-frontend\apps\frontend\modules\home\actions\actions.class.php on line 20 (Undefined index: conosur)
+Jan 28 20:26:02 symfony [err] {PropelException} Unable to open PDO connection [wrapped: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+Jan 28 20:26:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 28 20:26:02 symfony [warning] {sfWebDebugLogger}  Warning at D:\GIT\Cono-Sur\php-frontend\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at D:\GIT\Cono-Sur\php-frontend\lib\vendor\symfony\lib\response\sfWebResponse.class.php:409))
+Jan 28 20:26:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 28 20:26:02 symfony [info] {sfWebDebugLogger} Configuration 5.82 ms (8)
+Jan 28 20:26:02 symfony [info] {sfWebDebugLogger} Factories 24.13 ms (1)
+Jan 28 20:26:02 symfony [info] {sfWebDebugLogger} Action "home/index" 74.54 ms (1)
+Jan 28 20:26:36 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Jan 28 20:26:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 28 20:26:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 28 20:26:36 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jan 28 20:26:36 symfony [notice] {sfWebDebugLogger}  Notice at D:\GIT\Cono-Sur\php-frontend\apps\frontend\modules\home\actions\actions.class.php on line 20 (Undefined index: conosur)
+Jan 28 20:26:36 symfony [err] {PropelException} Unable to open PDO connection [wrapped: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+Jan 28 20:26:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 28 20:26:36 symfony [warning] {sfWebDebugLogger}  Warning at D:\GIT\Cono-Sur\php-frontend\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at D:\GIT\Cono-Sur\php-frontend\lib\vendor\symfony\lib\response\sfWebResponse.class.php:409))
+Jan 28 20:26:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 28 20:26:36 symfony [info] {sfWebDebugLogger} Configuration 6.81 ms (8)
+Jan 28 20:26:36 symfony [info] {sfWebDebugLogger} Factories 25.30 ms (1)
+Jan 28 20:26:36 symfony [info] {sfWebDebugLogger} Action "home/index" 81.81 ms (1)

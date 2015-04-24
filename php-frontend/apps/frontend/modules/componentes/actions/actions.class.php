@@ -17,6 +17,14 @@ class componentesActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
-      
+      exit;
+  }
+  public function executeHeader(sfWebRequest $request)
+  {
+      $this->setLayout("layout_header");
+  }
+  public function executeFooter(sfWebRequest $request)
+  {
+      $this->setLayout(false);
   }
 }
