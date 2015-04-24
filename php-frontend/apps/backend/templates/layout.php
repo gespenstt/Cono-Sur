@@ -42,17 +42,6 @@
 <div class="main">
 
     <div class="container">
-    
-    <?php if(strpos($_SERVER['SERVER_NAME'], "ratamonkey")!==FALSE){ ?>
-    
-    <div class="row">
-
-            <div class="alert alert-danger alert-dismissable">
-              <strong>Esto es DESARROLLO</strong>
-            </div> 
-    </div>
-    
-    <?php } ?>
 
         <?php echo $sf_content; ?>
 
