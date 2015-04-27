@@ -650,6 +650,7 @@ figure {
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
+	width: 100%;
 }
 
 figure img {
