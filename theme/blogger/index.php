@@ -7,7 +7,7 @@
 
 						<div class="col-md-4">
 							<figure class="effect-lily">
-								<img src="img/img-04.jpg" alt="img12"/>
+								<img src="../img/img-04.jpg" alt="img12"/>
 								<figcaption>
 									<div>
 										<h2>Nice <span>Lily</span></h2>
@@ -20,7 +20,7 @@
 
 					  	<div class="col-md-4 no-padding">
 					  		<figure class="effect-lily especial">
-								<img src="img/img-05.jpg" alt="img12"/>
+								<img src="../img/img-05.jpg" alt="img12"/>
 								<figcaption>
 									<div>
 										<h2>Nice <span>Lily</span></h2>
@@ -33,7 +33,7 @@
 
 					  	<div class="col-md-4">
 					  		<figure class="effect-lily">
-								<img src="img/img-06.jpg" alt="img12"/>
+								<img src="../img/img-06.jpg" alt="img12"/>
 								<figcaption>
 									<div>
 										<h2>Nice <span>Lily</span></h2>
@@ -46,7 +46,7 @@
 
 					  	<div class="col-md-4">
 							<figure class="effect-lily">
-								<img src="img/img-04.jpg" alt="img12"/>
+								<img src="../img/img-04.jpg" alt="img12"/>
 								<figcaption>
 									<div>
 										<h2>Nice <span>Lily</span></h2>
@@ -59,7 +59,7 @@
 
 					  	<div class="col-md-4 no-padding">
 					  		<figure class="effect-lily especial">
-								<img src="img/img-05.jpg" alt="img12"/>
+								<img src="../img/img-05.jpg" alt="img12"/>
 								<figcaption>
 									<div>
 										<h2>Nice <span>Lily</span></h2>
@@ -72,7 +72,7 @@
 
 					  	<div class="col-md-4">
 					  		<figure class="effect-lily">
-								<img src="img/img-06.jpg" alt="img12"/>
+								<img src="../img/img-06.jpg" alt="img12"/>
 								<figcaption>
 									<div>
 										<h2>Nice <span>Lily</span></h2>
