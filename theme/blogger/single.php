@@ -7,7 +7,7 @@
 
 						<div class="col-md-8">		
 
-							<span style="background-image: url(../img/img-04.jpg);" class="recipe-picture"></span>
+							<span style="background-image: url(http://conosur.ratamonkey.com/web/blog/wp-content/themes/blogger/img/img-04.jpg);" class="recipe-picture"></span>
 
 						</div>
 
