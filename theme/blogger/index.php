@@ -7,7 +7,7 @@
 
 						<div class="col-md-4">
 							<figure class="effect-lily">
-								<img src="http://conosur.ratamonkey.com/web/blog/wp-content/themes/blogger/img/img-04.jpg" alt="img12"/>
+								<img src="http://conosur.ratamonkey.com/web/blog/wp-content/themes/blogger/img/img-04-home.jpg" alt="img12"/>
 								<figcaption>
 									<div>
 										<h2>Nice <span>Lily</span></h2>
