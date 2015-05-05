@@ -780,6 +780,26 @@ figure.effect-lily:hover p {
 	transition-duration: 0.35s;
 }
 
+/* Post style */
+
+.post-title {
+	font-size: 36px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.post-picture {
+	height: 360px;
+	display: block;
+	background-size: cover;
+}
+
+.post-content p {
+	padding-top: 10px 0px 10px;
+	font-size: 14px;
+	line-height: 21px;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
 	.no-padding {
 		padding-right: 15px;
