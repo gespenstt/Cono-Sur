@@ -5,21 +5,15 @@
 
 					<div class="row show-grid">
 
-						<div class="col-md-8">		
+						<div class="col-md-12">	
 
-							<span style="background-image: url(http://conosur.ratamonkey.com/web/blog/wp-content/themes/blogger/img/img-04.jpg);" class="recipe-picture"></span>
+							<h1>Find Inspiration: Interactive Storytelling</h1>	
 
 						</div>
 
-					  	<div class="col-md-4">
+						<div class="col-md-12">	
 
-					  		<h4>Find Inspiration: Interactive Storytelling</h4>
-
-					  		<h3>by elainemcmillion March 10, 2015  Leave a comment</h3>
-
-					  		<p>Education & Training, Hollow, News and Links, Uncategorized
-arte, awards, best interactive websites, funding, interactive documentary, interactive media, list of resources, national film board of canada, nfb, storytelling, submarine channel, sxsw, tribeca, webbys
-</p>
+							<span style="background-image: url(http://conosur.ratamonkey.com/web/blog/wp-content/themes/blogger/img/img-04.jpg);" class="recipe-picture"></span>
 
 						</div>
 
