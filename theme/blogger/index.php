@@ -10,8 +10,7 @@
 								<img src="http://conosur.ratamonkey.com/web/blog/wp-content/themes/blogger/img/img-04-home.jpg" alt="img12"/>
 								<figcaption>
 									<div>
-										<h2>Nice <span>Lily</span></h2>
-										<p>Lily likes to play with crayons and pencils</p>
+										<h2>NO FAMILY TREES, NO DUSTY BOTTLES, JUST QUALITY WINE</h2>
 									</div>
 									<a href="http://conosur.ratamonkey.com/web/blog/2015/04/24/hola-mundo/">View more</a>
 								</figcaption>			
