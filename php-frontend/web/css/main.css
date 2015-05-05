@@ -638,6 +638,9 @@ h3 {
 	.recipe-img {
     background-position: center center;
 	}
+	.post-picture img {
+	width: 100%;
+	}
 }
 
 /* Common style */
@@ -822,10 +825,6 @@ figure.effect-lily:hover p {
 	figure {
 		width: 100%;
 	}
-
-	.post-picture img {
-		width: 100%;
-	}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 	.content-slider > div {
@@ -836,9 +835,6 @@ figure.effect-lily:hover p {
 	}
 
 	figure {
-		width: 100%;
-	}
-	.post-picture img {
 		width: 100%;
 	}	
 }
