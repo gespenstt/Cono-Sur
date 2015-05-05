@@ -17,10 +17,6 @@
 
 							<h1>March 17, 2015</h1>	
 
-						</div>
-
-						<div class="col-md-12">
-
 							<div class="post-content">
 
 						  		<p>A friend wrote me asking for resources to find/discover/learn about interactive storytelling. I compiled my list of go-to links and sent her an email, but decided that it may be helpful for all of you too!</p>
@@ -30,8 +26,8 @@
 						  		<p>Kuumenna mieluiten valurautaisella paistinpannulla n. puolen senttimetrin kerros rypsiöljyä. Pannu saa olla melko kuuma. Nostele ruokalusikalla raastesekoitusta pannulle, paina litteäksi ja muotoile röstit lusikalla halu- amasi mallisiksi. Paista kullanruskeiksi ja rapeiksi molemmilta puolilta, n. 2-3 minuuttia per puoli.</p>
 
 					  		</div>
-					  		
-					  	</div>
+
+						</div>
 
 					</div>
 
