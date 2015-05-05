@@ -15,6 +15,8 @@
 
 							<span style="background-image: url(http://conosur.ratamonkey.com/web/blog/wp-content/themes/blogger/img/img-04.jpg);" class="post-picture"></span>
 
+							<h1>March 17, 2015</h1>	
+
 						</div>
 
 						<div class="col-md-12">
