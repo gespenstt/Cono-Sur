@@ -783,21 +783,25 @@ figure.effect-lily:hover p {
 /* Post style */
 
 .post-title {
-	font-size: 36px;
+	font-size: 28px;
 	text-align: center;
 	text-decoration: none;
+	margin-bottom: 30px;
 }
 
 .post-picture {
 	height: 360px;
-	display: block;
-	background-size: cover;
+  	display: block;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-position: center;
 }
 
 .post-content p {
 	padding: 10px 0px 10px;
 	font-size: 14px;
 	line-height: 21px;
+	color: #666;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
