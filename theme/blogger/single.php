@@ -11,7 +11,7 @@
 
 						</div>
 
-						<div class="col-md-12">	
+						<div class="col-md-12 post-picture">	
 
 							<img src="http://conosur.ratamonkey.com/web/blog/wp-content/themes/blogger/img/img-04.jpg" alt="">
 

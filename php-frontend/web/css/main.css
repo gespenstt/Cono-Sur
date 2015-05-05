@@ -789,11 +789,9 @@ figure.effect-lily:hover p {
 	margin-bottom: 30px;
 }
 
-.post-picture {
-	height: 360px;
+.post-picture img {
+	margin: 0px auto;
   	display: block;
-  	background-repeat: no-repeat;
-  	background-position: center;
 }
 
 .post-content p {
