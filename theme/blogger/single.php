@@ -13,7 +13,7 @@
 
 						<div class="col-md-12 post-picture">	
 
-							<img src="http://conosur.ratamonkey.com/web/blog/wp-content/themes/blogger/img/img-04.jpg" alt="">
+							<img src="../img/img-04.jpg" alt="">
 
 							<!--<span style="background-image: url(http://conosur.ratamonkey.com/web/blog/wp-content/themes/blogger/img/img-04.jpg);" class="post-picture"></span>-->
 
