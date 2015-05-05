@@ -792,7 +792,6 @@ figure.effect-lily:hover p {
 .post-picture {
 	height: 360px;
   	display: block;
-  	background-size: cover;
   	background-repeat: no-repeat;
   	background-position: center;
 }
