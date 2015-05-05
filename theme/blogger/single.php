@@ -7,7 +7,7 @@
 
 						<div class="col-md-12">	
 
-							<h1 class="post-title">Find Inspiration: Interactive Storytelling</h1>	
+							<h1 class="post-title">no family trees, no dusty bottles, just quality wine</h1>	
 
 						</div>
 
@@ -21,11 +21,11 @@
 
 							<div class="post-content">
 
-						  		<p>A friend wrote me asking for resources to find/discover/learn about interactive storytelling. I compiled my list of go-to links and sent her an email, but decided that it may be helpful for all of you too!</p>
+						  		<p>Cono Sur was born around the oldest Pinot Noir vineyards in Chile. We were the first in Chile to produce Premium Pinot Noir, and also the first to export the variety. Producing Pinot Noir has been Cono Sur’s most exiting challenge.</p>
 
-						  		<p>So below, I have listed out the sites that I like to go to for updates in interactive storytelling. There are certainly many more (add the ones you love in the comments section) but these are my favorites, and have a bit of a non-fiction slant to them.</p>
+						  		<p>Our “Pinot Noir project” started in 1999, with the aim of producing the best Pinot Noir in Chile: unique, expressive and proud of its New World roots, while vinified according to the Burgundian tradition. From this same French DO comes Martin Prieur, an experienced Pinot Noir winemaker who has helped us select Chilean terroirs and advised us on optimum vineyard management.</p>
 
-						  		<p>Kuumenna mieluiten valurautaisella paistinpannulla n. puolen senttimetrin kerros rypsiöljyä. Pannu saa olla melko kuuma. Nostele ruokalusikalla raastesekoitusta pannulle, paina litteäksi ja muotoile röstit lusikalla halu- amasi mallisiksi. Paista kullanruskeiksi ja rapeiksi molemmilta puolilta, n. 2-3 minuuttia per puoli.</p>
+						  		<p>Our Pinot Noir grapes are harvested by hand, and after passing through the selection table, the bunches are then destemmed, taking care not to crush the grapes. The fruit is then placed into open-top tanks where it undergoes carbonic maceration at low temperatures. Later, the grapes are foot-trodden and colour extraction is enhanced by means of manual cap immersion. After fermentation, the wine is placed in new French oak barrels, where it ages for approximately 14 months.</p>
 
 					  		</div>
 
