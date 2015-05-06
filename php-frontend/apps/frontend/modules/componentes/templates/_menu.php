@@ -23,20 +23,25 @@
                             <ul class="nav navbar-nav navbar-right mayus">
                                     <li><a href="<?=url_for("contestdetails/index");?>"><?=$array_diccionario["menu"]["contest_details"];?></a></li>
                                     <li><a href="<?=url_for("grandprize/index");?>"><?=$array_diccionario["menu"]["grand_prize"];?></a></li>
-                                    <li class="dropdown">
+
+                                    <!--<li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$array_diccionario["menu"]["recipes"];?></a>
                                             <ul class="dropdown-menu">
                                                     <li><a href="<?=url_for("recipes/index/?from=se");?>">FROM SWEDEN</a></li>
                                                     <li><a href="<?=url_for("recipes/index/?from=ie");?>">FROM IRELAND</a></li>
                                                     <li><a href="<?=url_for("recipes/index/?from=fi");?>">FROM FINLAND</a></li>
                                             </ul>
-                                    </li>
+                                    </li>-->
+
                                     <?php /*if(!$esconder){ ?>
                                     <li><a href="<?=url_for("vote/index");?>"><?=$array_diccionario["menu"]["vote"];?></a></li>
                                     <?php } 
                                     <li><a href="<?=url_for("semifinalists/index");?>"><?=$array_diccionario["menu"]["semifinalists"];?></a></li>*/ ?>
-                                    <li><a href="<?=url_for("finalists/index");?>"><?=$array_diccionario["menu"]["finalists"];?></a></li>
-                                    <li><a href="<?=url_for("winner/index");?>"><?=$array_diccionario["menu"]["winner"];?></a></li>
+
+                                    <!--<li><a href="<?=url_for("finalists/index");?>"><?=$array_diccionario["menu"]["finalists"];?></a></li>
+                                    <li><a href="<?=url_for("winner/index");?>"><?=$array_diccionario["menu"]["winner"];?></a></li>-->
+
+                                    <li><a href="http://conosur.ratamonkey.com/web/blog/">Blog</a></li>
                             </ul>
 
                     </div><!-- /.navbar-collapse -->
