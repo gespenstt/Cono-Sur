@@ -18,16 +18,20 @@ class homeActions extends sfActions
   public function executeIndex(sfWebRequest $request)
   {
       $cookie = unserialize($_COOKIE["conosur"]);
+      print_r($cookie);
       $funciones = new funciones();
       $id_idioma = $funciones->mercheKeyIdioma($cookie["id"]);
+      echo ":::::::$id_idioma:::::";
       $this->votohabilitado = false;
       $array_ids_idioma = array(
           9,6,7,8,2,3
       );
       if(array_search($id_idioma, $array_ids_idioma)!==FALSE){
+          echo "ENCONTRADO";
           $this->votohabilitado = true;
           $id_idioma = $id_idioma;
       }else{
+          echo "FAIL 5";
           $id_idioma = 5;          
       }
       $c = new Criteria();
