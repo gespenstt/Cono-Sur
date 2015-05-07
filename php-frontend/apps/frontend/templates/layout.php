@@ -26,7 +26,7 @@
                 var det_lang = <?php include_component("componentes", "detectar"); ?>;
             </script>
             <script src="<?=public_path("js/jquery.min.js");?>"></script>
-            <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
+            <!--<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
             <script src="<?=public_path("js/bootstrap.js");?>"></script> 
             <script src="<?=public_path("js/jquery.cycle2.min.js");?>"></script>
             <script src="<?=public_path("js/jquery.form.js");?>"></script>
