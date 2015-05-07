@@ -24,7 +24,7 @@ class voteActions extends sfActions
       $array_ids_idioma = array(
           9,6,7,8,2,3
       );
-      if(in_array($id_idioma, $array_ids_idioma)!==FALSE){
+      if(array_search($id_idioma, $array_ids_idioma)!==FALSE){
           $id_idioma = $id_idioma;
       }else{
           $this->redirect("home/index");        
