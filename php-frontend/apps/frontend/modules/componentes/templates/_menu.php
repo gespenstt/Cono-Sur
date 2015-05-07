@@ -41,7 +41,7 @@
                                     <!--<li><a href="<?=url_for("finalists/index");?>"><?=$array_diccionario["menu"]["finalists"];?></a></li>
                                     <li><a href="<?=url_for("winner/index");?>"><?=$array_diccionario["menu"]["winner"];?></a></li>-->
 
-                                    <li><a href="http://conosur.ratamonkey.com/web/blog/">Blog</a></li>
+                                    <li><a href="<?=public_path("blog");?>"><?=$array_diccionario["menu"]["blog"];?></a></li>
                             </ul>
 
                     </div><!-- /.navbar-collapse -->
