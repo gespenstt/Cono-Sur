@@ -1,0 +1,58 @@
+May 07 22:21:24 executeDetectar [debug] Cookie : 
+May 07 22:21:24 funciones-detectLang [debug] inicio detect
+May 07 22:21:24 funciones-detectIp [debug] IP Encontrada | ip=::1
+May 07 22:21:24 funciones-ip_info [debug] datos de entrada | ip=::1
+May 07 22:21:24 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=::1
+May 07 22:21:25 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_countryCode":null,
+  "geoplugin_countryName":null,
+  "geoplugin_regionCode":null,
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+May 07 22:21:25 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+May 07 22:21:52 executeDetectar [debug] Cookie : Array
+(
+    [lang] => en
+    [id] => f6d7a559d5cfa79f1daf7c3562253c61
+)
+
+May 07 22:23:00 executeDetectar [debug] Cookie : 
+May 07 22:23:00 funciones-detectLang [debug] inicio detect
+May 07 22:23:00 funciones-detectIp [debug] IP Encontrada | ip=::1
+May 07 22:23:00 funciones-ip_info [debug] datos de entrada | ip=::1
+May 07 22:23:00 funciones-ip_info [debug] Call api | url=http://www.geoplugin.net/json.gp?ip=::1
+May 07 22:23:01 funciones-ip_info [debug] Call api RESPONSE | data={
+  "geoplugin_countryCode":null,
+  "geoplugin_countryName":null,
+  "geoplugin_regionCode":null,
+  "geoplugin_regionName":null,
+  "geoplugin_currencyCode":null,
+  "geoplugin_currencySymbol":null,
+  "geoplugin_currencySymbol_UTF8":"",
+  "geoplugin_currencyConverter":0
+}
+May 07 22:23:01 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+May 07 22:23:19 executeDetectar [debug] Cookie : Array
+(
+    [lang] => en
+    [id] => f6d7a559d5cfa79f1daf7c3562253c61
+)
+
+May 07 22:23:30 executeDetectar [debug] Cookie : Array
+(
+    [lang] => cl
+    [id] => 161747ec4dc9f55f1760195593742232
+    [natural] => 1
+)
+
+May 07 22:23:34 executeDetectar [debug] Cookie : Array
+(
+    [lang] => cl
+    [id] => 161747ec4dc9f55f1760195593742232
+    [natural] => 1
+)
+
