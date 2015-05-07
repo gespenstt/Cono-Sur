@@ -61,51 +61,7 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
     <div class="modal-content">
           
       <?php
-        switch ($lang){//fi gb se ie
-            case "fi":
-      ?>
-      <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Tervetuloa</h4>
-      </div>
-
-      <div class="modal-body">
-         <p>
-          Vahvistan, että olen täysi-ikäinen<br />
-          Tuote on tarkoitettu täysi-ikäisille. Nauti kohtuudella.
-        </p>
-
-         <h4>Osallistuvat maat</h4>
-
-        <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
-
-         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">Olen täysi-ikäinen</a>
-
-      </div>  
-
-        <?php            
-                break;
-            case "gb":
-        ?> 
-
-      <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Welcome</h4>
-      </div>
-
-      <div class="modal-body">
-         <p>
-          Confirm you are above legal drinking age to enter the site.<br />
-          Product for those of legal drinking age. Enjoy responsibly.
-        </p>
-
-        <h4>Participating Countries</h4>
-
-        <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
-
-         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">I agree</a>
-
-      </div>   
-        <?php            
-                break;
+        switch ($lang){
             case "se":
         ?> 
       <div class="modal-header">
@@ -134,6 +90,86 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
          <p>
           Confirm you are above legal drinking age to enter the site.<br />
           Product for those of legal drinking age. Enjoy responsibly.
+        </p>
+
+        <h4>Participating Countries</h4>
+
+        <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
+        
+         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">I agree</a>
+
+      </div>   
+        <?php  
+                break;
+            case "ca":
+        ?>
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Welcome</h4>
+      </div>
+
+      <div class="modal-body">
+         <p>
+          Confirma canada
+        </p>
+
+        <h4>Participating Countries</h4>
+
+        <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
+        
+         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">I agree</a>
+
+      </div>   
+        <?php  
+                break;
+            case "jp":
+        ?>
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Welcome</h4>
+      </div>
+
+      <div class="modal-body">
+         <p>
+          Confirma japon
+        </p>
+
+        <h4>Participating Countries</h4>
+
+        <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
+        
+         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">I agree</a>
+
+      </div>   
+        <?php  
+                break;
+            case "cl":
+        ?>
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Welcome</h4>
+      </div>
+
+      <div class="modal-body">
+         <p>
+          Confirma chilito
+        </p>
+
+        <h4>Participating Countries</h4>
+
+        <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
+        
+         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">I agree</a>
+
+      </div>   
+        <?php  
+                break;
+            case "us":
+        ?>
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Welcome</h4>
+      </div>
+
+      <div class="modal-body">
+         <p>
+          Confirma usa
         </p>
 
         <h4>Participating Countries</h4>
