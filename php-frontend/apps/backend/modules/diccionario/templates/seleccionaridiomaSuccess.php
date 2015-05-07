@@ -18,7 +18,12 @@
                                 <div class="col-lg-7">
                                     <select name="idioma" class="form-control">
                                         <option value="">Seleccione...</option>
-                                        <?php foreach($idiomas as $i){ ?>
+                                        <?php 
+                                            foreach($idiomas as $i){ 
+                                            if($i->getIdiIdentificador()=="en_uk" || $i->getIdiIdentificador()=="sv_fi"){
+                                                continue;
+                                            }
+                                        ?>
                                         <option value="<?=$i->getIdiId();?>"><?=$i->getIdiNombre();?></option>
                                         <?php } ?>
                                     </select>
