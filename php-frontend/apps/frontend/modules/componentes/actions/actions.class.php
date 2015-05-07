@@ -27,4 +27,11 @@ class componentesActions extends sfActions
   {
       $this->setLayout(false);
   }
+  public function executeDebug(sfWebRequest $request)
+  {
+      $funciones = new funciones();
+      $detect = $funciones->detectLang();
+      print_r($detect);
+      return sfView::NONE;
+  }
 }
