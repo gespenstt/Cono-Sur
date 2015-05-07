@@ -10,7 +10,10 @@ class componentesComponents extends sfComponents
       $funciones = new funciones();
       $id_idioma = $funciones->mercheKeyIdioma($cookie["id"]);
       $this->esconder = true;
-      if($id_idioma>1&&$id_idioma<5){
+      $array_ids_idioma = array(
+          9,6,7,8,2,3
+      );
+      if(array_search($id_idioma, $array_ids_idioma)!==FALSE){
           $id_idioma = $id_idioma;
           $this->esconder = false;
       }else{
