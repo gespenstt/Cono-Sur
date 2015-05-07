@@ -79,7 +79,7 @@ class componentesComponents extends sfComponents
             $found = false;
             switch (true){
                 //FI
-                case (strpos($detect, "fi")!==FALSE):
+                /*case (strpos($detect, "fi")!==FALSE):
                     $array_cookie = array(
                         "lang"=>"fi",
                         "id"=>"c5e62d69879248ba52c5839ae8216ae7",
@@ -87,7 +87,7 @@ class componentesComponents extends sfComponents
                     );
                     setcookie("conosur", serialize($array_cookie), time()+3600*24*90, "/");
                     $found=true;
-                    break;
+                    break;*/
                 //GB UK
                 /*case (strpos($detect, "gb")!==FALSE):
                     $array_cookie = array(
@@ -129,6 +129,46 @@ class componentesComponents extends sfComponents
                     setcookie("conosur", serialize($array_cookie), time()+3600*24*90, "/");
                     $found=true;
                     break;*/
+                //CA
+                case (strpos($detect, "ca")!==FALSE):
+                    $array_cookie = array(
+                        "lang"=>"ca",
+                        "id"=>"5435c69ed3bcc5b2e4d580e393e373d3",
+                        "natural"=>true,
+                    );
+                    setcookie("conosur", serialize($array_cookie), time()+3600*24*90, "/");
+                    $found=true;
+                    break;
+                //JP
+                case (strpos($detect, "jp")!==FALSE):
+                    $array_cookie = array(
+                        "lang"=>"jp",
+                        "id"=>"55add3d845bfcd87a9b0949b0da49c0a",
+                        "natural"=>true,
+                    );
+                    setcookie("conosur", serialize($array_cookie), time()+3600*24*90, "/");
+                    $found=true;
+                    break;
+                //CL
+                case (strpos($detect, "cl")!==FALSE):
+                    $array_cookie = array(
+                        "lang"=>"cl",
+                        "id"=>"161747ec4dc9f55f1760195593742232",
+                        "natural"=>true,
+                    );
+                    setcookie("conosur", serialize($array_cookie), time()+3600*24*90, "/");
+                    $found=true;
+                    break;
+                //US
+                case (strpos($detect, "us")!==FALSE):
+                    $array_cookie = array(
+                        "lang"=>"us",
+                        "id"=>"0b3b97fa66886c5688ee4ae80ec0c3c2",
+                        "natural"=>true,
+                    );
+                    setcookie("conosur", serialize($array_cookie), time()+3600*24*90, "/");
+                    $found=true;
+                    break;
             }
             if($found){
                 $this->getContext()->getActionStack()->getLastEntry()->getActionInstance()->redirect('home/index'); 

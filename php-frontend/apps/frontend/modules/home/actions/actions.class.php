@@ -77,7 +77,7 @@ class homeActions extends sfActions
       $this->msg = "";
       if(!empty($lang)){
             switch ($lang){
-                //FI
+                /*//FI
                 case "4":
                     $array_cookie = array(
                         "lang"=>"fi",
@@ -96,7 +96,7 @@ class homeActions extends sfActions
                     );
                     setcookie("conosur", serialize($array_cookie), time()+3600*24*90, "/");
                     $this->msg = "Cambiado a GB UK";
-                    break;
+                    break;*/
                 //IE
                 case "2":
                     $array_cookie = array(
@@ -116,6 +116,46 @@ class homeActions extends sfActions
                     );
                     setcookie("conosur", serialize($array_cookie), time()+3600*24*90, "/");
                     $this->msg = "Cambiado a SE";
+                    break;
+                //CA
+                case "9":
+                    $array_cookie = array(
+                        "lang"=>"ca",
+                        "id"=>"5435c69ed3bcc5b2e4d580e393e373d3",
+                        "natural"=>true,
+                    );
+                    setcookie("conosur", serialize($array_cookie), time()+3600*24*90, "/");
+                    $this->msg = "Cambiado a CA";
+                    break;
+                //JP
+                case "6":
+                    $array_cookie = array(
+                        "lang"=>"jp",
+                        "id"=>"55add3d845bfcd87a9b0949b0da49c0a",
+                        "natural"=>true,
+                    );
+                    setcookie("conosur", serialize($array_cookie), time()+3600*24*90, "/");
+                    $this->msg = "Cambiado a JP";
+                    break;
+                //CL
+                case "7":
+                    $array_cookie = array(
+                        "lang"=>"cl",
+                        "id"=>"161747ec4dc9f55f1760195593742232",
+                        "natural"=>true,
+                    );
+                    setcookie("conosur", serialize($array_cookie), time()+3600*24*90, "/");
+                    $this->msg = "Cambiado a CL";
+                    break;
+                //US
+                case "8":
+                    $array_cookie = array(
+                        "lang"=>"us",
+                        "id"=>"0b3b97fa66886c5688ee4ae80ec0c3c2",
+                        "natural"=>true,
+                    );
+                    setcookie("conosur", serialize($array_cookie), time()+3600*24*90, "/");
+                    $this->msg = "Cambiado a US";
                     break;
             }
           
