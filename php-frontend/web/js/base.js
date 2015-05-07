@@ -105,6 +105,14 @@ $(document).ready(function(){
                 }
             }
         });
+    });
+    
+    //Modal Chef
+    $(".modal-chef").click(function(){
+        $("#modalChef").modal({
+            backdrop: 'static',
+            keyboard: false
+        });
     })
     
 })

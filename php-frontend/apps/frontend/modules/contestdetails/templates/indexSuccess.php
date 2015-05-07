@@ -50,7 +50,14 @@
 
 					  		<h3><?=$array_diccionario["panel_d"]["titulo"];?></h3>
 
-							<p class="paragraph-color-especial"><?=$array_diccionario["panel_d"]["texto"];?></p>
+							<p class="paragraph-color-especial"><?php
+                                                        
+                                                            $textoChef = $array_diccionario["panel_d"]["texto"];
+                                                            $textoBuscar = ("Christopher Carpentier");
+                                                            $textoReplace = '<a href="#" class="modal-chef">Christopher Carpentier</a>';
+                                                            echo str_replace($textoBuscar, $textoReplace, $textoChef);
+                                                            
+                                                        ?></p>
 					  		
 					  	</div>
 
