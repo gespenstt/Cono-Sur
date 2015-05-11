@@ -1,92 +1,36 @@
 <?php
     get_header(); 
 ?>
-				<div class="container-fluid">
+    <div class="container-fluid">
 
-					<div class="row show-grid">
+            <div class="row show-grid">
+                
+                <?php 
+                    if ( have_posts() ) while ( have_posts() ) : the_post(); 
+                    
+                    $imagen_home = get_custom_field('imagen_home'); 
+                ?>
 
-						<div class="col-md-4">
-							<figure class="effect-lily">
-								<img src="http://conosur.ratamonkey.com/web/blog/wp-content/themes/blogger/img/img-04-home.jpg" alt="img12"/>
-								<figcaption>
-									<div>
-										<h2>NO FAMILY TREES, NO DUSTY BOTTLES, JUST QUALITY WINE</h2>
-									</div>
-									<a href="http://conosur.ratamonkey.com/web/blog/2015/04/24/hola-mundo/">View more</a>
-								</figcaption>			
-							</figure>
-						</div>
+                    <div class="col-md-4">
+                            <figure class="effect-lily">
+                                    <img src="<?php echo $imagen_home; ?>" alt="<?php the_title(); ?>"/>
+                                    <figcaption>
+                                            <div>
+                                                    <h2><?php the_title(); ?></h2>
+                                            </div>
+                                            <a href="<?php the_permalink();?>">View more</a>
+                                    </figcaption>			
+                            </figure>
+                    </div>
+                <?php
+                    endwhile;
+                ?>
+                
+            </div>					
 
-					  	<div class="col-md-4 no-padding">
-					  		<figure class="effect-lily especial">
-								<img src="../img/img-05.jpg" alt="img12"/>
-								<figcaption>
-									<div>
-										<h2>Nice <span>Lily</span></h2>
-										<p>Lily likes to play with crayons and pencils</p>
-									</div>
-									<a href="http://conosur.ratamonkey.com/web/blog/2015/04/24/hola-mundo/">View more</a>
-								</figcaption>			
-							</figure>
-					  	</div>
+    </div>
 
-					  	<div class="col-md-4">
-					  		<figure class="effect-lily">
-								<img src="../img/img-06.jpg" alt="img12"/>
-								<figcaption>
-									<div>
-										<h2>Nice <span>Lily</span></h2>
-										<p>Lily likes to play with crayons and pencils</p>
-									</div>
-									<a href="http://conosur.ratamonkey.com/web/blog/2015/04/24/hola-mundo/">View more</a>
-								</figcaption>			
-							</figure>
-					  	</div>
-
-					  	<div class="col-md-4">
-							<figure class="effect-lily">
-								<img src="../img/img-04.jpg" alt="img12"/>
-								<figcaption>
-									<div>
-										<h2>Nice <span>Lily</span></h2>
-										<p>Lily likes to play with crayons and pencils</p>
-									</div>
-									<a href="http://conosur.ratamonkey.com/web/blog/2015/04/24/hola-mundo/">View more</a>
-								</figcaption>			
-							</figure>
-						</div>
-
-					  	<div class="col-md-4 no-padding">
-					  		<figure class="effect-lily especial">
-								<img src="../img/img-05.jpg" alt="img12"/>
-								<figcaption>
-									<div>
-										<h2>Nice <span>Lily</span></h2>
-										<p>Lily likes to play with crayons and pencils</p>
-									</div>
-									<a href="http://conosur.ratamonkey.com/web/blog/2015/04/24/hola-mundo/">View more</a>
-								</figcaption>			
-							</figure>
-					  	</div>
-
-					  	<div class="col-md-4">
-					  		<figure class="effect-lily">
-								<img src="../img/img-06.jpg" alt="img12"/>
-								<figcaption>
-									<div>
-										<h2>Nice <span>Lily</span></h2>
-										<p>Lily likes to play with crayons and pencils</p>
-									</div>
-									<a href="http://conosur.ratamonkey.com/web/blog/2015/04/24/hola-mundo/">View more</a>
-								</figcaption>			
-							</figure>
-					  	</div>
-
-					</div>					
-					
-				</div>
-
-			</div><!-- /End Container -->
+</div><!-- /End Container -->
 <?php 
     get_footer();
 ?>

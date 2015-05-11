@@ -1,39 +1,42 @@
 <?php
     get_header(); 
 ?>
-<div class="container-fluid">
+                <?php 
+                    if ( have_posts() ) while ( have_posts() ) : the_post(); 
+                    
+                    $imagen_post = get_custom_field('imagen_post'); 
+                ?>
+                    <div class="container-fluid">
 
-					<div class="row show-grid">
+                            <div class="row show-grid">
 
-						<div class="col-md-12">	
+                                    <div class="col-md-12">	
 
-							<h1 class="post-title">no family trees, no dusty bottles, just quality wine</h1>	
+                                            <h1 class="post-title"><?php the_title(); ?></h1>	
 
-						</div>
+                                    </div>
 
-						<div class="col-md-12 post-picture">	
+                                    <div class="col-md-12 post-picture">	
 
-							<img src="http://conosur.ratamonkey.com/web/blog/wp-content/themes/blogger/img/img-04.jpg" alt="">
+                                            <img src="<?php echo $imagen_post; ?>" alt="<?php the_title(); ?>">
 
-							<!--<span style="background-image: url(http://conosur.ratamonkey.com/web/blog/wp-content/themes/blogger/img/img-04.jpg);" class="post-picture"></span>-->
+                                            <!--<span style="background-image: url(http://conosur.ratamonkey.com/web/blog/wp-content/themes/blogger/img/img-04.jpg);" class="post-picture"></span>-->
 
-							<h1>March 17, 2015</h1>	
+                                            <h1><?php the_date("F j, Y"); ?></h1>	
 
-							<div class="post-content">
+                                            <div class="post-content">
 
-						  		<p>Cono Sur was born around the oldest Pinot Noir vineyards in Chile. We were the first in Chile to produce Premium Pinot Noir, and also the first to export the variety. Producing Pinot Noir has been Cono Sur’s most exiting challenge.</p>
+                                                    <?php the_content(); ?>
+                                            </div>
 
-						  		<p>Our “Pinot Noir project” started in 1999, with the aim of producing the best Pinot Noir in Chile: unique, expressive and proud of its New World roots, while vinified according to the Burgundian tradition. From this same French DO comes Martin Prieur, an experienced Pinot Noir winemaker who has helped us select Chilean terroirs and advised us on optimum vineyard management.</p>
+                                    </div>
 
-						  		<p>Our Pinot Noir grapes are harvested by hand, and after passing through the selection table, the bunches are then destemmed, taking care not to crush the grapes. The fruit is then placed into open-top tanks where it undergoes carbonic maceration at low temperatures. Later, the grapes are foot-trodden and colour extraction is enhanced by means of manual cap immersion. After fermentation, the wine is placed in new French oak barrels, where it ages for approximately 14 months.</p>
+                            </div>
 
-					  		</div>
-
-						</div>
-
-					</div>
-
-				</div>
+                    </div>
+                <?php
+                    endwhile;
+                ?>
 <?php 
     get_footer();
 ?>
