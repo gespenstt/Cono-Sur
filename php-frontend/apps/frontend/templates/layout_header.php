@@ -23,7 +23,7 @@
             <link href="<?=public_path("css/main.css");?>" rel="stylesheet" media="screen">
             
             <script>
-                var det_lang = <?php include_component("componentes", "detectar"); ?>;
+                var det_lang = 'OK';
             </script>
             <script src="<?=public_path("js/jquery.min.js");?>"></script>
             <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
