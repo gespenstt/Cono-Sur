@@ -9,6 +9,5 @@
     curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
     $content = curl_exec($curl);
     curl_close($curl);
-
-    $html = str_get_html($content);
+    echo $content;
 ?>
