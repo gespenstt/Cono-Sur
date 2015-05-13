@@ -20,7 +20,7 @@
 
                                 <div class="col-md-2">
 
-                                        <a href="https://twitter.com/ConoSurWines" class="twitter"></a> <a href="https://www.facebook.com/conosurwinery?ref=hl" class="facebook"></a> <a href="http://instagram.com/vinaconosur" class="instagram"></a> <a href="http://www.pinterest.com/ConoSurWines/" class="pinterest"></a>
+                                        <a href="https://twitter.com/ConoSurWines" class="twitter"></a> <a href="https://www.facebook.com/conosurwinery?ref=hl" class="facebook"></a> <a href="https://instagram.com/conosurvineyards/" class="instagram"></a> <a href="http://www.pinterest.com/ConoSurWines/" class="pinterest"></a>
 
                                 </div>
 
