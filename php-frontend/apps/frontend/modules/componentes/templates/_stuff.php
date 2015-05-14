@@ -264,12 +264,26 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Chef!</h4>
+        <h4 class="modal-title" id="myModalLabel">Christopher Carpentier</h4>
       </div>
 
-      <div class="modal-body">
+      <div class="modal-body">      
 
-         CHEF!!!!
+         <div class="row show-grid">
+
+			<div class="col-md-5">
+
+				<img src="<?=public_path("img/chef.jpg");?>" alt="" width="100%">
+							
+			</div>
+
+			<div class="col-md-7 contest-details">
+
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no seaest Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua, ugo consetetur Lorem Ipsum.</p>
+					  		
+			</div>
+
+		</div>
          
       </div>
     </div>
