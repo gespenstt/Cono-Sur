@@ -55,5 +55,34 @@ class contestdetailsActions extends sfActions
       }
       
       $this->diccionario = $array_out;
+      
+      
+      //Chef   
+      $cc = new Criteria();
+      $cc->clearSelectColumns();
+      $cc->addSelectColumn(PaginaPeer::PAG_IDENTIFICADOR);
+      $cc->addSelectColumn(SeccionPeer::SEC_IDENTIFICADOR);
+      $cc->addSelectColumn(DiccionarioPeer::DIC_TEXTO);
+      $cc->addSelectColumn(ParametroPeer::PAR_IDENTIFICADOR);
+      $cc->addJoin(PaginaPeer::PAG_ID, SeccionPeer::PAG_ID);
+      $cc->addJoin(SeccionPeer::SEC_ID, ParametroPeer::SEC_ID);
+      $cc->addJoin(ParametroPeer::PAR_ID, DiccionarioPeer::PAR_ID);
+      $cc->add(DiccionarioPeer::IDI_ID,$id_idioma);
+      $cc->add(PaginaPeer::PAG_ID,10);
+      
+      $resCc = DiccionarioPeer::doSelectStmt($cc);
+      
+      $array_chef_out = array();
+      if($resCc){
+          while($row = $resC->fetch()){
+              $array_chef_out[$row["SEC_IDENTIFICADOR"]][$row["PAR_IDENTIFICADOR"]]=  nl2br($row["DIC_TEXTO"]);
+          }
+      }else{
+          echo "Error :(";
+          exit;
+      }
+      print_r($array_chef_out);
+      
+      $this->diccionario_chef = $array_chef_out;
   }
 }
