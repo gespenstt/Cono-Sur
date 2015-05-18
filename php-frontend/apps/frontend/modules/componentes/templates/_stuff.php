@@ -285,7 +285,7 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
 
 			<div class="col-md-7 text-left">
 
-                            <p><?php echo htmlentities($diccionario_chef["chef_descripcion"]["descripcion"]); ?></p>
+                            <p><?php echo html_entity_decode($diccionario_chef["chef_descripcion"]["descripcion"]); ?></p>
 					  		
 			</div>
 
