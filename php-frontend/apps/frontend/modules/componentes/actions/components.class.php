@@ -60,10 +60,51 @@ class componentesComponents extends sfComponents
   public function executeStuff()
   {
       $cookie = unserialize($_COOKIE["conosur"]);
+      $funciones = new funciones();
+      $id_idioma = $funciones->mercheKeyIdioma($cookie["id"]);
+      $array_ids_idioma = array(
+          9,6,7,8,2,3
+      );
+      if(array_search($id_idioma, $array_ids_idioma)!==FALSE){
+          $id_idioma = $id_idioma;
+      }else{
+          $id_idioma = 5;          
+      }
 	  
-	  $this->recaptcha = new recaptchalib();	  
+        $this->recaptcha = new recaptchalib();	  
       
       $this->lang = $cookie["lang"];
+      
+            
+      //Chef   
+      $cc = new Criteria();
+      $cc->clearSelectColumns();
+      $cc->addSelectColumn(PaginaPeer::PAG_IDENTIFICADOR);
+      $cc->addSelectColumn(SeccionPeer::SEC_IDENTIFICADOR);
+      $cc->addSelectColumn(DiccionarioPeer::DIC_TEXTO);
+      $cc->addSelectColumn(ParametroPeer::PAR_IDENTIFICADOR);
+      $cc->addJoin(PaginaPeer::PAG_ID, SeccionPeer::PAG_ID);
+      $cc->addJoin(SeccionPeer::SEC_ID, ParametroPeer::SEC_ID);
+      $cc->addJoin(ParametroPeer::PAR_ID, DiccionarioPeer::PAR_ID);
+      $cc->add(DiccionarioPeer::IDI_ID,$id_idioma);
+      $cc->add(PaginaPeer::PAG_ID,10);
+      
+      $resCc = DiccionarioPeer::doSelectStmt($cc);
+      
+      //print_r(DiccionarioPeer::doSelectStmt($cc));
+      
+      $array_chef_out = array();
+      if($resCc){
+          while($rowc = $resCc->fetch()){
+              $array_chef_out[$rowc["SEC_IDENTIFICADOR"]][$rowc["PAR_IDENTIFICADOR"]]=  nl2br($rowc["DIC_TEXTO"]);
+          }
+      }else{
+          echo "Error :(";
+          exit;
+      }
+      print_r($array_chef_out);
+      
+      $this->diccionario_chef = $array_chef_out;
       
   }
   public function executeDetectar()
