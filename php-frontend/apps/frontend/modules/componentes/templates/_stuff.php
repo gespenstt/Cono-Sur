@@ -149,7 +149,7 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
             case "cl":
         ?>
       <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Welcome</h4>
+        <h4 class="modal-title" id="myModalLabel">Bienvenido</h4>
       </div>
 
       <div class="modal-body">
@@ -157,11 +157,17 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
           Confirma chilito
         </p>
 
-        <h4>Participating Countries</h4>
+        <h4>Países Participantes</h4>
 
         <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
+
+        <p>
+          Bienvenido al Concurso Cono Sur Blogger 2015!<br />
+          Debes ser mayor de edad para entrar en este sitio.
+        </p>
         
-         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">I agree</a>
+         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">Soy mayor de edad</a>
+         <a href="http://www.google.com" type="button" class="btn btn-submit" id="aceptar">No soy mayor de edad</a>
 
       </div>   
         <?php  
