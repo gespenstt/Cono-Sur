@@ -32,7 +32,7 @@ class contestdetailsActions extends sfActions
       $this->lang = $cookie["lang"];
       
       $c = new Criteria();
-      $c->clearSelectColumns();
+      //$c->clearSelectColumns();
       $c->addSelectColumn(PaginaPeer::PAG_IDENTIFICADOR);
       $c->addSelectColumn(SeccionPeer::SEC_IDENTIFICADOR);
       $c->addSelectColumn(DiccionarioPeer::DIC_TEXTO);
@@ -53,13 +53,13 @@ class contestdetailsActions extends sfActions
           echo "Error :(";
           exit;
       }
-      
+      print_r($array_out);
       $this->diccionario = $array_out;
       
       
       //Chef   
       $cc = new Criteria();
-      $cc->clearSelectColumns();
+      //$cc->clearSelectColumns();
       $cc->addSelectColumn(PaginaPeer::PAG_IDENTIFICADOR);
       $cc->addSelectColumn(SeccionPeer::SEC_IDENTIFICADOR);
       $cc->addSelectColumn(DiccionarioPeer::DIC_TEXTO);
