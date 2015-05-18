@@ -1,5 +1,6 @@
 <div style="padding-top: 70px;">
     Seleccione el idioma: <br><br>
+    <a href="<?=url_for("home/debug/?lang=SN");?>" class="btn btn-default">Global</a> 
     <a href="<?=url_for("home/debug/?lang=2");?>" class="btn btn-default">Ingles Irlanda</a> 
     <a href="<?=url_for("home/debug/?lang=3");?>" class="btn btn-default">Sueco</a> 
     <a href="<?=url_for("home/debug/?lang=9");?>" class="btn btn-default">Canada</a> 

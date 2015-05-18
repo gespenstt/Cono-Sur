@@ -160,6 +160,14 @@ class homeActions extends sfActions
                     setcookie("conosur", serialize($array_cookie), time()+3600*24*90, "/");
                     $this->msg = "Cambiado a US";
                     break;
+                //US
+                case "SN":
+                    $array_cookie = array(
+                        "id"=>"0b3b97fa66886c5688ee4ae80ec0c3c2444444"
+                    );
+                    setcookie("conosur", serialize($array_cookie), time()+3600*24*90, "/");
+                    $this->msg = "Cambiado a Global";
+                    break;
             }
           
       }
