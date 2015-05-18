@@ -178,7 +178,12 @@ class componentesComponents extends sfComponents
             }
         }
       }else{
-          $this->respuesta = "OK";
+          if($cookie["lang"]=="gl_en"){
+            $this->respuesta = false;    
+          }else{
+            $this->respuesta = "OK";
+          }
+          
       }
   }
     

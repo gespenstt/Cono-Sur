@@ -163,7 +163,7 @@ class homeActions extends sfActions
                 //US
                 case "SN":
                     $array_cookie = array(
-                        "lang"=>"en",
+                        "lang"=>"gl_en",
                         "id"=>"EN3b97fa66886c5688ee4ae80ec0c3c2",
                         "natural"=>true,
                     );
