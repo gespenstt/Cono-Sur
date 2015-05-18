@@ -285,7 +285,7 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
 
 			<div class="col-md-7 text-left">
 
-				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no seaest Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua, ugo consetetur Lorem Ipsum.</p>
+				<p><?php echo $diccionario_chef["chef_descripcion"]["descripcion"]; ?></p>
 					  		
 			</div>
 

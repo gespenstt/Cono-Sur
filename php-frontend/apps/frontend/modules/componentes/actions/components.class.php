@@ -102,7 +102,7 @@ class componentesComponents extends sfComponents
           echo "Error :(";
           exit;
       }
-      print_r($array_chef_out);
+      //print_r($array_chef_out);
       
       $this->diccionario_chef = $array_chef_out;
       
