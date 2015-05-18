@@ -111,10 +111,6 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
       </div>
 
       <div class="modal-body">
-         <p>
-          Welcome to the Cono Sur Blogger Competition 2015!<br />
-          You must be of legal age to enter this site.
-        </p>
 
         <h4>Participating Countries</h4>
 
@@ -154,17 +150,13 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
 
       <div class="modal-body">
          <p>
-          Confirma chilito
+          Bienvenido al Concurso Cono Sur Blogger 2015!<br />
+          Debes ser mayor de edad para entrar en este sitio.
         </p>
 
         <h4>Países Participantes</h4>
 
         <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
-
-        <p>
-          Bienvenido al Concurso Cono Sur Blogger 2015!<br />
-          Debes ser mayor de edad para entrar en este sitio.
-        </p>
         
          <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">Soy mayor de edad</a>
          <a href="http://www.google.com" type="button" class="btn btn-submit" id="aceptar">No soy mayor de edad</a>
