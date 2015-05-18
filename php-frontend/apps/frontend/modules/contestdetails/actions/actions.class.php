@@ -72,6 +72,8 @@ class contestdetailsActions extends sfActions
       
       $resCc = DiccionarioPeer::doSelectStmt($cc);
       
+      print_r(DiccionarioPeer::doSelectStmt($cc));
+      
       $array_chef_out = array();
       if($resCc){
           while($row = $resC->fetch()){
