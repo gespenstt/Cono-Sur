@@ -112,6 +112,11 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
 
       <div class="modal-body">
 
+        <p>
+          Welcome to the Cono Sur Blogger Competition 2015!<br />
+          You must be of legal age to enter this site.
+        </p>
+
         <h4>Participating Countries</h4>
 
         <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
@@ -130,14 +135,16 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
 
       <div class="modal-body">
          <p>
-          Confirma japon
+          Welcome to the Cono Sur Blogger Competition 2015!<br />
+          You must be of legal age to enter this site.
         </p>
 
         <h4>Participating Countries</h4>
 
         <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
         
-         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">I agree</a>
+        <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">I am of legal age.</a> 
+         <a href="http://www.google.com" type="button" class="btn btn-submit" id="aceptar">I am not of legal age.</a>
 
       </div>   
         <?php  
