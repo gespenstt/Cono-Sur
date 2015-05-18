@@ -9,7 +9,7 @@
 
       <div class="modal-body">
 
-        <p>Although your country is not participating this year, we invite you to check out the site and stay tuned for heaps of savory recipes to pair with your favorite Cono Sur wines, which we will publish 18 August, 2014.</p> 
+        <p>Although your country is not participating this year, we invite you to check out the site and stay tuned for heaps of savory recipes to pair with your favorite Cono Sur wines, which we will publish 11 August, 2015. </p> 
 
         <h4>Participating Countries</h4>
 
@@ -20,7 +20,8 @@
              Confirm you are above legal drinking age to enter the site.<br />
              Product for those of legal drinking age. Enjoy responsibly.
          </p>             
-         <a href="<?=url_for("home/lang/?set=en&legal=ok");?>" type="button" class="btn btn-submit" >I agree</a>
+         <a href="<?=url_for("home/lang/?set=en&legal=ok");?>" type="button" class="btn btn-submit" >I am of legal age.</a> 
+         <a href="http://www.google.com" type="button" class="btn btn-submit" >I am not of legal age.</a>
 
       </div>
     </div>
@@ -55,7 +56,7 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
   </div>
 </div>
 
-<!-- Modal -->
+<!-- Modal COUNTRY -->
 <div class="modal fade" id="modalRestriccion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -88,15 +89,16 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
 
       <div class="modal-body">
          <p>
-          Confirm you are above legal drinking age to enter the site.<br />
-          Product for those of legal drinking age. Enjoy responsibly.
+          Welcome to the Cono Sur Blogger Competition 2015!<br />
+          You must be of legal age to enter this site.
         </p>
 
         <h4>Participating Countries</h4>
 
         <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
         
-         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">I agree</a>
+         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">I am of legal age.</a> 
+         <a href="http://www.google.com" type="button" class="btn btn-submit" id="aceptar">I am not of legal age.</a>
 
       </div>   
         <?php  
@@ -109,14 +111,16 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
 
       <div class="modal-body">
          <p>
-          Confirma canada
+          Welcome to the Cono Sur Blogger Competition 2015!<br />
+          You must be of legal age to enter this site.
         </p>
 
         <h4>Participating Countries</h4>
 
         <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
         
-         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">I agree</a>
+         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">I am of legal age.</a> 
+         <a href="http://www.google.com" type="button" class="btn btn-submit" id="aceptar">I am not of legal age.</a>
 
       </div>   
         <?php  
@@ -169,14 +173,16 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
 
       <div class="modal-body">
          <p>
-          Confirma usa
+          Welcome to the Cono Sur Blogger Competition 2015!<br />
+          You must be of legal age to enter this site.
         </p>
 
         <h4>Participating Countries</h4>
 
         <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
         
-         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">I agree</a>
+         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">I am of legal age.</a> 
+         <a href="http://www.google.com" type="button" class="btn btn-submit" id="aceptar">I am not of legal age.</a>
 
       </div>   
         <?php  
@@ -188,7 +194,7 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
 </div>
 
 
-<!-- Modal -->
+<!-- Modal VOTE -->
 <div class="modal fade" id="modalVote" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -240,7 +246,7 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
   </div>
 </div>
 
-<!-- Modal -->
+<!-- Modal VOTE SUCCESS -->
 <div class="modal fade" id="modalVotoexito" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -258,7 +264,7 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
   </div>
 </div>
 
-<!-- Modal -->
+<!-- Modal CHEF -->
 <div class="modal fade" id="modalChef" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
