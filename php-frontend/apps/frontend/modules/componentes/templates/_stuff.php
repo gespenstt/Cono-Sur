@@ -130,21 +130,21 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
             case "jp":
         ?>
       <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Welcome</h4>
+        <h4 class="modal-title" id="myModalLabel">ようこそ</h4>
       </div>
 
       <div class="modal-body">
          <p>
-          Welcome to the Cono Sur Blogger Competition 2015!<br />
-          You must be of legal age to enter this site.
+          コノスル・ブロガー・コンペティション2015へようこそ！<br />
+          このサイトを閲覧するためには、法律で飲酒が可能な年齢（20歳以上）である必要があります。
         </p>
 
         <h4>Participating Countries</h4>
 
         <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
         
-        <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">I am of legal age.</a> 
-         <a href="http://www.google.com" type="button" class="btn btn-submit" id="aceptar">I am not of legal age.</a>
+        <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">20歳以上です。</a> 
+         <a href="http://www.google.com" type="button" class="btn btn-submit" id="aceptar">20歳以上ではありません。</a>
 
       </div>   
         <?php  
