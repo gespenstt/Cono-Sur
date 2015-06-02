@@ -46,8 +46,14 @@
 								<div class="form-group">
 							    	<label for="inputEmail3" class="col-sm-2 control-label"><?=$array_diccionario["formulario"]["ingredients"];?></label>
 									<div class="col-sm-10">
-										<input type="text" class="form-control" data-msg="Please list ingredients." name="ingredientes" id="ingredientes" placeholder="EXAMPLE: Ingredient 1, Ingredient 2">
-										<p class="text-danger hidden"></p>
+										<!-- <input type="text" class="form-control" data-msg="Please list ingredients." name="ingredientes" id="ingredientes" placeholder="EXAMPLE: Ingredient 1, Ingredient 2"> -->
+                                                                            <ul id="listado"></ul>
+                                                                            <input type="text" id="input_ingrediente" class="form-control" placeholder="Ingrediente" />
+                                                                            <span class="input-group-btn">    
+                                                                              <button class="btn btn-default btn-insertar" type="button">+</button>
+                                                                            </span>
+                                                                            <textarea data-msg="Please list ingredients." class="hidden" name="ingredientes" id="ingredientes"></textarea>
+                                                                            <p class="text-danger hidden"></p>
 									</div>
 								</div>
 
@@ -87,6 +93,14 @@
 									</div>
 								</div>
 
+								<div class="form-group ">
+							    	<label for="inputEmail3" class="col-sm-2 control-label"><?=$array_diccionario["formulario"]["your_email"];?></label>
+									<div class="col-sm-10">
+										<input type="email" class="form-control" data-msg="Please follow proper format: xxxx@xxx.xxx" id="email" name="email">
+										<p class="text-danger hidden"></p>
+									</div> 
+								</div>
+
 								<div class="form-group">
 							    	<label for="inputEmail3" class="col-sm-2 control-label"><?=$array_diccionario["formulario"]["link_to_your_blog"];?></label>
 									<div class="col-sm-10">
@@ -95,12 +109,12 @@
 									</div>
 								</div>
 
-								<div class="form-group ">
-							    	<label for="inputEmail3" class="col-sm-2 control-label"><?=$array_diccionario["formulario"]["your_email"];?></label>
+								<div class="form-group">
+							    	<label for="inputEmail3" class="col-sm-2 control-label"><?=$array_diccionario["formulario"]["name_your_blog"];?></label>
 									<div class="col-sm-10">
-										<input type="email" class="form-control" data-msg="Please follow proper format: xxxx@xxx.xxx" id="email" name="email">
+										<input type="text" class="form-control" data-msg="Please include name of your blog." id="name_blog" name="name_blog">
 										<p class="text-danger hidden"></p>
-									</div> 
+									</div>
 								</div>
 
 								<div class="form-group">
@@ -136,3 +150,56 @@
 					</div>
 
 				</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var ingredientes = [];
+        var btn_insertar = $(".btn-insertar"),
+            input_ingrediente = $("#input_ingrediente"),
+            ul_listado = $("#listado"),
+            template = '<li class="">{ING} <i data-id="{ID}" data-ing="{ING}" class="glyphicon glyphicon-remove remove-ing"></i></li>';
+
+        btn_insertar.click(function(){
+            if(input_ingrediente.val()){
+                var ingrediente = input_ingrediente.val(),
+                    temp_template = template;
+                temp_template = temp_template.replace(/{ING}/g,ingrediente);
+                ingredientes.push(ingrediente);
+                var data_id = ingredientes.length - 1;
+                temp_template = temp_template.replace("{ID}",data_id);
+                ul_listado.append( temp_template);
+                input_ingrediente.val("");
+                //console.log(ingredientes);
+                var txt = "";
+                ingredientes.forEach(function(entry) {
+                    if(entry!=""){
+                       txt = txt + entry + "\n";
+                    }
+                }); 
+                
+                $("#ingredientes").val(txt);  
+            }
+                $(".remove-ing").unbind('click').bind('click',function(){
+                        var _this = $(this);
+                        var data_id = _this.data("id");
+                        ingredientes[data_id] = "";
+                        _this.parent("li").remove();
+                        
+                        var txt = "";
+                        ingredientes.forEach(function(entry) {
+                            if(entry!=""){
+                               txt = txt + entry + "\n";
+                            }
+                        }); 
+                        $("#ingredientes").val(txt); 
+                        //console.log(ingredientes);
+                });
+        });
+
+        input_ingrediente.keydown(function(event){    
+            if(event.keyCode==13){
+               btn_insertar.trigger('click');
+            }
+        });
+        
+    });
+</script>

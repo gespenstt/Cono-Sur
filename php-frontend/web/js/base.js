@@ -128,6 +128,7 @@ validarRecipe = function(){
     var vino_usado = $("#vino_usado");
     var nombre = $("#nombre");
     var link_blog = $("#link_blog");
+    var name_blog = $("#name_blog");
     var email = $("#email");
     var acepta_pais = $("#acepta_pais");
     var acepta_tos  = $("#acepta_tos");
@@ -138,6 +139,7 @@ validarRecipe = function(){
     setValidacion(vino_usado);
     setValidacion(nombre);
     setValidacion(link_blog);
+    setValidacion(name_blog);
     setValidacion(email,"email");
     setValidacion(acepta_pais,"checkbox");
     setValidacion(acepta_tos,"checkbox");

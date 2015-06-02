@@ -17,7 +17,7 @@ class enterrecipeActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
-      $this->redirect("home/index");
+      //$this->redirect("home/index");
       $cookie = unserialize($_COOKIE["conosur"]);
       $funciones = new funciones();
       $id_idioma = $funciones->mercheKeyIdioma($cookie["id"]);
@@ -59,7 +59,7 @@ class enterrecipeActions extends sfActions
   }
   public function executeGuardar(sfWebRequest $request)
   {
-      $this->redirect("home/index");
+      //$this->redirect("home/index");
       if($request->isMethod("post")){
           $funciones = new funciones();
           $log = $funciones->setLog("executeGuardar");
@@ -93,6 +93,7 @@ class enterrecipeActions extends sfActions
             $vino_usado = $request->getPostParameter("vino_usado");
             $nombre = $request->getPostParameter("nombre");
             $link_blog = $request->getPostParameter("link_blog");
+            $name_blog = $request->getPostParameter("name_blog");
             $email = $request->getPostParameter("email");
             //$acepta_pais = $re
             $receta = new Receta();
@@ -102,6 +103,7 @@ class enterrecipeActions extends sfActions
             $receta->setRecVino($vino_usado);
             $receta->setRecNombreBlogger($nombre);
             $receta->setRecUrlBlogger($link_blog);
+            $receta->setRecUrlnameBlogger($name_blog);
             $receta->setRecEmailBlogger($email);
             $receta->setRecPais($id_idioma);
             $receta->setRecImagen($nombre_archivo);
