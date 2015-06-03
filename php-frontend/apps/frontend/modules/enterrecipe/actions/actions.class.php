@@ -111,7 +111,7 @@ class enterrecipeActions extends sfActions
 
 
 $to = "webmanager@conosurwinery.cl";
-//$to = "jaime@onegorilla.cl";
+//$to = "rodrigoxv@gmail.com";
 
 $subject = "Email ConoSur";
 
@@ -182,7 +182,7 @@ Blog: '.$link_blog.'<br />
 //mail($to,$subject,$message,$headers);
 
 $mensaje = Swift_Message::newInstance()
-              ->setFrom(array('no.reply@conosur.com' => 'Blogger Competition'))
+              ->setFrom(array('blogger@bloggercompetition.conosur.com' => 'Blogger Competition'))
               ->setTo($to)
               ->setSubject($subject)
               ->setBody($message,'text/html');

@@ -52,5 +52,5 @@ all:
           param:    
             host:       mail.conosur.com
             port:       25
-            username: no.reply@conosur.com
+            username: blogger@bloggercompetition.conosur.com
             password: c0n0sur
