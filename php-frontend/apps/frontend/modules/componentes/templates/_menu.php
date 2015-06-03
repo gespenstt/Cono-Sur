@@ -40,7 +40,9 @@
 
                                     <!--<li><a href="<?=url_for("finalists/index");?>"><?=$array_diccionario["menu"]["finalists"];?></a></li>
                                     <li><a href="<?=url_for("winner/index");?>"><?=$array_diccionario["menu"]["winner"];?></a></li>-->
-
+									<?php if(!$esconder){ ?>
+									<li><a href="<?=url_for("vote/index");?>"><?=$array_diccionario["menu"]["enter_your_recipe"];?></a></li>
+									<?php } ?>
                                     <li><a href="<?=public_path("blog");?>"><?=$array_diccionario["menu"]["blog"];?></a></li>
                             </ul>
 
