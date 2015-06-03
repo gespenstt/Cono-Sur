@@ -111,12 +111,16 @@ class enterrecipeActions extends sfActions
 
 
 $to = "webmanager@conosurwinery.cl";
+//$to = "jaime@onegorilla.cl";
+
 $subject = "Email ConoSur";
 
-$array_paises["1"] = "UK";
 $array_paises["2"] = "Irlanda";
 $array_paises["3"] = "Suecia";
-$array_paises["4"] = "Finlandia";
+$array_paises["9"] = "Canada";
+$array_paises["6"] = "Japon";
+$array_paises["7"] = "Chile";
+$array_paises["8"] = "USA";
 
 
 $message = '<html><head>
