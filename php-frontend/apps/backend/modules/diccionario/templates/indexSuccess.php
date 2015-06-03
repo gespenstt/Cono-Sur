@@ -28,7 +28,13 @@
                                       </tr>
                                     </thead>
                                     <tbody>
-                                      <?php foreach($paginas as $p){  ?>
+                                      <?php 
+                                      foreach($paginas as $p){  
+                                          if($p->getPagId() == "4"){
+                                              continue;
+                                          }
+                                          
+                                      ?>
                                       <tr>
                                         <td><?=$p->getPagNombre();?></td>
                                         <td><?=$p->getUpdatedAt("d-m-Y h:s");?></td>
