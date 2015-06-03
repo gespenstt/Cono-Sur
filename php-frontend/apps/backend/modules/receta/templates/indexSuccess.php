@@ -12,10 +12,14 @@
                         <section id="tables">
                             <h3>Listado</h3>                  
                             <?php
-                                $array_paises["1"] = "UK";
+                                //$array_paises["1"] = "UK";
                                 $array_paises["2"] = "Irlanda";
                                 $array_paises["3"] = "Suecia";
-                                $array_paises["4"] = "Finlandia";                              
+                                $array_paises["9"] = "Canada";
+                                $array_paises["6"] = "Japon";
+                                $array_paises["7"] = "Chile";
+                                $array_paises["8"] = "USA";
+                                //$array_paises["4"] = "Finlandia";                              
                             ?>
                             <div class="clearfix" style="padding-bottom: 10px;">
                                   <form id="formularioBuscar" action="<?=url_for("receta/index");?>" method="get">

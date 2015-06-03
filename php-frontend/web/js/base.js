@@ -54,6 +54,7 @@ $(document).ready(function(){
             console.log(response.responseText);
             if(response.responseText=="ok"){
                 dibujarIconPicture();
+				$("#listado").html("");
                 $('#formRecipe')[0].reset();
                 $("#modalLoading").modal('hide');
                 $("#modalRecipe").modal(); 
