@@ -47,9 +47,9 @@
 							    	<label for="inputEmail3" class="col-sm-2 control-label"><?=$array_diccionario["formulario"]["ingredients"];?></label>
 									<div class="col-sm-8">
 										<!-- <input type="text" class="form-control" data-msg="Please list ingredients." name="ingredientes" id="ingredientes" placeholder="EXAMPLE: Ingredient 1, Ingredient 2"> -->
-                                    	<ul id="listado"></ul>
+                                    	<ol id="listado"></ol>
 
-                                    	<input type="text" id="input_ingrediente" class="form-control col-sm-10" placeholder="Ingrediente" />
+                                    	<input type="text" id="input_ingrediente" class="form-control col-sm-10" placeholder="Ingredients" />
 
                                     	<span class="input-group-btn col-sm-2">    
                                       		<button class="btn btn-default btn-insertar" type="button">+</button>
