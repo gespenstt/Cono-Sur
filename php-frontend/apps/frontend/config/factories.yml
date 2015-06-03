@@ -50,7 +50,7 @@ all:
         transport:
           class: Swift_SmtpTransport
           param:    
-            host:       mail.insydev.com
+            host:       mail.conosur.com
             port:       25
-            username: no.reply@bloggercompetition.conosur.com
+            username: no.reply@conosur.com
             password: c0n0sur
