@@ -70,14 +70,14 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
       </div>
 
       <div class="modal-body">
-         <p>På den här webbplatsen förekommer det information om alkoholhaltiga drycker och du måste ha fyllt 20 år för att besöka den.</p>
+         <p>På den här webbplatsen förekommer det information om alkoholhaltiga drycker och du måste ha fyllt 25 år för att besöka den.</p>
 
         <h4>Deltagande länder</h4>
 
         <p><img src="<?=public_path("img/country-modal.png");?>" alt=""></p>
 
-         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">jag håller med</a> 
-         <a href="http://www.google.com" type="button" class="btn btn-submit" id="aceptar">Jag är inte myndig</a>
+         <a href="<?=url_for("home/accept/?legal=ok");?>" type="button" class="btn btn-submit" id="aceptar">Jag är 25år eller äldre</a> 
+         <a href="http://www.google.com" type="button" class="btn btn-submit" id="aceptar">Jag är under 25år</a>
 
       </div>   
         <?php            
