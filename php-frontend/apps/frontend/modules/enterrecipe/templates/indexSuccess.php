@@ -33,7 +33,7 @@
 
 					  	<div class="col-md-9 no-padding padding-right">
 
-                                                    <form id="formRecipe" action="<?=url_for("enterrecipe/guardar");?>" method="post" enctype="multipart/form-data" class="form-horizontal enter-recipe-form" role="form" onsubmit="return validarRecipe();">
+                            <form id="formRecipe" action="<?=url_for("enterrecipe/guardar");?>" method="post" enctype="multipart/form-data" class="form-horizontal enter-recipe-form" role="form" onsubmit="return validarRecipe();">
 
 							 	<div class="form-group">
 							    	<label for="inputEmail3" class="col-sm-2 control-label"><?=$array_diccionario["formulario"]["recipe_name"];?></label>
@@ -43,18 +43,24 @@
 									</div>
 								</div>
 
-								<div class="form-group">
+								<div class="form-group form-inline">
 							    	<label for="inputEmail3" class="col-sm-2 control-label"><?=$array_diccionario["formulario"]["ingredients"];?></label>
-									<div class="col-sm-10">
+									<div class="col-sm-8">
 										<!-- <input type="text" class="form-control" data-msg="Please list ingredients." name="ingredientes" id="ingredientes" placeholder="EXAMPLE: Ingredient 1, Ingredient 2"> -->
-                                                                            <ul id="listado"></ul>
-                                                                            <input type="text" id="input_ingrediente" class="form-control" placeholder="Ingrediente" />
-                                                                            <span class="input-group-btn">    
-                                                                              <button class="btn btn-default btn-insertar" type="button">+</button>
-                                                                            </span>
-                                                                            <textarea data-msg="Please list ingredients." class="hidden" name="ingredientes" id="ingredientes"></textarea>
-                                                                            <p class="text-danger hidden"></p>
+                                    	<ul id="listado"></ul>
+
+                                    	<input type="text" id="input_ingrediente" class="form-control" placeholder="Ingrediente" />
+
+
+                                    	<textarea data-msg="Please list ingredients." class="hidden" name="ingredientes" id="ingredientes"></textarea>
+
+                                    	<p class="text-danger hidden"></p>
 									</div>
+
+									<div class="col-sm-2">   
+                                      	<button class="btn btn-default btn-insertar" type="button">+</button>
+                                    </div>
+
 								</div>
 
 								<div class="form-group">
