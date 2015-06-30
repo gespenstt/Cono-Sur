@@ -75,7 +75,7 @@
 										<!--<input type="text" class="form-control" data-msg="Must name range and variety." id="vino_usado" name="vino_usado" placeholder="EXAMPLE: Cono Sur, Ocio, Pinot Noir">-->
 										<select id="vino_usado" name="vino_usado">
 											<option value="">Select...</option>
-											<?php foreach($array_vinos as $av){ ?>
+											<?php foreach($sf_data->getRaw("array_vinos") as $av){ ?>
 											<option value="<?php echo $av; ?>"><?php echo $av; ?></option>
 											<?php } ?>
 										</select>
