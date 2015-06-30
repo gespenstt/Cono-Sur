@@ -73,8 +73,8 @@
 							    	<label for="inputEmail3" class="col-sm-2 control-label"><?=$array_diccionario["formulario"]["wine_used"];?></label>
 									<div class="col-sm-10">
 										<!--<input type="text" class="form-control" data-msg="Must name range and variety." id="vino_usado" name="vino_usado" placeholder="EXAMPLE: Cono Sur, Ocio, Pinot Noir">-->
-										<select id="vino_usado" name="vino_usado">
-											<option value="">Select...</option>
+										<select id="vino_usado" name="vino_usado" class="form-control" data-msg="Select wine used">
+											<option value="">Select wine used...</option>
 											<?php foreach($sf_data->getRaw("array_vinos") as $av){ ?>
 											<option value="<?php echo $av; ?>"><?php echo $av; ?></option>
 											<?php } ?>

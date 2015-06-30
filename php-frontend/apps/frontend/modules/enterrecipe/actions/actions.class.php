@@ -32,7 +32,7 @@ class enterrecipeActions extends sfActions
 
       //Vinos
       $array_vinos = array();
-      switch($array_ids_idioma){
+      switch($id_idioma){
         case 2:
           //IE
             $array_vinos = array(
@@ -80,7 +80,6 @@ class enterrecipeActions extends sfActions
             );
         break;
       }
-
       $this->array_vinos = $array_vinos;
 
       $c = new Criteria();
