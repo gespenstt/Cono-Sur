@@ -29,6 +29,60 @@ class enterrecipeActions extends sfActions
       }else{
           $this->redirect("home/index");        
       }
+
+      //Vinos
+      $array_vinos = array();
+      switch($array_ids_idioma){
+        case 2:
+          //IE
+            $array_vinos = array(
+              "Single Vineyard"
+            );
+        break;
+
+        case 3:
+          //SE
+            $array_vinos = array(
+              "Organic Chardonnay",
+              "Organic Cabernet/Carmenere"
+            );
+        break;
+
+        case 6:
+          //JP
+            $array_vinos = array(
+              "Reserva Especial Pinot Noir",
+              "Reserva Especial Gewürztraminer"
+            );
+        break;
+
+        case 7:
+          //CL
+            $array_vinos = array(
+              "Reserva Especial Pinot Noir",
+              "Reserva Especial Sauvignon Blanc"
+            );
+        break;
+
+        case 8:
+          //US
+            $array_vinos = array(
+              "Bicicleta",
+              "Reserva especial"
+            );
+        break;
+
+        case 9:
+          //CA
+            $array_vinos = array(
+              "Bicicleta",
+              "Orgánico"
+            );
+        break;
+      }
+
+      $this->array_vinos = $array_vinos;
+
       $c = new Criteria();
       $c->clearSelectColumns();
       $c->addSelectColumn(PaginaPeer::PAG_IDENTIFICADOR);

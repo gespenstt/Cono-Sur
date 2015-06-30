@@ -72,7 +72,13 @@
 								<div class="form-group">
 							    	<label for="inputEmail3" class="col-sm-2 control-label"><?=$array_diccionario["formulario"]["wine_used"];?></label>
 									<div class="col-sm-10">
-										<input type="text" class="form-control" data-msg="Must name range and variety." id="vino_usado" name="vino_usado" placeholder="EXAMPLE: Cono Sur, Ocio, Pinot Noir">
+										<!--<input type="text" class="form-control" data-msg="Must name range and variety." id="vino_usado" name="vino_usado" placeholder="EXAMPLE: Cono Sur, Ocio, Pinot Noir">-->
+										<select id="vino_usado" name="vino_usado">
+											<option value="">Select...</option>
+											<?php foreach($array_vinos as $av){ ?>
+											<option value="<?php echo $av; ?>"><?php echo $av; ?></option>
+											<?php } ?>
+										</select>
 										<p class="text-danger hidden"></p>
 									</div>
 								</div>
