@@ -36,7 +36,14 @@ class enterrecipeActions extends sfActions
         case 2:
           //IE
             $array_vinos = array(
-              "Single Vineyard"
+              "Single Vineyard Sauvignon Blanc",
+              "Single Vineyard Chardonnay",
+              "Single Vineyard Riesling",
+              "Single Vineyard Pinot Noir",
+              "Single Vineyard Merlot",
+              "Single Vineyard Carmenere",
+              "Single Vineyard Syrah",
+              "Single Vineyard Cabernet Sauvignon"
             );
         break;
 
@@ -68,15 +75,36 @@ class enterrecipeActions extends sfActions
           //US
             $array_vinos = array(
               "Bicicleta",
-              "Reserva especial"
+              "Organic Cabernet Sauvignon/Carmenere",
+              "Organic Chardonnay",
+              "Organic Pinot Noir",
+              "Organic Sauvignon Blanc",
+              "Reserva Especial Cabernet Sauvignon",
+              "Reserva Especial Carmenere",
+              "Reserva Especial Chardonnay",
+              "Reserva Especial Pinot Noir",
+              "Reserva Especial Sauvignon Blanc"
             );
         break;
 
         case 9:
           //CA
             $array_vinos = array(
-              "Bicicleta",
-              "Orgánico"
+              "Bicicleta Cabernet Sauvignon",
+              "Bicicleta Carmenere",
+              "Bicicleta Syrah",
+              "Bicicleta Gewürztraminer",
+              "Bicicleta Merlot",
+              "Bicicleta Pinot Grigio",
+              "Bicicleta Pinot Noir",
+              "Bicicleta Pinot Noir Rosé",
+              "Bicicleta Riesling",
+              "Bicicleta Sauvignon Blanc",
+              "Bicicleta Viognier",
+              "Organic Cabernet Sauvignon/Carmenere",
+              "Organic Chardonnay",
+              "Organic Pinot Noir",
+              "Organic Sauvignon Blanc",
             );
         break;
       }
