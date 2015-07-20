@@ -1,16 +1,4 @@
-        <div class="row">
-
-            <div class="col-md-12">
-                
-                <div class="widget stacked ">
-                    
-                    <div class="widget-header">
-                        <i class="icon-hand-right"></i>
-                        <h3>Recetas</h3>
-                    </div>                    
-                    <div class="widget-content">
-                        <section id="tables">
-                            <h3>Listado</h3>                  
+        <div class="row">              
                             <?php
                                 //$array_paises["1"] = "UK";
                                 $array_paises["2"] = "Irlanda";
@@ -21,6 +9,52 @@
                                 $array_paises["8"] = "USA";
                                 //$array_paises["4"] = "Finlandia";                              
                             ?>
+
+            <div class="col-md-12">
+                
+                <div class="widget stacked ">
+                    
+                    <div class="widget-header">
+                        <i class="icon-hand-right"></i>
+                        <h3>Recetas</h3>
+                    </div>                    
+                    <div class="widget-content">
+                        <section id="resumen">
+                            <h3>Resumen</h3> 
+                            
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th class="col-lg-4">Pais</th>
+                                            <th class="col-lg-2">En moderación</th>
+                                            <th class="col-lg-2">Aprobado</th>
+                                            <th class="col-lg-2">Reprobado</th>
+                                            <th class="col-lg-2">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <?php foreach($array_paises as $key => $val){ ?>
+                                    <?php
+                                        $moderacion = $funciones->getRecetaPaisEstado($key,0);
+                                        $aprobado = $funciones->getRecetaPaisEstado($key,1);
+                                        $reprobado = $funciones->getRecetaPaisEstado($key,2);
+                                        $total = $moderacion+$aprobado+$reprobado;
+                                    ?>
+                                        <tr>
+                                            <td><?php echo $val; ?></td>
+                                            <td><?php echo $moderacion; ?></td>
+                                            <td><?php echo $aprobado; ?></td>
+                                            <td><?php echo $reprobado; ?></td>
+                                            <td><?php echo $total; ?></td>
+                                        </tr>
+                                    <?php } ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section id="tables">
+                            <h3>Listado</h3>    
                             <div class="clearfix" style="padding-bottom: 10px;">
                                   <form id="formularioBuscar" action="<?=url_for("receta/index");?>" method="get">
                                 <div class="navbar-left navbar-form">

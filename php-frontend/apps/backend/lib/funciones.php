@@ -57,6 +57,15 @@ class funciones{
         
         return $out;
     }
+
+    public function getRecetaPaisEstado($pais,$estado){
+        $c = new Criteria();
+        $c->add(RecetaPeer::REC_ELIMINADO,0);
+        $c->add(RecetaPeer::REC_PAIS,$pais);
+        $c->add(RecetaPeer::REC_ESTADO,$estado);
+        $count = RecetaPeer::doCount($c);
+        return $count;
+    }
     
 }
 
