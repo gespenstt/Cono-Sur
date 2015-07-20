@@ -34,12 +34,22 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    <?php
+                                        $c_moderacion = 0;
+                                        $c_aprobado = 0;
+                                        $c_reprobado = 0;
+                                        $c_total = 0;
+                                    ?>
                                     <?php foreach($array_paises as $key => $val){ ?>
                                     <?php
                                         $moderacion = $funciones->getRecetaPaisEstado($key,0);
+                                        $c_moderacion = $c_moderacion + $moderacion;
                                         $aprobado = $funciones->getRecetaPaisEstado($key,1);
+                                        $c_aprobado = $c_aprobado + $aprobado;
                                         $reprobado = $funciones->getRecetaPaisEstado($key,2);
+                                        $c_reprobado = $c_reprobado + $reprobado;
                                         $total = $moderacion+$aprobado+$reprobado;
+                                        $c_total = $c_total + $total;
                                     ?>
                                         <tr>
                                             <td><?php echo $val; ?></td>
@@ -49,6 +59,13 @@
                                             <td><?php echo $total; ?></td>
                                         </tr>
                                     <?php } ?>
+                                        <tr>
+                                            <td><b>Totales</b></td>
+                                            <td><?php echo $c_moderacion; ?></td>
+                                            <td><?php echo $c_aprobado; ?></td>
+                                            <td><?php echo $c_reprobado; ?></td>
+                                            <td><?php echo $c_total; ?></td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
