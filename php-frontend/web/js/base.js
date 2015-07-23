@@ -58,6 +58,9 @@ $(document).ready(function(){
                 $('#formRecipe')[0].reset();
                 $("#modalLoading").modal('hide');
                 $("#modalRecipe").modal(); 
+            }else{
+                $("#modalLoading").modal('hide');
+                $("#modalRecipeError").modal();                 
             }
         }
  

@@ -144,8 +144,10 @@ class enterrecipeActions extends sfActions
       if($request->isMethod("post")){
           $funciones = new funciones();
           $log = $funciones->setLog("executeGuardar[".uniqid()."]");
-          $log->debug(print_r($_POST,true));
-          $log->debug(print_r($_FILES,true));
+          $log->debug("POST");
+          $log->debug(json_encode($_POST,true));
+          $log->debug("FILES");
+          $log->debug(json_encode($_FILES,true));
           $cookie = unserialize($_COOKIE["conosur"]);
           $log->debug(print_r($cookie,true));
           if($cookie["natural"]!="1"||empty($cookie["id"])&&!$funciones->esKeyIdioma($cookie["id"])){
@@ -185,7 +187,7 @@ class enterrecipeActions extends sfActions
 
 
             if(empty($nombre_receta) || empty($ingredientes_in) || empty($intrucciones) || empty($vino_usado)
-              || empty($nombre) || empty($link_blog) || empty($name_blog) || empty($email) || !is_array($_FILES["foto"])){
+              || empty($nombre) || empty($link_blog) || empty($name_blog) || empty($email) || !is_array($_FILES["foto"]) || ($_FILES["foto"]["error"] != "0")){
               $log->err("Faltan elementos");
               echo "NOK";
               exit;
