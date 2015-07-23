@@ -111,17 +111,18 @@ class funciones{
             );
             //if (filter_var($ip, FILTER_VALIDATE_IP) && in_array($purpose, $support)) {
             $url_api = "http://www.geoplugin.net/json.gp?ip=" . $ip;
-            $log->debug("Call api | url=$url_api");
+            //$log->debug("Call api | url=$url_api");
             $w = new sfWebBrowser();
             $w->get($url_api);
             $json_w = $w->getResponseText();
-            $log->debug("Call api RESPONSE | data=$json_w");
+            //$log->debug("Call api RESPONSE | data=$json_w");
                 $ipdat = json_decode($json_w,true);
                 //$log->debug("IPDAT: ".print_r($ipdat,true));
                 if (@strlen(trim($ipdat["geoplugin_countryCode"])) == 2) {
                     $output = $ipdat["geoplugin_countryCode"];
                 }
             //}
+            $log->debug("output=[$output]");
             return $output;
             
         } catch (Exception $ex) {

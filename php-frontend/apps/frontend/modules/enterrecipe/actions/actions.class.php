@@ -181,7 +181,7 @@ class enterrecipeActions extends sfActions
 
             $log->debug("nombre_receta=[$nombre_receta] | ingredientes_in=[$ingredientes_in] | intrucciones=[$intrucciones] ".
                 " | vino_usado=[$vino_usado] | nombre=[$nombre] | link_blog=[$link_blog] | email=[$email] | ".
-                "pais=[".$array_paises[$id_idioma]."] | ip=[$ip]");
+                "pais=[".$array_paises[$id_idioma]."] | ip=[$ip] | imagen=[".json_encode($_FILES["foto"])."]");
 
 
             if(empty($nombre_receta) || empty($ingredientes_in) || empty($intrucciones) || empty($vino_usado)
@@ -211,6 +211,8 @@ class enterrecipeActions extends sfActions
             $receta->setRecPais($id_idioma);
             $receta->setRecImagen($nombre_archivo);
             $receta->save();
+
+            $log->debug("Receta creada | id=".$recete->getRecId());
 
 
 $to = "webmanager@conosurwinery.cl";
@@ -285,6 +287,7 @@ $mensaje = Swift_Message::newInstance()
               $this->getMailer()->send($mensaje);
 			  
             echo "ok";
+            $log->debug("Email enviado");
               
           } catch (Exception $ex) {
               $log->err($ex->getMessage());
