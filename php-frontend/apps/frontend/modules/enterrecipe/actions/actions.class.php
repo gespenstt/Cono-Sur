@@ -214,7 +214,7 @@ class enterrecipeActions extends sfActions
             $receta->setRecImagen($nombre_archivo);
             $receta->save();
 
-            $log->debug("Receta creada | id=".$recete->getRecId());
+            $log->debug("Receta creada | id=".$receta->getRecId());
 
 
 $to = "webmanager@conosurwinery.cl";
