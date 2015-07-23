@@ -143,7 +143,7 @@ class enterrecipeActions extends sfActions
       //$this->redirect("home/index");
       if($request->isMethod("post")){
           $funciones = new funciones();
-          $log = $funciones->setLog("executeGuardar");
+          $log = $funciones->setLog("executeGuardar[".uniqid()."]");
           $log->debug(print_r($_POST,true));
           $log->debug(print_r($_FILES,true));
           $cookie = unserialize($_COOKIE["conosur"]);
@@ -154,11 +154,43 @@ class enterrecipeActions extends sfActions
               exit;
           }
           try{
+
+            $array_paises["2"] = "Irlanda";
+            $array_paises["3"] = "Suecia";
+            $array_paises["9"] = "Canada";
+            $array_paises["6"] = "Japon";
+            $array_paises["7"] = "Chile";
+            $array_paises["8"] = "USA";
+
             $id_idioma = $funciones->mercheKeyIdioma($cookie["id"]);
             $log->debug("Set idioma = $id_idioma");
             $path_upload = sfConfig::get("sf_upload_dir").DIRECTORY_SEPARATOR;
             $nombre_archivo = date("U").rand(111,999).".jpg";
             $log->debug("Imagen | origen=".$_FILES["foto"]["tmp_name"]." | destino=$path_upload$nombre_archivo");
+            
+            $nombre_receta = $request->getPostParameter("nombre_receta");
+            $ingredientes_in = $request->getPostParameter("ingredientes");
+            $ingredientes = str_replace(",", "<br>", $ingredientes_in);
+            $intrucciones = $request->getPostParameter("intrucciones");
+            $vino_usado = $request->getPostParameter("vino_usado");
+            $nombre = $request->getPostParameter("nombre");
+            $link_blog = $request->getPostParameter("link_blog");
+            $name_blog = $request->getPostParameter("name_blog");
+            $email = $request->getPostParameter("email");
+            $ip = $funciones->get_client_ip();
+
+            $log->debug("nombre_receta=[$nombre_receta] | ingredientes_in=[$ingredientes_in] | intrucciones=[$intrucciones] ".
+                " | vino_usado=[$vino_usado] | nombre=[$nombre] | link_blog=[$link_blog] | email=[$email] | ".
+                "pais=[".$array_paises[$id_idioma]."] | ip=[$ip]");
+
+
+            if(empty($nombre_receta) || empty($ingredientes_in) || empty($intrucciones) || empty($vino_usado)
+              || empty($nombre) || empty($link_blog) || empty($name_blog) || empty($email) || !is_array($_FILES["foto"])){
+              $log->err("Faltan elementos");
+              echo "NOK";
+              exit;
+            }
+
             //$s_imagen = new abeautifulsite\SimpleImage($_FILES["foto"]["tmp_name"]);
             //$s_imagen->resize(400, 400);
             //$s_imagen->save($path_upload.$nombre_archivo);
@@ -166,16 +198,6 @@ class enterrecipeActions extends sfActions
             $s_imagen->load($_FILES["foto"]["tmp_name"]);
             //$s_imagen->resize(400, 400);
             $s_imagen->save($path_upload.$nombre_archivo);
-            
-            $nombre_receta = $request->getPostParameter("nombre_receta");
-            $ingredientes = $request->getPostParameter("ingredientes");
-            $ingredientes = str_replace(",", "<br>", $ingredientes);
-            $intrucciones = $request->getPostParameter("intrucciones");
-            $vino_usado = $request->getPostParameter("vino_usado");
-            $nombre = $request->getPostParameter("nombre");
-            $link_blog = $request->getPostParameter("link_blog");
-            $name_blog = $request->getPostParameter("name_blog");
-            $email = $request->getPostParameter("email");
             //$acepta_pais = $re
             $receta = new Receta();
             $receta->setRecNombreReceta($nombre_receta);
@@ -195,13 +217,6 @@ $to = "webmanager@conosurwinery.cl";
 //$to = "rodrigoxv@gmail.com";
 
 $subject = "Email ConoSur";
-
-$array_paises["2"] = "Irlanda";
-$array_paises["3"] = "Suecia";
-$array_paises["9"] = "Canada";
-$array_paises["6"] = "Japon";
-$array_paises["7"] = "Chile";
-$array_paises["8"] = "USA";
 
 
 $message = '<html><head>
