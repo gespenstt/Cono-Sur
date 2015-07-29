@@ -80,6 +80,7 @@ class recetaActions extends sfActions
           $nombre_blogger = $request->getPostParameter("nombre_blogger");
           $email_blogger = $request->getPostParameter("email_blogger");
           $blog_blogger = $request->getPostParameter("blog_blogger");
+          $blog_blogger_name = $request->getPostParameter("blog_blogger_name");
           
           $semi = 0;
           $final = 0;
@@ -106,7 +107,7 @@ class recetaActions extends sfActions
           $receta->setRecNombreBlogger($nombre_blogger);
           $receta->setRecEmailBlogger($email_blogger);
           $receta->setRecUrlBlogger($blog_blogger);
-          
+          $receta->setRecUrlnameBlogger($blog_blogger_name);
           $receta->setRecSemi($semi);
           $receta->setRecFinal($final);
           $receta->setRecGanador($ganador);

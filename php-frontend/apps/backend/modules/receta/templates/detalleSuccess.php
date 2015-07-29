@@ -82,7 +82,8 @@
                                             <div class="col-lg-8">
                                                 Nombre: <?=$receta->getRecNombreBlogger();?><br>
                                                 Email: <?=$receta->getRecEmailBlogger();?><br>
-                                                Blog: <?=$receta->getRecUrlBlogger();?>
+                                                Blog nombre: <?=$receta->getRecUrlnameBlogger();?><br>
+                                                Blog url: <?=$receta->getRecUrlBlogger();?>
                                             </div>
                                         </div>
                                         

@@ -96,6 +96,9 @@
                                         <div class="form-group col-lg-6 " style="padding-top: 20px;">
                                             <label class="col-lg-4">Blog Blogger:</label>
                                             <div class="col-lg-8">
+                                                Nombre: <br>
+                                                <input class="form-control"  type="text" name="blog_blogger_name" value="<?=$receta->getRecUrlnameBlogger();?>" />
+                                                URL: <br>
                                                 <input class="form-control"  type="text" name="blog_blogger" value="<?=$receta->getRecUrlBlogger();?>" />
                                             </div>
                                         </div>
