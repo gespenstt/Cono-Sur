@@ -343,4 +343,48 @@ class recetaActions extends sfActions
       });
       $this->finlandia = $finlandia;
   }
+  public function executeSubirimagen(sfWebRequest $request)
+  {
+      $id = $request->getParameter("id");
+      if(empty($id)){
+          $this->redirect("receta/index");
+      }
+      $this->funciones = new funciones();
+      $c = new Criteria();
+      $c->add(RecetaPeer::REC_ELIMINADO,0);
+      $c->add(RecetaPeer::REC_ID,$id);
+      $receta = RecetaPeer::doSelectOne($c);
+      $error = false;
+      $msg = "";
+
+      if($request->isMethod("post")){
+          $imagen = $_FILES["imagen"];
+          if($imagen["error"] > 0 || $imagen["size"] > 3000000 || $imagen["size"] == 0){
+            $error = true;
+            $msg = "Ha ocurrido un error al subir la imagen, por favor revisar que el peso no exceda el límite de 3mb";
+          }else{
+            $path_upload = sfConfig::get("sf_root_dir").DIRECTORY_SEPARATOR."web".DIRECTORY_SEPARATOR."uploads".DIRECTORY_SEPARATOR;
+            $nombre_archivo = date("U").rand(111,999).".jpg";
+            list($width, $height, $type, $attr) = getimagesize($_FILES["imagen"]["tmp_name"]);
+            if($width<460 || $height<460){
+              $error = true;
+              $msg = "Las dimensiones mínimas de la imagen no corresponden con las solicitadas: 460x460 píxeles";
+            }else{
+              $s_imagen = new SimpleImage();
+              $s_imagen->load($_FILES["imagen"]["tmp_name"]);
+              $s_imagen->save($path_upload.$nombre_archivo);
+              $receta->setRecImagen($nombre_archivo);
+              $receta->save();
+              $msg = "La imagen se ha subido con éxito";              
+            }
+          }
+      }
+
+      $this->error = $error;
+      $this->msg = $msg;
+
+      $this->receta = $receta;
+      
+
+  }
 }

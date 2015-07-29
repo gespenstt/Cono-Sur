@@ -276,10 +276,23 @@ UpdatePreviewCanvas = function()
         return;
     console.log(img.width);
     console.log(img.height);
+    var size = document.getElementById("foto").files[0].size;
+    console.log("size:"+size);
+
     if(img.width > 459 && img.height > 459){
-        $("#validaImagen").attr("data-imagen","true");
-        $(".form-group-imagen").removeClass("has-error");
-        $(".text-danger-imagen").addClass("hidden");
+        if(size > 3100000){
+            var msgerror = $("#validaImagen").attr("data-msg2");
+            $(".text-danger-imagen").html(msgerror);
+            $(".form-group-imagen").addClass("has-error");
+            $(".text-danger-imagen").removeClass("hidden");
+            $("#validaImagen").attr("data-imagen","false");
+            dibujarIconPicture();
+            return false;
+        }else{
+            $("#validaImagen").attr("data-imagen","true");
+            $(".form-group-imagen").removeClass("has-error");
+            $(".text-danger-imagen").addClass("hidden");            
+        }
     }else{
         var msgerror = $("#validaImagen").attr("data-msg");
         $(".text-danger-imagen").html(msgerror);

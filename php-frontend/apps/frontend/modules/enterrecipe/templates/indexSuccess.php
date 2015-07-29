@@ -89,7 +89,7 @@
                                                                             <div id="canvasImagen" >
                                                                                 <canvas id="previewcanvas" width="200" height="200"></canvas>
                                                                             </div>
-                                                                            <input type="hidden" id="validaImagen" value="ok" data-imagen="false" data-msg="Your photo does not meet the dimension requirements. Please try again with a photo of 460 x 460 pixels or superior." />
+                                                                            <input type="hidden" id="validaImagen" value="ok" data-imagen="false" data-msg2="<b>The size of image is higher than 3mb, please select another image.</b>" data-msg="Your photo does not meet the dimension requirements. Please try again with a photo of 460 x 460 pixels or superior." />
                                                                             <input type="file" name="foto" data-msg="Your photo does not meet the dimension requirements. Please try again with a photo of 460 x 460 pixels or superior." id="foto" onchange="return ShowImagePreview( this.files );" />
 										<p class="text-danger hidden text-danger-imagen"></p>
 									</div>

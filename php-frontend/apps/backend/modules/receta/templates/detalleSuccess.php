@@ -1,10 +1,17 @@
         <div class="row">
 
                             <?php
-                                $array_paises["1"] = "UK";
+                                /*$array_paises["1"] = "UK";
                                 $array_paises["2"] = "Irlanda";
                                 $array_paises["3"] = "Suecia";
-                                $array_paises["4"] = "Finlandia"; 
+                                $array_paises["4"] = "Finlandia"; */
+
+                                $array_paises["2"] = "Irlanda";
+                                $array_paises["3"] = "Suecia";
+                                $array_paises["9"] = "Canada";
+                                $array_paises["6"] = "Japon";
+                                $array_paises["7"] = "Chile";
+                                $array_paises["8"] = "USA";
                             ?>                
             <div class="widget stacked ">
 
@@ -104,6 +111,7 @@
             <a href="<?=url_for("receta/restaurar/?id=".$receta->getRecId());?>" class="btn btn-danger">Restaurar Imagen Original</a> 
             <?php } ?>
             <a href="<?=url_for("receta/editar/?id=".$receta->getRecId());?>" class="btn btn-warning">Editar</a>
+            <a href="<?=url_for("receta/subirimagen/?id=".$receta->getRecId());?>" class="btn btn-success">Subir imagen</a>
             <a href="<?=url_for("receta/index");?>" class="btn btn-default">Volver</a>
                     </section>
 
