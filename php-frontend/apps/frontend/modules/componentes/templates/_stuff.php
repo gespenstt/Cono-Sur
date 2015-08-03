@@ -58,7 +58,7 @@
 
          <p>You have successfully entered the Cono Sur Blogger Competition. We will
 
-publish the recipes on this site on 18.08.2014 when the voting begins. If you have any questions, 
+publish the recipes on this site on 18.08.2015 when the voting begins. If you have any questions, 
 
 please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurwinery.cl</a>.</p>
       </div>
