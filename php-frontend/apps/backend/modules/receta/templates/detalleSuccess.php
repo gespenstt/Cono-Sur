@@ -36,14 +36,14 @@
                                         <div class="form-group col-lg-6">
                                             <label class="col-lg-4">Ingredientes:</label>
                                             <div class="col-lg-8">
-                                                <?=html_entity_decode($receta->getRecIngredientes());?>
+                                                <?=html_entity_decode(nl2br($receta->getRecIngredientes()));?>
                                             </div>
                                         </div>
 
                                         <div class="form-group col-lg-6">
                                             <label class="col-lg-4">Instrucciones:</label>
                                             <div class="col-lg-8">
-                                                <?=html_entity_decode($receta->getRecInstrucciones());?>
+                                                <?=html_entity_decode(nl2br($receta->getRecInstrucciones()));?>
                                             </div>
                                         </div>
 
