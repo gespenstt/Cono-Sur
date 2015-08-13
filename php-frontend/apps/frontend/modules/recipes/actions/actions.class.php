@@ -68,18 +68,31 @@ class recipesActions extends sfActions
               break;
       }
       switch($from){
-          case "se":
-              $cre->add(RecetaPeer::REC_PAIS,3);
-              break;
+
           case "ie":
               $cre->add(RecetaPeer::REC_PAIS,2);
               break;
-          /*case "gb":
-              $cre->add(RecetaPeer::REC_PAIS,1);
-              break;*/
-          case "fi":
-              $cre->add(RecetaPeer::REC_PAIS,4);
+
+          case "se":
+              $cre->add(RecetaPeer::REC_PAIS,3);
               break;
+
+          case "ca":
+              $cre->add(RecetaPeer::REC_PAIS,9);
+              break;
+
+          case "jp":
+              $cre->add(RecetaPeer::REC_PAIS,6);
+              break;
+
+          case "cl":
+              $cre->add(RecetaPeer::REC_PAIS,7);
+              break;
+
+          case "us":
+              $cre->add(RecetaPeer::REC_PAIS,8);
+              break;
+
       }
       $this->recetas = RecetaPeer::doSelect($cre);    
   
@@ -89,7 +102,10 @@ class recipesActions extends sfActions
       $cookie = unserialize($_COOKIE["conosur"]);
       $funciones = new funciones();
       $id_idioma = $funciones->mercheKeyIdioma($cookie["id"]);
-      if($id_idioma>1&&$id_idioma<5){
+      $array_ids_idioma = array(
+          9,6,7,8,2,3
+      );
+      if(array_search($id_idioma, $array_ids_idioma)!==FALSE){
           $id_idioma = $id_idioma;
       }else{
           $id_idioma = 5;          

@@ -24,18 +24,21 @@
                                     <li><a href="<?=url_for("contestdetails/index");?>"><?=$array_diccionario["menu"]["contest_details"];?></a></li>
                                     <li><a href="<?=url_for("grandprize/index");?>"><?=$array_diccionario["menu"]["grand_prize"];?></a></li>
 
-                                    <!--<li class="dropdown">
+                                    <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$array_diccionario["menu"]["recipes"];?></a>
                                             <ul class="dropdown-menu">
-                                                    <li><a href="<?=url_for("recipes/index/?from=se");?>">FROM SWEDEN</a></li>
-                                                    <li><a href="<?=url_for("recipes/index/?from=ie");?>">FROM IRELAND</a></li>
-                                                    <li><a href="<?=url_for("recipes/index/?from=fi");?>">FROM FINLAND</a></li>
+                                                    <li><a href="<?=url_for("recipes/index/?from=ie");?>">FROM Irlanda</a></li>
+                                                    <li><a href="<?=url_for("recipes/index/?from=se");?>">FROM Suecia</a></li>
+                                                    <li><a href="<?=url_for("recipes/index/?from=ca");?>">FROM Canada</a></li>
+                                                    <li><a href="<?=url_for("recipes/index/?from=jp");?>">FROM Japon</a></li>
+                                                    <li><a href="<?=url_for("recipes/index/?from=cl");?>">FROM Chile</a></li>
+                                                    <li><a href="<?=url_for("recipes/index/?from=us");?>">FROM USA</a></li>
                                             </ul>
-                                    </li>-->
+                                    </li>
 
-                                    <?php /*if(!$esconder){ ?>
+                                    <?php if(!$esconder){ ?>
                                     <li><a href="<?=url_for("vote/index");?>"><?=$array_diccionario["menu"]["vote"];?></a></li>
-                                    <?php } 
+                                    <?php } /*
                                     <li><a href="<?=url_for("semifinalists/index");?>"><?=$array_diccionario["menu"]["semifinalists"];?></a></li>*/ ?>
 
                                     <!--<li><a href="<?=url_for("finalists/index");?>"><?=$array_diccionario["menu"]["finalists"];?></a></li>

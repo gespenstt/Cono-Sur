@@ -3,7 +3,7 @@
                         <div class="row show-grid">
 
                                 <div class="col-md-2">
-                                        © 2014 Cono Sur
+                                        © <?php echo date("Y"); ?> Cono Sur
                                 </div>
 
                                 <div class="col-md-3">

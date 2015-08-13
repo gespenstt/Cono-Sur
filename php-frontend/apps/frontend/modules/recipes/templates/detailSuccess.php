@@ -21,12 +21,12 @@
                                                                                     $url_bloger = "http://".$url_bloger;
                                                                                 }
                                                                             ?>
-                                                                            <a href="<?=$url_bloger;?>" target="_blank"><?=$array_diccionario["panel_a"]["view_blog"];?></a>
+                                                                            <a href="<?=$url_bloger;?>" target="_blank"><?php echo $receta->getRecUrlnameBlogger();?></a>
 
 									</span>
 									
 
-                                                    <span style="background-image: url(<?=public_path("uploads/".$receta->getRecImagen());?>)" class="recipe-picture"></span>
+                                                    <span style="background-image: url(http://bloggercompetition.conosur.com/uploads/<?=$receta->getRecImagen();?>)" class="recipe-picture"></span>
 
                                                         <span class="picture-info"><?=$receta->getRecVino();?></span>
                                                         
