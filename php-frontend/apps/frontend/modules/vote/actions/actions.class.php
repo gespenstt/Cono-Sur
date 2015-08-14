@@ -122,14 +122,16 @@ class voteActions extends sfActions
                 
             }
             
-            $captcha = new recaptchalib();
+            /*$captcha = new recaptchalib();
             $privatekey = "6LdyyfgSAAAAAMOEGtahWl7v7SwLxM4PCik-VJ0N";
             //$privatekey = "6Le4R_cSAAAAABeiA2WbQeVDkgHVrTdV0LatoEgN";
             $resp = $captcha->recaptcha_check_answer ($privatekey,
                                         $_SERVER["REMOTE_ADDR"],
                                         $_POST["recaptcha_challenge_field"],
-                                        $_POST["recaptcha_response_field"]); 
-            if(!$resp->is_valid){
+                                        $_POST["recaptcha_response_field"]); */
+            $recaptcha = new \ReCaptcha\ReCaptcha("6Le4R_cSAAAAABeiA2WbQeVDkgHVrTdV0LatoEgN");
+            $resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
+            if(!$resp->isSuccess()){
                 $log->err("Captcha no valido");
                 $array_salida = array(
                   "estado" => "nok",

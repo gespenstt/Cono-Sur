@@ -71,7 +71,7 @@ class componentesComponents extends sfComponents
           $id_idioma = 5;          
       }
 	  
-        $this->recaptcha = new recaptchalib();	  
+        //$this->recaptcha = new recaptchalib();	  
       
       $this->lang = $cookie["lang"];
       

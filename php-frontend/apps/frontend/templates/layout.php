@@ -35,6 +35,7 @@
             <![endif]-->
 
             <script src="<?=public_path("js/fix-ios6.js");?>"></script>
+            <script src='https://www.google.com/recaptcha/api.js'></script>
             <script src="<?=public_path("js/base.js");?>"></script>
     </head>
     <body>
