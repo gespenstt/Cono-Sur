@@ -17,7 +17,7 @@ class enterrecipeActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
-      //$this->redirect("home/index");
+      $this->redirect("home/index");
       $cookie = unserialize($_COOKIE["conosur"]);
       $funciones = new funciones();
       $id_idioma = $funciones->mercheKeyIdioma($cookie["id"]);
@@ -140,7 +140,7 @@ class enterrecipeActions extends sfActions
   }
   public function executeGuardar(sfWebRequest $request)
   {
-      //$this->redirect("home/index");
+      $this->redirect("home/index");
       if($request->isMethod("post")){
           $funciones = new funciones();
           $log = $funciones->setLog("executeGuardar[".uniqid()."]");
