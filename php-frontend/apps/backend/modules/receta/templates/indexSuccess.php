@@ -77,6 +77,10 @@
                             <h3>Listado</h3>    
                             <div class="clearfix" style="padding-bottom: 10px;">
                                   <form id="formularioBuscar" action="<?=url_for("receta/index");?>" method="get">
+
+                                <div class="navbar-left navbar-form">
+                                      <input name="nombre" placeholder="Nombre receta" class="form-control">
+                                </div>
                                 <div class="navbar-left navbar-form">
                                       <select name="estado" class="form-control">
                                           <option value="">Todos los estados</option>

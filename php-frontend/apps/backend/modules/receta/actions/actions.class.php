@@ -21,6 +21,7 @@ class recetaActions extends sfActions
       $pais = $request->getParameter("pais");
       $this->estado = "";
       $estado = $request->getParameter("estado");
+      $nombre = $request->getParameter("nombre");
       $c = new Criteria();
       $c->add(RecetaPeer::REC_ELIMINADO,0);
       $c->addDescendingOrderByColumn(RecetaPeer::CREATED_AT);
@@ -31,6 +32,11 @@ class recetaActions extends sfActions
       if($estado != ""){
           $this->estado = $estado;
           $c->add(RecetaPeer::REC_ESTADO,$estado);
+      }
+      if($nombre != ""){
+          $this->nombre = $nombre;
+          $c->add(RecetaPeer::REC_NOMBRE_RECETA,"%$nombre%",Criteria::LIKE);
+          $c->setIgnoreCase(true);
       }
       //$resC = RecetaPeer::doSelect($c);
       //$this->recetas = $resC;
