@@ -1,0 +1,82 @@
+Aug 17 12:32:35 executeDetectar [debug] Cookie : 
+Aug 17 12:32:35 funciones-detectLang [debug] inicio detect
+Aug 17 12:32:35 funciones-detectIp [debug] IP Encontrada | ip=::1
+Aug 17 12:32:35 funciones-ip_info [debug] datos de entrada | ip=::1
+Aug 17 12:32:36 funciones-ip_info [debug] output=[]
+Aug 17 12:32:36 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Aug 17 12:32:39 executeDetectar [debug] Cookie : Array
+(
+    [lang] => en
+    [id] => f6d7a559d5cfa79f1daf7c3562253c61
+)
+
+Aug 17 12:32:42 executeDetectar [debug] Cookie : Array
+(
+    [lang] => en
+    [id] => f6d7a559d5cfa79f1daf7c3562253c61
+)
+
+Aug 17 12:32:53 executeDetectar [debug] Cookie : 
+Aug 17 12:32:53 funciones-detectLang [debug] inicio detect
+Aug 17 12:32:53 funciones-detectIp [debug] IP Encontrada | ip=::1
+Aug 17 12:32:53 funciones-ip_info [debug] datos de entrada | ip=::1
+Aug 17 12:32:54 funciones-ip_info [debug] output=[]
+Aug 17 12:32:54 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Aug 17 12:32:56 executeDetectar [debug] Cookie : Array
+(
+    [lang] => en
+    [id] => f6d7a559d5cfa79f1daf7c3562253c61
+)
+
+Aug 17 12:33:17 executeDetectar [debug] Cookie : Array
+(
+    [lang] => cl
+    [id] => 161747ec4dc9f55f1760195593742232
+    [natural] => 1
+)
+
+Aug 17 12:33:20 executeDetectar [debug] Cookie : Array
+(
+    [lang] => cl
+    [id] => 161747ec4dc9f55f1760195593742232
+    [natural] => 1
+)
+
+Aug 17 12:33:22 executeDetectar [debug] Cookie : Array
+(
+    [lang] => cl
+    [id] => 161747ec4dc9f55f1760195593742232
+    [natural] => 1
+)
+
+Aug 17 12:33:29 executeDetectar [debug] Cookie : Array
+(
+    [lang] => cl
+    [id] => 161747ec4dc9f55f1760195593742232
+    [natural] => 1
+)
+
+Aug 17 12:33:38 executeDetectar [debug] Cookie : 
+Aug 17 12:33:38 funciones-detectLang [debug] inicio detect
+Aug 17 12:33:38 funciones-detectIp [debug] IP Encontrada | ip=::1
+Aug 17 12:33:38 funciones-ip_info [debug] datos de entrada | ip=::1
+Aug 17 12:33:39 funciones-ip_info [debug] output=[]
+Aug 17 12:33:39 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Aug 17 12:35:27 executeDetectar [debug] Cookie : 
+Aug 17 12:35:27 funciones-detectLang [debug] inicio detect
+Aug 17 12:35:27 funciones-detectIp [debug] IP Encontrada | ip=::1
+Aug 17 12:35:27 funciones-ip_info [debug] datos de entrada | ip=::1
+Aug 17 12:35:28 funciones-ip_info [debug] output=[]
+Aug 17 12:35:28 funciones-detectIp [err] LOCATION NO RESUELTO POR INFO
+Aug 17 12:38:51 executeDetectar [debug] Cookie : Array
+(
+    [lang] => en
+    [id] => f6d7a559d5cfa79f1daf7c3562253c61
+)
+
+Aug 17 12:39:17 executeDetectar [debug] Cookie : Array
+(
+    [lang] => en
+    [id] => f6d7a559d5cfa79f1daf7c3562253c61
+)
+

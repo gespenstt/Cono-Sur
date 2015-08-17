@@ -32,7 +32,7 @@
                                                         
                                                         <!-- share -->
                                                         <?php
-                                                            $url_share = "http://bloggercompetition.conosur.com/index.php/recipes/detail/id/".$receta->getRecId();
+                                                            $url_share = "http://bloggercompetition.conosur.com/index.php/recipes/detail/id/".$receta->getRecId()."/share/social/";
                                                         ?>
                                                         <a href="https://www.facebook.com/sharer/sharer.php?u=<?=urlencode($url_share);?>" target="_blank" class="share-facebook">FACEBOOK</a> 
                                                         <a href="https://twitter.com/home?status=<?=urlencode($url_share);?>" target="_blank" class="share-twitter">TWITTER</a>

@@ -214,7 +214,7 @@ class componentesComponents extends sfComponents
                     $found=true;
                     break;
             }
-            if($found){
+            if($found&&$_GET["share"]!="social"){
                 $this->getContext()->getActionStack()->getLastEntry()->getActionInstance()->redirect('home/index'); 
             }
         }

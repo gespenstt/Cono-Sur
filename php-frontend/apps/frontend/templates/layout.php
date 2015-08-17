@@ -23,7 +23,11 @@
             <link href="<?=public_path("css/main.css");?>" rel="stylesheet" media="screen">
             
             <script>
+                <?php if($_GET["share"]=="social"){ ?>
+                var det_lang = false;
+                <?php }else{ ?>
                 var det_lang = <?php include_component("componentes", "detectar"); ?>;
+                <?php } ?>
             </script>
             <script src="<?=public_path("js/jquery.min.js");?>"></script>
             <!--<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
