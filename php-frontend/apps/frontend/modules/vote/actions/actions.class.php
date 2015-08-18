@@ -129,7 +129,7 @@ class voteActions extends sfActions
                                         $_SERVER["REMOTE_ADDR"],
                                         $_POST["recaptcha_challenge_field"],
                                         $_POST["recaptcha_response_field"]); */
-            $recaptcha = new \ReCaptcha\ReCaptcha("6Le4R_cSAAAAABeiA2WbQeVDkgHVrTdV0LatoEgN");
+            /*$recaptcha = new \ReCaptcha\ReCaptcha("6Le4R_cSAAAAABeiA2WbQeVDkgHVrTdV0LatoEgN");
             $resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
             if(!$resp->isSuccess()){
                 $log->err("Captcha no valido");
@@ -139,7 +139,7 @@ class voteActions extends sfActions
                 );
                 echo json_encode($array_salida);
                 exit;
-            }
+            }*/
 
             //BUSCAR USUARIO
             $cus = new Criteria();

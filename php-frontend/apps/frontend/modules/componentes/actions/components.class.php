@@ -107,11 +107,18 @@ class componentesComponents extends sfComponents
       $this->diccionario_chef = $array_chef_out;
       
   }
-  public function executeDetectar()
+  public function executeDetectar(sfWebRequest $request)
   {
       $this->respuesta = false;
       $funciones = new funciones();
       $log = $funciones->setLog("executeDetectar");
+      $ip_user = $funciones->get_client_ip();
+      $cookie_ip = $_COOKIE["conosur_ip"];
+      if($cookie_ip != md5($ip_user)){
+        setcookie("conosur", null, time()-3600*24*90, "/");
+        setcookie("conosur_ip", md5($ip_user), time()+3600*24*90, "/");
+        $this->redirec("home/index");
+      }
       $cookie = unserialize($_COOKIE["conosur"]);
       $log->debug("Cookie : ".print_r($cookie,true));
       if(!is_array($cookie) || empty($cookie["lang"])){

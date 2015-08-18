@@ -1,12 +1,12 @@
 <?php
 
-    $irlanda = $sf_data->getRaw("irlanda");
-    $suecia = $sf_data->getRaw("suecia");
+    $out_array = $sf_data->getRaw("out_array");
+    /*$suecia = $sf_data->getRaw("suecia");
     $finlandia = $sf_data->getRaw("finlandia");
     
     $irlanda = array_reverse($irlanda);
     $suecia = array_reverse($suecia);
-    $finlandia = array_reverse($finlandia);
+    $finlandia = array_reverse($finlandia);*/
 
 ?>
         <div class="row">
@@ -31,10 +31,16 @@
                     <h3>Top</h3>
                 </div>     
                 <div class="widget-content">
+                <?php foreach($out_array as $id_pais => $val_pais){ ?>
+                    <?php
+                        if(count($val_pais) == 0){
+                            continue;
+                        }
+                    ?>
                     <section>
                         
                         <div class="col-md-12">
-                            <h4><?=$array_paises["2"];?></h4>
+                            <h4><?=$array_paises[$id_pais];?></h4>
                             <div class="table-responsive">
                                 <table class="table table-bordered table-hover table-striped">
                                     <thead>
@@ -46,12 +52,12 @@
                                       </tr>
                                     </thead>
                                     <tbody>
-                                        <?php foreach($irlanda as $ir){ ?>
+                                        <?php foreach($val_pais as $oa){ ?>
                                         <tr>
-                                            <td><a href="<?=url_for("receta/editar/?id=".$ir["id"]);?>"><?=$ir["nombre"];?></a></td>
-                                            <td><?=$ir["blogger"];?></td>
-                                            <td><?=$ir["count"];?></td>
-                                            <td><?=$ir["flag"];?></td>
+                                            <td><a href="<?=url_for("receta/editar/?id=".$oa["id"]);?>"><?=$oa["nombre"];?></a></td>
+                                            <td><?=$oa["blogger"];?></td>
+                                            <td><?=$oa["count"];?></td>
+                                            <td><?=$oa["flag"];?></td>
                                         </tr>
                                         <?php } ?>
                                     </tbody>
@@ -60,64 +66,7 @@
                         </div>
                         
                     </section>
-                    <section>
-                        
-                        <div class="col-md-12">
-                            <h4><?=$array_paises["3"];?></h4>
-                            <div class="table-responsive">
-                                <table class="table table-bordered table-hover table-striped">
-                                    <thead>
-                                      <tr>
-                                        <th class="col-lg-4">Nombre receta</th>
-                                        <th class="col-lg-2">Blogger</th>
-                                        <th class="col-lg-2">Votos</th>
-                                        <th class="col-lg-2">Flag</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                        <?php foreach($suecia as $ir){ ?>
-                                        <tr>
-                                            <td><a href="<?=url_for("receta/editar/?id=".$ir["id"]);?>"><?=$ir["nombre"];?></a></td>
-                                            <td><?=$ir["blogger"];?></td>
-                                            <td><?=$ir["count"];?></td>
-                                            <td><?=$ir["flag"];?></td>
-                                        </tr>
-                                        <?php } ?>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        
-                    </section>
-                    <section>
-                        
-                        <div class="col-md-12">
-                            <h4><?=$array_paises["4"];?></h4>
-                            <div class="table-responsive">
-                                <table class="table table-bordered table-hover table-striped">
-                                    <thead>
-                                      <tr>
-                                        <th class="col-lg-4">Nombre receta</th>
-                                        <th class="col-lg-2">Blogger</th>
-                                        <th class="col-lg-2">Votos</th>
-                                        <th class="col-lg-2">Flag</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                        <?php foreach($finlandia as $ir){ ?>
-                                        <tr>
-                                            <td><a href="<?=url_for("receta/editar/?id=".$ir["id"]);?>"><?=$ir["nombre"];?></a></td>
-                                            <td><?=$ir["blogger"];?></td>
-                                            <td><?=$ir["count"];?></td>
-                                            <td><?=$ir["flag"];?></td>
-                                        </tr>
-                                        <?php } ?>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        
-                    </section>
+                    <?php } ?>
                 </div>
             </div>
         </div>

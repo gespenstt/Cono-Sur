@@ -248,9 +248,9 @@ please write to <a href="mailto:webmanager@conosurwinery.cl">webmanager@conosurw
                     <input type="text" name="name" class="form-control form-control-especial" placeholder="Enter your name">
                   </div>
               </div>          
-                     <p>	 
+                     <!-- <p>	 
                       <div class="g-recaptcha" data-sitekey="6Le4R_cSAAAAAN9b8eQkCxwQbynVCBNWjrIRqCzJ"></div>
-                     </p>
+                     </p> -->
               <button type="button" class="btn btn-submit-voto">Submit</button>
             </form>
           </div>

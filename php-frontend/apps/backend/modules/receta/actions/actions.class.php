@@ -242,8 +242,50 @@ class recetaActions extends sfActions
   public function executeTop(sfWebRequest $request)
   {
       $util = new funciones();
+
+      $out_array = array();
+
+      $co = new Criteria();
+      $co->add(IdiomaPeer::IDI_ID,5,Criteria::NOT_EQUAL);
+      $co->addAscendingOrderByColumn(IdiomaPeer::IDI_ID);
+      $resCo = IdiomaPeer::doSelect($co);
+
+      foreach($resCo as $pais){
+
+        $cpais = new Criteria();
+        $cpais->add(RecetaPeer::REC_ELIMINADO,0);
+        $cpais->add(RecetaPeer::REC_PAIS,$pais->getIdiId());
+        $cpais->add(RecetaPeer::REC_ESTADO,1);
+        $recetas = RecetaPeer::doSelect($cpais);
       
-      $irlanda = array();
+        foreach($recetas as $r){
+            $flag = "";
+            if($r->getRecSemi()==1){ $flag .= "Semi ";}
+            if($r->getRecFinal()==1){ $flag .= "- Finalista ";}
+            if($r->getRecGanador()==1){ $flag .= "- Ganador ";}
+            
+            $out_array[$pais->getIdiId()][$r->getRecId()] = array(
+                "id" => $r->getRecId(),
+               "nombre" => $r->getRecNombreReceta(),
+                "blogger" => $r->getRecNombreBlogger(),
+                "count" => $util->countVotos($r->getRecId()),
+                "flag" => $flag,
+                "pais" => $pais->getIdiId(),
+            );
+        }
+
+        $temp_pais = $out_array[$pais->getIdiId()];
+        usort($temp_pais, function($a, $b) {
+              return $a['count'] - $b['count'];
+        });
+        $out_array[$pais->getIdiId()] = array_reverse($temp_pais);
+
+      }
+      //print_r($out_array); exit;
+      $this->out_array = $out_array;
+
+      
+      /*$irlanda = array();
       
       $c = new Criteria();
       $c->add(RecetaPeer::REC_ELIMINADO,0);
@@ -348,7 +390,7 @@ class recetaActions extends sfActions
       usort($finlandia, function($a, $b) {
             return $a['count'] - $b['count'];
       });
-      $this->finlandia = $finlandia;
+      $this->finlandia = $finlandia;*/
   }
   public function executeSubirimagen(sfWebRequest $request)
   {

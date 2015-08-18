@@ -63,7 +63,7 @@
                                       <?php foreach($votantes->getResults() as $p){  ?>
                                       <?php $info_receta = $funciones->getRecetaUsuarioInfo($p->getUsuId()); ?>
                                       <tr>
-                                        <td><?=$p->getUsuNombre();?></td>
+                                        <td><?php echo $p->getUsuNombre();?><br /><?php echo $p->getUsuEmail();?></td>
                                         <td><?php echo $info_receta["nombre"]; ?></td>
                                         <td><?php
                                             echo $array_paises[$info_receta["pais"]];                                            
