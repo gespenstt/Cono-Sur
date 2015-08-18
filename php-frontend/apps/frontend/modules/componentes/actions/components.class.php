@@ -117,7 +117,7 @@ class componentesComponents extends sfComponents
       if($cookie_ip != md5($ip_user)){
         setcookie("conosur", null, time()-3600*24*90, "/");
         setcookie("conosur_ip", md5($ip_user), time()+3600*24*90, "/");
-        $this->redirec("home/index");
+        $this->getContext()->getActionStack()->getLastEntry()->getActionInstance()->redirect("home/index");
       }
       $cookie = unserialize($_COOKIE["conosur"]);
       $log->debug("Cookie : ".print_r($cookie,true));
