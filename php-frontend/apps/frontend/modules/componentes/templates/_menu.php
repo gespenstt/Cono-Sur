@@ -27,19 +27,19 @@
                                     <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$array_diccionario["menu"]["recipes"];?></a>
                                             <ul class="dropdown-menu">
-                                                    <li><a href="<?=url_for("recipes/index/?from=ie");?>">FROM Irlanda</a></li>
-                                                    <li><a href="<?=url_for("recipes/index/?from=se");?>">FROM Suecia</a></li>
+                                                    <li><a href="<?=url_for("recipes/index/?from=ie");?>">FROM Ireland</a></li>
+                                                    <li><a href="<?=url_for("recipes/index/?from=se");?>">FROM Sweden</a></li>
                                                     <li><a href="<?=url_for("recipes/index/?from=ca");?>">FROM Canada</a></li>
-                                                    <li><a href="<?=url_for("recipes/index/?from=jp");?>">FROM Japon</a></li>
+                                                    <li><a href="<?=url_for("recipes/index/?from=jp");?>">FROM Japan</a></li>
                                                     <li><a href="<?=url_for("recipes/index/?from=cl");?>">FROM Chile</a></li>
                                                     <li><a href="<?=url_for("recipes/index/?from=us");?>">FROM USA</a></li>
                                             </ul>
                                     </li>
 
-                                    <?php if(!$esconder){ ?>
+                                    <?php /*if(!$esconder){ ?>
                                     <li><a href="<?=url_for("vote/index");?>"><?=$array_diccionario["menu"]["vote"];?></a></li>
-                                    <?php } /*
-                                    <li><a href="<?=url_for("semifinalists/index");?>"><?=$array_diccionario["menu"]["semifinalists"];?></a></li>*/ ?>
+                                    <?php }*/?>
+                                    <li><a href="<?=url_for("semifinalists/index");?>"><?=$array_diccionario["menu"]["semifinalists"];?></a></li> 
 
                                     <!--<li><a href="<?=url_for("finalists/index");?>"><?=$array_diccionario["menu"]["finalists"];?></a></li>
                                     <li><a href="<?=url_for("winner/index");?>"><?=$array_diccionario["menu"]["winner"];?></a></li>-->

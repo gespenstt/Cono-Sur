@@ -481,7 +481,7 @@ h3 {
     z-index: 1;
 }
 
-.flag-ireland, .flag-finland, .flag-sweden {
+.flag-ireland, .flag-finland, .flag-sweden, .flag-canada, .flag-japan, .flag-chile, .flag-usa {
 	background-image: url(../img/country-modal.png);
 	height: 29px;
 	width: 45px;
@@ -494,7 +494,23 @@ h3 {
 }
 
 .flag-sweden {
-	background-position: 115px 0px;
+	background-position: -102px 0px;
+}
+
+.flag-canada {
+	background-position: -52px 0px;
+}
+
+.flag-japan {
+	background-position: 94px 0px;
+}
+
+.flag-chile {
+	background-position: 45px 0px;
+}
+
+.flag-usa {
+	background-position: -157px 0px;
 }
 
 .recipe-item h1, .recipe-item h2{	

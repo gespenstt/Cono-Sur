@@ -52,6 +52,8 @@ class semifinalistsActions extends sfActions
       }
       
       $this->diccionario = $array_out;  
+
+      $array_paises = array();
       
       
       //IRLANDA
@@ -61,8 +63,7 @@ class semifinalistsActions extends sfActions
       $c->add(RecetaPeer::REC_PAIS,2);
       $c->add(RecetaPeer::REC_ESTADO,1);
       $c->add(RecetaPeer::REC_SEMI,1);
-      $resC = RecetaPeer::doSelect($c);  
-      $this->irlanda = $resC;
+      $array_paises["ireland"] = RecetaPeer::doSelect($c);  
       //SUECIA
       $d = new Criteria();
       $d->add(RecetaPeer::REC_ELIMINADO,0);
@@ -70,16 +71,42 @@ class semifinalistsActions extends sfActions
       $d->add(RecetaPeer::REC_PAIS,3);
       $d->add(RecetaPeer::REC_ESTADO,1);
       $d->add(RecetaPeer::REC_SEMI,1);
-      $resD = RecetaPeer::doSelect($d);      
-      $this->suecia = $resD;
-      //FINLANDIA
+      $array_paises["sweden"] = RecetaPeer::doSelect($d);     
+      //Canada
       $e = new Criteria();
       $e->add(RecetaPeer::REC_ELIMINADO,0);
       $e->addDescendingOrderByColumn(RecetaPeer::CREATED_AT);
-      $e->add(RecetaPeer::REC_PAIS,4);
+      $e->add(RecetaPeer::REC_PAIS,9);
       $e->add(RecetaPeer::REC_ESTADO,1);
       $e->add(RecetaPeer::REC_SEMI,1);
-      $resE = RecetaPeer::doSelect($e);   
-      $this->finlandia = $resE;
+      $array_paises["canada"] = RecetaPeer::doSelect($e);   
+      //JAPON
+      $f = new Criteria();
+      $f->add(RecetaPeer::REC_ELIMINADO,0);
+      $f->addDescendingOrderByColumn(RecetaPeer::CREATED_AT);
+      $f->add(RecetaPeer::REC_PAIS,6);
+      $f->add(RecetaPeer::REC_ESTADO,1);
+      $f->add(RecetaPeer::REC_SEMI,1);
+      $array_paises["japan"] = RecetaPeer::doSelect($f);  
+      //CHILE
+      $g = new Criteria();
+      $g->add(RecetaPeer::REC_ELIMINADO,0);
+      $g->addDescendingOrderByColumn(RecetaPeer::CREATED_AT);
+      $g->add(RecetaPeer::REC_PAIS,7);
+      $g->add(RecetaPeer::REC_ESTADO,1);
+      $g->add(RecetaPeer::REC_SEMI,1);
+      $array_paises["chile"] = RecetaPeer::doSelect($g);  
+      //USA
+      $h = new Criteria();
+      $h->add(RecetaPeer::REC_ELIMINADO,0);
+      $h->addDescendingOrderByColumn(RecetaPeer::CREATED_AT);
+      $h->add(RecetaPeer::REC_PAIS,8);
+      $h->add(RecetaPeer::REC_ESTADO,1);
+      $h->add(RecetaPeer::REC_SEMI,1);
+      $array_paises["usa"] = RecetaPeer::doSelect($h);   
+
+
+
+      $this->array_paises = $array_paises;
   }
 }
