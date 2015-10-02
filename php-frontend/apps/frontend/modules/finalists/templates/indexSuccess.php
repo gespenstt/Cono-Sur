@@ -38,7 +38,7 @@
                         <div class="row show-grid">
                         <?php } ?>
 
-                            <div class="col-md-12">
+                            <div class="col-md-6">
 
                             <ul class="recipe-item <?=$array_div_color[$count_color];?>">
                                 <li class="recipe-img" style="background-image: url(http://bloggercompetition.conosur.com/uploads/<?=$re->getRecImagen();?>)"></li>
