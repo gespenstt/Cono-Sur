@@ -20,7 +20,7 @@
 
             <!-- Bootstrap CSS -->
             <link href="<?=public_path("css/bootstrap.css");?>" rel="stylesheet" media="screen">
-            <link href="<?=public_path("css/main.css");?>" rel="stylesheet" media="screen">
+            <link href="<?=public_path("css/main.css?v=2");?>" rel="stylesheet" media="screen">
             
             <script>
                 <?php if($_GET["share"]=="social"){ ?>

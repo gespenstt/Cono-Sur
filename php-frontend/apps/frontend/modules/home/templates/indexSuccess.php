@@ -21,10 +21,11 @@
 
 					  	<div class="col-md-4">
 					  		<span class="square mustard" style="padding-top:30%;">
-					  			<h3 class="mayus"><?=$array_diccionario["panel_b"]["texto"];?></h3>
-                                                                <?php if($votohabilitado){ ?>
+					  			<?php /*<h3 class="mayus"><?=$array_diccionario["panel_b"]["texto"];?></h3>
+                                                                if($votohabilitado){ ?>
 								<a href="<?=url_for("vote/index");?>" class="link-georgia"><?=$array_diccionario["panel_b"]["link"];?></a>
-                                                                <?php } ?>
+                                                                <?php }*/ ?>
+                                <a href="<?=url_for("finalists/index");?>" class="link-georgia">Finalists!</a>                             
 							</span>
 					  	</div>
 

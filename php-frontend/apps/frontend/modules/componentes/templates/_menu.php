@@ -38,11 +38,11 @@
 
                                     <?php /*if(!$esconder){ ?>
                                     <li><a href="<?=url_for("vote/index");?>"><?=$array_diccionario["menu"]["vote"];?></a></li>
-                                    <?php }*/?>
-                                    <li><a href="<?=url_for("semifinalists/index");?>"><?=$array_diccionario["menu"]["semifinalists"];?></a></li> 
+                                    <?php }
+                                    <li><a href="<?=url_for("semifinalists/index");?>"><?=$array_diccionario["menu"]["semifinalists"];?></a></li> */?>
 
-                                    <!--<li><a href="<?=url_for("finalists/index");?>"><?=$array_diccionario["menu"]["finalists"];?></a></li>
-                                    <li><a href="<?=url_for("winner/index");?>"><?=$array_diccionario["menu"]["winner"];?></a></li>-->
+                                    <li><a href="<?=url_for("finalists/index");?>"><?=$array_diccionario["menu"]["finalists"];?></a></li>
+                                    <li><a href="<?=url_for("winner/index");?>"><?=$array_diccionario["menu"]["winner"];?></a></li>
 									<?php /*if(!$esconder){ ?>
 									<li><a href="<?=url_for("enterrecipe/index");?>"><?=$array_diccionario["menu"]["enter_your_recipe"];?></a></li>
 									<?php }*/ ?>
